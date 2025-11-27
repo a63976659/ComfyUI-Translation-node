@@ -1,0 +1,85 @@
+{
+  "ImageSize (Side) - Yaser": {
+    "title": "图像尺寸（边）",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "side": "选择边",
+      "Longest": "最长",
+      "Shortest": "最短"
+    },
+    "outputs": {
+      "resolution": "分辨率"
+    }
+  },
+
+  "Switch (Any) - Yaser": {
+    "title": "切换（任意）",
+    "inputs": {
+      "input1": "输入1"
+    },
+    "widgets": {
+      "select": "选择",
+      "sel_mode": "选择模式",
+      "select_on_execution": "执行时选择",
+      "select_on_prompt": "提示时选择"
+    },
+    "outputs": {
+      "selected_value": "选中值",
+      "selected_label": "选中标签",
+      "selected_index": "选中索引"
+    }
+  },
+
+  "Float - Yaser": {
+    "title": "浮点",
+    "widgets": {
+      "value": "值"
+    },
+    "outputs": {
+      "float": "浮点"
+    }
+  },
+
+  "Repeat Images - Yaser": {
+    "title": "重复图像",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "amount": "数量"
+    },
+    "outputs": {
+      "IMAGE": "图像"
+    }
+  }
+  ,
+
+  "ImageSizeBySide": {
+    "title": "图像尺寸（边）",
+    "inputs": { "image": "图像" },
+    "widgets": { "side": "选择边", "Longest": "最长", "Shortest": "最短" },
+    "outputs": { "resolution": "分辨率" }
+  },
+
+  "UtilRepeatImages": {
+    "title": "重复图像",
+    "inputs": { "images": "图像" },
+    "widgets": { "amount": "数量" },
+    "outputs": { "IMAGE": "图像" }
+  },
+
+  "GeneralSwitch": {
+    "title": "切换（任意）",
+    "inputs": { "input1": "输入1" },
+    "widgets": { "select": "选择", "sel_mode": "选择模式", "select_on_execution": "执行时选择", "select_on_prompt": "提示时选择" },
+    "outputs": { "selected_value": "选中值", "selected_label": "选中标签", "selected_index": "选中索引" }
+  },
+
+  "Float": {
+    "title": "浮点",
+    "widgets": { "value": "值" },
+    "outputs": { "float": "浮点" }
+  }
+}
