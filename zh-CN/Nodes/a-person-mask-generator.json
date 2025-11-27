@@ -1,0 +1,42 @@
+{
+  "APersonFaceLandmarkMaskGenerator": {
+    "title": "五官特征遮罩生成器",
+    "inputs": {
+      "images": "输入图像"
+    },
+    "widgets": {
+      "face": "人脸区域",
+      "left_eyebrow": "左眉毛",
+      "right_eyebrow": "右眉毛",
+      "left_eye": "左眼区域",
+      "right_eye": "右眼区域",
+      "left_pupil": "左瞳孔",
+      "right_pupil": "右瞳孔",
+      "lips": "嘴唇区域",
+      "number_of_faces": "检测人脸数",
+      "confidence": "置信阈值",
+      "refine_mask": "遮罩优化"
+    },
+    "outputs": {
+      "masks": "特征遮罩"
+    }
+  },
+  "APersonMaskGenerator": {
+    "title": "人像遮罩生成器",
+    "inputs": {
+      "images": "输入图像"
+    },
+    "widgets": {
+      "face_mask": "人脸遮罩",
+      "background_mask": "背景遮罩",
+      "hair_mask": "头发遮罩",
+      "body_mask": "身体遮罩",
+      "clothes_mask": "衣物遮罩",
+      "confidence": "置信阈值",
+      "refine_mask": "遮罩优化"
+    },
+    "outputs": {
+      "masks": "人像遮罩"
+    }
+  }
+}

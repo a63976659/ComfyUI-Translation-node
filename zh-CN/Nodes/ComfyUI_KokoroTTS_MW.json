@@ -1,0 +1,47 @@
+{
+    "KokoroRun": {
+        "title": "Kokoro文生音频",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "voice": "音色",
+            "unload_model": "卸载模型",
+            "enable_dialogue": "启用对话功能",
+            "voice_s2": "音色2"
+        },
+        "outputs": {
+            "audio": "音频",
+            "AUDIO": "音频"
+        }
+    },
+    "KokoroZHRun": {
+        "title": "Kokoro中文 文生音频",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "voice": "音色",
+            "unload_model": "卸载模型",
+            "enable_dialogue": "启用对话功能",
+            "voice_s2": "音色2"
+        },
+        "outputs": {
+            "audio": "音频",
+            "AUDIO": "音频"
+        }
+    },
+    "MultiLinePromptKK": {
+        "title": "Kokoro多行文本",
+        "inputs": {},
+        "widgets": {
+            "voice": "音色",
+            "unload_model": "卸载模型",
+            "text": "文本"
+        },
+        "outputs": {
+            "text": "文本",
+            "TEXT": "音频"
+        }
+    }
+}

@@ -1,0 +1,1202 @@
+{
+    "BatchCount+": {
+        "title": "批次计数",
+        "inputs": {
+            "batch": "批次"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "CLIPTextEncodeSDXL+": {
+        "title": "CLIP文本编码SDXL简化",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "size_cond_factor": "大小条件系数",
+            "text": "文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "FluxAttentionSeeker+": {
+        "title": "🔧 Flux 注意力吸引器",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "apply_to_query": "应用到查询",
+            "apply_to_key": "应用到键",
+            "apply_to_value": "应用到值",
+            "apply_to_out": "应用到输出",
+            "RESET ALL": "重置所有",
+            "ZERO ALL": "零 停止",
+            "REPEAT FIRST": "重复 第一次",
+            "text": "文本"
+        },
+        "outputs": {
+            "clip": "CLIP"
+        }
+    },
+    "SD3AttentionSeekerLG+": {
+        "title": "🔧 SD3  注意力吸引器（左/右）",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "apply_to_query": "应用到查询",
+            "apply_to_key": "应用到键",
+            "apply_to_value": "应用到值",
+            "apply_to_out": "应用到输出",
+            "RESET L": "重置左",
+            "RESET G": "重置右",
+            "REPEAT FIRST": "重复 第一次",
+            "text": "文本"
+        },
+        "outputs": {
+            "clip": "CLIP"
+        }
+    },
+    "SD3AttentionSeekerT5+": {
+        "title": "🔧 SD3 注意力 探索 T5",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "apply_to_query": "应用到查询",
+            "apply_to_key": "应用到键",
+            "apply_to_value": "应用到值",
+            "apply_to_out": "应用到输出",
+            "RESET ALL": "重置所有",
+            "REPEAT FIRST": "重复 第一次",
+            "text": "文本"
+        },
+        "outputs": {
+            "clip": "CLIP"
+        }
+    },
+    "ConsoleDebug+": {
+        "title": "控制台Debug",
+        "inputs": {
+            "value": "值"
+        },
+        "widgets": {
+            "prefix": "前缀"
+        }
+    },
+    "DebugTensorShape+": {
+        "title": "🔧调试BUG张量形状",
+        "inputs": {
+            "tensor": "张量"
+        }
+    },
+    "DebugTensorShape": {
+        "title": "🔧调试BUG张量形状",
+        "inputs": {
+            "Tensor": "张量"
+        }
+    },
+    "DisplayAny": {
+        "title": "显示任意值",
+        "inputs": {
+            "input": "输入"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "SimpleComparison+": {
+        "title": "简易对比",
+        "inputs": {
+            "a": "a",
+            "b": "b"
+        },
+        "widgets": {
+            "comparison": "对比"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "SimpleCondition+": {
+        "title": "简易条件",
+        "inputs": {
+            "evaluate": "判断",
+            "on_true": "真",
+            "on_false": "假"
+        },
+        "outputs": {
+            "result": "结果"
+        }
+    },
+    "SimpleMathDual+": {
+        "title": "简易运算（双）",
+        "widgets": {
+            "value_1": "值1",
+            "value_2": "值2"
+        },
+        "outputs": {
+            "int_1": "整数_1",
+            "float_1": "浮点_1",
+            "int_2": "整数_2",
+            "float_2": "浮点_2"
+        }
+    },
+    "SimpleMathCondition+": {
+        "title": "简易运算（条件）",
+        "inputs": {
+            "evaluate": "判断"
+        },
+        "widgets": {
+            "on_true": "真",
+            "on_false": "假"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点"
+        }
+    },
+    "SimpleMathBoolean+": {
+        "title": "简易布尔",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "SimpleMathFloat+": {
+        "title": "简易浮点",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "SimpleMathInt+": {
+        "title": "简易整数",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "SimpleMathPercent+": {
+        "title": "简易百分比",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "SimpleMathSlider+": {
+        "title": "简易滑条",
+        "widgets": {
+            "value": "值",
+            "min": "最小值",
+            "max": "最大值",
+            "rounding": "舍入"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "SimpleMathSliderLowRes+": {
+        "title": "简易滑条（低精度）",
+        "widgets": {
+            "value": "值",
+            "min": "最小值",
+            "max": "最大值",
+            "rounding": "舍入"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "DrawText+": {
+        "title": "添加字幕",
+        "widgets": {
+            "img_composite": "图像复合",
+            "text": "文本",
+            "font": "字体",
+            "size": "大小",
+            "color": "颜色",
+            "background_color": "背景颜色",
+            "shadow_distance": "阴影距离",
+            "shadow_blur": "阴影模糊",
+            "shadow_color": "阴影颜色",
+            "horizontal_align": "水平对齐",
+            "vertical_align": "垂直对齐",
+            "offset_x": "对齐x",
+            "offset_y": "对齐y",
+            "direction": "方向",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "ExtractKeyframes+": {
+        "title": "分解关键帧",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "KEYFRAMES": "关键帧",
+            "indexes": "索引",
+            "IMAGE": "图像",
+            "STRING": "字符串"
+        }
+    },
+    "GetImageSize+": {
+        "title": "获取图像尺寸",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度",
+            "count": "数字",
+            "INT": "整数"
+        }
+    },
+    "ImageToDevice+": {
+        "title": "设置图像设备",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "device": "设备"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImagePreviewFromLatent+": {
+        "title": "Latent预览图像",
+        "inputs": {
+            "latent": "Latent",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸",
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "NoiseFromImage+": {
+        "title": "图像到噪波",
+        "inputs": {
+            "image": "图像",
+            "noise_mask": "遮罩噪波"
+        },
+        "widgets": {
+            "noise_strength": "噪波强度",
+            "noise_strenght": "噪波强度",
+            "noise_size": "噪波尺寸",
+            "color_noise": "颜色噪波",
+            "mask_strength": "遮罩强度",
+            "mask_scale_diff": "遮罩缩放差值",
+            "mask_contrast": "遮罩对比度",
+            "saturation": "饱和度",
+            "contrast": "对比度",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageApplyLUT+": {
+        "title": "图像应用LUT",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "lut_file": "LUT文件",
+            "log_colorspace": "记录色彩空间",
+            "gamma_correction": "伽马校正",
+            "clip_values": "CLIP值",
+            "strength": "强度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "PixelOEPixelize+": {
+        "title": "像素化",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "downscale_mode": "缩小模式",
+            "target_size": "目标尺寸",
+            "patch_size": "批次大小",
+            "thickness": "厚度",
+            "color_matching": "颜色适配",
+            "upscale": "放大"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageCASharpening+": {
+        "title": "图像对比度自适应锐化",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "amount": "数量"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageCompositeFromMaskBatch+": {
+        "title": "图像自遮罩批次合成",
+        "inputs": {
+            "image_from": "图像从",
+            "image_to": "图像到",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageComposite+": {
+        "title": "图像合成",
+        "inputs": {
+            "destination": "目标",
+            "source": "源",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "offset_x": "X偏移",
+            "offset_y": "Y偏移"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageCrop+": {
+        "title": "图像裁剪",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "position": "位置",
+            "x_offset": "X偏移",
+            "y_offset": "Y偏移"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "x": "X",
+            "y": "Y",
+            "INT": "整数"
+        }
+    },
+    "ImageDesaturate+": {
+        "title": "图像稀释",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "method": "方法",
+            "factor": "系数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageEnhanceDifference+": {
+        "title": "图像增强差异",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2"
+        },
+        "widgets": {
+            "exponent": "指数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageExpandBatch+": {
+        "title": "图像批次扩展",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "size": "大小",
+            "method": "方法"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageFlip+": {
+        "title": "图像翻转",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "axis": "轴向"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageRandomTransform+": {
+        "title": "图像随机变换",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "repeat": "重复",
+            "variation": "变化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageFromBatch+": {
+        "title": "获取图像批次",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "start": "起始",
+            "length": "长度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageListToBatch+": {
+        "title": "图像列表到批次",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageBatchToList+": {
+        "title": "🔧图像批次到列表",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImagePosterize+": {
+        "title": "图像色调分离",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageColorMatch+": {
+        "title": "图像颜色匹配",
+        "inputs": {
+            "image": "图像",
+            "reference": "参考图像",
+            "reference_mask": "遮罩"
+        },
+        "widgets": {
+            "color_space": "色彩空间",
+            "factor": "系数",
+            "device": "设备",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageColorMatchAdobe+": {
+        "title": "图像颜色匹配（Adobe）",
+        "inputs": {
+            "image": "图像",
+            "reference": "参考图像",
+            "reference_mask": "遮罩"
+        },
+        "widgets": {
+            "color_space": "色彩空间",
+            "luminance_factor": "明度系数",
+            "color_intensity_factor": "饱和度系数",
+            "fade_factor": "消逝系数",
+            "neutralization_factor": "自然系数",
+            "device": "设备"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageHistogramMatch+": {
+        "title": "图像直方图匹配",
+        "inputs": {
+            "image": "图像",
+            "reference": "参考图像"
+        },
+        "widgets": {
+            "method": "方法",
+            "factor": "系数",
+            "device": "设备"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageSmartSharpen+": {
+        "title": "图像智能锐化",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "noise_radius": "噪波半径",
+            "preserve_edges": "避开边缘",
+            "sharpen": "锐化",
+            "ratio": "比率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageRemoveAlpha+": {
+        "title": "图像移除透明",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageRemoveBackground+": {
+        "title": "图像移除背景",
+        "inputs": {
+            "rembg_session": "移除背景组",
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "ImageResize+": {
+        "title": "图像缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "interpolation": "插值",
+            "method": "方法",
+            "condition": "条件",
+            "multiple_of": "乘数"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "width": "宽度",
+            "height": "高度",
+            "INT": "整数"
+        }
+    },
+    "ImageSeamCarving+": {
+        "title": "图像接缝裁剪",
+        "inputs": {
+            "image": "图像",
+            "keep_mask": "保留遮罩",
+            "drop_mask": "剔除遮罩"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "energy": "能量",
+            "order": "顺序"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageTile+": {
+        "title": "图像分块",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "rows": "行",
+            "cols": "列",
+            "overlap": "重叠",
+            "overlap_x": "重叠_x",
+            "overlap_y": "重叠_y"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "tile_width": "分块宽度",
+            "tile_height": "分块高度",
+            "overlap_x": "重叠_x",
+            "overlap_y": "重叠_y"
+        }
+    },
+    "ImageUntile+": {
+        "title": "图像逆分块",
+        "inputs": {
+            "tiles": "图像"
+        },
+        "widgets": {
+            "overlap_x": "重叠_x",
+            "overlap_y": "重叠_y",
+            "rows": "行",
+            "cols": "列"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "KSamplerVariationsStochastic+": {
+        "title": "K采样器差异",
+        "inputs": {
+            "model": "模型",
+            "latent_image": "Latent",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "noise_seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler": "采样器",
+            "scheduler": "调度器",
+            "variation_seed": "差异随机种",
+            "variation_strength": "差异强度",
+            "cfg_scale": "CFG缩放"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KSamplerVariationsWithNoise+": {
+        "title": "K采样器差异噪波",
+        "inputs": {
+            "model": "模型",
+            "latent_image": "Latent",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "main_seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "variation_strength": "差异强度",
+            "variation_seed": "差异随机种",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "InjectLatentNoise+": {
+        "title": "插入噪波Latent",
+        "inputs": {
+            "latent": "Latent",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "noise_seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "noise_strength": "噪波强度",
+            "normalize": "规格化"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "FluxSamplerParams+": {
+        "title": "Flux采样参数",
+        "inputs": {
+            "model": "模型",
+            "conditioning": "条件",
+            "latent_image": "Latent",
+            "loras": "Lora"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "sampler": "采样器",
+            "scheduler": "调度器",
+            "steps": "步数",
+            "guidance": "引导",
+            "max_shift": "最大偏移",
+            "base_shift": "基础偏移",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "latent": "Latent",
+            "params": "参数组"
+        }
+    },
+    "ModelSamplingSD3Advanced+": {
+        "title": "🔧SD3模型 采样 高级版",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "shift": "最大偏移",
+            "cut_off": "切断",
+            "shift_multiplier": "系数"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "GuidanceTimestepping+": {
+        "title": "🔧指导时间步长(实验性)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "value": "值",
+            "start_at": "开始于",
+            "end_at": "结束于"
+        },
+        "outputs": {
+            "latent": "Latent",
+            "params": "参数组"
+        }
+    },
+    "PlotParameters+": {
+        "title": "Plot参数",
+        "inputs": {
+            "images": "图像",
+            "params": "参数组"
+        },
+        "widgets": {
+            "order_by": "排序",
+            "cols_value": "行值",
+            "cols_num": "行数",
+            "add_prompt": "添加提示词",
+            "add_params": "添加参数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "TextEncodeForSamplerParams+": {
+        "title": "文本编码到采样参数",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "SamplerSelectHelper+": {
+        "title": "采样器选择助手",
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "SchedulerSelectHelper+": {
+        "title": "调度器选择助手",
+        "widgets": {
+            "normal": "标准",
+            "exponential": "指数",
+            "sgm_uniform": "SGM 统一格式",
+            "simple": "简单",
+            "ddim_uniform": "DDIM 统一格式",
+            "linear_quadratic": "线性二次",
+            "kl_optimal": "最优控制"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "LorasForFluxParams+": {
+        "title": "Flux参数LoRA",
+        "widgets": {
+            "lora_1": "LoRA_1",
+            "strength_model_1": "模型强度_1"
+        },
+        "outputs": {
+            "LORA_PARAMS": "LoRA参数组"
+        }
+    },
+    "MaskBatch+": {
+        "title": "遮罩组合批次",
+        "inputs": {
+            "mask1": "遮罩1",
+            "mask2": "遮罩2"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskBlur+": {
+        "title": "遮罩模糊",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "device": "设备",
+            "amount": "数量"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskExpandBatch+": {
+        "title": "遮罩批次扩展",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "size": "大小",
+            "method": "方法"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskFlip+": {
+        "title": "遮罩翻转",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "axis": "轴向"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskFromBatch+": {
+        "title": "获取遮罩批次",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "start": "起始",
+            "length": "长度"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskBoundingBox+": {
+        "title": "遮罩BBox",
+        "inputs": {
+            "mask": "遮罩",
+            "image_optional": "图像（可选）"
+        },
+        "widgets": {
+            "padding": "分区",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "MASK": "遮罩",
+            "IMAGE": "图像",
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "MaskFix+": {
+        "title": "遮罩修复",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "erode_dilate": "消融膨胀",
+            "fill_holes": "填充缺口",
+            "remove_isolated_pixels": "移除孤岛像素",
+            "smooth": "平滑",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskFromSegmentation+": {
+        "title": "语义分割到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "segments": "Segments",
+            "remove_isolated_pixels": "移除孤岛像素",
+            "remove_small_masks": "移除过小遮罩",
+            "fill_holes": "填充缺口"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "MaskFromRGBCMYBW+": {
+        "title": "色彩到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold_r": "阈值_红",
+            "threshold_g": "阈值_绿",
+            "threshold_b": "阈值_蓝",
+            "remove_isolated_pixels": "移除孤岛像素",
+            "fill_holes": "填充缺口"
+        },
+        "outputs": {
+            "red": "红",
+            "green": "绿",
+            "blue": "蓝",
+            "cyan": "青",
+            "magenta": "品红",
+            "yellow": "黄",
+            "black": "黑",
+            "white": "白"
+        }
+    },
+    "MaskSmooth+": {
+        "title": "遮罩平滑",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "amount": "数量"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskFromList+": {
+        "title": "列表到遮罩",
+        "widgets": {
+            "values": "值",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskFromColor+": {
+        "title": "颜色到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "red": "红",
+            "green": "绿",
+            "blue": "蓝",
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskPreview+": {
+        "title": "遮罩预览",
+        "inputs": {
+            "mask": "遮罩"
+        }
+    },
+    "ModelCompile+": {
+        "title": "模型编译",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "fullgraph": "全图",
+            "dynamic": "活力",
+            "mode": "模式"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "FluxBlocksBuster+": {
+        "title": "🔧 Flux模型块解构器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "patched_blocks": "修补后的区块",
+            "MODEL": "模型"
+        }
+    },
+    "RemBGSession+": {
+        "title": "移除背景组",
+        "widgets": {
+            "model": "模型",
+            "providers": "设备"
+        },
+        "outputs": {
+            "REMBG_SESSION": "移除背景组"
+        }
+    },
+    "TransparentBGSession+": {
+        "title": "透明背景组",
+        "widgets": {
+            "mode": "模式",
+            "use_jit": "即时编译（JIT）技术"
+        },
+        "outputs": {
+            "REMBG_SESSION": "移除背景组"
+        }
+    },
+    "RemoveLatentMask+": {
+        "title": "移除Latent遮罩",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "SDXLEmptyLatentSizePicker+": {
+        "title": "SDXL空Latent尺寸选择",
+        "widgets": {
+            "width_override": "宽度覆盖",
+            "height_override": "高度覆盖",
+            "resolution": "分辨率",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent",
+            "width": "宽度",
+            "height": "高度",
+            "INT": "整数"
+        }
+    },
+    "SimpleMath+": {
+        "title": "简易运算",
+        "widgets": {
+            "value": "值",
+            "a": "A",
+            "b": "B"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点"
+        }
+    },
+    "TransitionMask+": {
+        "title": "过渡遮罩",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "frames": "帧数",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "transition_type": "过渡类型",
+            "timing_function": "时间类型"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "ConditioningCombineMultiple+": {
+        "title": "条件合并(多重)",
+        "inputs": {
+            "conditioning_1": "条件_1",
+            "conditioning_2": "条件_2",
+            "conditioning_3": "条件_3",
+            "conditioning_4": "条件_4",
+            "conditioning_5": "条件_5"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "SD3NegativeConditioning+": {
+        "title": "SD负面条件+",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "end": "结束"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ImageBatchMultiple+": {
+        "title": "图像合并(多重)",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4",
+            "image_5": "图像_5"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "LoadCLIPSegModels+": {
+        "title": "加载CLIP_Seg模型",
+        "outputs": {
+            "CLIP_SEG": "CLIP_Seg"
+        }
+    },
+    "ApplyCLIPSeg+": {
+        "title": "应用CLIP_Seg",
+        "inputs": {
+            "image": "图像",
+            "clip_seg": "CLIP_Seg"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "threshold": "阈值",
+            "smooth": "平滑",
+            "dilate": "膨胀",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+  "Seed Generator": {
+    "title": "随机种子生成器",
+    "inputs": {
+      "seed": "种子值"
+    },
+    "widgets": {
+      "seed": "种子值",
+      "control_after_generate": "生成后进行控制"
+    },
+    "outputs": {
+      "INT": "整数"
+    }
+  },
+  "String Literal": {
+    "title": "字符串常量",
+    "inputs": {
+      "string": "字符串"
+    },
+    "widgets": {},
+    "outputs": {
+      "STRING": "字符串输出"
+    }
+  },
+  "Width/Height Literal": {
+    "title": "宽高常量",
+    "inputs": {
+      "int": "整数值"
+    },
+    "widgets": {
+      "int": "整数值"
+    },
+    "outputs": {
+      "INT": "整数"
+    }
+  },
+  "Int Literal": {
+    "title": "整型常量",
+    "inputs": {
+      "int": "整数值"
+    },
+    "widgets": {
+      "int": "整数值"
+    },
+    "outputs": {
+      "INT": "整数"
+    }
+  },
+  "Cfg Literal": {
+    "title": "配置常量",
+    "inputs": {
+      "float": "浮点"
+    },
+    "widgets": {
+      "float": "浮点"
+    },
+    "outputs": {
+      "FLOAT": "浮点"
+    }
+  },
+  "Checkpoint Selector": {
+    "title": "Checkpoint大模型选择器",
+    "inputs": {
+      "ckpt_name": "模型名称"
+    },
+    "widgets": {},
+    "outputs": {
+      "ckpt_name": "模型名称"
+    }
+  },
+  "Sampler Selector": {
+    "title": "采样器选择",
+    "inputs": {
+      "sampler_name": "采样器名称"
+    },
+    "widgets": {},
+    "outputs": {
+      "sampler_name": "采样器名称"
+    }
+  },
+  "Scheduler Selector": {
+    "title": "调度器选择",
+    "inputs": {
+      "scheduler": "调度器"
+    },
+    "widgets": {},
+    "outputs": {
+      "scheduler": "调度器"
+    }
+  },
+  "Save Image w/Metadata": {
+    "title": "保存图像元数据",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "filename": "文件名",
+      "path": "路径",
+      "extension": "扩展名",
+      "steps": "步数",
+      "cfg": "配置值",
+      "modelname": "模型名称",
+      "sampler_name": "采样器名称",
+      "scheduler": "调度器",
+      "positive": "正向提示",
+      "negative": "负向提示",
+      "seed_value": "种子值",
+      "width": "宽度",
+      "height": "高度",
+      "lossless_webp": "无损WebP",
+      "quality_jpeg_or_webp": "JPEG/WebP质量",
+      "counter": "计数器",
+      "time_format": "时间格式",
+      "prompt": "提示词",
+      "extra_pnginfo": "额外PNG信息",
+      "output_path": "输出路径",
+      "filename_prefix": "文件名前缀",
+      "comment": "备注"
+    },
+    "outputs": {}
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "CatVTONWrapper": {
+        "title": "猫猫换装工具",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "refer_image": "参考图像"
+        },
+        "widgets": {
+            "mask_grow": "遮罩扩展",
+            "mixed_precision": "混合精度",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "配置参数"
+        },
+        "outputs": {
+            "image": "图像"
+        },
+        "description": "此节点仅用于换装 \n\n 适量提高步数换装结果更融合 \n 混合精度 fp32更精准 占用更多内存，时间也会增加"
+    }
+}

@@ -1,0 +1,427 @@
+{
+  "DownloadAndLoadCogVideoModel": {
+    "title": "下载并加载Cog视频模型",
+    "inputs": {
+      "block_edit": "块编辑",
+      "lora": "Lora模型",
+      "compile_args": "编译参数"
+    },
+    "widgets": {
+      "model": "模型",
+      "precision": "精度",
+      "quantization": "量化",
+      "enable_sequential_cpu_offload": "启用顺序CPU卸载",
+      "attention_mode": "注意力模式",
+      "load_device": "加载设备",
+      "compile": "编译"
+    },
+    "outputs": {
+      "model": "模型",
+      "cogvideomodel": "Cog视频模型",
+      "vae": "VAE"
+    }
+  },
+  "CogVideoImageEncode": {
+    "title": "Cog视频 图像编码",
+    "inputs": {
+      "pipeline": "Cog视频",
+      "image": "图像",
+      "vae": "VAE",
+      "start_image": "起始图像",
+      "end_image": "结束图像"
+    },
+    "widgets": {
+      "enable_tiling": "启用分块",
+      "noise_aug_strength": "噪声增强强度",
+      "strength": "强度",
+      "start_percent": "开始百分比",
+      "end_percent": "结束百分比"
+    },
+    "outputs": {
+      "samples": "Latent",
+      "latent": "Latent"
+    }
+  },
+  "CogVideoDecode": {
+    "title": "Cog视频 解码",
+    "inputs": {
+      "vae": "VAE",
+      "samples": "Latent"
+    },
+    "widgets": {
+      "enable_vae_tiling": "启用VAE分块",
+      "tile_sample_min_height": "分块样本最小高度",
+      "tile_sample_min_width": "分块样本最小宽度",
+      "tile_overlap_factor_height": "分块重叠高度因子",
+      "tile_overlap_factor_width": "分块重叠宽度因子",
+      "auto_tile_size": "自动分块大小",
+      "pipeline": "节点束"
+    },
+    "outputs": {
+      "images": "图像"
+    }
+  },
+  "CogVideoTextEncode": {
+    "title": "Cog视频 文本编码",
+    "inputs": {
+      "clip": "CLIP",
+      "prompt": "提示词",
+      "strength": "强度",
+      "force_offload": "强制卸载"
+    },
+    "widgets": {},
+    "outputs": {
+      "conditioning": "条件",
+      "clip": "CLIP"
+    }
+  },
+  "CogVideoSampler": {
+    "title": "Cog视频 采样器",
+    "inputs": {
+      "pipeline": "Cog视频",
+      "positive": "正面条件",
+      "negative": "负面条件",
+      "samples": "Latent",
+      "model": "模型",
+      "image_cond_latents": "图像条件Latent",
+      "context_options": "上下文选项",
+      "controlnet": "ControlNet",
+      "tora_trajectory": "Tora轨迹",
+      "fastercache": "快速缓存",
+      "feta_args": "视频增强参数",
+      "teacache_args": "Tea缓存参数"
+    },
+    "widgets": {
+      "width": "宽度",
+      "height": "高度",
+      "num_frames": "帧数",
+      "fps": "帧率",
+      "steps": "步数",
+      "cfg": "CFG",
+      "seed": "随机种",
+      "control_after_generate": "运行后操作",
+      "scheduler": "调度器",
+      "t_tile_length": "分块长度",
+      "t_tile_overlap": "分块重叠",
+      "denoise_strength": "降噪"
+    },
+    "outputs": {
+      "cogvideo_pipe": "Cog视频",
+      "samples": "Latent"
+    }
+  },
+  "CogVideoLoraSelect": {
+    "title": "Cog视频 Lora选择器",
+    "inputs": {
+      "lora": "Lora模型",
+      "strength": "强度",
+      "prev_lora": "前一个Lora",
+      "fuse_lora": "融合Lora"
+    },
+    "widgets": {
+      "lora": "Lora模型",
+      "strength": "强度",
+      "prev_lora": "前一个Lora",
+      "fuse_lora": "融合Lora"
+    },
+    "outputs": {
+      "lora": "Cog视频 Lora"
+    }
+  },
+  "CogVideoLoraSelectComfy": {
+    "title": "Cog视频 Lora选择器(Comfy版)",
+    "inputs": {
+      "lora": "Lora模型",
+      "strength": "强度",
+      "prev_lora": "前一个Lora",
+      "fuse_lora": "融合Lora"
+    },
+    "widgets": {
+      "lora": "Lora模型",
+      "strength": "强度",
+      "prev_lora": "前一个Lora",
+      "fuse_lora": "融合Lora"
+    },
+    "outputs": {
+      "lora": "Cog视频 Lora"
+    }
+  },
+  "DownloadAndLoadCogVideoGGUFModel": {
+    "title": "下载并加载Cog视频 GGUF模型",
+    "inputs": {
+      "block_edit": "块编辑"
+    },
+    "widgets": {
+      "model": "模型",
+      "vae_precision": "VAE精度",
+      "fp8_fastmode": "FP8快速模式",
+      "load_device": "加载设备",
+      "enable_sequential_cpu_offload": "启用顺序CPU卸载",
+      "attention_mode": "注意力模式",
+      "compile_args": "编译参数"
+    },
+    "outputs": {
+      "model": "模型",
+      "cogvideomodel": "Cog视频模型",
+      "vae": "VAE"
+    }
+  },
+  "CogVideoXModelLoader": {
+    "title": "Cog视频X模型加载器",
+    "inputs": {
+      "model": "模型",
+      "base_precision": "基础精度",
+      "quantization": "量化",
+      "load_device": "加载设备",
+      "enable_sequential_cpu_offload": "启用顺序CPU卸载",
+      "block_edit": "块编辑",
+      "lora": "Lora模型",
+      "compile_args": "编译参数",
+      "attention_mode": "注意力模式"
+    },
+    "widgets": {},
+    "outputs": {
+      "cogvideomodel": "Cog视频模型"
+    }
+  },
+  "CogVideoXVAELoader": {
+    "title": "Cog视频X VAE加载器",
+    "inputs": {
+      "model_name": "模型名称",
+      "precision": "精度",
+      "compile_args": "编译参数"
+    },
+    "widgets": {
+      "model_name": "模型名称",
+      "precision": "精度",
+      "compile_args": "编译参数"
+    },
+    "outputs": {
+      "vae": "VAE"
+    }
+  },
+  "DownloadAndLoadToraModel": {
+    "title": "下载并加载Tora模型",
+    "inputs": {
+      "model": "模型"
+    },
+    "widgets": {
+      "model": "模型"
+    },
+    "outputs": {
+      "tora_model": "Tora模型"
+    }
+  },
+  "DownloadAndLoadCogVideoControlNet": {
+    "title": "下载并加载Cog视频 ControlNet",
+    "inputs": {
+      "model": "模型"
+    },
+    "widgets": {
+      "model": "模型"
+    },
+    "outputs": {
+      "cogvideo_controlnet": "Cog视频 ControlNet模型"
+    }
+  },
+  "CogVideoEnhanceAVideo": {
+    "title": "Cog视频 视频增强",
+    "inputs": {},
+    "widgets": {
+      "weight": "权重",
+      "start_percent": "开始百分比",
+      "end_percent": "结束百分比"
+    },
+    "outputs": {
+      "feta_args": "视频增强参数"
+    }
+  },
+  "CogVideoContextOptions": {
+    "title": "Cog视频 上下文选项",
+    "inputs": {
+      "freenoise": "自由噪声"
+    },
+    "widgets": {
+      "context_schedule": "上下文计划",
+      "context_frames": "上下文帧数",
+      "context_stride": "上下文步幅",
+      "context_overlap": "上下文重叠",
+      "freenoise": "自由噪声"
+    },
+    "outputs": {
+      "context_options": "上下文选项"
+    }
+  },
+  "CogVideoTransformerEdit": {
+    "title": "Cog视频 Transformer编辑",
+    "inputs": {
+      "remove_blocks": "移除块"
+    },
+    "widgets": {},
+    "outputs": {
+      "block_list": "屏蔽列表",
+      "transformerblocks": "Transformer块"
+    }
+  },
+  "CogVideoXTorchCompileSettings": {
+    "title": "Cog视频 Torch编译设置",
+    "inputs": {},
+    "widgets": {
+      "backend": "后端",
+      "fullgraph": "全图",
+      "mode": "模式",
+      "dynamic": "动态",
+      "dynamo_cache_size_limit": "Dynamo缓存大小限制"
+    },
+    "outputs": {
+      "torch_compile_args": "Torch编译参数",
+      "compileargs": "编译参数"
+    }
+  },
+  "CogVideoTextEncodeCombine": {
+    "title": "Cog视频 文本编码合并",
+    "inputs": {
+      "conditioning_1": "条件1",
+      "conditioning_2": "条件2"
+    },
+    "widgets": {
+      "combination_mode": "合并模式",
+      "weighted_average_ratio": "加权平均比率"
+    },
+    "outputs": {
+      "conditioning": "条件"
+    }
+  },
+  "ToraEncodeTrajectory": {
+    "title": "Tora轨迹编码",
+    "inputs": {
+      "tora_model": "Tora模型",
+      "vae": "VAE",
+      "coordinates": "坐标"
+    },
+    "widgets": {
+      "width": "宽度",
+      "height": "高度",
+      "num_frames": "帧数",
+      "strength": "强度",
+      "start_percent": "开始百分比",
+      "end_percent": "结束百分比",
+      "enable_tiling": "启用分块"
+    },
+    "outputs": {
+      "tora_trajectory": "Tora轨迹",
+      "video_flow_images": "视频流图像"
+    }
+  },
+  "ToraEncodeOpticalFlow": {
+    "title": "Tora光流编码",
+    "inputs": {
+      "vae": "VAE",
+      "tora_model": "Tora模型",
+      "optical_flow": "光流"
+    },
+    "widgets": {
+      "strength": "强度",
+      "start_percent": "开始百分比",
+      "end_percent": "结束百分比"
+    },
+    "outputs": {
+      "tora_trajectory": "Tora轨迹"
+    }
+  },
+  "CogVideoImageEncodeFunInP": {
+    "title": "Cog视频图像编码FunInP",
+    "inputs": {
+      "vae": "VAE",
+      "start_image": "起始图像",
+      "end_image": "结束图像"
+    },
+    "widgets": {
+      "num_frames": "帧数",
+      "enable_tiling": "启用分块处理",
+      "noise_aug_strength": "噪声增强强度"
+    },
+    "outputs": {
+      "image_cond_latents": "图像条件Latent"
+    }
+  },
+  "CogVideoXFasterCache": {
+    "title": "Cog视频 X快速缓存",
+    "inputs": {
+      "num_blocks_to_cache": "缓存块数"
+    },
+    "widgets": {
+      "start_step": "开始步骤",
+      "hf_step": "高频步骤",
+      "lf_step": "低频步骤",
+      "cache_device": "缓存设备",
+      "num_blocks_to_cache": "缓存块数"
+    },
+    "outputs": {
+      "fastercache": "快速缓存"
+    }
+  },
+  "CogVideoXTeaCache": {
+    "title": "Cog视频X Tea缓存",
+    "inputs": {},
+    "widgets": {
+      "rel_l1_thresh": "相对L1阈值"
+    },
+    "outputs": {
+      "teacache_args": "Tea缓存参数"
+    }
+  },
+  "CogVideoControlNet": {
+    "title": "Cog视频 ControlNet",
+    "inputs": {
+      "controlnet": "ControlNet",
+      "images": "图像"
+    },
+    "widgets": {
+      "control_strength": "控制强度",
+      "control_start_percent": "控制开始百分比",
+      "control_end_percent": "控制结束百分比"
+    },
+    "outputs": {
+      "cogvideo_controlnet": "Cog视频 ControlNet"
+    }
+  },
+  "CogVideoXFunResizeToClosestBucket": {
+    "title": "Cog视频X智能调整到最近桶大小",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "base_resolution": "基础分辨率",
+      "upscale_method": "放大方法",
+      "crop": "裁剪"
+    },
+    "outputs": {
+      "image": "图像",
+      "images": "图像",
+      "width": "宽度",
+      "height": "高度",
+      "int": "整数"
+    }
+  },
+  "CogVideoLatentPreview": {
+    "title": "Cog视频Latent预览",
+    "inputs": {
+      "samples": "采样"
+    },
+    "widgets": {
+      "seed": "种子",
+      "min_val": "最小值",
+      "max_val": "最大值",
+      "r_bias": "R偏差",
+      "g_bias": "G偏差",
+      "b_bias": "B偏差"
+    },
+    "outputs": {
+      "image": "图像",
+      "images": "图像",
+      "latent_rgb_factors": "Latent RGB 因素",
+      "string": "字符串"
+    }
+  }
+}

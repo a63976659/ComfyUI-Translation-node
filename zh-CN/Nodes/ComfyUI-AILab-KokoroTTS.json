@@ -1,0 +1,34 @@
+{
+  "Save_Audio": {
+    "title": "保存音频 🔊",
+    "inputs": {
+      "audio": "音频输入"
+    },
+    "widgets": {
+      "filepath": "文件路径",
+      "format": "音频格式 (mp3/wav)",
+      "quality": "音质 (1-100)",
+      "overwrite": "覆盖现有文件",
+      "base_path": "基础路径",
+      "filename": "文件名"
+    },
+    "outputs": {
+      "filepath": "文件路径",
+      "audio": "音频输出"
+    }
+  },
+  "KokoroTTS": {
+    "title": "Kokoro 语音合成 🔊",
+    "inputs": {
+      "text": "输入文本"
+    },
+    "widgets": {
+      "voice": "发音人",
+      "speed": "语速 (0.5-2.0)",
+      "volume": "音量 (0-100)"
+    },
+    "outputs": {
+      "AUDIO": "合成音频"
+    }
+  }
+}

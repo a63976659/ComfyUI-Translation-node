@@ -1,0 +1,73 @@
+{
+    "DetailDaemonGraphSigmasNode": {
+        "title": "细节魔灵图表Sigma值",
+        "description": "为采样过程生成细节增强的Sigma值序列，用于图表流程",
+        "widgets": {
+            "detail_amount": "细节增强量",
+            "start": "起始值",
+            "end": "结束值",
+            "bias": "偏差",
+            "exponent": "指数",
+            "start_offset": "起始偏移",
+            "end_offset": "结束偏移",
+            "fade": "淡化",
+            "smooth": "平滑",
+            "cfg_scale": "CFG缩放"
+        },
+        "outputs": {
+            "sigmas": "Sigma值序列"
+        }
+    },
+    "DetailDaemonSamplerNode": {
+        "title": "细节魔灵采样器",
+        "description": "使用细节增强的Sigma值序列进行采样，提高图像细节表现",
+        "inputs": {
+            "sampler": "采样器"
+        },
+        "widgets": {
+            "detail_amount": "细节增强量",
+            "start": "起始值",
+            "end": "结束值",
+            "bias": "偏差",
+            "exponent": "指数",
+            "start_offset": "起始偏移",
+            "end_offset": "结束偏移",
+            "fade": "淡化",
+            "smooth": "平滑",
+            "cfg_scale_override": "CFG缩放覆盖"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+    "MultiplySigmas": {
+        "title": "倍增Sigma值(无状态)",
+        "description": "对Sigma值序列进行倍增处理，无需保持状态",
+        "inputs": {
+            "sigmas": "Sigma值序列"
+        },
+        "widgets": {
+            "factor": "倍增因子",
+            "start": "起始点",
+            "end": "结束点"
+        },
+        "outputs": {
+            "SIGMAS": "处理后的Sigma值"
+        }
+    },
+    "LyingSigmaSampler": {
+        "title": "谎言Sigma采样器",
+        "description": "通过修改采样器的Sigma值进行'欺骗'，以实现特殊的视觉效果",
+        "inputs": {
+            "sampler": "采样器"
+        },
+        "widgets": {
+            "dishonesty_factor": "欺骗因子",
+            "start_percent": "开始百分比",
+            "end_percent": "结束百分比"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    }
+}

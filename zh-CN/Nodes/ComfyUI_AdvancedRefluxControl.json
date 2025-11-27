@@ -1,0 +1,51 @@
+{
+  "StyleModelApplySimple": {
+    "title": "风格模型应用(简易版)",
+    "inputs": {
+      "conditioning": "条件",
+      "style_model": "样式模型",
+      "clip_vision_output": "CLIP视觉输出"
+    },
+    "widgets": {
+      "image_strength": "图像强度",
+      "highest": "最高",
+      "high": "高",
+      "medium": "中等",
+      "low": "低",
+      "lowest": "最低"
+    },
+    "outputs": {
+      "conditioning": "条件"
+    }
+  },
+  "ReduxAdvanced": {
+    "title": "Redux模型应用(高级版)",
+    "inputs": {
+      "conditioning": "条件",
+      "style_model": "样式模型",
+      "clip_vision": "CLIP视觉",
+      "image": "图像",
+      "mask": "遮罩"
+    },
+    "widgets": {
+      "downsampling_factor": "下采样因子",
+      "downsampling_function": "下采样函数",
+      "nearest": "最近邻",
+      "bilinear": "双线性",
+      "bicubic": "双三次",
+      "area": "区域",
+      "nearest-exact": "精确最近邻",
+      "mode": "模式",
+      "center crop (square)": "中心裁剪(正方形)",
+      "keep aspect ratio": "保持宽高比",
+      "autocrop with mask": "使用遮罩自动裁剪",
+      "weight": "权重",
+      "autocrop_margin": "自动裁剪边距"
+    },
+    "outputs": {
+      "conditioning": "条件",
+      "image": "图像",
+      "mask": "遮罩"
+    }
+  }
+} 

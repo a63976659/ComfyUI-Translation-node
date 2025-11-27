@@ -1,0 +1,23 @@
+{
+  "AutoCropFaces": {
+    "title": "自动裁剪人脸（照片）",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "number_of_faces": "人脸数量",
+      "scale_factor": "缩放因子",
+      "shift_factor": "位移因子",
+      "start_index": "起始索引",
+      "max_faces_per_image": "每图最多人脸数",
+      "aspect_ratio": "宽高比",
+      "str_aspect_ratio": "字符串宽高比",
+      "max_number_of_faces": "最大人脸数量",
+      "method": "方法"
+    },
+    "outputs": {
+      "face": "脸图像",
+      "output_1": "裁剪数据"
+    }
+  }
+}

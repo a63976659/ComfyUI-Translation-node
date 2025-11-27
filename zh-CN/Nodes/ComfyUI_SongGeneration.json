@@ -1,0 +1,66 @@
+{
+    "SongGeneration_Loader": {
+        "title": "歌曲生成_加载器",
+        "inputs": {
+            "infer_model": "推理模型"
+        },
+        "widgets": {
+            "infer_model": "推理模型"
+        },
+        "outputs": {
+            "model": "歌曲模型",
+            "cfg": "CFG配置"
+        }
+    },
+    "SongGeneration_Stage1": {
+        "title": "歌曲生成_阶段1",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "vae": "VAE",
+            "seperate_model": "分离模型",
+            "prompt_pt": "提示文件",
+            "auto_prompt_audio_type": "自动提示音频类型",
+            "model_1rvq": "模型_1rvq",
+            "demucs_pt": "Demucs文件"
+        },
+        "outputs": {
+            "cond": "条件"
+        }
+    },
+    "SongGeneration_Stage2": {
+        "title": "歌曲生成_阶段2",
+        "inputs": {
+            "model": "模型",
+            "cfg": "配置",
+            "cond": "条件"
+        },
+        "widgets": {
+            "lyric": "歌词",
+            "description": "描述",
+            "cfg_coef": "配置系数",
+            "temp": "温度",
+            "top_k": "Top_K",
+            "top_p": "Top_P",
+            "record_tokens": "记录标记",
+            "record_window": "记录窗口"
+        },
+        "outputs": {
+            "cond": "条件"
+        }
+    },
+    "SongGeneration_Sampler": {
+        "title": "歌曲生成_采样器",
+        "inputs": {
+            "cond": "条件"
+        },
+        "widgets": {
+            "save_separate": "保存分离",
+            "gen_type": "生成类型"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    }
+}

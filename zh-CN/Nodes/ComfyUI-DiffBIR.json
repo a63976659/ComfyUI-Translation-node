@@ -1,0 +1,106 @@
+{
+  "Stage2_load": {
+    "title": "阶段2加载器",
+    "inputs": {},
+    "widgets": {
+      "device": "运算设备",
+      "infer_type": "推理模式"
+    },
+    "outputs": {
+      "cldm": "条件潜在扩散模型",
+      "diffusion": "扩散模型",
+      "infer_type": "推理模式"
+    }
+  },
+  "Stage1_load": {
+    "title": "阶段1加载器",
+    "inputs": {},
+    "widgets": {
+      "task": "任务类型",
+      "device": "运算设备",
+      "infer_type": "推理模式"
+    },
+    "outputs": {
+      "stage1_model": "阶段1模型",
+      "task": "任务类型"
+    }
+  },
+  "Simple_load": {
+    "title": "简易加载器",
+    "inputs": {},
+    "widgets": {
+      "device": "运算设备",
+      "infer_type": "推理模式"
+    },
+    "outputs": {
+      "stage1_model": "阶段1模型",
+      "cldm": "条件潜在扩散模型",
+      "diffusion": "扩散模型",
+      "infer_type": "推理模式"
+    }
+  },
+  "DiffBIR_sample_advanced": {
+    "title": "DiffBIR高级采样器",
+    "inputs": {
+      "stage1_model": "阶段1模型",
+      "task": "任务类型",
+      "cldm": "条件潜在扩散模型",
+      "diffusion": "扩散模型",
+      "infer_type": "推理模式",
+      "image": "输入图像"
+    },
+    "widgets": {
+      "upscale_ratio": "图像放大比例",
+      "steps": "迭代步数",
+      "cfg": "CFG缩放系数",
+      "better_start": "优化初始化起点",
+      "tiled": "启用分块处理",
+      "tile_size": "分块尺寸",
+      "tile_stride": "分块步距",
+      "keep_stage1_loaded": "保持阶段1常驻内存",
+      "stage1_tile": "阶段1分块处理",
+      "stage1_tile_size": "阶段1分块尺寸",
+      "stage1_tile_stride": "阶段1分块步距",
+      "pos_prompt": "正向提示词",
+      "neg_prompt": "负向提示词",
+      "seed": "随机种子",
+      "device": "运算设备",
+      "guidance": "引导强度",
+      "g_loss": "引导损失权重",
+      "g_scale": "引导缩放因子",
+      "g_start": "引导起始步",
+      "g_stop": "引导终止步",
+      "g_space": "引导间隔步数",
+      "g_repeat": "引导重复次数"
+    },
+    "outputs": {
+      "image": "输出图像"
+    }
+  },
+  "DiffBIR_sample": {
+    "title": "DiffBIR采样器",
+    "inputs": {
+      "stage1_model": "阶段1模型",
+      "cldm": "条件潜在扩散模型",
+      "diffusion": "扩散模型",
+      "infer_type": "推理模式",
+      "image": "输入图像"
+    },
+    "widgets": {
+      "upscale_ratio": "图像放大比例",
+      "steps": "迭代步数",
+      "cfg": "CFG缩放系数",
+      "better_start": "优化初始化起点",
+      "tiled": "启用分块处理",
+      "tile_size": "分块尺寸",
+      "tile_stride": "分块步距",
+      "pos_prompt": "正向提示词",
+      "neg_prompt": "负向提示词",
+      "seed": "随机种子",
+      "device": "运算设备"
+    },
+    "outputs": {
+      "image": "输出图像"
+    }
+  }
+}

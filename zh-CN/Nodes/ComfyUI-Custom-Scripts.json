@@ -1,0 +1,221 @@
+{
+    "LoraLoader|pysssss": {
+        "title": "Lora加载器(模型预览)🐍",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度",
+            "example": "示例"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "example": "示例"
+        }
+    },
+    "CheckpointLoader|pysssss": {
+        "title": "Checkpoint加载器(模型预览)🐍",
+        "widgets": {
+            "ckpt_name": "Checkpoint名称",
+            "example": "示例"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "example": "示例"
+        }
+    },
+
+    "ConstrainImageforVideo|pysssss": {
+        "title": "限制图像为视频🐍",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "max_width": "最大宽度",
+            "max_height": "最大高度",
+            "min_width": "最小宽度",
+            "min_height": "最小高度",
+            "crop_if_required": "裁剪"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ConstrainImage|pysssss": {
+        "title": "限制图像区域🐍",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "max_width": "最大宽度",
+            "max_height": "最大高度",
+            "min_width": "最小宽度",
+            "min_height": "最小高度",
+            "crop_if_required": "裁剪",
+                "yes": "是",
+                "no": "否"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+    "MathExpression|pysssss": {
+        "title": "数学表达式🐍",
+        "inputs": {
+            "a": "a",
+            "b": "b",
+            "c": "c"
+        },
+        "widgets": {
+            "expression": "表达式"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点"
+        }
+    },
+    "PlaySound|pysssss": {
+        "title": "播放声音🐍",
+        "inputs": {
+            "any": "输入"
+        },
+        "widgets": {
+            "mode": "模式",
+                "alway": "总是",
+                "on empty queue": "空队列",
+            "volume": "音量",
+            "file": "文件"
+        }
+    },
+    "Repeater|pysssss": {
+        "title": "复制器🐍",
+        "inputs": {
+            "source": "源"
+        },
+        "widgets": {
+            "repeats": "复制次数",
+            "output": "输出",
+                "single": "单个",
+                "multi": "多个",
+            "node_mode": "节点模式",
+                "reuse": "复用",
+                "create": "生成"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
+    "ReroutePrimitive|pysssss": {
+        "title": "Primitive连接点🐍",
+        "inputs": {
+            "value": "值"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
+    "ReroutePrimitve 🐍": {
+        "title": "Primitive连接点🐍",
+        "inputs": {
+            "value": "值"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
+    "ShowText|pysssss": {
+        "title": "展示文本🐍",
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "StringFunction|pysssss": {
+        "title": "字符串操作🐍",
+        "widgets": {
+            "action": "操作",
+                "append": "相加",
+                "replace": "替换",
+            "tidy_tags": "整理词条",
+                "yes": "是",
+                "no": "否",
+            "text_a": "文本_A",
+            "text_b": "文本_B",
+            "text_c": "文本_C"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "LoadText|pysssss": {
+        "title": "加载文本🐍",
+        "widgets": {
+            "root_dir": "根目录",
+                "input": "输入",
+                "output": "输出",
+                "temp": "缓存",
+            "file": "文件"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "SaveText|pysssss": {
+        "title": "保存文本🐍",
+        "widgets": {
+            "root_dir": "根目录",
+                "input": "输入",
+                "output": "输出",
+                "temp": "缓存",
+            "file": "文件",
+            "append": "附加",
+                "overwrite": "覆盖",
+                "new only": "仅新文件",
+            "insert": "插入",
+            "text": "文本"
+        }
+    },
+
+    "PresetText|pysssss": {
+        "title": "预设文本🐍",
+        "widgets": {
+            "value": "值",
+            "Manage": "管理"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "Preset Text 🐍": {
+        "title": "预设文本🐍",
+        "widgets": {
+            "value": "值",
+            "Manage": "管理"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "SystemNotification|pysssss": {
+        "title": "系统通知🐍",
+        "inputs": {
+            "any": "输入"
+        },
+        "widgets": {
+            "message": "消息",
+            "mode": "模式"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    }
+}

@@ -1,0 +1,269 @@
+{
+    "IntegerInput": {
+        "title": "整数输入",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "FloatInput": {
+        "title": "浮点数输入",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点数"
+        }
+    },
+    "PreciseFloatInput": {
+        "title": "精确浮点数输入",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点数"
+        }
+    },
+    "BooleanInput": {
+        "title": "布尔值输入",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔值"
+        }
+    },
+    "StringInput": {
+        "title": "字符串输入",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ToInt": {
+        "title": "转换为整数",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "round_method": "取整方法"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "ToFloat": {
+        "title": "转换为浮点数",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {},
+        "outputs": {
+            "FLOAT": "浮点数"
+        }
+    },
+    "ToString": {
+        "title": "转换为字符串",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {},
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ToBool": {
+        "title": "转换为布尔值",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "invert": "取反"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔值"
+        }
+    },
+    "BasicMath": {
+        "title": "基础数学运算",
+        "inputs": {},
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "运算操作"
+        },
+        "outputs": {
+            "NUMBER": "数字"
+        }
+    },
+    "IntMath": {
+        "title": "整数数学运算",
+        "inputs": {
+            "operation": "运算操作"
+        },
+        "widgets": {
+            "a": "a",
+            "b": "b"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "UnaryMath": {
+        "title": "一元数学运算",
+        "inputs": {
+            "value": "值"
+        },
+        "widgets": {
+            "operation": "运算操作"
+        },
+        "outputs": {
+            "NUMBER": "数字"
+        }
+    },
+    "MathConstants": {
+        "title": "数学常量",
+        "inputs": {},
+        "widgets": {
+            "constant": "常量"
+        },
+        "outputs": {
+            "FLOAT": "浮点数"
+        }
+    },
+    "NumberRound": {
+        "title": "数字取整",
+        "inputs": {
+            "value": "值"
+        },
+        "widgets": {
+            "decimals": "小数位数"
+        },
+        "outputs": {
+            "FLOAT": "浮点数"
+        }
+    },
+    "NumberClamp": {
+        "title": "数字钳位",
+        "inputs": {
+            "value": "值",
+            "min_value": "最小值",
+            "max_value": "最大值"
+        },
+        "widgets": {},
+        "outputs": {
+            "NUMBER": "数字"
+        }
+    },
+    "NumberLerp": {
+        "title": "数字线性插值",
+        "inputs": {},
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "t": "t"
+        },
+        "outputs": {
+            "NUMBER": "数字"
+        }
+    },
+    "NumberInRange": {
+        "title": "数字在范围内",
+        "inputs": {
+            "value": "值",
+            "min_value": "最小值",
+            "max_value": "最大值"
+        },
+        "widgets": {
+            "inclusive": "包含边界"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔值"
+        }
+    },
+    "NumberComparison": {
+        "title": "数字比较",
+        "inputs": {
+            "a": "a",
+            "b": "b"
+        },
+        "widgets": {
+            "operation": "操作"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔值"
+        }
+    },
+    "IntegerComparison": {
+        "title": "整数比较",
+        "inputs": {},
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "操作"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔值"
+        }
+    },
+    "FloatComparison": {
+        "title": "浮点数比较",
+        "inputs": {},
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "操作",
+            "tolerance": "容差"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔值"
+        }
+    },
+    "StringComparison": {
+        "title": "字符串比较",
+        "inputs": {},
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "操作",
+            "case_sensitive": "区分大小写"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔值"
+        }
+    },
+    "BooleanLogic": {
+        "title": "布尔逻辑",
+        "inputs": {
+            "operation": "操作"
+        },
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "操作"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔值"
+        }
+    },
+    "BooleanUnary": {
+        "title": "一元布尔运算",
+        "inputs": {},
+        "widgets": {
+            "value": "值",
+            "operation": "操作"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔值"
+        }
+    }
+}

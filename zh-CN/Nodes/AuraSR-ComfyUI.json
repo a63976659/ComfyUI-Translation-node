@@ -1,0 +1,22 @@
+{
+  "AuraSR.AuraSRUpscaler": {
+    "title": "AuraSR放大",
+    "inputs": {
+      "image": "图像",
+      "transparency_mask": "透明遮罩"
+
+    },
+    "widgets": {
+      "model_name": "模型名称",
+      "mode": "处理模式",
+      "reapply_transparency": "透明度重应用",
+      "tile_batch_size": "分块批大小",
+      "device": "计算设备",
+      "offload_to_cpu": "CPU卸载",
+      "cl": "CL参数"
+    },
+    "outputs": {
+      "IMAGE": "图像"
+    }
+  }
+}

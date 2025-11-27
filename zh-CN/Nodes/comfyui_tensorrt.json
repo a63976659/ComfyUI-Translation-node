@@ -1,0 +1,60 @@
+{
+    "TRT_MODEL_CONVERSION_BASE": {
+        "title": "TRT模型转换基础",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {}
+    },
+    "DYNAMIC_TRT_MODEL_CONVERSION": {
+        "title": "动态TRT模型转换",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "batch_size_min": "最小批次大小",
+            "batch_size_opt": "最佳批次大小",
+            "batch_size_max": "最大批次大小",
+            "height_min": "最小高度",
+            "height_opt": "最佳高度",
+            "height_max": "最大高度",
+            "width_min": "最小宽度",
+            "width_opt": "最佳宽度",
+            "width_max": "最大宽度",
+            "context_min": "最小上下文",
+            "context_opt": "最佳上下文",
+            "context_max": "最大上下文",
+            "num_video_frames": "视频帧数"
+        },
+        "outputs": {},
+        "description": "\n 动态引擎将使用以下文件名格式：\n 1.动态-b-最小-最大-优化-h-最小-最大-优化-w-最小-最大-优化\n 2dyn=动态, b=批量大小, h=高度, w=宽度 \n 动态引擎支持由min和max参数指定的一系列分辨率和批次大小。\n 使用最佳（opt）分辨率和批次大小时性能最佳，因此为最常使用的分辨率和批次大小指定输出参数。"
+    },
+    "STATIC_TRT_MODEL_CONVERSION": {
+        "title": "静态TRT模型转换",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "batch_size_opt": "最佳批次大小",
+            "height_opt": "最佳高度",
+            "width_opt": "最佳宽度",
+            "context_opt": "最佳上下文",
+            "num_video_frames": "视频帧数"
+        },
+        "outputs": {},
+        "description": "\n 静态引擎将使用以下文件名格式：\n 1.状态-优化-高度-优化-重量-优化\n 2.stat=静态, b=批次大小, h=高度, w=宽度\n 静态引擎仅支持单一分辨率和批次大小。\n 这些提供了与动态引擎最佳设置相同的性能提升。"
+    },
+    "TensorRTLoader": {
+        "title": "TensorRT加载器",
+        "inputs": {},
+        "widgets": {
+            "unet_name": "UNet名称",
+            "model_type": "模型类型"
+        },
+        "outputs": {
+            "model": "模型"
+        },
+        "description": "ComfyUI TensorRT 引擎目前不兼容 ControlNets 或 LoRAs。\n 兼容性将在未来的更新中启用。\n 模型类型必须与TensorRT引擎的模型类型匹配。\n 工作流程的 CLIP 和 VAE 需要从原始模型checkpoint利用，TensorRT 加载器的 模型 输出将连接到采样器。"
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "AudioCombine": {
+        "title": "合并音频🎵",
+        "inputs": {
+            "audio_1": "音频_1",
+            "audio_2": "音频_2"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioTempoMatch": {
+        "title": "音频节奏匹配🎵",
+        "inputs": {
+            "audio_1": "音频_1",
+            "audio_2": "音频_2"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "audio_1": "音频_1",
+            "audio_2": "音频_2"
+        }
+    },
+    "AudioVideoCombine": {
+        "title": "合并音频与视频🎵",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "video_path": "视频路径",
+            "video_start_time": "视频开始时间",
+            "video_end_time": "视频结束时间",
+            "auto_open": "自动打开"
+        },
+        "outputs": {
+            "saved_video_path": "保存的视频路径"
+        }
+    },
+    "AudioCrop": {
+        "title": "裁剪音频🎵",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "start_time": "开始时间",
+            "end_time": "结束时间"
+        },
+        "outputs": {
+            "output_0": "音频"
+        }
+    },
+    "GetTempo": {
+        "title": "获取节奏🎵",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {},
+        "outputs": {
+            "tempo_string": "节奏字符串",
+            "tempo_float": "节奏浮点数",
+            "tempo_integer": "整数"
+        }
+    },
+    "AudioGetTempo": {
+        "title": "音频获取节拍🎵",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {},
+        "outputs": {
+            "tempo_string": "节奏字符串",
+            "tempo_float": "节奏浮点数",
+            "tempo_integer": "整数"
+        }
+    },
+    "AudioSeparation": {
+        "title": "音频分离🎵",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "chunk_length": "块长度",
+            "chunk_overlap": "块重叠",
+            "chunk_fade_shape": "块渐变形状"
+        },
+        "outputs": {
+            "Bass": "贝斯音频",
+            "Drums": "鼓音频",
+            "Other": "其他音频",
+            "Vocals": "人声音频"
+        }
+    },
+    "TempoMatch": {
+        "title": "匹配节奏🎵",
+        "inputs": {
+            "audio_1": "音频_1",
+            "audio_2": "音频_2"
+        },
+        "widgets": {},
+        "outputs": {
+            "audio_1": "音频_1",
+            "audio_2": "音频_2"
+        }
+    },
+    "AudioSpeedShift": {
+        "title": "音频速度变换🎵",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "rate": "速率"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "TimeShift": {
+        "title": "时间偏移🎵",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "rate": "速率"
+        },
+        "outputs": {
+            "output_0": "音频"
+        }
+    }
+}

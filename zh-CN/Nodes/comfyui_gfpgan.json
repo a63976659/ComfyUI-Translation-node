@@ -1,0 +1,18 @@
+{
+  "GFPGANRestorer": {
+    "title": "GFPGAN人脸修复",
+    "inputs": {
+      "image": "图像",
+      "model_name": "修复模型",
+      "upscale": "放大倍数"
+    },
+    "widgets": {
+      "model_name": "模型选择",
+      "upscale": "放大滑块",
+      "upscale": "放大倍数"
+    },
+    "outputs": {
+      "image": "修复图像"
+    }
+  }
+}

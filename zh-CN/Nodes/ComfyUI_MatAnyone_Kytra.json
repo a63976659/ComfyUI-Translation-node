@@ -1,0 +1,21 @@
+{
+    "MatAnyoneVideoMatting": {
+        "title": "MatAnyone视频Kytra",
+        "inputs": {
+            "video_frames": "视频帧",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "warmup_frames": "预热帧数",
+            "erode_kernel": "腐蚀核",
+            "dilate_kernel": "膨胀核",
+            "bg_red": "背景红色",
+            "bg_green": "背景绿色",
+            "bg_blue": "背景蓝色"
+        },
+        "outputs": {
+            "foreground_frames": "前景帧",
+            "alpha_frames": "透明度帧"
+        }
+    }
+}

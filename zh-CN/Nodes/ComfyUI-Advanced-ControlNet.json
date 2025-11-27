@@ -1,0 +1,664 @@
+{
+    "ACN_ControlNet++LoaderSingle": {
+        "title": "ControlNet++加载器(单独)🛂🅐🅒🅝",
+        "widgets": {
+            "name": "名称",
+            "control_type": "控制类型"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ControlNetLoaderAdvanced": {
+        "title": "加载高级ControlNet模型🛂🅐🅒🅝",
+        "inputs": {
+            "tk_optional": "帧间隔"
+        },
+        "widgets": {
+            "control_net_name": "ControlNet名称"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "DiffControlNetLoaderAdvanced": {
+        "title": "加载高级ControlNet模型（更新） 🛂🅐🅒🅝",
+        "inputs": {
+            "model": "模型",
+            "tk_optional": "帧间隔"
+        },
+        "widgets": {
+            "control_net_name": "ControlNet名称"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_ControlNet++LoaderAdvanced": {
+        "title": "ControlNet++加载器(高级)🛂🅐🅒🅝",
+        "inputs": {
+            "plus_input": "ControlNet++输入组"
+        },
+        "widgets": {
+            "name": "名称"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet",
+            "IMAGE": "图像"
+        }
+    },
+    "ACN_ControlNet++InputNode": {
+        "title": "ControlNet++输入🛂🅐🅒🅝",
+        "inputs": {
+            "image": "图像",
+            "prev_plus_input": "前输入组"
+        },
+        "widgets": {
+            "control_type": "控制类型"
+        },
+        "outputs": {
+            "PLUS_INPUT": "ControlNet++输入组"
+        }
+    },
+    "TimestepKeyframe": {
+        "title": "帧间隔",
+        "inputs": {
+            "control_net_weights": "ControlNet权重",
+            "t2i_adapter_weights": "T2I适配权重",
+            "latent_keyframe": "Latent关键帧",
+            "prev_timestep_keyframe": "帧间隔",
+            "prev_timestep_kf": "帧间隔",
+            "cn_weights": "ControlNet权重",
+            "mask_optional": "遮罩"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "strength": "强度",
+            "null_latent_kf_stre": "空Latent关键帧强度",
+            "null_latent_kf_strength": "空Latent关键帧强度",
+            "inherit_missing": "缺失值自动继承",
+            "gurantee_usage": "gurantee_usage",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "TIMESTEP_KF": "帧间隔"
+        }
+    },
+    "ACN_TimestepKeyframeInterpolation": {
+        "title": "帧间隔关键帧插值🛂🅐🅒🅝",
+        "inputs": {
+            "prev_timestep_kf": "帧间隔",
+            "cn_weights": "ControlNet权重",
+            "latent_keyframe": "Latent关键帧",
+            "mask_optional": "遮罩(可选)"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "strength_start": "起始强度",
+            "strength_end": "结束强度",
+            "interpolation": "插值方式",
+            "intervals": "迭代次数",
+            "null_latent_kf_strength": "空Latent关键帧强度",
+            "inherit_missing": "缺失值自动继承",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "TIMESTEP_KF": "帧间隔"
+        }
+    },
+    "ACN_TimestepKeyframeFromStrengthList": {
+        "title": "帧间隔从强度列表到关键帧🛂🅐🅒🅝",
+        "inputs": {
+            "prev_timestep_kf": "帧间隔",
+            "cn_weights": "ControlNet权重",
+            "latent_keyframe": "Latent关键帧",
+            "mask_optional": "遮罩(可选)",
+            "float_strengths": "浮点强度组"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "null_latent_kf_strength": "空Latent关键帧强度",
+            "inherit_missing": "缺失值自动继承",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "TIMESTEP_KF": "帧间隔"
+        }
+    },
+    "LatentKeyframe": {
+        "title": "Latent关键帧",
+        "inputs": {
+            "prev_latent_keyframe": "Latent关键帧",
+            "prev_latent_kf": "Latent关键帧"
+        },
+        "widgets": {
+            "batch_index": "批次索引",
+            "strength": "强度"
+        },
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent关键帧",
+            "LATENT_KF": "Latent关键帧"
+        }
+    },
+    "LatentKeyframeGroup": {
+        "title": "Latent关键帧组",
+        "inputs": {
+            "prev_latent_keyframe": "Latent关键帧",
+            "latent_image_opt": "Latent",
+            "prev_latent_kf": "Latent关键帧",
+            "latent_optional": "Latent"
+        },
+        "widgets": {
+            "index_strengths": "索引强度",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent关键帧",
+            "LATENT_KF": "Latent关键帧"
+        }
+    },
+    "LatentKeyframeBatchedGroup": {
+        "title": "Latent关键帧组合",
+        "inputs": {
+            "prev_latent_keyframe": "Latent关键帧",
+            "prev_latent_kf": "Latent关键帧",
+            "float_strengths": "浮点强度组"
+        },
+        "widgets": {
+            "strengths": "强度",
+            "float_strength": "浮点强度",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent关键帧",
+            "LATENT_KF": "Latent关键帧"
+        }
+    },
+    "LatentKeyframeTiming": {
+        "title": "Latent关键帧插值",
+        "inputs": {
+            "prev_latent_keyframe": "Latent关键帧",
+            "prev_latent_kf": "Latent关键帧"
+        },
+        "widgets": {
+            "batch_index_from": "批次索引从",
+            "batch_index_to_excl": "批次索引到",
+            "strength_from": "强度从",
+            "strength_to": "强度到",
+            "interpolation": "插值方式",
+                "ease-in-out": "渐进渐出",
+                "ease-in": "渐进",
+                "ease-out": "渐出",
+                "linear": "线性",
+            "flip_weights": "反转权重",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent关键帧",
+            "LATENT_KF": "Latent关键帧"
+        }
+    },
+
+    "ACN_ReferencePreprocessor": {
+        "title": "参考预处理器🛂🅐🅒🅝",
+        "inputs": {
+            "image": "图像",
+            "vae": "VAE",
+            "latent_size": "Latent"
+        },
+        "outputs": {
+            "proc_IMAGE": "图像"
+        }
+    },
+    "ACN_ReferenceControlNet": {
+        "title": "参考ControlNet🛂🅐🅒🅝",
+        "widgets": {
+            "reference_type": "参考类型",
+            "style_fidelity": "风格精确度",
+            "ref_weight": "参考权重"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_ReferenceControlNetFinetune": {
+        "title": "参考ControlNet(微调)🛂🅐🅒🅝",
+        "widgets": {
+            "attn_style_fidelity": "注意力风格保真度",
+            "attn_ref_weight": "注意力参考权重",
+            "attn_strength": "注意力强度",
+            "adain_style_fidelity": "自适应实例归一化（AdaIN）风格保真度",
+            "adain_ref_weight": "自适应实例归一化（AdaIN）参考权重",
+            "adain_strength": "自适应实例归一化（AdaIN）强度"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+
+    "ACN_ControlNetLoaderAdvanced": {
+        "title": "高级ControlNet模型加载器🛂🅐🅒🅝",
+        "inputs": {
+            "_tk_opt": "帧间隔"
+        },
+        "widgets": {
+            "cnet": "ControlNet名称"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_DiffControlNetLoaderAdvanced": {
+        "title": "高级ControlNet模型加载器(更新)🛂🅐🅒🅝",
+        "inputs": {
+            "model": "模型",
+            "_tk_opt": "帧间隔"
+        },
+        "widgets": {
+            "cnet": "ControlNet名称"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_AdvancedControlNetApply": {
+        "title": "应用高级ControlNet🛂🅐🅒🅝",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "control_net": "ControlNet",
+            "image": "图像",
+            "mask_optional": "遮罩",
+            "timestep_kf": "帧间隔",
+            "latent_kf_override": "覆盖Latent关键帧",
+            "weights_override": "覆盖ControlNet权重",
+            "model_optional": "模型(可选)"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始位置",
+            "end_percent": "结束位置"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "model": "模型"
+        }
+    },
+    
+    "ScaledSoftControlNetWeights": {
+        "title": "缩放柔和ControlNet权重",
+        "widgets": {
+            "base_multiplier": "系数",
+            "flip_weights": "反转权重"
+        },
+        "outputs": {
+            "CONTROL_NET_WEIGHTS": "ControlNet权重",
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "SoftControlNetWeights": {
+        "title": "柔和ControlNet权重",
+        "widgets": {
+            "weight_00": "权重00",
+            "weight_01": "权重01",
+            "weight_02": "权重02",
+            "weight_03": "权重03",
+            "weight_04": "权重04",
+            "weight_05": "权重05",
+            "weight_06": "权重06",
+            "weight_07": "权重07",
+            "weight_08": "权重08",
+            "weight_09": "权重09",
+            "weight_10": "权重10",
+            "weight_11": "权重11",
+            "weight_12": "权重12",
+            "flip_weights": "反转权重"
+        },
+        "outputs": {
+            "CONTROL_NET_WEIGHTS": "ControlNet权重",
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "CustomControlNetWeights": {
+        "title": "自定义ControlNet权重",
+        "widgets": {
+            "weight_00": "权重00",
+            "weight_01": "权重01",
+            "weight_02": "权重02",
+            "weight_03": "权重03",
+            "weight_04": "权重04",
+            "weight_05": "权重05",
+            "weight_06": "权重06",
+            "weight_07": "权重07",
+            "weight_08": "权重08",
+            "weight_09": "权重09",
+            "weight_10": "权重10",
+            "weight_11": "权重11",
+            "weight_12": "权重12",
+            "flip_weights": "反转权重"
+        },
+        "outputs": {
+            "CONTROL_NET_WEIGHTS": "ControlNet权重",
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "SoftT2IAdapterWeights": {
+        "title": "柔和T2I适配权重",
+        "widgets": {
+            "weight_00": "权重00",
+            "weight_01": "权重01",
+            "weight_02": "权重02",
+            "weight_03": "权重03",
+            "flip_weights": "反转权重"
+        },
+        "outputs": {
+            "T2I_ADAPTER_WEIGHTS": "T2I适配权重",
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "CustomT2IAdapterWeights": {
+        "title": "自定义T2I适配权重",
+        "widgets": {
+            "weight_00": "权重00",
+            "weight_01": "权重01",
+            "weight_02": "权重02",
+            "weight_03": "权重03",
+            "flip_weights": "反转权重"
+        },
+        "outputs": {
+            "T2I_ADAPTER_WEIGHTS": "T2I适配权重",
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "LoadImagesFromDirectory": {
+        "title": "从路径加载图像",
+        "widgets": {
+            "directory": "路径",
+            "image_load_cap": "图像加载上限",
+            "start_index": "初始索引"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
+            "INT": "整数"
+        }
+    },
+    "ScaledSoftMaskedUniversalWeights": {
+        "title": "缩放柔和遮罩权重",
+        "inputs": {
+            "mask": "遮罩",
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "min_base_multiplier": "最小系数",
+            "max_base_multiplier": "最大系数",
+            "uncond_multiplier": "无条件乘数"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_DefaultUniversalWeights": {
+        "title": "默认权重🛂🅐🅒🅝",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+
+
+
+    "ACN_SparseCtrlRGBPreprocessor": {
+        "title": "SparseCtrl稀疏控制预处理器🛂🅐🅒🅝",
+        "inputs": {
+            "image": "图像",
+            "vae": "VAE",
+            "latent_size": "Latent"
+        },
+        "outputs": {
+            "proc_IMAGE": "图像"
+        }
+    },
+    "ACN_SparseCtrlMergedLoaderAdvanced": {
+        "title": "SparseCtrl稀疏控制l加载器(融合)🛂🅐🅒🅝",
+        "inputs": {
+            "sparse_method": "Sparse稀疏方法",
+            "tk_optional": "帧间隔"
+        },
+        "widgets": {
+            "sparsectrl_name": "SparseCtrl稀疏控制名称",
+            "control_net_name": "ControlNet名称",
+            "use_motion": "使用动态",
+            "motion_strength": "动态强度",
+            "motion_scale": "动态缩放"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_SparseCtrlWeightExtras": {
+        "title": "SparseCtrl稀疏控制附加权重🛂🅐🅒🅝",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "sparse_hint_mult": "稀疏提示乘数",
+            "sparse_nonhint_mult": "稀疏非提示乘数",
+            "sparse_mask_mult": "稀疏遮罩乘数"
+        },
+        "outputs": {
+            "cn_extras": "ControlNet附加组"
+        }
+    },
+    "ACN_SparseCtrlLoaderAdvanced": {
+        "title": "SparseCtrl稀疏控制加载器🛂🅐🅒🅝",
+        "inputs": {
+            "sparse_method": "Sparse稀疏方法",
+            "tk_optional": "帧间隔"
+        },
+        "widgets": {
+            "sparsectrl_name": "SparseCtrl稀疏控制名称",
+            "use_motion": "使用动态",
+            "motion_strength": "动态强度",
+            "motion_scale": "动态缩放",
+            "context_aware": "上下文感知",
+            "sparse_hint_mult": "稀疏提示乘数",
+            "sparse_nonhint_mult": "稀疏非提示乘数",
+            "sparse_mask_mult": "稀疏遮罩乘数"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_SparseCtrlIndexMethodNode": {
+        "title": "SparseCtrl稀疏控制索引方法🛂🅐🅒🅝",
+        "widgets": {
+            "indexes": "序号"
+        },
+        "outputs": {
+            "SPARSE_METHOD": "Sparse稀疏方法"
+        }
+    },
+    "ACN_SparseCtrlSpreadMethodNode": {
+        "title": "SparseCtrl稀疏控制分散方法🛂🅐🅒🅝",
+        "widgets": {
+            "spread": "分散",
+                "uniform": "不变",
+                "starting": "起始",
+                "ending": "结束",
+                "center": "中点"
+        },
+        "outputs": {
+            "SPARSE_METHOD": "Sparse方法"
+        }
+    },
+
+
+    "ACN_SoftControlNetWeightsSD15": {
+        "title": "柔和 ControlNet 权重(SD15)🛂🅐🅒🅝",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "uncond_multiplier": "无条件乘数"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_CustomControlNetWeightsSD15": {
+        "title": "自定义 ControlNet 权重(SD15)🛂🅐🅒🅝",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "uncond_multiplier": "无条件乘数"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_CustomControlNetWeightsFlux": {
+        "title": "自定义 ControlNet 权重(Flux)🛂🅐🅒🅝",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "uncond_multiplier": "无条件乘数"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_SoftT2IAdapterWeights": {
+        "title": "柔和 T2IAdapter 权重🛂🅐🅒🅝",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "uncond_multiplier": "无条件乘数"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_CustomT2IAdapterWeights": {
+        "title": "自定义 T2IAdapter 权重🛂🅐🅒🅝",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "uncond_multiplier": "无条件乘数"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_AdvancedControlNetApply_v2": {
+        "title": "应用高级ControlNet V2🛂🅐🅒🅝",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "control_net": "ControlNet",
+            "vae_optional": "选择VAE",
+            "image": "图像",
+            "timestep_kf": "帧间隔",
+            "latent_kf_override": "Latent关键帧覆盖",
+            "weights_override": "权重覆盖",
+            "mask_optional": "可选遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始时间",
+            "end_percent": "结束时间"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "ACN_AdvancedControlNetApplySingle_v2": {
+        "title": "应用高级ControlNet单节点 V2🛂🅐🅒🅝",
+        "inputs": {
+            "conditioning": "条件",
+            "control_net": "ControlNet",
+            "vae_optional": "选择VAE",
+            "image": "图像",
+            "timestep_kf": "帧间隔",
+            "latent_kf_override": "Latent关键帧覆盖",
+            "weights_override": "权重覆盖",
+            "mask_optional": "可选遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始时间",
+            "end_percent": "结束时间"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "model_opt": "模型输出"
+        }
+    },
+    "ACN_CtrLoRALoader": {
+        "title": "加载ControlNet Lora🛂🅐🅒🅝",
+        "widgets": {
+            "base": "基模",
+            "lora": "Lora"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_ExtrasMiddleMult": {
+        "title": "额外功能 中间权重🛂🅐🅒🅝",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "middle_mult": "中间权重"
+        },
+        "outputs": {
+            "cn_extras": "ControlNet附加组"
+        }
+    },
+    "ACN_ScaledSoftControlNetWeights": {
+        "title": "缩放柔和 ControlNet 权重🛂🅐🅒🅝",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "base_multiplier": "系数",
+            "uncond_multiplier": "无条件乘数"
+        },
+        "outputs": {
+            "CONTROL_NET_WEIGHTS": "ControlNet权重",
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    }
+}

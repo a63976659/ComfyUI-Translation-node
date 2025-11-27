@@ -1,0 +1,338 @@
+{
+  "BridgePreviewNode": {
+    "title": "🎈LG_预览桥接器V2",
+    "inputs": {
+      "images": "输入图像"
+    },
+    "widgets": {
+      "file_info": "文件元数据",
+      "skip": "跳过处理",
+      "mask": "输入遮罩",
+      "filename_prefix": "文件前缀",
+      "prompt": "提示文本",
+      "extra_pnginfo": "PNG元信息",
+      "unique_id": "节点ID"
+    },
+    "outputs": {
+      "image": "图像",
+      "mask": "遮罩"
+    }
+  },
+  "FastCanvasTool": {
+    "title": "🎈LG_快速画布工具",
+    "inputs": {
+      "bg_img": "背景图",
+      "img_1": "前景图"
+    },
+    "widgets": {},
+    "outputs": {
+      "fc_data": "画布数据"
+    }
+  },
+  "FastCanvas": {
+    "title": "🎈LG_快速画布",
+    "inputs": {
+      "fc_data": "画布数据",
+      "unique_id": "节点ID"
+    },
+    "widgets": {},
+    "outputs": {
+      "image": "合成图像",
+      "mask": "合成遮罩",
+      "transform_data": "变换参数"
+    },
+        "description": "点击加载进行编辑\n 1.支持实时调整构图输出图像和选中图层遮罩\n 2.支持批量构图，切换输入图层继承上个图层的位置和缩放\n 3.支持限制画布窗口视图大小的功能，不用担心图片较大占地方了\n 4.图层右键辅助功能，变换，设置背景等\n 5.支持通过输入端口输入图像， 支持无输入端口独立使用\n 6.支持复制，拖拽，以及上传方式对图像处理\n使用加载图像输入RGBA需要合并Alpha图层！"
+  },
+  "FastCanvasComposite": {
+    "title": "🎈LG_快速画布合成",
+    "inputs": {
+      "bg_img": "背景图",
+      "image": "前景图",
+      "mask": "遮罩图",
+      "transform_data": "变换参数"
+    },
+    "widgets": {
+      "invert_mask": "遮罩反转",
+      "mode": "混合模式",
+      "offset_x": "X轴位移",
+      "offset_y": "Y轴位移",
+      "tensor": "张量数据",
+      "fg_width": "前景宽度",
+      "fg_height": "前景高度",
+      "scale": "缩放比例"
+    },
+    "outputs": {
+      "image": "图像",
+      "mask": "遮罩"
+    }
+  },
+  "ColorAdjustment": {
+    "title": "🎈LG_色彩调节器",
+    "inputs": {
+      "image": "图像",
+      "unique_id": "节点ID"
+    },
+    "widgets": {
+      "brightness": "亮度",
+      "contrast": "对比度",
+      "saturation": "饱和度"
+    },
+    "outputs": {
+      "image": "图像"
+    }
+  },
+  "ImageCropper": {
+    "title": "🎈LG_图像裁剪器",
+    "inputs": {
+      "image": "图像",
+      "unique_id": "节点ID"
+    },
+    "widgets": {
+      "seed": "随机种子",
+      "seed_mode": "随机模式"
+    },
+    "outputs": {
+      "image": "图像"
+    },
+        "description": "执行后框选裁剪"
+  },
+  "ImageSelector": {
+    "title": "🎈LG_图像选择器",
+    "inputs": {
+      "images": "图像列表"
+    },
+    "widgets": {
+      "mode": "选择模式",
+      "prompt": "选择提示",
+      "unique_id": "节点ID",
+      "extra_pnginfo": "PNG元信息",
+      "node_id": "关联节点"
+    },
+    "outputs": {
+      "selected_images": "选中的图像",
+      "selected_indices": "选择的索引"
+    }
+  },
+  "ImageSizeAdjustment": {
+    "title": "🎈LG_尺寸调节器",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "x_offset": "x 偏移量",
+      "y_offset": "y 偏移量"
+    },
+    "outputs": {
+      "image": "图像"
+    }
+  },
+  "InspyrenetRembgLoader": {
+    "title": "🎈LG_智能去背景模型加载器",
+    "inputs": {
+      "mode": "处理模式",
+      "torchscript_jit": "JIT加速"
+    },
+    "widgets": {
+      "mode": "处理模式",
+      "torchscript_jit": "JIT加速"
+    },
+    "outputs": {
+      "inspyrenet_model": "去背模型",
+      "INSPYRENET_MODEL": "去背模型"
+    }
+  },
+  "InspyrenetRembgProcess": {
+    "title": "🎈LG_智能去背景处理器",
+    "inputs": {
+      "model": "去背景模型",
+      "image": "图像"
+    },
+    "widgets": {
+      "threshold": "分割阈值",
+      "background_color": "背景色"
+    },
+    "outputs": {
+      "image": "去背结果",
+      "mask": "Alpha遮罩"
+    }
+  },
+  "LazySwitch2way": {
+    "title": "🎈LG_双向懒切换",
+    "inputs": {
+      "boolean": "条件判断",
+      "ON_TRUE": "真值输入",
+      "on_true": "真值输入",
+      "ON_FALSE": "假值输入",
+      "on_false": "假值输入"
+    },
+    "widgets": {
+      "boolean": "布尔"
+    },
+    "outputs": {
+      "any": "输出结果",
+      "OUTPUT": "输出",
+      "output": "输出"
+    }
+  },
+  "LazySwitch1way": {
+    "title": "🎈LG_单向懒切换",
+    "inputs": {
+      "boolean": "条件判断",
+      "ON_TRUE": "真值输入",
+      "ON_FALSE": "假值输入"
+    },
+    "widgets": {
+      "boolean": "布尔"
+    },
+    "outputs": {
+      "OUTPUT": "输出"
+    }
+  },
+  "GroupSwitcher": {
+    "title": "🎈LG_组切换器",
+    "inputs": {
+      "boolean": "切换条件"
+    },
+    "widgets": {
+      "boolean": "布尔",
+      "Group A": "A 组",
+      "Group B": "B 组"
+    },
+    "outputs": {},
+        "description": "右键开关节点有设置不同模式（忽略和禁用）的功能"
+  },
+  "MuterSwitcher": {
+    "title": "🎈LG_静音切换器",
+    "inputs": {
+      "boolean": "静音开关",
+      "ON_TRUE": "启用输入",
+      "on_true": "启用输入",
+      "ON_FALSE": "禁用输入",
+      "on_false": "禁用输入"
+    },
+    "widgets": {
+      "boolean": "布尔"
+    },
+    "outputs": {
+      "any": "输出结果",
+      "OUTPUT": "输出",
+      "output": "输出"
+    },
+        "description": "右键开关节点有设置不同模式（忽略和禁用）的功能"
+  },
+  "CachePreviewBridge": {
+    "title": "🎈LG_缓存预览桥接",
+    "inputs": {
+      "images": "图像列表"
+    },
+    "widgets": {
+      "use_cache": "使用缓存",
+      "image": "图像",
+      "🔄 refresh from Temp": "🔄 刷新 从缓存重新获取信息",
+      "🔄 refresh from Output": "🔄 从输出中获取"
+    },
+    "outputs": {
+      "image": "图像",
+      "mask": "遮罩"
+    }
+  },
+  "LG_Noise": {
+    "title": "🎈LG_高级噪点生成器",
+    "inputs": {
+      "image_optional": "底图(可选)",
+      "mask_optional": "遮罩(可选)"
+    },
+    "widgets": {
+      "type": "类型",
+      "opacity": "不透明度",
+      "strength": "强度",
+      "density": "密度",
+      "sharpen": "锐化",
+      "brightness": "亮度",
+      "random_color": "随机颜色",
+      "color": "颜色",
+      "seed": "随机种子",
+      "hex_color": "HEX色值"
+    },
+    "outputs": {
+      "image": "图像"
+    }
+  },
+  "IPAdapterWeightTypes": {
+    "title": "🎈LG_IPAdapter权重类型",
+    "inputs": {
+      "weight_type": "权重类型"
+    },
+    "widgets": {
+      "weight_type": "类型选择器"
+    },
+    "outputs": {
+      "weight_type": "权重类型"
+    }
+  },
+  "LG_LoadImage": {
+    "title": "🎈LG_图像加载器",
+    "inputs": {
+      "image": "图像文件",
+      "keep_alpha": "保留透明通道"
+    },
+    "widgets": {
+      "image": "图像文件",
+      "keep_alpha": "保留alpha透明通道",
+      "🔄 refresh from Temp": "🔄 刷新 从缓存重新获取信息",
+      "🔄 refresh from Output": "🔄 从输出中获取"
+    },
+    "outputs": {
+      "image": "图像",
+      "mask": "遮罩"
+    }
+  },
+  "LG_LatentBatchToList": {
+    "title": "🎈LG_Latent批次转列表",
+    "inputs": {
+      "latent": "Latent"
+    },
+    "widgets": {},
+    "outputs": {
+      "latent": "Latent"
+    }
+  },
+  "🎈GroupDetector": {
+    "title": "🎈LG_群组探测器",
+    "inputs": {
+      "latent": "Latent"
+    },
+    "widgets": {},
+    "outputs": {
+      "output": "输出"
+    }
+  },
+  "🎈StateTransfer": {
+    "title": "🎈LG_状态转移",
+    "inputs": {
+      "input_1": "输入1",
+      "input_2": "输入2",
+      "input_3": "输入3",
+      "input_4": "输入4",
+      "input_5": "输入5",
+      "input_6": "输入6"
+    },
+    "widgets": {},
+    "outputs": {
+      "output": "输出"
+    }
+  },
+  "LG_SaveImage": {
+    "title": "🎈LG_保存图像",
+    "inputs": {
+      "images": "图像列表"
+    },
+    "widgets": {
+      "filename_prefix": "文件前缀",
+      "path": "保存路径",
+      "format": "文件格式",
+      "quality": "保存质量"
+    },
+    "outputs": {}
+  }
+}

@@ -1,0 +1,313 @@
+{
+    "ImageSize(FaceParsing)": {
+        "title": "图像尺寸（人脸解析）",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "ImageListSelect(FaceParsing)": {
+        "title": "图像列表选择（人脸解析）",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "index": "索引"
+        }
+    },
+    "ImageResizeWithBBox(FaceParsing)": {
+        "title": "带边界框的图像缩放（人脸解析）",
+        "inputs": {
+            "bbox": "边界框",
+            "image": "图像"
+        }
+    },
+    "ImageInsertWithBBox(FaceParsing)": {
+        "title": "带边界框的图像插入（人脸解析）",
+        "inputs": {
+            "bbox": "边界框",
+            "image_src": "源图像",
+            "image": "目标图像"
+        }
+    },
+    "ImagePadWithBBox(FaceParsing)": {
+        "title": "带边界框的图像填充（人脸解析）",
+        "inputs": {
+            "bbox": "边界框",
+            "image": "图像"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "MaskComposite(FaceParsing)": {
+        "title": "遮罩合成（人脸解析）",
+        "inputs": {
+            "destination": "目标遮罩",
+            "source": "源遮罩"
+        },
+        "widgets": {
+            "operation": "操作"
+        }
+    },
+    "BBoxDetectorLoader(FaceParsing)": {
+        "title": "边界框检测器加载（人脸解析）",
+        "widgets": {
+            "model_name": "模型"
+        },
+        "outputs": {
+            "BBOX_DETECTOR": "边界框检测器"
+        }
+    },
+    "ImageCropWithBBox(FaceParsing)": {
+        "title": "带边界框的图像裁剪（人脸解析）",
+        "inputs": {
+            "bbox": "边界框",
+            "image": "图像"
+        }
+    },
+    "ColorAdjust(FaceParsing)": {
+        "title": "色彩调整（人脸解析）",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "contrast": "对比度",
+            "brightness": "亮度",
+            "saturation": "饱和度",
+            "hue": "色调",
+            "gamma": "伽马值"
+        }
+    },
+    "MaskToBBoxList(FaceParsing)": {
+        "title": "遮罩转边界框列表（人脸解析）",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "pad": "填充"
+        },
+        "outputs": {
+            "BBOX_LIST": "边界框列表"
+        }
+    },
+    "MaskListSelect(FaceParsing)": {
+        "title": "遮罩列表选择（人脸解析）",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "index": "索引"
+        }
+    },
+    "BBoxDetect(FaceParsing)": {
+        "title": "边界框检测（人脸解析）",
+        "inputs": {
+            "bbox_detector": "边界框检测器",
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "检测阈值",
+            "dilation": "膨胀值",
+            "dilation_ratio": "膨胀比例",
+            "by_ratio": "按比例方式"
+        },
+        "outputs": {
+            "BBOX_LIST": "边界框列表",
+            "count": "检测数量"
+        }
+    },
+    "ImageCropWithBBoxList(FaceParsing)": {
+        "title": "带边界框列表的图像裁剪（人脸解析）",
+        "inputs": {
+            "bbox_list": "边界框列表",
+            "image": "图像"
+        }
+    },
+    "MaskInsertWithBBox(FaceParsing)": {
+        "title": "带边界框的遮罩插入（人脸解析）",
+        "inputs": {
+            "bbox": "边界框",
+            "image_src": "源图像",
+            "mask": "遮罩"
+        }
+    },
+    "MaskBatchComposite(FaceParsing)": {
+        "title": "遮罩批量合成（人脸解析）",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "operation": "操作"
+        }
+    },
+    "BBoxListItemSelect(FaceParsing)": {
+        "title": "边界框列表项选择（人脸解析）",
+        "inputs": {
+            "bbox_list": "边界框列表"
+        },
+        "widgets": {
+            "index": "索引"
+        },
+        "outputs": {
+            "BBOX": "边界框"
+        }
+    },
+    "GuidedFilter(FaceParsing)": {
+        "title": "导向滤波（人脸解析）",
+        "inputs": {
+            "image": "图像",
+            "guide": "引导图像"
+        },
+        "widgets": {
+            "radius": "滤波半径",
+            "eps": "正则化参数"
+        }
+    },
+    "FaceParse(FaceParsing)": {
+        "title": "人脸解析",
+        "inputs": {
+            "model": "模型",
+            "processor": "处理器",
+            "image": "图像"
+        },
+        "outputs": {
+            "FACE_PARSING_RESULT": "人脸解析结果"
+        }
+    },
+    "FaceParsingModelLoader(FaceParsing)": {
+        "title": "人脸解析模型加载（人脸解析）",
+        "widgets": {
+            "device": "设备"
+        },
+        "outputs": {
+            "FACE_PARSING_MODEL": "加载的人脸解析模型"
+        }
+    },
+    "MaskCropWithBBox(FaceParsing)": {
+        "title": "带边界框的遮罩裁剪（人脸解析）",
+        "inputs": {
+            "bbox": "边界框",
+            "mask": "遮罩"
+        }
+    },
+    "FaceParsingProcessorLoader(FaceParsing)": {
+        "title": "人脸解析处理器加载（人脸解析）",
+        "outputs": {
+            "FACE_PARSING_PROCESSOR": "加载的人脸解析处理器"
+        }
+    },
+    "BBoxResize(FaceParsing)": {
+        "title": "边界框缩放（人脸解析）",
+        "inputs": {
+            "bbox": "边界框"
+        },
+        "widgets": {
+            "width_old": "原宽度",
+            "height_old": "原高度",
+            "width": "目标宽度",
+            "height": "目标高度"
+        },
+        "outputs": {
+            "BBOX": "边界框"
+        }
+    },
+    "BBoxDecompose(FaceParsing)": {
+        "title": "边界框分解（人脸解析）",
+        "inputs": {
+            "bbox": "边界框"
+        },
+        "outputs": {
+            "l": "左边界坐标",
+            "t": "上边界坐标",
+            "r": "右边界坐标",
+            "b": "下边界坐标"
+        }
+    },
+    "MaskBlackOut(FaceParsing)": {
+        "title": "遮罩遮黑（人脸解析）",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "direction": "方向",
+            "position": "位置"
+        }
+    },
+    "MaskBorderDissolve(FaceParsing)": {
+        "title": "遮罩边界溶解（人脸解析）",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "size": "溶解尺寸",
+            "kernel_size": "模糊范围",
+            "sigma": "模糊强度"
+        }
+    },
+    "ImageResizeCalculator(FaceParsing)": {
+        "title": "图像尺寸调整计算（人脸解析）",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "target_size": "目标尺寸",
+            "force_8x": "强制8倍缩放",
+            "force_64x": "强制64倍缩放"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度",
+            "width_old": "原宽度",
+            "height_old": "原高度",
+            "min": "最小尺寸",
+            "scale": "缩放比例",
+            "scale_r": "缩放比率"
+        }
+    },
+    "MaskBorderDissolveAdvanced(FaceParsing)": {
+        "title": "遮罩边界高级溶解（人脸解析）",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "l": "左边界溶解尺寸",
+            "t": "上边界溶解尺寸",
+            "r": "右边界溶解尺寸",
+            "b": "下边界溶解尺寸",
+            "kernel_size": "模糊范围",
+            "sigma": "模糊强度"
+        }
+    },
+    "FaceParsingResultsParser(FaceParsing)": {
+        "title": "人脸解析结果解析（人脸解析）",
+        "inputs": {
+            "result": "人脸解析结果"
+        },
+        "widgets": {
+            "background": "背景",
+            "skin": "皮肤",
+            "nose": "鼻子",
+            "eye_g": "眼部",
+            "r_eye": "右眼",
+            "l_eye": "左眼",
+            "r_brow": "右眉毛",
+            "l_brow": "左眉毛",
+            "r_ear": "右耳",
+            "l_ear": "左耳",
+            "mouth": "嘴巴",
+            "u_lip": "上嘴唇",
+            "l_lip": "下嘴唇",
+            "hair": "头发",
+            "hat": "帽子",
+            "ear_r": "耳部",
+            "neck_l": "颈部",
+            "neck": "脖子",
+            "cloth": "衣物"
+        }
+    }
+}

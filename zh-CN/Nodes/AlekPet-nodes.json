@@ -1,0 +1,339 @@
+{
+  "ArgosTranslateCLIPTextEncodeNode": {
+    "title": "CLIP文本编码器(Argos翻译)",
+    "inputs": {
+      "clip": "CLIP模型"
+    },
+    "widgets": {
+      "from_translate": "源语言",
+      "to_translate": "目标语言",
+      "add_proxies": "启用代理",
+      "proxies": "代理地址",
+      "auth_data": "认证密钥",
+      "service": "服务",
+      "Show proxy": "显示代理",
+      "Show authorization": "显示授权",
+      "text": "文本"
+    },
+    "outputs": {
+      "CONDITIONING": "条件编码",
+      "STRING": "字符串"
+    }
+  },
+  "ArgosTranslateTextNode": {
+    "title": "文本翻译(Argos翻译)",
+    "widgets": {
+      "from_translate": "源语言",
+      "to_translate": "目标语言",
+      "add_proxies": "启用代理",
+      "proxies": "代理地址",
+      "auth_data": "认证密钥",
+      "service": "服务",
+      "text": "文本"
+    },
+    "outputs": {
+      "CONDITIONING": "条件编码",
+      "text": "文本"
+    }
+  },
+  "ChatGLM4TranslateCLIPTextEncodeNode": {
+    "title": "CLIP文本编码器(ChatGLM4翻译)",
+    "inputs": {
+      "clip": "CLIP模型"
+    },
+    "widgets": {
+      "from_translate": "源语言",
+      "to_translate": "目标语言",
+      "model": "模型版本",
+      "max_tokens": "最大标记数",
+      "temperature": "随机性",
+      "top_p": "采样阈值",
+      "text": "文本"
+    },
+    "outputs": {
+      "CONDITIONING": "条件编码",
+      "STRING": "字符串"
+    }
+  },
+  "ChatGLM4TranslateTextNode": {
+    "title": "文本翻译(ChatGLM4翻译)",
+    "widgets": {
+      "from_translate": "源语言",
+      "to_translate": "目标语言",
+      "model": "模型版本",
+      "max_tokens": "最大标记数",
+      "temperature": "随机性",
+      "top_p": "采样阈值",
+      "text": "文本"
+    },
+    "outputs": {
+      "STRING": "字符串"
+    }
+  },
+  "ChatGLM4InstructNode": {
+    "title": "ChatGLM4指令处理节点",
+    "widgets": {
+      "model": "模型版本",
+      "max_tokens": "最大标记数",
+      "temperature": "随机性",
+      "top_p": "采样阈值",
+      "instruct": "指令模板",
+      "query": "输入内容"
+    },
+    "outputs": {
+      "STRING": "字符串"
+    }
+  },
+  "ChatGLM4InstructMediaNode": {
+    "title": "ChatGLM4多媒体指令节点",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "model": "模型版本",
+      "max_tokens": "最大标记数",
+      "temperature": "随机性",
+      "top_p": "采样阈值",
+      "instruct": "指令模板",
+      "video": "视频输入"
+    },
+    "outputs": {
+      "STRING": "字符串"
+    }
+  },
+  "DeepLXTranslateTextNode": {
+    "title": "DeepLX翻译文本节点",
+    "widgets": {
+      "source_translate": "源翻译",
+      "target_translate": "目标翻译",
+      "prompt": "提示",
+      "to_translate": "目标语言",
+      "add_proxies": "启用代理",
+      "proxies": "代理地址",
+      "auth_data": "认证密钥",
+      "service": "服务",
+      "video": "视频输入"
+    },
+    "outputs": {
+      "string": "字符串"
+    }
+  },
+  "DeepTranslatorCLIPTextEncodeNode": {
+    "title": "CLIP文本编码器(深度翻译高级)",
+    "inputs": {
+      "clip": "CLIP模型"
+    },
+    "widgets": {
+      "from_translate": "源语言",
+      "to_translate": "目标语言",
+      "add_proxies": "启用代理",
+      "proxies": "代理地址",
+      "auth_data": "认证密钥",
+      "service": "服务",
+      "Show proxy": "显示代理",
+      "Show authorization": "显示授权",
+      "hide_proxy": "隐藏代理",
+      "hide_authorization": "隐藏授权",
+      "text": "文本"
+    },
+    "outputs": {
+      "CONDITIONING": "条件编码",
+      "STRING": "字符串"
+    }
+  },
+  "DeepTranslatorTextNode": {
+    "title": "深度翻译文本节点",
+    "inputs": {
+      "clip": "CLIP模型"
+    },
+    "widgets": {
+      "from_translate": "源翻译",
+      "to_translate": "目标语言",
+      "add_proxies": "启用代理",
+      "proxies": "代理地址",
+      "auth_data": "认证密钥",
+      "service": "服务",
+      "text": "文本",
+      "Show proxy": "显示代理",
+      "Show authorization": "显示授权",
+      "hide_proxy": "隐藏代理",
+      "hide_authorization": "隐藏授权",
+      "video": "视频输入"
+    },
+    "outputs": {
+      "text": "文本"
+    }
+  },
+  "PreviewTextNode": {
+    "title": "文本预览",
+    "widgets": {
+      "text": "文本内容",
+      "STRING": "字符串输出"
+    },
+    "outputs": {
+      "STRING": "字符串"
+    }
+  },
+  "HexToHueNode": {
+    "title": "十六进制转色相节点",
+    "widgets": {
+      "color_hex": "十六进制颜色",
+      "unique_id": "唯一标识符"
+    },
+    "outputs": {
+      "string_hex": "十六进制字符串",
+      "float_hue_degrees": "浮动色相度",
+      "float_hue_norm": "浮动色相规范",
+      "string_hue_degrees": "弦色相度",
+      "string_hue_norm": "弦色相规范"
+    }
+  },
+  "ColorsCorrectNode": {
+    "title": "色彩校正",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "brightness": "亮度",
+      "contrast": "对比度",
+      "saturation": "饱和度",
+      "gamma": "伽马",
+      "hue_degrees": "色相旋转角度",
+      "use_color": "使用颜色",
+      "hex_color": "十六进制色值",
+      "factor": "因素",
+      "hue": "色调"
+    },
+    "outputs": {
+      "image": "图像"
+    }
+  },
+  "DeepLXTranslateCLIPTextEncodeNode": {
+    "title": "CLIP文本编码器(深度LX翻译)",
+    "inputs": {
+      "clip": "CLIP模型"
+    },
+    "widgets": {
+      "source_translate": "源翻译",
+      "target_translate": "目标翻译",
+      "manual_translate": "人工翻译",
+      "Manual_Translate": "人工翻译",
+      "proxies": "代理地址",
+      "auth_data": "认证密钥",
+      "service": "服务",
+      "Show proxy": "显示代理",
+      "Show authorization": "显示授权",
+      "text": "文本"
+    },
+    "outputs": {
+      "CONDITIONING": "条件编码",
+      "STRING": "字符串"
+    }
+  },
+  "GoogleTranslateCLIPTextEncodeNode": {
+    "title": "CLIP文本编码器(谷歌翻译)",
+    "inputs": {
+      "clip": "CLIP模型"
+    },
+    "widgets": {
+      "from_translate": "源语言",
+      "to_translate": "目标语言",
+      "manual_translate": "人工翻译",
+      "Manual_Translate": "人工翻译",
+      "proxies": "代理地址",
+      "auth_data": "认证密钥",
+      "service": "服务",
+      "Show proxy": "显示代理",
+      "Show authorization": "显示授权",
+      "Manual Trasnlate": "手动翻译",
+      "text": "文本"
+    },
+    "outputs": {
+      "CONDITIONING": "条件编码",
+      "STRING": "字符串"
+    }
+  },
+  "GoogleTranslateTextNode": {
+    "title": "文本翻译(谷歌翻译)",
+    "inputs": {
+      "clip": "CLIP模型"
+    },
+    "widgets": {
+      "from_translate": "源语言",
+      "to_translate": "目标语言",
+      "manual_translate": "人工翻译",
+      "Manual_Translate": "人工翻译",
+      "proxies": "代理地址",
+      "auth_data": "认证密钥",
+      "service": "服务",
+      "Show proxy": "显示代理",
+      "Show authorization": "显示授权",
+      "Manual Trasnlate": "手动翻译",
+      "text": "文本"
+    },
+    "outputs": {
+      "CONDITIONING": "条件编码",
+      "text": "文本"
+    }
+  },
+  "IDENode": {
+    "title": "编程开发环境节点",
+    "inputs": {
+      "var1_[any]": "变量1 [任意类型]",
+      "var2_[any]": "变量2 [任意类型]",
+      "var3_[any]": "变量3 [任意类型]"
+    },
+    "widgets": {
+      "language": "编程语言",
+      "theme_highlight": "主题突出",
+      "Add Input variable": "添加输入变量",
+      "Add Output variable": "添加输出变量",
+      "Clear": "清空"
+    },
+    "outputs": {
+      "[any]_result": "[任意类型] 结果"
+    }
+  },
+  "PainterNode": {
+    "title": "画板工具",
+    "inputs": {
+      "images": "画布图像"
+    },
+    "widgets": {
+      "Mode": "模式",
+      "Selection": "选择",
+      "MyPaint": "我的油漆",
+      "Shapes:": "形状:",
+      "Colors:": "颜色:",
+      "Fill:": "填充:",
+      "Stroke": "描边",
+      "Alpha": "透明通道",
+      "Brush/Erase_width:": "刷/擦除大小:",
+      "Brush:": "画笔",
+      "Erase:": "擦除",
+      "Background": "背景:",
+      "BG": "背景:",
+      "Settimgs_🛠️": "设置🛠️:",
+      "Canvas size": "画布大小",
+      "Clear Canvas": "清除画布",
+      "image": "画布图像"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "MASK": "遮罩"
+    }
+  },
+  "PoseNode": {
+    "title": "姿态编辑器",
+    "widgets": {
+      "image": "参考图像",
+      "Add pose": "添加姿态",
+      "Change canvas size": "更改画布尺寸",
+      "Reset pose": "重置姿态"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "MASK": "遮罩"
+    }
+  }
+}

@@ -1,0 +1,929 @@
+{
+  "GR BLIP 2 Caption Generator": {
+    "title": "GR BLIP2字幕生成器",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "max_length": "最大长度",
+      "num_beams": "束搜索数量",
+      "temperature": "温度",
+      "top_k": "前K个"
+    },
+    "outputs": {
+      "caption": "标题"
+    }
+  },
+  "GR BLIP 2 Text Expander": {
+    "title": "GR BLIP2文本扩展器",
+    "inputs": {
+      "text_input": "文本输入"
+    },
+    "widgets": {
+      "max_new_tokens": "最大新标记数",
+      "num_beams": "束搜索数量",
+      "do_sample": "是否采样",
+      "temperature": "温度",
+      "top_p": "前P个",
+      "seed": "种子",
+      "device": "设备"
+    },
+    "outputs": {
+      "expanded_text": "扩展文本"
+    }
+  },
+  "GR Counter": {
+    "title": "GR计数器视频",
+    "inputs": {
+      "background_image": "背景图像"
+    },
+    "widgets": {
+      "start": "开始值",
+      "finish": "结束值",
+      "counter_duration": "计数器时长",
+      "fps": "帧率",
+      "resolution": "分辨率",
+      "use_background_image_size": "使用背景图像尺寸",
+      "use_background_image": "使用背景图像",
+      "countdown": "倒计时",
+      "clock_type": "时钟类型",
+      "video_path": "视频路径",
+      "save_images": "保存图像",
+      "image_output_folder": "图像输出文件夹",
+      "background_colour": "背景颜色",
+      "font_path": "字体路径",
+      "font_size_min": "最小字体尺寸",
+      "font_size_max": "最大字体尺寸",
+      "font_color": "字体颜色",
+      "font_opacity": "字体透明度",
+      "font_shadow": "字体阴影",
+      "font_shadow_dist": "字体阴影距离",
+      "font_control": "字体控制",
+      "outline": "轮廓",
+      "outline_size": "轮廓尺寸",
+      "outline_color": "轮廓颜色",
+      "outline_opacity": "轮廓透明度",
+      "rotate": "旋转",
+      "rotate_type": "旋转类型",
+      "rotate_freq": "旋转频率",
+      "processing_device": "处理设备",
+      "start_x": "起始X坐标",
+      "start_y": "起始Y坐标",
+      "end_x": "结束X坐标",
+      "end_y": "结束Y坐标",
+      "movement": "移动",
+      "upscale": "超分辨率",
+      "alpha": "透明度",
+      "total_frames": "总帧数",
+      "frames_per_counter": "每计数器帧数",
+      "start_pos": "起始位置",
+      "end_pos": "结束位置",
+      "angle": "角度",
+      "background_size": "背景尺寸",
+      "width": "宽度",
+      "height": "高度",
+      "device": "设备",
+      "font_size": "字体尺寸",
+      "pos_x": "X位置",
+      "pos_y": "Y位置",
+      "frame_idx": "帧索引",
+      "upscale_method": "超分辨率方法",
+      "scale_by": "缩放比例"
+    },
+    "outputs": {
+      "FileDetails": "文件详细信息",
+      "FrameImages": "帧图像"
+    }
+  },
+  "GR Florence 2 Caption Generator": {
+    "title": "Florence2提示生成器",
+    "inputs": {
+      "text_input": "文本输入",
+      "image": "图像",
+      "model": "模型"
+    },
+    "widgets": {
+      "task": "任务",
+      "max_new_tokens": "最大新标记数",
+      "num_beams": "束搜索数量",
+      "do_sample": "是否采样",
+      "seed": "种子",
+      "image_types": "图像类型",
+      "custom_image_types": "自定义图像类型",
+      "media_type": "媒体类型",
+      "model_path": "模型路径",
+      "device": "设备"
+    },
+    "outputs": {
+      "prompt": "提示",
+      "image_type_description": "图像类型描述",
+      "media_description": "媒体描述",
+      "ollama": "Ollama"
+    }
+  },
+  "GR Image Size": {
+    "title": "GR图像尺寸",
+    "inputs": {
+      "dimensions": "尺寸图"
+    },
+    "widgets": {
+      "width": "宽度",
+      "height": "高度",
+      "standard": "标准",
+      "batch_size": "批次大小",
+      "length": "长度",
+      "seed": "种子",
+      "color": "颜色",
+      "resize": "调整大小",
+      "dimensions": "尺寸",
+      "longest_side": "最长边",
+      "longest_side_value": "最长边值",
+      "divisible_by": "可被整除",
+      "scale_factor": "缩放因子",
+      "hex_color": "十六进制颜色"
+    },
+    "outputs": {
+      "width": "宽度",
+      "height": "高度",
+      "batch_size": "批量大小",
+      "length": "长度",
+      "samples": "采样",
+      "seed": "种子",
+      "empty_image": "空图像",
+      "resized": "调整大小"
+    }
+  },
+  "GR Image Resize": {
+    "title": "GR图像缩放",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "width": "宽度",
+      "height": "高度",
+      "image_dimensions": "图像尺寸",
+      "longest_side": "最长边",
+      "longest_side_value": "最长边值",
+      "divisible_by": "可被整除",
+      "scale_factor": "缩放因子"
+    },
+    "outputs": {
+      "image": "图像",
+      "width": "宽度",
+      "height": "高度",
+      "scale_factor": "比例因子"
+    }
+  },
+  "GR Stack Image": {
+    "title": "GR堆叠图像",
+    "inputs": {
+      "image1": "图像1",
+      "image2": "图像2"
+    },
+    "widgets": {
+      "border": "边框",
+      "colour": "颜色",
+      "horizontal_stack": "水平堆叠"
+    },
+    "outputs": {
+      "IMAGE": "图像"
+    }
+  },
+  "GR Image Resize Methods": {
+    "title": "GR加载图像缩放方法",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "image": "图像",
+      "width": "宽度",
+      "height": "高度",
+      "method": "方法",
+      "image_tensor": "图像张量"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "MASK": "遮罩"
+    }
+  },
+  "GR Image Details Saver": {
+    "title": "GR图像详情保存",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "filename_prefix": "文件名前缀",
+      "prompt": "提示",
+      "extra_pnginfo": "额外PNG信息"
+    },
+    "outputs": {}
+  },
+  "GR Image Details Displayer": {
+    "title": "GR图像详情显示器",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "filename_prefix": "文件名前缀",
+      "prompt": "提示",
+      "extra_pnginfo": "额外PNG信息",
+      "image_tensor": "图像张量"
+    },
+    "outputs": {}
+  },
+  "GR Image Paste": {
+    "title": "GR图像粘贴",
+    "inputs": {
+      "image1": "图像1",
+      "image2": "图像2"
+    },
+    "widgets": {
+      "opacity": "透明度"
+    },
+    "outputs": {
+      "IMAGE": "图像"
+    }
+  },
+  "GR Image Paste With Mask": {
+    "title": "GR带遮罩图像粘贴",
+    "inputs": {
+      "background_image": "背景图像",
+      "overlay_image": "叠加图像",
+      "mask_image": "遮罩图像"
+    },
+    "widgets": {
+      "opacity": "透明度",
+      "overlay_x": "叠加X坐标",
+      "overlay_y": "叠加Y坐标",
+      "overlay_fit": "叠加适配",
+      "mask_x": "遮罩X坐标",
+      "mask_y": "遮罩Y坐标",
+      "mask_fit": "遮罩适配",
+      "mask_zoom": "遮罩缩放",
+      "mask_stretch_x": "遮罩X拉伸",
+      "mask_stretch_y": "遮罩Y拉伸",
+      "outline": "轮廓",
+      "outline_thickness": "轮廓厚度",
+      "outline_colour": "轮廓颜色",
+      "outline_opacity": "轮廓透明度",
+      "outline_position": "轮廓位置",
+      "blend": "混合",
+      "blend_method": "混合方法",
+      "blend_strength": "混合强度",
+      "blend_area": "混合区域",
+      "hex_color": "十六进制颜色",
+      "alpha": "透明度",
+      "method": "方法",
+      "strength": "强度",
+      "fit_option": "适配选项",
+      "x_offset": "X偏移",
+      "y_offset": "Y偏移",
+      "is_mask": "作为遮罩"
+    },
+    "outputs": {
+      "output_image": "输出图像",
+      "inverted_mask_image": "反向遮罩图像",
+      "contour_image": "图像轮廓",
+      "image_dimensions": "图像尺寸"
+    }
+  },
+  "GR Background Remover REMBG": {
+    "title": "GR背景移除(REMBG)",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "rembg_model": "REMBG模型",
+      "session": "会话"
+    },
+    "outputs": {
+      "IMAGE": "图像"
+    }
+  },
+  "GR Image Multiplier": {
+    "title": "GR图像批量复制",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "multiplier": "倍增器",
+      "interleave": "交错",
+      "random_order": "随机顺序",
+      "seed": "种子"
+    },
+    "outputs": {
+      "output_image": "输出图像"
+    }
+  },
+  "GR INT Incremetor": {
+    "title": "GR整数递增",
+    "inputs": {},
+    "widgets": {
+      "prefix": "前缀",
+      "start_value": "起始值",
+      "seed": "种子"
+    },
+    "outputs": {
+      "int": "整数",
+      "string": "文本"
+    }
+  },
+  "GR Lora Randomizer": {
+    "title": "GR LoRA",
+    "inputs": {
+      "model": "模型",
+      "clip": "CLIP"
+    },
+    "widgets": {
+      "subfolder": "子文件夹",
+      "num_loras": "LoRA数量",
+      "strength": "强度",
+      "seed": "种子",
+      "enable_style_lora": "启用风格LoRA",
+      "style_lora_1": "风格LoRA 1",
+      "style_lora_1_strength": "风格LoRA 1强度",
+      "style_lora_2": "风格LoRA 2",
+      "style_lora_2_strength": "风格LoRA 2强度",
+      "style_lora_3": "风格LoRA 3",
+      "style_lora_3_strength": "风格LoRA 3强度"
+    },
+    "outputs": {
+      "MODEL": "模型",
+      "clip": "CLIP",
+      "lora_info": "lora信息"
+    }
+  },
+  "GR Mask": {
+    "title": "GR遮罩",
+    "inputs": {},
+    "widgets": {
+      "height": "高度",
+      "width": "宽度",
+      "mask_width": "遮罩宽度",
+      "mask_height": "遮罩高度",
+      "mask_position_v": "遮罩垂直位置",
+      "mask_position_h": "遮罩水平位置",
+      "offset_x": "X偏移",
+      "offset_y": "Y偏移",
+      "mask_shape": "遮罩形状",
+      "randomize": "随机化",
+      "exclude_borders": "排除边界",
+      "num_masks": "遮罩数量",
+      "min_dist": "最小距离",
+      "border_margin": "边界边距",
+      "new_mask": "新遮罩",
+      "placed_masks": "已放置遮罩",
+      "x_start": "X起始",
+      "y_start": "Y起始"
+    },
+    "outputs": {
+      "MASK": "遮罩"
+    }
+  },
+  "GR Mask Create Random": {
+    "title": "GR随机遮罩创建",
+    "inputs": {},
+    "widgets": {
+      "height": "高度",
+      "width": "宽度",
+      "mask_size": "遮罩尺寸",
+      "seed": "种子"
+    },
+    "outputs": {
+      "MASK": "遮罩"
+    }
+  },
+  "GR Mask Resize": {
+    "title": "GR遮罩缩放",
+    "inputs": {
+      "mask": "遮罩"
+    },
+    "widgets": {
+      "width": "宽度",
+      "height": "高度"
+    },
+    "outputs": {
+      "MASK": "遮罩"
+    }
+  },
+  "GR Mask Create": {
+    "title": "GR遮罩创建",
+    "inputs": {},
+    "widgets": {
+      "height": "高度",
+      "width": "宽度",
+      "mask_width": "遮罩宽度",
+      "position_percentage": "位置百分比"
+    },
+    "outputs": {
+      "MASK": "遮罩"
+    }
+  },
+  "GR Multi Mask Create": {
+    "title": "GR多重遮罩创建",
+    "inputs": {},
+    "widgets": {
+      "height": "高度",
+      "width": "宽度",
+      "num_masks": "遮罩数量"
+    },
+    "outputs": {}
+  },
+  "GR Image/Depth Mask": {
+    "title": "GR图像/深度遮罩",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "threshold": "阈值",
+      "invert": "反转",
+      "blur_radius": "模糊半径",
+      "blur_radius_expand": "模糊扩展半径",
+      "brightness": "亮度",
+      "contrast": "对比度",
+      "channel": "通道",
+      "expand": "扩展",
+      "contract": "收缩"
+    },
+    "outputs": {
+      "MASK": "遮罩"
+    }
+  },
+  "GR Mask Create Random Multi": {
+    "title": "GR随机多重遮罩创建",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "seed": "种子",
+      "mask_size": "遮罩尺寸",
+      "mask_number": "遮罩数量",
+      "exclude_borders": "排除边界",
+      "border_margin_height": "垂直边界边距",
+      "border_margin_width": "水平边界边距",
+      "min_distance": "最小间距",
+      "ring_color": "环的颜色",
+      "ring_type": "环的类型",
+      "distance_from_boundary": "边界距离",
+      "ring_thickness": "环形厚度",
+      "mask_shape": "遮罩形状",
+      "use_image_dimensions": "使用图像尺寸",
+      "height": "高度",
+      "width": "宽度",
+      "x_center": "X中心",
+      "y_center": "Y中心",
+      "diameter": "直径",
+      "x_start": "X起始",
+      "y_start": "Y起始",
+      "side_length": "边长",
+      "sides": "边数",
+      "points": "点数",
+      "distance": "距离",
+      "ring_mask": "环形遮罩",
+      "kernel_size": "核尺寸",
+      "sigma": "Sigma"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "MASK": "遮罩"
+    }
+  },
+  "GR Sigmas": {
+    "title": "GR Sigmas调度",
+    "inputs": {
+      "depth_maps": "深度地图",
+      "sigmas_input": "sigmas输入"
+    },
+    "widgets": {
+      "preset": "预设",
+      "overall_max": "整体最大值",
+      "overall_min": "整体最小值",
+      "auto_distribute": "自动分布",
+      "total_steps": "总步数",
+      "comp_thresh": "合成阈值",
+      "mid_thresh": "中间阈值",
+      "comp_steps": "合成步数",
+      "comp_curve": "合成曲线(控制参数变化趋势)",
+      "comp_exponent": "合成指数(调整强度或衰减速率)",
+      "mid_steps": "中间层步数",
+      "mid_curve": "中间层曲线",
+      "mid_exponent": "中间层指数",
+      "detail_steps": "细节步数",
+      "detail_curve": "细节曲线",
+      "detail_exponent": "细节指数",
+      "zone_transition": "区域过渡(控制不同区域的参数衔接)",
+      "show_debug": "显示调试信息",
+      "show_ascii": "显示 ASCII 字符(常用于文本化调试输出)",
+      "show_graph": "显示图表(可视化参数变化)"
+    },
+    "outputs": {
+      "graph": "图像",
+      "poz_frames": "poz帧"
+    }
+  },
+  "GRFloatsNode": {
+    "title": "GR浮点数组",
+    "inputs": {},
+    "widgets": {
+      "input_1": "输入1",
+      "input_2": "输入2",
+      "input_3": "输入3",
+      "input_4": "输入4",
+      "input_5": "输入5",
+      "input_6": "输入6",
+      "input_7": "输入7"
+    },
+    "outputs": {
+      "floats": "浮点数"
+    }
+  },
+  "GR Pan Or Zoom": {
+    "title": "GR平移缩放",
+    "inputs": {
+      "depth_maps": "深度图",
+      "images": "图像"
+    },
+    "widgets": {
+      "zoom": "缩放级别",
+      "frames_per_transition": "过渡帧数",
+      "mode": "模式",
+      "use_depth": "使用深度",
+      "depth_focus_method": "深度聚焦方法",
+      "max_depth": "最大深度",
+      "parallax_strength": "视差强度",
+      "device": "设备",
+      "randomize": "随机化",
+      "method": "方法",
+      "i": "索引"
+    },
+    "outputs": {
+      "poz_frames": "poz帧"
+    }
+  },
+  "GR Prompt Selector": {
+    "title": "GR提示词选择器",
+    "inputs": {
+      "clip": "CLIP"
+    },
+    "widgets": {
+      "always_a1": "总是A1",
+      "negative_a1": "负面A1",
+      "select_prompt": "选择提示"
+    },
+    "outputs": {
+      "positive": "正面条件",
+      "negative": "负面条件",
+      "prompts": "提示词"
+    }
+  },
+  "GR Prompt Selector Multi": {
+    "title": "GR多重提示词选择器",
+    "inputs": {
+      "clip": "CLIP"
+    },
+    "widgets": {
+      "positive_1": "正面条件1",
+      "positive_2": "正面条件2",
+      "positive_3": "正面条件3",
+      "positive_4": "正面条件4",
+      "positive_5": "正面条件5",
+      "positive_6": "正面条件6",
+      "alwayspositive_1": "总是正面条件1",
+      "negative": "负面条件"
+    },
+    "outputs": {
+      "positive1": "正面条件1",
+      "positive2": "正面条件2",
+      "positive3": "正面条件3",
+      "positive4": "正面条件4",
+      "positive5": "正面条件5",
+      "positive6": "正面条件6",
+      "alwayspositive_1": "总是正面条件1",
+      "negative": "负面条件"
+    }
+  },
+  "GR Prompt HUB": {
+    "title": "GR提示词中心",
+    "inputs": {
+      "positive1": "正向提示词1",
+      "positive2": "正向提示词2",
+      "positive3": "正向提示词3",
+      "positive4": "正向提示词4",
+      "positive5": "正向提示词5",
+      "positive6": "正向提示词6",
+      "negative1": "负面提示词1",
+      "negative2": "负面提示词2",
+      "negative3": "负面提示词3",
+      "negative4": "负面提示词4",
+      "negative5": "负面提示词5",
+      "negative6": "负面提示词6"
+    },
+    "widgets":{},
+    "outputs": {
+      "CONDITIONING": "条件"
+    }
+  },
+  "GR Prompty": {
+    "title": "GR提示词组合器",
+    "inputs": {
+      "clip": "CLIP"
+    },
+    "widgets": {
+      "always_a1": "总是A1",
+      "negative_a1": "负面A1",
+      "select_prompts": "选择提示组",
+      "randomize": "随机化",
+      "multi_prompt": "多重提示",
+      "seed": "种子"
+    },
+    "outputs": {
+      "positive": "正面条件",
+      "negative": "负面条件",
+      "prompts": "提示词"
+    }
+  },
+  "GR Prompt Generator": {
+    "title": "GR提示生成",
+    "inputs": {},
+    "widgets": {
+      "positive": "正面",
+      "short_text": "短文本",
+      "seed": "种子",
+      "expand": "扩展",
+      "category": "类别",
+      "type_of_image": "图像类型"
+    },
+    "outputs": {
+      "generated_prompts": "生成的提示",
+      "seed": "种子"
+    }
+  },
+  "GR Prompt Generator Extended": {
+    "title": "GR扩展提示生成",
+    "inputs": {},
+    "widgets": {
+      "positive": "正面",
+      "short_text": "短文本",
+      "seed": "种子",
+      "expand": "扩展",
+      "subject_only": "仅主题",
+      "category": "类别",
+      "mood_type": "情绪类型",
+      "color_type": "颜色类型",
+      "composition_type": "构图类型",
+      "detail_type": "细节类型",
+      "weather_type": "天气类型",
+      "time_of_day_type": "时段类型",
+      "object_type": "对象类型",
+      "style_type": "风格类型",
+      "subject_type": "主题类型",
+      "type_of_image": "图像类型"
+    },
+    "outputs": {
+      "generated_prompts": "生成的提示",
+      "seed": "种子"
+    }
+  },
+  "GR Scroller": {
+    "title": "GR文字滚动视频",
+    "inputs": {
+      "background_image": "背景图像"
+    },
+    "widgets": {
+      "text": "文本",
+      "fps": "帧率",
+      "resolution": "分辨率",
+      "use_background_image_size": "使用背景图像尺寸",
+      "use_background_image": "使用背景图像",
+      "font_path": "字体路径",
+      "font_size": "字体尺寸",
+      "font_color": "字体颜色",
+      "font_opacity": "字体透明度",
+      "font_stroke": "字体描边",
+      "font_stroke_thickness": "字体描边粗细",
+      "font_stroke_colour": "字体描边颜色",
+      "background_colour": "背景颜色",
+      "output_path": "输出路径",
+      "save_images": "保存图像",
+      "image_save_path": "图像保存路径",
+      "scroll_direction": "滚动方向",
+      "scroll_speed": "滚动速度",
+      "movement_speed": "移动速度",
+      "movement_duration": "移动时长",
+      "movement_type": "移动类型",
+      "movement_distance": "移动距离",
+      "apply_to_each_character": "逐字符应用",
+      "seed": "种子",
+      "upscale": "超分辨率",
+      "alpha": "透明度",
+      "position": "位置",
+      "upscale_method": "超分辨率方法",
+      "scale_by": "缩放比例"
+    },
+    "outputs": {
+      "FileDetails": "文件详细信息",
+      "Frames": "帧"
+    }
+  },
+  "GR Text Overlay": {
+    "title": "GR添加字幕",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "text": "文本",
+      "font": "字体",
+      "font_size": "字体尺寸",
+      "vertical_alignment": "垂直对齐",
+      "horizontal_alignment": "水平对齐",
+      "justification": "对齐方式",
+      "padding": "内边距",
+      "stroke_thickness": "描边粗细",
+      "stroke_colour": "描边颜色",
+      "fill_colour": "填充颜色",
+      "line_spacing": "行间距",
+      "letter_spacing": "字间距",
+      "x_align": "X对齐",
+      "y_align": "Y对齐",
+      "background": "背景",
+      "background_size": "背景尺寸",
+      "background_stroke": "背景描边",
+      "background_stroke_colour": "背景描边颜色",
+      "background_colour": "背景颜色",
+      "background_opacity": "背景透明度",
+      "edge_style": "边缘样式",
+      "hex_color": "十六进制颜色",
+      "alpha": "透明度",
+      "font_name": "字体名称",
+      "draw": "绘制方法",
+      "position": "位置",
+      "fill": "填充",
+      "stroke_fill": "描边填充",
+      "stroke_width": "描边宽度",
+      "align": "对齐方式",
+      "spacing": "间距",
+      "left": "左",
+      "top": "顶",
+      "right": "右",
+      "bottom": "底",
+      "outline": "轮廓",
+      "width": "宽度",
+      "style": "样式",
+      "italic_adjust": "斜体调整",
+      "use_cache": "使用缓存"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "MASK": "遮罩"
+    }
+  },
+  "GR Onomatopoeia": {
+    "title": "GR文字气泡",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "text": "文本",
+      "randomize": "随机化",
+      "font": "字体",
+      "font_size": "字体尺寸",
+      "vertical_alignment": "垂直对齐",
+      "horizontal_alignment": "水平对齐",
+      "justification": "对齐方式",
+      "padding": "内边距",
+      "stroke_thickness": "描边粗细",
+      "stroke_colour": "描边颜色",
+      "fill_colour": "填充颜色",
+      "bubble": "气泡",
+      "bubble_distance": "气泡距离",
+      "bubble_colour": "气泡颜色",
+      "bubble_stroke_thickness": "气泡描边粗细",
+      "bubble_fill": "气泡填充",
+      "bubble_fill_colour": "气泡填充颜色",
+      "line_type": "线条类型",
+      "jagged_points": "锯齿点",
+      "jagged_min_distance": "最小锯齿距离",
+      "jagged_max_distance": "最大锯齿距离",
+      "shape_type": "形状类型",
+      "seed": "种子",
+      "vertical_randomness": "垂直随机性",
+      "letter_spacing": "字间距",
+      "randomize_colours": "随机颜色",
+      "hex_color": "十六进制颜色",
+      "color_name": "颜色名称",
+      "draw": "绘制方法",
+      "position": "位置",
+      "fill": "填充",
+      "stroke_fill": "描边填充",
+      "stroke_width": "描边宽度",
+      "align": "对齐方式",
+      "size": "尺寸",
+      "color": "颜色",
+      "shape": "形状",
+      "bubble_bbox": "气泡边界框",
+      "bubble_thickness": "气泡厚度"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "MASK": "遮罩"
+    }
+  },
+  "GR Tile and Border Image": {
+    "title": "GR平铺图像",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "columns": "列数",
+      "rows": "行数",
+      "border": "边框",
+      "colour": "颜色"
+    },
+    "outputs": {
+      "IMAGE": "图像"
+    }
+  },
+  "GR Tile and Border Image Random Flip": {
+    "title": "GR翻转平铺图像",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "columns": "列数",
+      "rows": "行数",
+      "border": "边框",
+      "colour": "颜色"
+    },
+    "outputs": {
+      "IMAGE": "图像"
+    }
+  },
+  "GR Flip Tile Random Inverted": {
+    "title": "GR反转平铺图像",
+    "inputs": {
+      "image": "图像"
+    },
+    "widgets": {
+      "columns": "列数",
+      "rows": "行数",
+      "border": "边框",
+      "colour": "颜色"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "MASK": "遮罩"
+    }
+  },
+  "GR Flip Tile Random Red Ring": {
+    "title": "GR翻转平铺随机红环",
+    "inputs": {
+      "flipped_tile_image": "翻转平铺图像",
+      "image": "图像"
+    },
+    "widgets": {
+      "columns": "列数",
+      "rows": "行数",
+      "border": "边框",
+      "colour": "颜色",
+      "border_thickness": "边框厚度",
+      "seed": "种子"
+    },
+    "outputs": {
+      "IMAGE": "图像"
+    }
+  },
+  "GRPromptViewer": {
+    "title": "GR 提示查看器",
+    "inputs": {
+      "folder": "文件夹",
+      "file": "文件"
+    },
+    "widgets": {
+      "folder": "文件夹",
+      "file": "文件"
+    },
+    "outputs": {
+      "content": "内容"
+    }
+  },
+  "GR Checkered Board": {
+    "title": "GR棋盘格",
+    "inputs": {},
+    "widgets": {
+      "rows": "行数",
+      "columns": "列数",
+      "tile_size": "平铺尺寸",
+      "color1": "颜色1",
+      "color2": "颜色2",
+      "border": "边框",
+      "border_color": "边框颜色",
+      "outer_border": "外边框",
+      "outer_border_color": "外边框颜色",
+      "color": "颜色"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "MASK": "遮罩"
+    }
+  }
+}

@@ -1,0 +1,833 @@
+{
+    "IPAdapterMS": {
+        "title": "应用IPAdapter疯狂科学",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "面部ID_V2权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影",
+            "layer_weights": "层权重"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterClipVisionEnhancer": {
+        "title": "应用IPAdapter CLIP视觉增强",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "面部ID_V2权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影",
+            "enhance_tiles": "增强分块",
+            "enhance_ratio": "增强比率"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterClipVisionEnhancerBatch": {
+        "title": "应用IPAdapter CLIP视觉增强(批次)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "面部ID_V2权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影",
+            "enhance_tiles": "增强分块",
+            "enhance_ratio": "增强比率",
+            "encode_batch_size": "编码批大小"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterApply": {
+        "title": "IPAdapter应用",
+        "inputs": {
+            "ipadapter": "IPAdapter",
+            "clip_vision": "CLIP视觉",
+            "image": "图像",
+            "model": "模型",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波增强",
+            "weight_type": "权重类型",
+            "original": "初始",
+            "linear": "线性",
+            "channel penalty": "通道惩罚",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterApplyFaceID": {
+        "title": "IPAdapter应用（面部ID）",
+        "inputs": {
+            "ipadapter": "IPAdapter",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测",
+            "image": "图像",
+            "model": "模型",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波增强",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "faceid_v2": "面部ID_V2",
+            "weight_v2": "权重_V2",
+            "unfold_batch": "展开批次"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterApplyEncoded": {
+        "title": "IPAdapter应用（已编码）",
+        "inputs": {
+            "ipadapter": "IPAdapter",
+            "embeds": "嵌入组",
+            "model": "模型",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波增强",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterBatchEmbeds": {
+        "title": "组合嵌入组",
+        "inputs": {
+            "embed1": "嵌入组1",
+            "embed2": "嵌入组2"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    },
+    "InsightFaceLoader": {
+        "title": "人脸检测加载器",
+        "widgets": {
+            "provider": "设备"
+        },
+        "outputs": {
+            "CLIP_VISION": "CLIP视觉"
+        }
+    },
+    "PrepImageForInsightFace": {
+        "title": "人脸检测预处理",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "crop_position": "裁剪位置",
+            "sharpening": "锐化",
+            "pad_around": "填充四周"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "IPAdapter": {
+        "title": "应用IPAdapter",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "图像",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "weight_type": "权重类型"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP_VISION_OUTPUT": "CLIP视觉输出"
+        }
+    },
+    "IPAdapterAdvanced": {
+        "title": "应用IPAdapter（高级）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterBatch": {
+        "title": "应用IPAdapter（批次）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影",
+            "encode_batch_size": "编码批大小"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterFaceID": {
+        "title": "应用IPAdapter面部ID",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "面部ID_V2权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "face_image": "脸图像",
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterFaceIDKolors": {
+        "title": "应用IPAdapter面部ID（颜色校正）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "面部ID_V2权重",
+            "weight_kolors": "颜色校正权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "face_image": "脸图像",
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterFaceIDBatch": {
+        "title": "应用IPAdapter面部ID（批次）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "面部ID_V2权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "face_image": "脸图像",
+            "MODEL": "模型"
+        }
+    },
+    "IPAAdapterFaceIDBatch": {
+        "title": "应用IPAdapter面部ID（批次）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "面部ID_V2权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "face_image": "脸图像",
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterTiled": {
+        "title": "应用IPAdapter（分块）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "sharpening": "锐化",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "tiles": "分块图像",
+            "masks": "遮罩"
+        }
+    },
+    "IPAdapterTiledBatch": {
+        "title": "应用IPAdapter（分块批次）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "sharpening": "锐化",
+            "embeds_scaling": "嵌入光影",
+            "encode_batch_size": "编码批大小"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "tiles": "分块图像",
+            "masks": "遮罩"
+        }
+    },
+    "IPAdapterEmbeds": {
+        "title": "应用IPAdapter（嵌入组）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "pos_embed": "正面嵌入组",
+            "neg_embed": "负面嵌入组",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterEmbedsBatch": {
+        "title": "应用IPAdapter（批次嵌入组）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "pos_embed": "正面嵌入组",
+            "neg_embed": "负面嵌入组",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterPreciseStyleTransfer": {
+        "title": "应用IPAdapter精确风格迁移",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "风格图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "style_boost": "风格增强",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterPreciseStyleTransferBatch": {
+        "title": "应用IPAdapter精确风格迁移（批次）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "风格图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "style_boost": "风格增强",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterPreciseComposition": {
+        "title": "应用IPAdapter精确合成",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "composition_boost": "合成增强",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterPreciseCompositionBatch": {
+        "title": "应用IPAdapter精确合成（批次）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "人脸检测"
+        },
+        "widgets": {
+            "weight": "权重",
+            "composition_boost": "合成增强",
+            "style_boost": "风格增强",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterUnifiedLoader": {
+        "title": "IPAdapter加载器",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        },
+        "widgets": {
+            "preset": "预设"
+        },
+        "outputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        }
+    },
+    "IPAdapterUnifiedLoaderFaceID": {
+        "title": "IPAdapter面部ID加载器",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        },
+        "widgets": {
+            "preset": "预设",
+            "lora_strength": "LoRA强度",
+            "provider": "设备"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "ipadapter": "IPAdapter"
+        },
+        "description": "设备的架构特性：\n CPU串行处理强，多核并行，兼容所有硬件 \n CUDA基于GPU的并行计算架构，专为N卡优化，生态最成熟  \n ROCM开源GPU计算平台，兼容HIP语言，对标CUDA \n DirectML跨硬件抽象层，支持DX12显卡（N/A/Intel），Win系统原生集成 \n OpenVINO针对Intel CPU/核显优化，支持模型量化，低延迟推理 \n CoreML苹果芯片（M/A系列）专用，硬件-软件深度集成，能效比高 \n- 优先选择CUDA"
+    },
+    "IPAdapterModelLoader": {
+        "title": "IPAdapter模型加载器",
+        "widgets": {
+            "ipadapter_file": "IPAdapter文件"
+        },
+        "outputs": {
+            "IPADAPTER": "IPAdapter"
+        }
+    },
+    "IPAdapterInsightFaceLoader": {
+        "title": "IPAdapter人脸检测模型加载器",
+        "widgets": {
+            "provider": "设备",
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "INSIGHTFACE": "人脸检测"
+        }
+    },
+    "IPAdapterUnifiedLoaderCommunity": {
+        "title": "IPAdapter加载器（预设）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        },
+        "widgets": {
+            "preset": "预设"
+        },
+        "outputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        }
+    },
+    "IPAdapterFromParams": {
+        "title": "应用IPAdapter（参数组）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "ipadapter_params": "IPAdapter参数组",
+            "image_negative": "负面图像",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "combine_embeds": "融合嵌入",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterRegionalConditioning": {
+        "title": "IPAdapter区域条件",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "image_weight": "图像权重",
+            "prompt_weight": "提示词权重",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
+        },
+        "outputs": {
+            "IPADAPTER_PARAMS": "IPAdapter参数组",
+            "POSITIVE": "正面条件",
+            "NEGATIVE": "负面条件"
+        }
+    },
+    "IPAdapterCombineParams": {
+        "title": "IPAdapter合并参数组",
+        "inputs": {
+            "params_1": "参数组_1",
+            "params_2": "参数组_2",
+            "params_3": "参数组_3",
+            "params_4": "参数组_4",
+            "params_5": "参数组_5"
+        },
+        "outputs": {
+            "IPADAPTER_PARAMS": "IPAdapter参数组"
+        }
+    },
+    "IPAdapterStyleComposition": {
+        "title": "IPAdapter风格合成SDXL",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image_style": "风格图像",
+            "image_composition": "合成图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight_style": "风格权重",
+            "weight_composition": "合成权重",
+            "expand_style": "风格扩展",
+            "combine_embeds": "融合嵌入",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterStyleCompositionBatch": {
+        "title": "IPAdapter风格合成SDXL（批次）",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image_style": "风格图像",
+            "image_composition": "合成图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight_style": "风格权重",
+            "weight_composition": "合成权重",
+            "expand_style": "风格扩展",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入光影"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterEncoder": {
+        "title": "IPAdapter编码",
+        "inputs": {
+            "ipadapter": "IPAdapter",
+            "clip_vision": "CLIP视觉",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "weight": "权重"
+        },
+        "outputs": {
+            "pos_embed": "正面嵌入组",
+            "neg_embed": "负面嵌入组"
+        }
+    },
+    "IPAdapterCombineEmbeds": {
+        "title": "IPAdapter合并嵌入组",
+        "inputs": {
+            "embed1": "嵌入组1",
+            "embed2": "嵌入组2",
+            "embed3": "嵌入组3",
+            "embed4": "嵌入组4",
+            "embed5": "嵌入组5"
+        },
+        "widgets": {
+            "method": "融合方法"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    },
+    "IPAdapterNoise": {
+        "title": "IPAdapter噪波",
+        "inputs": {
+            "image_optional": "图像(可选)"
+        },
+        "widgets": {
+            "type": "类型",
+            "strength": "强度",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "PrepImageForClipVision": {
+        "title": "CLIP视觉图像处理",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "interpolation": "插值方式",
+            "crop_position": "裁剪位置",
+            "sharpening": "锐化",
+            "add_weight": "附加权重"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        },
+        "description": "选择建议：\n 追求画质 → 优先 Lanczos 或 Bicubic\n 保留高频细节，典型用途-医学影像/卫星图处理 → Hamming  \n 需要实时性 → 选择 Bilinear \n 降采样任务 → Box 效率最高 \n 风格化处理 → 使用 Nearest 制造像素感"
+    },
+    "IPAdapterCombineWeights": {
+        "title": "IPAdapter权重合并",
+        "widgets": {
+            "weights_1": "权重_1",
+            "weights_2": "权重_2"
+        },
+        "outputs": {
+            "weights": "权重",
+            "count": "计数"
+        }
+    },
+    "IPAdapterWeights": {
+        "title": "IPAdapter权重计算",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "weights": "权重",
+            "timing": "时间",
+            "frames": "帧数",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "add_starting_frames": "添加起始帧",
+            "add_ending_frames": "添加结束帧",
+            "method": "方法"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "weights": "权重",
+            "weights_invert": "反转权重",
+            "total_frames": "帧数",
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "weights_strategy": "权重策略"
+        },
+        "description": "计算模式对比：\n 全批次计算__内存占用：高__稳定性：最高__适用:小数据集/高精度训练  \n 偏移批次__内存占用：中__稳定性：中__适用:防止过拟合/大数据集 \n 交替批次__内存占用：低__稳定性：较低__适用:多任务学习/对抗训练 \n- GPU显存充足 → 优先用全批次计算_\n_数据量＞1M样本 → 选择偏移批次_\n_多模型协同训练 → 交替批次更高效 "
+    },
+    "IPAdapterWeightsFromStrategy": {
+        "title": "IPAdapter权重策略",
+        "inputs": {
+            "weights_strategy": "权重策略",
+            "image": "图像"
+        },
+        "outputs": {
+            "weights": "权重",
+            "weights_invert": "反转权重",
+            "total_frames": "帧数",
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "weights_strategy": "权重策略"
+        }
+    },
+    "IPAdapterPromptScheduleFromWeightsStrategy": {
+        "title": "IPAdapter权重策略调度提示词",
+        "inputs": {
+            "weights_strategy": "权重策略"
+        },
+        "widgets": {
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "prompt_schedule": "调度提示词"
+        }
+    },
+    "IPAdapterSaveEmbeds": {
+        "title": "保存嵌入组",
+        "inputs": {
+            "embeds": "嵌入组"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
+    "IPAdapterLoadEmbeds": {
+        "title": "读取嵌入组",
+        "widgets": {
+            "embeds": "嵌入组"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    }
+}

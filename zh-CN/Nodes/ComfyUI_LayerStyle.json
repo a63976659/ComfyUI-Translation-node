@@ -1,0 +1,3384 @@
+{
+    "LayerFilter: AddGrain": {
+        "title": "图层滤镜：添加噪点",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "grain_power": "颗粒强度",
+            "grain_scale": "颗粒缩放",
+            "grain_sat": "颗粒饱和度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: ChannelShake": {
+        "title": "图层滤镜：通道错位",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "distance": "距离",
+            "angle": "角度",
+            "mode": "模式"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: ColorMap": {
+        "title": "图层滤镜：彩色热力图",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "color_map": "类型",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: Film": {
+        "title": "图层滤镜：胶片颗粒",
+        "inputs": {
+            "image": "图像",
+            "depth_map": "深度图"
+        },
+        "widgets": {
+            "center_x": "中心X",
+            "center_y": "中心Y",
+            "saturation": "饱和度",
+            "vignette_intensity": "暗角强度",
+            "grain_power": "颗粒强度",
+            "grain_scale": "颗粒缩放",
+            "grain_sat": "颗粒饱和度",
+            "grain_shadows": "颗粒阴影",
+            "grain_highs": "亮部颗粒强度",
+            "blur_strength": "模糊强度",
+            "blur_focus_spread": "焦点扩散",
+            "focal_depth": "模拟虚焦"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: FilmV2": {
+        "title": "图层滤镜：胶片颗粒 V2",
+        "inputs": {
+            "image": "图像",
+            "depth_map": "深度图"
+        },
+        "widgets": {
+            "center_x": "中心X",
+            "center_y": "中心Y",
+            "saturation": "饱和度",
+            "vignette_intensity": "暗角强度",
+            "grain_method": "颗粒算法",
+            "grain_power": "颗粒强度",
+            "grain_scale": "颗粒缩放",
+            "grain_sat": "颗粒饱和度",
+            "filmgrainer_shadows": "颗粒阴影",
+            "filmgrainer_highs": "颗粒高光",
+            "blur_strength": "模糊强度",
+            "blur_focus_spread": "焦点扩散",
+            "focal_depth": "模拟虚焦"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: GaussianBlur": {
+        "title": "图层滤镜：高斯模糊",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "blur": "模糊"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: HDREffects": {
+        "title": "图层滤镜：HDR特效",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "hdr_intensity": "HDR强度",
+            "shadow_intensity": "阴影强度",
+            "highlight_intensity": "高光强度",
+            "gamma_intensity": "伽马强度",
+            "contrast": "对比度",
+            "enhance_color": "增强颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: LightLeak": {
+        "title": "图层滤镜：漏光",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "light": "光斑",
+            "corner": "位置",
+            "hue": "色相",
+            "saturation": "饱和度",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: MotionBlur": {
+        "title": "图层滤镜：运动模糊",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "angle": "角度",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: Sharp & Soft": {
+        "title": "图层滤镜：锐化/柔化",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "enhance": "增强"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: SharpAndSoft": {
+        "title": "图层滤镜：锐化/柔化",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "enhance": "增强"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: SkinBeauty": {
+        "title": "图层滤镜：磨皮",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "smooth": "平滑",
+            "threshold": "阈值",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像",
+            "beauty_mask": "磨皮遮罩"
+        }
+    },
+    "LayerFilter: SoftLight": {
+        "title": "图层滤镜：柔光",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "soft": "柔和",
+            "threshold": "阈值",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: WaterColor": {
+        "title": "图层滤镜：水彩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "line_density": "密度",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+
+
+    "LayerColor: ColorAdapter": {
+        "title": "图层颜色：颜色适配",
+        "inputs": {
+            "image": "图像",
+            "color_ref_image": "参考图像"
+        },
+        "widgets": {
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: AutoAdjust": {
+        "title": "图层颜色：自动调色",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "brightness": "亮度",
+            "contrast": "对比度",
+            "saturation": "饱和度",
+            "red": "红色",
+            "green": "绿色",
+            "blue": "蓝色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: AutoAdjustV2": {
+        "title": "图层颜色：自动调色 V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "brightness": "亮度",
+            "contrast": "对比度",
+            "saturation": "饱和度",
+            "red": "红色",
+            "green": "绿色",
+            "blue": "蓝色",
+            "mode": "模式"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: AutoBrightness": {
+        "title": "图层颜色：自动亮度",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "saturation": "饱和度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: Brightness & Contrast": {
+        "title": "图层颜色：亮度/对比度",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "brightness": "亮度",
+            "contrast": "对比度",
+            "saturation": "饱和度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: ColorBalance": {
+        "title": "图层颜色：色彩平衡",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "cyan_red": "青-红",
+            "magenta_green": "品红-绿",
+            "yellow_blue": "黄-蓝"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: ColorTemperature": {
+        "title": "图层颜色：色温",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "temperature": "温度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: Exposure": {
+        "title": "图层颜色：曝光",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "exposure": "曝光"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: Gamma": {
+        "title": "图层颜色：Gamma",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "gamma": "gamma"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: HSV": {
+        "title": "图层颜色：HSV",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "H": "H",
+            "S": "S",
+            "V": "V"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: LAB": {
+        "title": "图层颜色：LAB",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "L": "L",
+            "A": "A",
+            "B": "B"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: Levels": {
+        "title": "图层颜色：色阶",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "channel": "通道",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "gray_point": "灰色阈值",
+            "output_black_point": "输出黑色阈值",
+            "output_white_point": "输出白色阈值"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: LUT Apply": {
+      "title": "图层颜色：LUT应用",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "LUT": "LUT",
+            "color_space": "色彩空间",
+            "strength": "强度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: RGB": {
+        "title": "图层颜色：RGB",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "R": "R",
+            "G": "G",
+            "B": "B"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: Color of Shadow & Highlight": {
+        "title": "图层颜色：阴影与高光",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "shadow_brightness": "阴影亮度",
+            "shadow_saturation": "阴影饱和度",
+            "shadow_hue": "阴影色相",
+            "shadow_level_offset": "阴影强度",
+            "shadow_range": "阴影范围",
+            "highlight_brightness": "高光亮度",
+            "highlight_saturation": "高光饱和度",
+            "highlight_hue": "高光色相",
+            "highlight_level_offset": "高光强度",
+            "highlight_range": "高光范围"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: YUV": {
+        "title": "图层颜色：YUV",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "Y": "Y",
+            "U": "U",
+            "V": "V"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+
+
+    "LayerUtility: ColorImage": {
+        "title": "图层工具：纯色图像",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "color": "颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: ColorImage V2": {
+        "title": "图层工具：纯色图像_V2",
+        "inputs": {
+            "size_as": "参考大小"
+        },
+        "widgets": {
+            "size": "大小",
+            "custom_width": "自定义宽度",
+            "custom_height": "自定义高度",
+            "color": "颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: ColorPicker": {
+        "title": "图层工具：取色器",
+        "widgets": {
+            "color": "颜色",
+            "mode": "模式"
+        },
+        "outputs": {
+            "value": "值"
+        }
+    },
+    "LayerUtility: CropBoxResolve": {
+        "title": "图层工具：裁剪框分析",
+        "inputs": {
+            "crop_box": "裁剪框"
+        },
+        "outputs": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "LayerUtility: CropByMask": {
+        "title": "图层工具：遮罩裁剪",
+        "inputs": {
+            "image": "图像",
+            "mask_for_crop": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "detect": "检测方法",
+            "top_reserve": "顶端保留",
+            "bottom_reserve": "底部保留",
+            "left_reserve": "左侧保留",
+            "right_reserve": "右侧保留"
+        },
+        "outputs": {
+            "croped_image": "裁剪图像",
+            "croped_mask": "裁剪遮罩",
+            "crop_box": "裁剪框",
+            "box_preview": "裁剪框预览"
+        }
+    },
+    "LayerUtility: CropByMask V2": {
+        "title": "图层工具：遮罩裁剪_V2",
+        "inputs": {
+            "image": "图像",
+            "mask_for_crop": "遮罩",
+            "crop_box": "裁剪框"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "detect": "检测方法",
+            "top_reserve": "顶端保留",
+            "bottom_reserve": "底部保留",
+            "left_reserve": "左侧保留",
+            "round_to_multiple": "四舍五入到倍数",
+            "right_reserve": "右侧保留"
+        },
+        "outputs": {
+            "croped_image": "裁剪图像",
+            "croped_mask": "裁剪遮罩",
+            "crop_box": "裁剪框",
+            "box_preview": "裁剪框预览"
+        }
+    },
+    "LayerUtility: ExtendCanvas": {
+        "title": "图层工具：扩展画布",
+        "inputs": {
+            "image": "图像",
+            "color": "颜色",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "top": "上",
+            "bottom": "下",
+            "left": "左",
+            "right": "右"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: GetColorTone": {
+        "title": "图层工具：获取色调",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "RGB color in HEX": "十六进制的 RGB 颜色值",
+            "HSV color in list": "列表中的 HSV 颜色"
+        }
+    },
+    "LayerUtility: GetColorToneV2": {
+        "title": "图层工具：获取色调_V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "mode": "模式",
+            "color_of": "目标颜色",
+            "remove_bkgd_method": "移除背景方法",
+            "invert_mask": "反转遮罩",
+            "mask_grow": "遮罩扩张"
+        },
+        "outputs": {
+            "image": "图像",
+            "color_in_hex": "颜色（以十六进制表示）",
+            "HSV color in list": "列表中的 HSV 颜色"
+        }
+    },
+    "LayerUtility: GetImageSize": {
+        "title": "图层工具：获取图像尺寸",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度",
+            "original_size": "原始大小"
+        }
+    },
+    "LayerUtility: GradientImage": {
+        "title": "图层工具：渐变图像",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "angle": "角度",
+            "start_color": "起始色",
+            "end_color": "结束色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: GradientImage V2": {
+        "title": "图层工具：渐变图像_V2",
+        "inputs": {
+            "size_as": "参考大小"
+        },
+        "widgets": {
+            "size": "大小",
+            "custom_width": "自定义宽度",
+            "custom_height": "自定义高度",
+            "angle": "角度",
+            "start_color": "起始色",
+            "end_color": "结束色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: ImageAutoCrop": {
+        "title": "图层工具：图像自动裁剪",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "background_color": "背景颜色",
+            "aspect_ratio": "宽高比",
+            "proportional_height": "比例高",
+            "proportional_width": "比例宽",
+            "scale_to_longest_side": "按长边缩放",
+            "longest_side": "长边长度",
+            "detect": "检测方法",
+            "border_reserve": "保留边框",
+            "ultra_detail_range": "细化边缘",
+            "matting_method": "遮罩生成方法",
+            "sam_model": "SAM模型",
+            "grounding_dino_model": "GroundingDINO模型",
+            "sam_threshold": "SAM阈值",
+            "sam_prompt": "SAM提示词"
+        },
+        "outputs": {
+            "cropped_image": "裁剪图像",
+            "box_preview": "裁剪框预览",
+            "cropped_mask": "裁剪遮罩"
+        }
+    },
+    "LayerUtility: ImageAutoCrop V2": {
+        "title": "图层工具：图像自动裁剪V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "fill_background": "填充背景",
+            "background_color": "背景颜色",
+            "aspect_ratio": "宽高比",
+            "proportional_height": "比例高",
+            "proportional_width": "比例宽",
+            "scale_to_longest_side": "按长边缩放",
+            "longest_side": "长边长度",
+            "detect": "检测方法",
+            "border_reserve": "保留边框",
+            "ultra_detail_range": "细化边缘",
+            "matting_method": "遮罩生成方法",
+            "sam_model": "SAM模型",
+            "grounding_dino_model": "GroundingDINO模型",
+            "sam_threshold": "SAM阈值",
+            "sam_prompt": "SAM提示词"
+        },
+        "outputs": {
+            "cropped_image": "裁剪图像",
+            "box_preview": "裁剪框预览",
+            "cropped_mask": "裁剪遮罩"
+        }
+    },
+    "LayerUtility: ImageBlend": {
+        "title": "图层工具：混合",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_mask": "遮罩层",
+            "layer_image": "图像层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: ImageBlendAdvance": {
+        "title": "图层工具：混合(高级)",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_mask": "遮罩层",
+            "layer_image": "图像层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "x_percent": "X百分比",
+            "y_percent": "Y百分比",
+            "mirror": "镜像",
+            "scale": "缩放",
+            "aspect_ratio": "宽高比",
+            "rotate": "旋转",
+            "transform_method": "采样方法",
+            "anti_aliasing": "抗锯齿"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: ImageChannelMerge": {
+        "title": "图层工具：通道合并",
+        "inputs": {
+            "channel_1": "通道_1",
+            "channel_2": "通道_2",
+            "channel_3": "通道_3",
+            "channel_4": "通道_4"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: ImageChannelSplit": {
+        "title": "图层工具：通道拆分",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "channel_1": "通道_1",
+            "channel_2": "通道_2",
+            "channel_3": "通道_3",
+            "channel_4": "通道_4"
+        }
+    },
+    "LayerUtility: ImageCombineAlpha": {
+        "title": "图层工具：图像合并Alpha",
+        "inputs": {
+            "RGB_image": "RGB图像",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "RGBA_image": "RGBA图像"
+        }
+    },
+    "LayerUtility: ImageMaskScaleAs": {
+        "title": "图层工具：参考缩放",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "scale_as": "参考大小",
+            "fit": "裁剪模式",
+            "method": "采样方法"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "original_size": "原始大小"
+        }
+    },
+    "LayerUtility: ImageOpacity": {
+        "title": "图层工具：不透明",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "opacity": "不透明",
+            "invert_mask": "反转遮罩"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: ImageRemoveAlpha": {
+        "title": "图层工具：移除Alpha",
+        "inputs": {
+            "RGBA_image": "RGBA图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "fill_background": "填充背景",
+            "background_color": "背景颜色"
+        },
+        "outputs": {
+            "RGB_image": "RGB图像"
+        }
+    },
+    "LayerUtility: ImageRewardFilter": {
+        "title": "图层工具：图像美学过滤",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "output_num": "输出数量"
+        },
+        "outputs": {
+            "images": "图像",
+            "obsolete_images": "过滤图像"
+        }
+    },
+    "LayerUtility: ImageScaleByAspectRatio": {
+        "title": "图层工具：按宽高比缩放",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "aspect_ratio": "宽高比",
+            "proportional_width": "比例宽",
+            "proportional_height": "比例高",
+            "fit": "缩放模式",
+            "method": "采样方法",
+            "round_to_multiple": "倍数取整",
+            "scale_to_longest_side": "按长边缩放",
+            "longest_side": "长边长度"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "original_size": "原始大小"
+        }
+    },
+    "LayerUtility: ImageScaleByAspectRatio V2": {
+        "title": "图层工具：按宽高比缩放_V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "aspect_ratio": "宽高比",
+            "proportional_width": "比例宽",
+            "proportional_height": "比例高",
+            "fit": "缩放模式",
+            "method": "采样方法",
+            "round_to_multiple": "倍数取整",
+            "scale_to_side": "缩放到边",
+            "scale_to_length": "缩放到长度",
+            "background_color": "背景颜色"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "original_size": "原始大小"
+        }
+    },
+    "LayerUtility: ImageScaleRestore": {
+        "title": "图层工具：缩放恢复",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "original_size": "原始大小"
+        },
+        "widgets": {
+            "scale": "缩放",
+            "method": "采样方法",
+            "scale_by_longest_side": "按长边缩放",
+            "longest_side": "长边长度"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "width": "宽度",
+            "height": "高度",
+            "original_size": "原始大小"
+        }
+    },
+    "LayerUtility: ImageScaleRestore V2": {
+        "title": "图层工具：缩放恢复_V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "original_size": "原始大小"
+        },
+        "widgets": {
+            "scale": "缩放",
+            "method": "采样方法",
+            "scale_by": "缩放方法",
+            "scale_by_length": "缩放长度"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "width": "宽度",
+            "height": "高度",
+            "original_size": "原始大小"
+        }
+    },
+    "LayerUtility: ImageShift": {
+        "title": "图层工具：位移",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "shift_x": "X",
+            "shift_y": "Y",
+            "cyclic": "循环",
+            "background_color": "背景颜色",
+            "border_mask_width": "接缝宽度",
+            "border_mask_blur": "接缝模糊"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "border_mask": "接缝遮罩"
+        }
+    },
+    "LayerUtility: LaMa": {
+        "title": "图层工具：LaMa",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "lama_model": "LaMa模型",
+            "device": "设备",
+            "invert_mask": "反转遮罩",
+            "mask_grow": "遮罩扩张",
+            "mask_blur": "遮罩模糊"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: LayerImageTransform": {
+        "title": "图层工具：图像变换",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "mirror": "镜像",
+            "scale": "缩放",
+            "aspect_ratio": "宽高比",
+            "rotate": "旋转",
+            "transform_method": "采样方法",
+            "anti_aliasing": "抗锯齿"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: LayerMaskTransform": {
+        "title": "图层工具：遮罩变换",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "mirror": "镜像",
+            "scale": "缩放",
+            "aspect_ratio": "宽高比",
+            "rotate": "旋转",
+            "transform_method": "采样方法",
+            "anti_aliasing": "抗锯齿"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: PrintInfo": {
+        "title": "图层工具：输出到控制台",
+        "inputs": {
+            "anything": "任意"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "LayerUtility: PromptEmbellish": {
+        "title": "图层工具：提示词润色",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "api": "API",
+            "token_limit": "Token限制",
+            "describe": "描述"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "LayerUtility: PromptTagger": {
+        "title": "图层工具：提示词反推",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "api": "API",
+            "token_limit": "Token限制",
+            "exclude_word": "排除词",
+            "replace_with_word": "替换词"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "LayerUtility: RestoreCropBox": {
+        "title": "图层工具：裁剪恢复",
+        "inputs": {
+            "background_image": "背景图像",
+            "croped_image": "裁剪图像",
+            "croped_mask": "裁剪遮罩",
+            "crop_box": "裁剪框"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: SimpleTextImage": {
+        "title": "图层工具：文本图像(简易)",
+        "inputs": {
+            "size_as": "参考大小"
+        },
+        "widgets": {
+            "text": "文本",
+            "font_file": "字体",
+            "align": "对齐到",
+            "char_per_line": "每行字数",
+            "leading": "行间距",
+            "font_size": "字体大小",
+            "text_color": "文本颜色",
+            "x_offset": "X偏移",
+            "y_offset": "Y偏移",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: TextImage": {
+        "title": "图层工具：文本图像",
+        "inputs": {
+            "size_as": "参考大小"
+        },
+        "widgets": {
+            "text": "文本",
+            "font_file": "字体",
+            "spacing": "字间距",
+            "leading": "行间距",
+            "horizontal_border": "侧边边距",
+            "vertical_border": "顶部边距",
+            "scale": "缩放",
+            "variation_range": "字符变化范围",
+            "variation_seed": "字符变化种子",
+            "layout": "排版",
+            "width": "宽度",
+            "height": "高度",
+            "text_color": "文本颜色",
+            "background_color": "背景颜色"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: TextJoin": {
+        "title": "图层工具：文本合并",
+        "widgets": {
+            "text_1": "文本_1",
+            "text_2": "文本_2",
+            "text_3": "文本_3",
+            "text_4": "文本_4"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "LayerUtility: XY to Percent": {
+        "title": "图层工具：XY坐标到百分比坐标",
+        "widgets": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "x": "X",
+            "y": "Y"
+        },
+        "outputs": {
+            "x_percent": "X百分比",
+            "y_percent": "Y百分比"
+        }
+    },
+
+
+    "LayerStyle: ColorOverlay": {
+        "title": "图层样式：颜色覆盖",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "color": "颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: DropShadow": {
+        "title": "图层样式：生成阴影",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "distance_x": "X距离",
+            "distance_y": "Y距离",
+            "grow": "扩张",
+            "blur": "模糊",
+            "shadow_color": "阴影色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: Gradient Map": {
+        "title": "图层样式：渐变映射",
+        "inputs": {
+            "image": "图像",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "start_color": "起始色",
+            "mid_color": "中间色",
+            "end_color": "结束色",
+            "mid_point": "中间点",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像",
+            "gradient": "渐变"
+        }
+    },
+    "LayerStyle: GradientOverlay": {
+        "title": "图层样式：渐变覆盖",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "start_color": "起始色",
+            "start_alpha": "起始透明",
+            "end_color": "结束色",
+            "end_alpha": "结束透明",
+            "angle": "角度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: InnerGlow": {
+        "title": "图层样式：内发光",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "brightness": "亮度",
+            "glow_range": "范围",
+            "blur": "模糊",
+            "light_color": "发光色",
+            "glow_color": "辉光色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: InnerShadow": {
+        "title": "图层样式：内阴影",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "distance_x": "X距离",
+            "distance_y": "Y距离",
+            "grow": "扩张",
+            "blur": "模糊",
+            "shadow_color": "阴影色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: OuterGlow": {
+        "title": "图层样式：外发光",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "brightness": "亮度",
+            "glow_range": "范围",
+            "blur": "模糊",
+            "light_color": "发光色",
+            "glow_color": "辉光色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: Stroke": {
+        "title": "图层样式：描边",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "stroke_grow": "扩张",
+            "stroke_width": "宽度",
+            "blur": "模糊",
+            "stroke_color": "描边色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: ColorOverlay V2": {
+        "title": "图层样式：颜色覆盖 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "color": "颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: DropShadow V2": {
+        "title": "图层样式：生成阴影 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "distance_x": "X距离",
+            "distance_y": "Y距离",
+            "grow": "扩张",
+            "blur": "模糊",
+            "shadow_color": "阴影色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: GradientOverlay V2": {
+        "title": "图层样式：渐变覆盖 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "start_color": "起始色",
+            "start_alpha": "起始透明",
+            "end_color": "结束色",
+            "end_alpha": "结束透明",
+            "angle": "角度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: InnerGlow V2": {
+        "title": "图层样式：内发光 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "brightness": "亮度",
+            "glow_range": "范围",
+            "blur": "模糊",
+            "light_color": "发光色",
+            "glow_color": "辉光色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: InnerShadow V2": {
+        "title": "图层样式：内阴影 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "distance_x": "X距离",
+            "distance_y": "Y距离",
+            "grow": "扩张",
+            "blur": "模糊",
+            "shadow_color": "阴影色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: OuterGlow V2": {
+        "title": "图层样式：外发光 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "brightness": "亮度",
+            "glow_range": "范围",
+            "blur": "模糊",
+            "light_color": "发光色",
+            "glow_color": "辉光色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: Stroke V2": {
+        "title": "图层样式：描边 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "stroke_grow": "扩张",
+            "stroke_width": "宽度",
+            "blur": "模糊",
+            "stroke_color": "描边色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+
+
+    "LayerMask: BiRefNetUltra": {
+        "title": "图层遮罩：BiRefNet去除背景",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: BiRefNetUltraV2": {
+        "title": "图层遮罩：BiRefNet去除背景V2",
+        "inputs": {
+            "image": "图像",
+            "birefnet_model": "BiRefNet模型"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: BlendIf Mask": {
+        "title": "图层遮罩：混合颜色带",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_if": "颜色带",
+            "black_point": "黑色阈值",
+            "black_range": "黑色范围",
+            "white_point": "白色阈值",
+            "white_range": "白色范围"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: CreateGradientMask": {
+        "title": "图层遮罩：生成渐变遮罩",
+        "inputs": {
+            "size_as": "参考大小"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "gradient_side": "方向",
+            "gradient_scale": "缩放",
+            "gradient_offset": "偏移",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: EVFSAMUltra": {
+        "title": "图层遮罩：EVSAM Ultra",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "precision": "精度",
+            "load_in_bit": "加载位精度",
+            "prompt": "提示词",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        }
+    },
+    "LayerMask: Florence2Ultra": {
+        "title": "图层遮罩：Florence2 Ultra",
+        "inputs": {
+            "florence2_model": "Florence2模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "task": "任务",
+            "text_input": "文本",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: ImageToMask": {
+        "title": "图层遮罩：图像到遮罩",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "channel": "通道",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "gray_point": "灰色阈值",
+            "invert_output_mask": "反转遮罩输出"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskBoxDetect": {
+        "title": "图层遮罩：检测遮罩区域",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "detect": "检测方法",
+            "x_adjust": "X偏移",
+            "y_adjust": "Y偏移",
+            "scale_adjust": "缩放"
+        },
+        "outputs": {
+            "box_preview": "图像",
+            "x_percent": "X百分比",
+            "y_percent": "Y百分比",
+            "width": "宽度",
+            "height": "高度",
+            "x": "X",
+            "y": "Y"
+        }
+    },
+    "LayerMask: MaskByColor": {
+        "title": "图层遮罩：颜色到遮罩",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "color": "颜色",
+            "color_in_HEX": "HEX颜色",
+            "threshold": "阈值",
+            "fix_gap": "填缝",
+            "fix_threshold": "修补阈值",
+            "invert_mask": "反转遮罩"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskByDifferent": {
+        "title": "图层遮罩：差值遮罩",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2"
+        },
+        "widgets": {
+            "gain": "增强",
+            "fix_gap": "填缝",
+            "fix_threshold": "修补阈值",
+            "main_subject_detect": "仅检测主体"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskEdgeShrink": {
+        "title": "图层遮罩：遮罩边缘收缩",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "shrink_level": "等级",
+            "soft": "柔化",
+            "edge_shrink": "幅度",
+            "edge_reserve": "保留细节"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskEdgeUltraDetail": {
+        "title": "图层遮罩：遮罩细化",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "method": "方法",
+            "mask_grow": "遮罩扩张",
+            "fix_gap": "填缝",
+            "fix_threshold": "修补阈值",
+            "detail_range": "细节范围",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskEdgeUltraDetail V2": {
+        "title": "图层遮罩：遮罩细化 V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "method": "方法",
+            "mask_grow": "遮罩扩张",
+            "fix_gap": "填缝",
+            "fix_threshold": "修补阈值",
+            "edge_erode": "边缘消融",
+            "edge_dilate": "边缘膨胀",
+            "edte_dilate": "边缘膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "device": "设备",
+            "max_megapixels": "最大像素"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskGradient": {
+        "title": "图层遮罩：遮罩渐变",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "gradient_side": "方向",
+            "gradient_scale": "缩放",
+            "gradient_offset": "偏移",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskGrain": {
+        "title": "图层遮罩：遮罩颗粒",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "grain": "颗粒",
+            "invert_mask": "反转遮罩"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskGrow": {
+        "title": "图层遮罩：遮罩扩张",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "grow": "扩张",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskInvert": {
+        "title": "图层遮罩：遮罩反转",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blur": "模糊",
+            "angle": "角度"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskMotionBlur": {
+        "title": "图层遮罩：遮罩动态模糊",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blur": "模糊",
+            "angle": "角度"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskPreview": {
+        "title": "图层遮罩：遮罩预览",
+        "inputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskStroke": {
+        "title": "图层遮罩：遮罩描边",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "stroke_grow": "扩张",
+            "stroke_width": "宽度",
+            "blur": "模糊"
+        }
+    },
+    "LayerMask: MediapipeFacialSegment": {
+        "title": "图层遮罩：Mediapipe面部分割",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "left_eye": "左眼",
+            "left_eyebrow": "左眉",
+            "right_eye": "右眼",
+            "right_eyebrow": "右眉",
+            "lips": "嘴唇",
+            "tooth": "牙齿"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: BBoxJoin": {
+        "title": "图层遮罩：合并BBox",
+        "inputs": {
+            "bboxes_1": "BBoxes_1",
+            "bboxes_2": "BBoxes_2",
+            "bboxes_3": "BBoxes_3",
+            "bboxes_4": "BBoxes_4"
+        },
+        "outputs": {
+            "bboxes": "BBoxes"
+        }
+    },
+    "LayerMask: ObjectDetectorFL2": {
+        "title": "图层遮罩：物体检测（Florence2）",
+        "inputs": {
+            "image": "图像",
+            "florence2_model": "Florence2模型"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "sort_method": "排序方法",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号"
+        },
+        "outputs": {
+            "bboxes": "BBoxes",
+            "preview": "预览图像"
+        }
+    },
+    "LayerMask: ObjectDetectorMask": {
+        "title": "图层遮罩：物体检测（遮罩）",
+        "inputs": {
+            "object_mask": "物体遮罩"
+        },
+        "widgets": {
+            "sort_method": "排序方法",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号"
+        },
+        "outputs": {
+            "bboxes": "BBoxes",
+            "preview": "预览图像"
+        }
+    },
+    "LayerMask: ObjectDetectorYOLO8": {
+        "title": "图层遮罩：物体检测（Yolov8）",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "yolo_model": "Yolo模型",
+            "sort_method": "排序方法",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号"
+        },
+        "outputs": {
+            "bboxes": "BBoxes",
+            "preview": "预览图像"
+        }
+    },
+    "LayerMask: ObjectDetectorYOLOWorld": {
+        "title": "图层遮罩：物体检测（YoloWorld）",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "yolo_world_model": "YoloWorld模型",
+            "confidence_threshold": "置信度",
+            "nms_iou_threshold": "非极大值抑制阈值",
+            "prompt": "提示词",
+            "sort_method": "排序方法",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号"
+        },
+        "outputs": {
+            "bboxes": "BBoxes",
+            "preview": "预览图像"
+        }
+    },
+    "LayerMask: PersonMaskUltra": {
+        "title": "图层遮罩：人像遮罩 Ultra",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "face": "面部",
+            "hair": "头发",
+            "body": "身体",
+            "clothes": "衣服",
+            "accessories": "饰品",
+            "background": "背景",
+            "confidence": "置信度",
+            "detail_range": "细节范围",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: PersonMaskUltra V2": {
+        "title": "图层遮罩：人像遮罩 Ultra V2",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "face": "面部",
+            "hair": "头发",
+            "body": "身体",
+            "clothes": "衣服",
+            "accessories": "饰品",
+            "background": "背景",
+            "confidence": "置信度",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: PixelSpread": {
+        "title": "图层遮罩：像素扩张",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "mask_grow": "遮罩扩张"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerMask: RemBgUltra": {
+        "title": "图层遮罩：移除背景",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "detail_range": "细节范围",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: RmBgUltra V2": {
+        "title": "图层遮罩：移除背景 V2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "最大像素"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: SAM2Ultra": {
+        "title": "图层遮罩：SAM2 Ultra",
+        "inputs": {
+            "image": "图像",
+            "bboxes": "BBoxes"
+        },
+        "widgets": {
+            "sam2_model": "SAM2模型",
+            "precision": "精度",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号",
+            "cache_model": "缓存模型",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: SAM2VideoUltra": {
+        "title": "图层遮罩：SAM2视频 Ultra",
+        "inputs": {
+            "image": "图像",
+            "bboxes": "BBoxes",
+            "first_frame_mask": "首帧遮罩",
+            "pre_masK": "关注层遮罩"
+        },
+        "widgets": {
+            "sam2_model": "SAM2模型",
+            "precision": "精度",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号",
+            "cache_model": "缓存模型",
+            "individual_objects": "独立物体",
+            "mask_preview_color": "遮罩预览颜色",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "preview": "预览图像"
+        }
+    },
+    "LayerMask: SegformerUltraV2": {
+        "title": "图层遮罩：Segformer服装分割V2",
+        "inputs": {
+            "image": "图像",
+            "segformer_pipeline": "Segformer框架"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: SegformerB2ClothesUltra": {
+        "title": "图层遮罩：Segformer B2服装 Ultra",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "face": "脸",
+            "hair": "头发",
+            "hat": "帽子",
+            "sunglass": "墨镜",
+            "left_arm": "左臂",
+            "right_arm": "右臂",
+            "left_leg": "左腿",
+            "right_leg": "右腿",
+            "upper_clothes": "上衣",
+            "skirt": "短裙",
+            "pants": "裤子",
+            "dress": "连衣裙",
+            "belt": "腰带",
+            "shoe": "鞋子",
+            "bag": "背包",
+            "scarf": "围巾",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: SegformerClothesPipelineLoader": {
+        "title": "图层遮罩：Segformer 服装框架加载器",
+        "widgets": {
+            "model": "模型",
+            "face": "脸",
+            "hair": "头发",
+            "hat": "帽子",
+            "sunglass": "墨镜",
+            "left_arm": "左臂",
+            "right_arm": "右臂",
+            "left_leg": "左腿",
+            "right_leg": "右腿",
+            "left_shoe": "左鞋",
+            "right_shoe": "右鞋",
+            "upper_clothes": "上衣",
+            "skirt": "短裙",
+            "pants": "裤子",
+            "dress": "连衣裙",
+            "belt": "腰带",
+            "bag": "背包",
+            "scarf": "围巾"
+        },
+        "outputs": {
+            "segformer_pipeline": "Segformer框架"
+        }
+    },
+    "LayerMask: SegformerFashionPipelineLoader": {
+        "title": "图层遮罩：Segformer 服饰框架加载器",
+        "widgets": {
+            "model": "模型",
+            "shirt":"衬衫、罩衫",
+            "top":"上衣、t恤",
+            "sweater":"毛衣",
+            "cardigan":"开襟毛衫",
+            "jacket":"夹克",
+            "vest":"背心",
+            "pants":"裤子",
+            "shorts":"短裤",
+            "skirt":"裙子",
+            "coat":"外套",
+            "dress":"连衣裙",
+            "jumpsuit":"连身裤",
+            "cape":"斗篷",
+            "glasses":"眼镜",
+            "hat":"帽子",
+            "hairaccessory":"头带",
+            "tie":"领带",
+            "glove":"手套",
+            "watch":"手表",
+            "belt":"皮带",
+            "legwarmer":"腿套",
+            "tights":"裤袜",
+            "sock":"袜子",
+            "shoe":"鞋子",
+            "bagwallet":"手包",
+            "scarf":"围巾",
+            "umbrella":"雨伞",
+            "hood":"兜帽",
+            "collar":"衣领",
+            "lapel":"翻领",
+            "epaulette":"肩章",
+            "sleeve":"袖子",
+            "pocket":"口袋",
+            "neckline":"领口",
+            "buckle":"带扣",
+            "zipper":"拉链",
+            "applique":"贴花",
+            "bead":"珠子",
+            "bow":"蝴蝶结",
+            "flower":"花",
+            "fringe":"刘海",
+            "ribbon":"丝带",
+            "rivet":"铆钉",
+            "ruffle":"褶饰",
+            "sequin":"亮片",
+            "tassel":"流苏"
+        },
+        "outputs": {
+            "segformer_pipeline": "Segformer框架"
+        }
+    },
+    "LayerMask: SegmentAnythingUltra": {
+        "title": "图层遮罩：超级语义分割",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "sam_model": "SAM模型",
+            "grounding_dino_model": "GroundingDINO模型",
+            "threshold": "阈值",
+            "detail_range": "细节范围",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: SegmentAnythingUltra V2": {
+        "title": "图层遮罩：超级语义分割 V2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "sam_model": "SAM模型",
+            "grounding_dino_model": "GroundingDINO模型",
+            "threshold": "阈值",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "prompt": "提示词",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: Shadow & Highlight Mask": {
+        "title": "图层遮罩：阴影与高光遮罩",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "shadow_level_offset": "阴影强度",
+            "shadow_range": "阴影范围",
+            "highlight_level_offset": "高光强度",
+            "highlight_range": "高光范围"
+        },
+        "outputs": {
+            "shadow_mask": "阴影遮罩",
+            "highlight_mask": "高光遮罩"
+        }
+    },
+    "LayerMask: TransparentBackgroundUltra": {
+        "title": "图层遮罩：透明背景 Ultra",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerFilter: HalfTone": {
+        "title": "图层滤镜：图层滤镜：半色调",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "dot_size": "网点大小",
+            "angle": "角度",
+            "shape": "形状",
+            "dot_color": "网点颜色",
+            "background_color": "背景颜色",
+            "anti_aliasing": "抗锯齿"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: GrayValue": {
+        "title": "图层工具：灰度值",
+        "inputs": {
+            "color_value": "颜色值"
+        },
+        "outputs": {
+            "gray(256_level)": "灰色(256值)",
+            "gray(100_level)": "灰色(100值)"
+        }
+    },
+    "LayerUtility: HSV Value": {
+        "title": "图层工具：HSV值",
+        "inputs": {
+            "color_value": "颜色值"
+        },
+        "outputs": {
+            "int": "整数"
+        }
+    },
+    "LayerUtility: RGB Value": {
+        "title": "图层工具：RGB值",
+        "inputs": {
+            "color_value": "颜色值"
+        },
+        "outputs": {
+            "int": "整数"
+        }
+    },
+    "LayerUtility: Seed": {
+        "title": "图层工具：种子值",
+        "widgets": {
+            "seed": "种子"
+        },
+        "outputs": {
+            "seed": "种子"
+        }
+    },
+    "LayerUtility: Float": {
+        "title": "图层工具：浮点数",
+        "widgets": {
+            "float_value": "浮点数值"
+        },
+        "outputs": {
+            "float": "浮点数",
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: Integer": {
+        "title": "图层工具：整数",
+        "widgets": {
+            "int_value": "整数值"
+        },
+        "outputs": {
+            "int": "整数",
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: Boolean": {
+        "title": "图层工具：布尔值",
+        "widgets": {
+            "bool_value": "布尔值"
+        },
+        "outputs": {
+            "boolean": "布尔值",
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: BooleanOperator": {
+        "title": "图层工具：布尔运算",
+        "inputs": {
+            "a": "输入A",
+            "b": "输入B"
+        },
+        "widgets": {
+            "operator": "运算符"
+        },
+        "outputs": {
+            "output": "输出"
+        }
+    },
+    "LayerUtility: BooleanOperatorV2": {
+        "title": "图层工具：布尔运算V2",
+        "inputs": {
+            "a": "输入A",
+            "b": "输入B"
+        },
+        "widgets": {
+            "operator": "运算符",
+            "a_value": "值A",
+            "b_value": "值B"
+
+        },
+        "outputs": {
+            "output": "输出",
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: SwitchCase": {
+        "title": "图层工具：条件选择",
+        "inputs": {
+            "input_default": "默认输入",
+            "input_1": "输入1",
+            "input_2": "输入2",
+            "input_3": "输入3"
+        },
+        "widgets": {
+            "switch_condition": "条件判断",
+            "case_1": "条件1",
+            "case_2": "条件2",
+            "case_3": "条件3"
+        },
+        "outputs": {
+            "any": "任意输出"
+        }
+    },
+    "LayerUtility: NumberCalculator": {
+        "title": "图层工具：数值计算",
+        "inputs": {
+            "a": "数值A",
+            "b": "数值B"
+        },
+        "widgets": {
+            "operator": "运算符"
+        },
+        "outputs": {
+            "int": "整数",
+            "float": "浮点数"
+        }
+    },
+    "LayerUtility: NumberCalculatorV2": {
+        "title": "图层工具：数值计算V2",
+        "inputs": {
+            "a": "输入A",
+            "b": "输入B"
+        },
+        "widgets": {
+            "a_value": "值A",
+            "b_value": "值B",
+            "operator": "运算符"
+        },
+        "outputs": {
+            "int": "整数",
+            "float": "浮点数",
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: If": {
+        "title": "图层工具：条件判断",
+        "inputs": {
+            "if_condition": "条件",
+            "when_TRUE": "真时输入",
+            "when_FALSE": "假时输入"
+        },
+        "outputs": {
+            "any": "任意输出"
+        }
+    },
+    "LayerUtility: StringCondition": {
+        "title": "图层工具：字符串条件",
+        "widgets": {
+            "text": "文本",
+            "condition": "条件",
+            "sub_string": "子字符串"
+        },
+        "outputs": {
+            "output": "输出",
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: TextJoinV2": {
+        "title": "图层工具：文本连接V2",
+        "inputs": {
+            "text_1": "文本1",
+            "text_2": "文本2",
+            "text_3": "文本3",
+            "text_4": "文本4"
+        },
+        "widgets": {
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: TextPreseter": {
+        "title": "图层工具：文本预设",
+        "inputs": {
+            "text_preset": "文本预设"
+        },
+        "widgets": {
+            "title": "标题",
+            "content": "内容"
+        },
+        "outputs": {
+            "text_preset": "预设列表"
+        }
+    },
+    "LayerUtility: RandomGenerator": {
+        "title": "图层工具：随机生成器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "min_value": "最小值",
+            "max_value": "最大值",
+            "float_decimal_places": "小数位数",
+            "fix_seed": "固定种子"
+        },
+        "outputs": {
+            "int": "整数",
+            "float": "浮点数",
+            "bool": "布尔值"
+        }
+    },
+    "LayerUtility: RandomGeneratorV2": {
+        "title": "图层工具：随机生成器V2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "min_value": "最小值",
+            "max_value": "最大值",
+            "least": "最小值",
+            "float_decimal_places": "小数位数",
+            "seed": "种子"
+        },
+        "outputs": {
+            "int": "整数",
+            "float": "浮点数",
+            "bool": "布尔值"
+        }
+    },
+    "LayerUtility: CheckMask": {
+        "title": "图层工具：检查遮罩",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "white_point": "白点阈值",
+            "area_percent": "区域百分比"
+        },
+        "outputs": {
+            "bool": "布尔值"
+        }
+    },
+    "LayerUtility: CheckMaskV2": {
+        "title": "图层工具：检查遮罩V2",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "method": "方法",
+            "white_point": "白点阈值",
+            "area_percent": "区域百分比"
+        },
+        "outputs": {
+            "bool": "布尔值"
+        }
+    },
+    "LayerUtility: ChoiceTextPreset": {
+        "title": "图层工具：选择文本预设",
+        "inputs": {
+            "text_preset": "文本预设"
+        },
+        "widgets": {
+            "choice_title": "选择标题",
+            "random_choice": "随机选择",
+            "default": "默认值",
+            "seed": "种子"
+        },
+        "outputs": {
+            "title": "标题",
+            "content": "内容"
+        }
+    },
+    "LayerUtility: ExtendCanvasV2": {
+        "title": "图层工具：扩展画布V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "top": "顶部",
+            "bottom": "底部",
+            "left": "左侧",
+            "right": "右侧",
+            "color": "颜色"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: GetMainColorsV2": {
+        "title": "图层工具：获取主色V2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "k_means_algorithm": "K均值算法",
+            "colors": "颜色",
+            "num_colors": "颜色数量",
+            "algorithm": "算法",
+            "mix_iter": "混合迭代",
+            "random_state": "随机状态"
+        },
+        "outputs": {
+            "preview_image": "查看图像",
+            "color_1": "颜色1",
+            "color_2": "颜色2",
+            "color_3": "颜色3",
+            "color_4": "颜色4",
+            "color_5": "颜色5",
+            "color_6": "颜色6",
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: GetMainColors": {
+        "title": "图层工具：获取主色",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "k_means_algorithm": "K均值算法",
+            "colors": "颜色",
+            "num_colors": "颜色数量",
+            "algorithm": "算法",
+            "mix_iter": "混合迭代",
+            "random_state": "随机状态"
+        },
+        "outputs": {
+            "preview_image": "查看图像",
+            "color_1": "颜色1",
+            "color_2": "颜色2",
+            "color_3": "颜色3",
+            "color_4": "颜色4",
+            "color_5": "颜色5",
+            "color_6": "颜色6",
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: ICMask": {
+        "title": "图层工具：IC遮罩",
+        "inputs": {
+            "first_image": "第一图像",
+            "first_mask": "第一遮罩",
+            "second_image": "第二图像",
+            "second_mask": "第二遮罩"
+        },
+        "widgets": {
+            "patch_mode": "补丁模式",
+            "output_length": "输出长度",
+            "patch_color": "补丁颜色"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "icmask_data": "IC遮罩数据"
+        }
+    },
+    "LayerUtility: ICMaskCropBack": {
+        "title": "图层工具：IC遮罩裁剪恢复",
+        "inputs": {
+            "image": "图像",
+            "icmask_data": "IC遮罩数据"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "LayerUtility: HLFrequencyDetailRestore": {
+        "title": "图层工具：高低频细节恢复",
+        "inputs": {
+            "image": "图像",
+            "detail_image": "细节图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "keep_high_freq": "保留高频",
+            "erase_low_freq": "擦除低频",
+            "mask_blur": "遮罩模糊"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: ImageBlend V2": {
+        "title": "图层工具：图像混合V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图层图像",
+            "layer_mask": "图层遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: ImageBlendAdvance V2": {
+        "title": "图层工具：高级图像混合V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图层图像",
+            "layer_mask": "图层遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明度",
+            "x_percent": "X百分比",
+            "y_percent": "Y百分比",
+            "mirror": "镜像",
+            "scale": "缩放",
+            "aspect_ratio": "宽高比",
+            "rotate": "旋转",
+            "transform_method": "变换方法",
+            "anti_aliasing": "抗锯齿"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: ImageBlendAdvance V3": {
+        "title": "图层工具：高级图像混合V3",
+        "inputs": {
+            "layer_image": "图层图像",
+            "background_image": "背景图像",
+            "layer_mask": "图层遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明度",
+            "x_percent": "X百分比",
+            "y_percent": "Y百分比",
+            "mirror": "镜像",
+            "scale": "缩放",
+            "aspect_ratio": "宽高比",
+            "rotate": "旋转",
+            "transform_method": "变换方法",
+            "anti_aliasing": "抗锯齿"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: ImageHub": {
+        "title": "图层工具：图像中心",
+        "inputs": {
+            "input1_image": "输入1图像",
+            "input1_mask": "输入1遮罩",
+            "input2_image": "输入2图像",
+            "input2_mask": "输入2遮罩",
+            "input3_image": "输入3图像",
+            "input3_mask": "输入3遮罩",
+            "input4_image": "输入4图像",
+            "input4_mask": "输入4遮罩",
+            "input5_image": "输入5图像",
+            "input5_mask": "输入5遮罩",
+            "input6_image": "输入6图像",
+            "input6_mask": "输入6遮罩",
+            "input7_image": "输入7图像",
+            "input7_mask": "输入7遮罩",
+            "input8_image": "输入8图像",
+            "input8_mask": "输入8遮罩",
+            "input9_image": "输入9图像",
+            "input9_mask": "输入9遮罩"
+        },
+        "widgets": {
+            "output": "输出",
+            "random_output": "随机输出"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: ImageMaskScaleAsV2": {
+        "title": "图层工具：图像遮罩参考缩放V2",
+        "inputs": {
+            "scale_as": "参考缩放",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "fit": "适配",
+            "method": "方法",
+            "background_color": "背景颜色"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "original_size": "原始大小",
+            "width": "宽度",
+            "widht": "宽度",
+            "height": "高度",
+            "int": "整数"
+        }
+    },
+    "LayerUtility: ImageReel": {
+        "title": "图层工具：图像卷轴",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4"
+        },
+        "widgets": {
+            "image1_text": "图像1文本",
+            "image2_text": "图像2文本",
+            "image3_text": "图像3文本",
+            "image4_text": "图像4文本",
+            "reel_height": "卷轴高度",
+            "border": "边框",
+            "image": "图像",
+            "target_height": "目标高度",
+            "image_list": "图像列表"
+        },
+        "outputs": {
+            "reel": "卷轴"
+        }
+    },
+    "LayerUtility: ImageReelComposit": {
+        "title": "图层工具：图像卷轴合成",
+        "inputs": {
+            "reel_1": "卷轴1",
+            "reel_2": "卷轴2",
+            "reel_3": "卷轴3",
+            "reel_4": "卷轴4"
+        },
+        "widgets": {
+            "font_file": "字体文件",
+            "font_size": "字体大小",
+            "border": "边框",
+            "color_theme": "颜色主题",
+            "background_image": "背景图像",
+            "image": "图像",
+            "text_image": "文本图像",
+            "box": "边界框",
+            "shadow_size": "阴影大小",
+            "text_color": "文本颜色",
+            "reel": "卷轴"
+        },
+        "outputs": {
+            "image1": "图像1"
+        }
+    },
+    "LayerUtility: RoundedRectangle": {
+        "title": "图层工具：圆角矩形",
+        "inputs": {
+            "image": "图像",
+            "object_mask": "对象遮罩",
+            "crop_box": "裁剪框"
+        },
+        "widgets": {
+            "rounded_rect_radius": "圆角半径",
+            "anti_aliasing": "抗锯齿",
+            "top": "顶部",
+            "bottom": "底部",
+            "left": "左侧",
+            "right": "右侧",
+            "detect": "检测",
+            "obj_ext_top": "对象扩展顶部",
+            "obj_ext_bottom": "对象扩展底部",
+            "obj_ext_left": "对象扩展左侧",
+            "obj_ext_right": "对象扩展右侧"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: LoadVQAModel": {
+        "title": "图层工具：加载VQA模型",
+        "inputs": {},
+        "widgets": {
+            "model": "模型",
+            "precision": "精度",
+            "device": "设备"
+        },
+        "outputs": {
+            "vqa_model": "VQA模型"
+        }
+    },
+    "LayerUtility: VQAPrompt": {
+        "title": "图层工具：VQA提示",
+        "inputs": {
+            "image": "图像",
+            "vqa_model": "VQA模型",
+            "question": "问题"
+        },
+        "widgets": {},
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "LayerMask: ShadowHighlightMaskV2": {
+        "title": "图层遮罩：阴影高光遮罩V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "shadow_level_offset": "阴影级别偏移",
+            "shadow_range": "阴影范围",
+            "highlight_level_offset": "高光级别偏移",
+            "highlight_range": "高光范围"
+        },
+        "outputs": {
+            "highlight_mask": "高光遮罩",
+            "shadow_mask": "阴影遮罩"
+        }
+    },
+    "LayerMask: SegformerUltraV3": {
+        "title": "图层遮罩：Segformer超能分形识别系统V3",
+        "inputs": {
+            "image": "图像",
+            "segformer_model": "Segformer模型",
+            "segformer_setting": "Segformer设置"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: SegformerClothesSetting": {
+        "title": "图层遮罩：Segformer服装设置",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "face": "脸",
+            "hair": "头发",
+            "hat": "帽子",
+            "sunglass": "墨镜",
+            "left_arm": "左臂",
+            "right_arm": "右臂",
+            "left_leg": "左腿",
+            "right_leg": "右腿",
+            "left_shoe": "左鞋",
+            "right_shoe": "右鞋",
+            "upper_clothes": "上衣",
+            "skirt": "短裙",
+            "pants": "裤子",
+            "dress": "连衣裙",
+            "belt": "腰带",
+            "shoe": "鞋子",
+            "bag": "背包",
+            "scarf": "围巾"
+        },
+        "outputs": {
+            "image": "图像",
+            "segformer_clothes_setting": "Segformer服装设置"
+        }
+    },
+    "LayerMask: SegformerFashionSetting": {
+        "title": "图层遮罩：Segformer 时尚设置",
+        "inputs": {},
+        "widgets": {
+            "shirt":"衬衫、罩衫",
+            "top":"上衣、t恤",
+            "sweater":"毛衣",
+            "cardigan":"开襟毛衫",
+            "jacket":"夹克",
+            "vest":"背心",
+            "pants":"裤子",
+            "shorts":"短裤",
+            "skirt":"裙子",
+            "coat":"外套",
+            "dress":"连衣裙",
+            "jumpsuit":"连身裤",
+            "cape":"斗篷",
+            "glasses":"眼镜",
+            "hat":"帽子",
+            "hairaccessory":"头带",
+            "tie":"领带",
+            "glove":"手套",
+            "watch":"手表",
+            "belt":"皮带",
+            "legwarmer":"腿套",
+            "tights":"裤袜",
+            "sock":"袜子",
+            "shoe":"鞋子",
+            "bagwallet":"手包",
+            "scarf":"围巾",
+            "umbrella":"雨伞",
+            "hood":"兜帽",
+            "collar":"衣领",
+            "lapel":"翻领",
+            "epaulette":"肩章",
+            "sleeve":"袖子",
+            "pocket":"口袋",
+            "neckline":"领口",
+            "buckle":"带扣",
+            "zipper":"拉链",
+            "applique":"贴花",
+            "bead":"珠子",
+            "bow":"蝴蝶结",
+            "flower":"花",
+            "fringe":"刘海",
+            "ribbon":"丝带",
+            "rivet":"铆钉",
+            "ruffle":"褶饰",
+            "sequin":"亮片",
+            "tassel":"流苏"
+        },
+        "outputs": {
+            "segformer_fashion_setting": "Segformer时尚设置",
+            "segformer_pipeline": "Segformer框架"
+        }
+    },
+    "LayerMask: LoadSegformerModel": {
+        "title": "图层遮罩：加载 Segformer 模型",
+        "inputs": {
+            "image": "图像",
+            "segformer_model": "Segformer模型",
+            "segformer_pipeline": "Segformer框架"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "segfromer_model": "Segformer模型",
+            "segformer_model": "Segformer模型"
+        }
+    },
+    "LayerMask: LoadSAM2Model": {
+        "title": "图层遮罩：加载SAM2模型",
+        "inputs": {
+            "image": "图像",
+            "bboxes": "BBoxes"
+        },
+        "widgets": {
+            "sam2_model": "SAM2模型",
+            "precision": "精度",
+            "device": "设备"
+        },
+        "outputs": {
+            "sam2_model": "SAM2模型"
+        }
+    },
+    "LayerMask: SAM2UltraV2": {
+        "title": "图层遮罩：SAM2 超级V2（高级）",
+        "inputs": {
+            "sam2_model": "SAM2模型",
+            "image": "图像",
+            "bboxes": "BBoxes"
+        },
+        "widgets": {
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerColor: BrightnessContrastV2": {
+        "title": "图层颜色：亮度对比度V2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "brightness": "亮度",
+            "contrast": "对比度",
+            "saturation": "饱和度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: ColorName": {
+        "title": "图层工具：颜色名称",
+        "widgets": {
+            "color": "颜色",
+            "palette": "调色板"
+        },
+        "outputs": {
+            "color_name": "颜色名称"
+        }
+    },
+    "LayerUtility: NameToColor": {
+        "title": "图层工具：名称转颜色",
+        "inputs": {
+            "size_as": "参考尺寸"
+        },
+        "widgets": {
+            "color_name": "颜色名称",
+            "palette": "调色板",
+            "in_palette_only": "仅限调色板",
+            "default_color": "默认颜色",
+            "size": "尺寸",
+            "custom_width": "自定义宽度",
+            "custom_height": "自定义高度"
+        },
+        "outputs": {
+            "image": "图像",
+            "color": "颜色"
+        }
+    },
+    "LayerColor: ColorofShadowHighlightV2": {
+        "title": "图层颜色：阴影高光颜色V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "shadow_brightness": "阴影亮度",
+            "shadow_saturation": "阴影饱和度",
+            "shadow_hue": "阴影色相",
+            "shadow_level_offset": "阴影级别偏移",
+            "shadow_range": "阴影范围",
+            "highlight_brightness": "高光亮度",
+            "highlight_saturation": "高光饱和度",
+            "highlight_hue": "高光色相",
+            "highlight_level_offset": "高光级别偏移",
+            "highlight_range": "高光范围"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: DropShadow V3": {
+        "title": "图层样式：投影V3",
+        "inputs": {
+            "layer_image": "图层图像",
+            "background_image": "背景图像",
+            "layer_mask": "图层遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明度",
+            "distance_x": "X距离",
+            "distance_y": "Y距离",
+            "grow": "扩展",
+            "blur": "模糊",
+            "shadow_color": "阴影颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: GaussianBlurV2": {
+        "title": "图层滤镜：高斯模糊V2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "blur": "模糊度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: AnyRerouter": {
+        "title": "图层工具：任意重定向器",
+        "inputs": {
+            "any": "任意输入"
+        },
+        "outputs": {
+            "anything": "任意输出"
+        }
+    },
+    "LayerUtility: String": {
+        "title": "图层工具：字符串",
+        "widgets": {
+            "string": "字符串"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "LayerUtility: CropByMask V3": {
+        "title": "图层工具：遮罩裁剪V3",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "crop_box": "裁剪框"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "detect": "检测",
+            "top_reserve": "顶部保留",
+            "bottom_reserve": "底部保留",
+            "left_reserve": "左侧保留",
+            "right_reserve": "右侧保留",
+            "round_to_multiple": "取整倍数"
+
+        },
+        "outputs": {
+            "croped_image": "裁剪图像",
+            "croped_mask": "裁剪遮罩",
+            "crop_box": "裁剪框",
+            "box_preview": "裁剪框预览"
+        }
+    },
+    "LayerUtility: TextImage V2": {
+        "title": "图层工具：文本图像V2",
+        "inputs": {
+            "size_as": "参考尺寸"
+        },
+        "widgets": {
+            "text": "文本",
+            "font_file": "字体文件",
+            "spacing": "字间距",
+            "leading": "行间距",
+            "horizontal_border": "水平边框",
+            "vertical_border": "垂直边框",
+            "scale": "缩放",
+            "variation_range": "变化范围",
+            "variation_seed": "变化种子",
+            "layout": "布局",
+            "width": "宽度",
+            "height": "高度",
+            "text_color": "文本颜色",
+            "background_color": "背景颜色"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: TextBox": {
+        "title": "图层工具：文本框",
+        "inputs": {},
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "LayerUtility: BatchSelector": {
+        "title": "图层工具：批量选择器",
+        "inputs": {
+            "images": "图像组",
+            "masks": "遮罩组"
+        },
+        "widgets": {
+            "select": "选择"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: QueueStop": {
+        "title": "图层工具：队列停止",
+        "inputs": {
+            "any": "任意"
+        },
+        "widgets": {
+            "mode": "模式",
+            "stop": "停止"
+        },
+        "outputs": {
+            "any": "任意"
+        }
+    },
+    "LayerUtility: ImageTaggerSave": {
+        "title": "图层工具：图像标签器保存",
+        "inputs": {
+            "image": "图像",
+            "tag_text": "标签文本"
+        },
+        "widgets": {
+            "custom_path": "自定义路径",
+            "filename_prefix": "文件名前缀",
+            "timestamp": "时间戳",
+            "format": "格式",
+            "quality": "质量",
+            "preview": "预览"
+        },
+        "outputs": {}
+    },
+    "LayerUtility: ImageTaggerSaveV2": {
+        "title": "图层工具：图像标签器保存 V2",
+        "inputs": {
+            "image": "图像",
+            "tag_text": "标签文本"
+        },
+        "widgets": {
+            "custom_path": "自定义路径",
+            "custom_filename": "自定义文件名",
+            "remove_custom_filename_ext": "删除自定义文件名扩展名",
+            "filename_prefix": "文件名前缀",
+            "timestamp": "时间戳",
+            "format": "格式",
+            "quality": "质量",
+            "preview": "预览"
+        },
+        "outputs": {}
+    },
+    "LayerUtility: LoadImagesFromPath": {
+        "title": "图层工具：从路径加载图像",
+        "inputs": {
+            "any": "任意"
+        },
+        "widgets": {
+            "path": "路径",
+            "image_load_cap": "图像加载上限",
+            "select_every_nth": "选择每隔第 n 个"
+        },
+        "outputs": {
+            "images": "图像",
+            "masks": "遮罩",
+            "file_name": "文件名",
+            "frame_count": "帧数"
+        }
+    },
+    "LayerUtility: PurgeVRAM": {
+        "title": "图层工具：清除虚拟内存",
+        "inputs": {
+            "anything": "任何"
+        },
+        "widgets": {
+            "purge_cache": "清除缓存",
+            "purge_models": "清除模型"
+        },
+        "outputs": {}
+    },
+    "LayerUtility: PurgeVRAM V2": {
+        "title": "图层工具：清除虚拟内存V2",
+        "inputs": {
+            "anything": "任何"
+        },
+        "widgets": {
+            "purge_cache": "清除缓存",
+            "purge_models": "清除模型"
+        },
+        "outputs": {
+            "any": "任意"
+        }
+    },
+    "LayerUtility: FluxKontextImageScale": {
+        "title": "图层工具：Flux Kontext图像缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "image": "图像",
+            "IMAGE": "图像"
+        }
+    },
+    "LayerColor: Negative": {
+        "title": "图层颜色：反相",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "negative_channel": "反相通道"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: NanoBananaImageScale": {
+        "title": "图层工具：纳米香蕉 图像缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerMask: MaskBoxExtend": {
+        "title": "图层遮罩：反相",
+        "inputs": {
+            "mask": "遮罩",
+            "crop_box": "裁剪框"
+        },
+        "widgets": {
+            "top_extend": "上扩展",
+            "bottem_extend": "下扩展",
+            "left_extend": "左扩展",
+            "right_extend": "右扩展"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "x_percent": "x 百分比",
+            "y_percent": "y 百分比",
+            "width": "宽度",
+            "height": "高度",
+            "crop_box": "裁剪框"
+        }
+    }
+}

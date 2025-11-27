@@ -1,0 +1,1209 @@
+{
+    "AV_IPAdapterPipe": {
+        "title": "AV_IPAdapter节点束",
+        "inputs": {
+            "ip_adapter_name": "IP适配器名称",
+            "clip_name": "CLIP名称"
+        },
+        "widgets": {},
+        "outputs": {
+            "pipeline": "IPAdapter"
+        }
+    },
+    "AV_IPAdapter": {
+        "title": "AV_IPAdapter",
+        "inputs": {
+            "ip_adapter_name": "IP适配器名称",
+            "clip_name": "CLIP名称",
+            "model": "模型",
+            "image": "图像",
+            "ip_adapter_opt": "IP适配器选项",
+            "clip_vision_opt": "CLIP视觉选项",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "start_at": "开始位置",
+            "end_at": "结束位置",
+            "enabled": "启用"
+        },
+        "outputs": {
+            "model": "模型",
+            "pipeline": "IPAdapter",
+            "clip_vision": "CLIP视觉"
+        }
+    },
+    "AV_VAELoader": {
+        "title": "AV VAE加载器",
+        "inputs": {},
+        "widgets": {
+            "vae_name": "VAE名称",
+            "vae_override": "VAE覆盖"
+        },
+        "outputs": {}
+    },
+    "AV_LoraLoader": {
+        "title": "AV Lora加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_name": "Lora名称",
+            "strength_model": "强度模型",
+            "strength_clip": "强度CLIP",
+            "lora_override": "Lora 覆盖",
+            "enabled": "开启"
+        },
+        "outputs": {}
+    },
+    "AV_LoraListStacker": {
+        "title": "AVLora堆列表",
+        "inputs": {
+            "lora_stack": "Lora堆"
+        },
+        "widgets": {
+            "data": "数据"
+        },
+        "outputs": {
+            "LORA_STACK": "Lora堆"
+        }
+    },
+    "AV_LoraListLoader": {
+        "title": "AV Lora列表加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "data": "数据"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        }
+    },
+    "AV_CheckpointModelsToParametersPipe": {
+        "title": "AV Checkpoint模型转为节点束",
+        "inputs": {
+            "pipe": "节点束"
+        },
+        "widgets": {
+            "ckpt_name": "Checkpoint大模型名称",
+            "secondary_ckpt_name": "第二Checkpoint名称",
+            "vae_name": "VAE名称",
+            "upscaler_name": "超分放大模型名称",
+            "secondary_upscaler_name": "第二超分放大模型名称",
+            "lora_1_name": "Lora_1名称",
+            "lora_2_name": "Lora_2名称",
+            "lora_3_name": "Lora_3名称"
+        },
+        "outputs": {
+            "PIPE": "节点束"
+        }
+    },
+    "AV_PromptsToParametersPipe": {
+        "title": "AV 提示词转为节点束",
+        "inputs": {
+            "pipe": "节点束",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        },
+        "outputs": {
+            "PIPE": "节点束"
+        }
+    },
+    "AV_ParametersPipeToCheckpointModels": {
+        "title": "AV 节点束转为Checkpoint模型",
+        "inputs": {
+            "pipe": "节点束"
+        },
+        "widgets": {},
+        "outputs": {
+            "pipe": "节点束",
+            "ckpt_name": "Checkpoint名称",
+            "secondary_ckpt_name": "第二Checkpoint名称",
+            "vae_name": "VAE名称",
+            "upscaler_name": "超分放大模型名称",
+            "secondary_upscaler_name": "第二超分放大模型名称",
+            "lora_1_name": "Lora名称",
+            "lora_2_name": "Lora名称",
+            "lora_3_name": "Lora名称"
+        }
+    },
+    "AV_ParametersPipeToPrompts": {
+        "title": "AV 节点束转为提示词",
+        "inputs": {
+            "pipe": "节点束"
+        },
+        "widgets": {},
+        "outputs": {
+            "pipe": "节点束",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "AV_CheckpointMerge": {
+        "title": "AV 合并大模型Checkpoint",
+        "inputs": {
+            "model1": "模型_1",
+            "model2": "模型_2"
+        },
+        "widgets": {
+            "model1_weight": "模型_1权重",
+            "model2_weight": "模型_2权重"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "AV_CheckpointSave": {
+        "title": "AV 保存大模型Checkpoint",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "dtype": "数据类型"
+        },
+        "outputs": {}
+    },
+    "LoadImageFromUrl": {
+        "title": "从网址加载图像",
+        "inputs": {},
+        "widgets": {
+            "image": "图像",
+            "keep_alpha_channel": "保留Alpha透明通道",
+            "output_mode": "输出模式"
+        },
+        "outputs": {
+            "images": "图像",
+            "masks": "遮罩",
+            "has_image": "是否有图像"
+        }
+    },
+    "LoadImageAsMaskFromUrl": {
+        "title": "从网址加载图像（作为遮罩）",
+        "inputs": {},
+        "widgets": {
+            "image": "图像",
+            "channel": "通道",
+            "output_mode": "输出模式"
+        },
+        "outputs": {
+            "masks": "遮罩"
+        }
+    },
+    "LoadJsonFromText": {
+        "title": "从文本加载JSON",
+        "inputs": {},
+        "widgets": {
+            "data": "数据"
+        },
+        "outputs": {
+            "json": "JSON"
+        }
+    },
+    "LoadJsonFromUrl": {
+        "title": "从网址加载JSON",
+        "inputs": {},
+        "widgets": {
+            "url": "网址",
+            "print_to_console": "打印到控制台"
+        },
+        "outputs": {
+            "json": "JSON"
+        }
+    },
+    "GetObjectFromJson": {
+        "title": "从JSON获取对象",
+        "inputs": {
+            "json": "JSON"
+        },
+        "widgets": {
+            "key": "密匙"
+        },
+        "outputs": {
+            "json": "JSON"
+        }
+    },
+    "GetTextFromJson": {
+        "title": "从JSON获取文本",
+        "inputs": {
+            "json": "JSON"
+        },
+        "widgets": {
+            "key": "密匙"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "GetFloatFromJson": {
+        "title": "从JSON获取浮点数",
+        "inputs": {
+            "json": "JSON"
+        },
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "GetIntFromJson": {
+        "title": "从JSON获取整数",
+        "inputs": {
+            "json": "JSON"
+        },
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "int": "整数"
+        }
+    },
+    "GetBoolFromJson": {
+        "title": "从JSON获取布尔值",
+        "inputs": {
+            "json": "JSON"
+        },
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "boolean": "布尔"
+        }
+    },
+    "RandomInt": {
+        "title": "生成随机整数",
+        "inputs": {},
+        "widgets": {
+            "min": "最小值",
+            "max": "最大值"
+        },
+        "outputs": {
+            "int": "整数",
+            "string": "字符串"
+        }
+    },
+    "RandomFloat": {
+        "title": "生成随机浮点数",
+        "inputs": {},
+        "widgets": {
+            "min": "最小值",
+            "max": "最大值"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "string": "字符串"
+        }
+    },
+    "StringToInt": {
+        "title": "字符串转整数",
+        "inputs": {},
+        "widgets": {
+            "string": "字符串"
+        },
+        "outputs": {
+            "Int": "整数"
+        }
+    },
+    "StringToNumber": {
+        "title": "字符串转数字",
+        "inputs": {},
+        "widgets": {
+            "rounding": "舍入方式",
+            "string": "字符串"
+        },
+        "outputs": {
+            "int": "整数",
+            "Floating point": "浮点"
+        }
+    },
+    "NumberScaler": {
+        "title": "数字缩放器",
+        "inputs": {},
+        "widgets": {
+            "min": "最小值",
+            "max": "最大值",
+            "scale_to_min": "缩放到最小值",
+            "scale_to_max": "缩放到最大值",
+            "value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "BooleanPrimitive": {
+        "title": "布尔值",
+        "inputs": {},
+        "widgets": {
+            "value": "值",
+            "reverse": "取反"
+        },
+        "outputs": {
+            "boolean": "布尔",
+            "string": "字符串"
+        }
+    },
+    "TextSwitchCase": {
+        "title": "文本切换情况",
+        "inputs": {},
+        "widgets": {
+            "switch_cases": "切换情况",
+            "condition": "情况",
+            "default_value": "默认值",
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "ImageMuxer": {
+        "title": "图像混合器",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4"
+        },
+        "widgets": {
+            "input_selector": "输入选择器"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "SDXLAspectRatioSelector": {
+        "title": "SDXL 宽高比选择器",
+        "inputs": {
+            "aspect_ratio": "宽高比"
+        },
+        "widgets": {
+            "aspect_ratio": "宽高比"
+        },
+        "outputs": {
+            "ratio": "比例",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "AspectRatioSelector": {
+        "title": "宽高比选择器",
+        "inputs": {
+            "aspect_ratio": "宽高比"
+        },
+        "widgets": {
+            "aspect_ratio": "宽高比"
+        },
+        "outputs": {
+            "ratio": "比例",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "DependenciesEdit": {
+        "title": "依赖项编辑",
+        "inputs": {
+            "dependencies": "依赖项",
+            "clip": "CLIP",
+            "lora_stack": "Lora堆",
+            "cnet_stack": "Control Net堆"
+        },
+        "widgets": {
+            "ckpt_name": "Checkpoint 大模型名称",
+            "vae_name": "VAE名称",
+            "clip_skip": "CLIP跳过层数",
+            "positive": "正面",
+            "negative": "负面"
+        },
+        "outputs": {
+            "DEPENDENCIES": "依赖项"
+        }
+    },
+    "ImageScaleDown": {
+        "title": "缩小图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "crop": "裁剪"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageScaleDownBy": {
+        "title": "按比例缩小图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "scale_by": "缩放比例"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageScaleDownToSize": {
+        "title": "缩小图像至指定大小",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "size": "大小",
+            "mode": "模式"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageScaleToMegapixels": {
+        "title": "缩放图像至百万像素",
+        "inputs": {
+            "images": "图像",
+            "upscale_model_opt": "放大模型选项"
+        },
+        "widgets": {
+            "megapixels": "百万像素数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageAlphaComposite": {
+        "title": "图像Alpha合成",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2"
+        },
+        "widgets": {},
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageGaussianBlur": {
+        "title": "图像高斯模糊",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "radius": "半径"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageExtractChannel": {
+        "title": "图像提取通道",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "channel": "通道"
+        },
+        "outputs": {
+            "channel_data": "遮罩"
+        }
+    },
+    "ImageApplyChannel": {
+        "title": "图像应用通道",
+        "inputs": {
+            "images": "图像",
+            "channel_data": "通道数据"
+        },
+        "widgets": {
+            "channel": "通道"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "QRCodeGenerator": {
+        "title": "二维码生成器",
+        "inputs": {
+            "error_correction": "纠错等级"
+        },
+        "widgets": {
+            "text": "文本",
+            "size": "大小",
+            "qr_version": "二维码版本",
+            "error_correction": "纠错",
+            "box_size": "模块大小",
+            "border": "边框"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageRepeat": {
+        "title": "重复图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "amount": "数量"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "SeedSelector": {
+        "title": "种子选择器",
+        "inputs": {},
+        "widgets": {
+            "mode": "模式",
+            "seed": "种子",
+            "fixed_seed": "固定种子"
+        },
+        "outputs": {
+            "seed": "种子"
+        }
+    },
+    "CheckpointNameSelector": {
+        "title": "Checkpoint大模型名称选择器",
+        "inputs": {
+            "ckpt_name": "Checkpoint大模型名称"
+        },
+        "widgets": {
+            "ckpt_name": "Checkpoint大模型名称"
+        },
+        "outputs": {
+            "ckpt_name": "Checkpoint大模型名称",
+            "ckpt_name_str": "Checkpoint大模型名称 字符串"
+        }
+    },
+    "MergeModels": {
+        "title": "合并模型",
+        "inputs": {
+            "model1": "模型_1",
+            "model2": "模型_2"
+        },
+        "widgets": {
+            "ratio": "比例"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "TextRandomMultiline": {
+        "title": "随机多行文本",
+        "inputs": {},
+        "widgets": {
+            "text": "文本",
+            "amount": "数量",
+            "seed": "种子"
+        },
+        "outputs": {
+            "lines": "行"
+        }
+    },
+    "AV_CheckpointLoader": {
+        "title": "AV Checkpoint大模型加载器",
+        "inputs": {
+            "lora_stack": "Lora堆",
+            "cnet_stack": "Control Net堆"
+        },
+        "widgets": {
+            "ckpt_name": "Checkpoint 大模型名称",
+            "vae_name": "VAE名称",
+            "clip_skip": "CLIP跳过层数",
+            "lora_name": "Lora名称",
+            "lora_model_strength": "Lora模型强度",
+            "lora_clip_strength": "Lora CLIP强度",
+            "token_normalization": "token 令牌标准化",
+            "weight_interpretation": "权重解释",
+            "empty_latent_width": "空Latent宽度",
+            "empty_latent_height": "空Latent高度",
+            "batch_size": "批次大小",
+            "ckpt_override": "Checkpoint 覆盖",
+            "vae_override": "VAE 覆盖",
+            "lora_override": "Lora 覆盖"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CONDITIONING+": "正面条件",
+            "CONDITIONING-": "负面条件",
+            "DEPENDENCIES": "依赖项"
+        }
+    },
+    "Fooocus_KSampler": {
+        "title": "AV K采样器（Fooocus）",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent图像"
+        },
+        "widgets": {
+            "seed": "随机种子",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器名称",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "sharpness": "锐度"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "Fooocus_KSamplerAdvanced": {
+        "title": "AV 高级K采样器（Fooocus）",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent图像"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "noise_seed": "噪波种子",
+            "seed": "随机种子",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器名称",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "start_at_step": "开始步数",
+            "end_at_step": "结束步数",
+            "return_with_leftover_noise": "返回剩余噪波",
+            "sharpness": "锐度"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "Fooocus_KSamplerEfficient": {
+        "title": "AV 带脚本的效率K采样器（Fooocus）",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent图像",
+            "optional_vae": "可选VAE",
+            "script": "脚本"
+        },
+        "widgets": {
+            "seed": "随机种子",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器名称",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "preview_method": "预览方法",
+            "vae_decode": "VAE解码",
+            "sharpness": "锐度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CONDITIONING+": "正面条件",
+            "CONDITIONING-": "负面条件",
+            "DEPENDENCIES": "依赖项",
+            "latent": "Latent",
+            "IMAGE": "图像"
+        }
+    },
+    "Fooocus_KSamplerEfficientAdvanced": {
+        "title": "AV 带脚本的高级效率K采样器（Fooocus）",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent图像",
+            "optional vae": "可选VAE",
+            "script": "脚本"
+        },
+        "widgets": {
+            "seed": "随机种子",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器名称",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "preview_method": "预览方法",
+            "vae_decode": "VAE解码",
+            "sharpness": "锐度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CONDITIONING+": "正面条件",
+            "CONDITIONING-": "负面条件",
+            "DEPENDENCIES": "依赖项",
+            "latent": "Latent",
+            "IMAGE": "图像"
+        }
+    },
+    "AV_FaceDetailer": {
+        "title": "AV 面部细节增强器",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {}
+    },
+    "AV_FaceDetailerPipe": {
+        "title": "AV 面部细节增强器节点束",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {}
+    },
+    "PrepareImageAndMaskForInpaint": {
+        "title": "为修复准备图像和遮罩",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "controlnet_image": "ControlNet图像"
+        },
+        "widgets": {
+            "mask_blur": "遮罩模糊",
+            "inpaint_masked": "修复遮罩区域",
+            "mask_padding": "遮罩填充",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "inpaint_image": "图像",
+            "inpaint_mask": "遮罩",
+            "overlay_image": "图像",
+            "crop_region": "裁剪区域",
+            "controlnet_image": "图像"
+        }
+    },
+    "OverlayInpaintedLatent": {
+        "title": "覆盖修复后的Latent图像",
+        "inputs": {
+            "original": "原始图像",
+            "inpainted": "修复后的图像",
+            "mask": "遮罩"
+        },
+        "widgets": {},
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "OverlayInpaintedImage": {
+        "title": "覆盖修复后的图像",
+        "inputs": {
+            "inpainted": "修复后的图像",
+            "overlay_image": "覆盖图像",
+            "crop_region": "裁剪区域"
+        },
+        "widgets": {},
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "AV_SAMLoader": {
+        "title": "AV_加载SAM模型",
+        "inputs": {},
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "sam_model": "SAM模型"
+        }
+    },
+    "GetSAMEmbedding": {
+        "title": "获取SAM嵌入",
+        "inputs": {
+            "sam_model": "SAM模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "device_mode": "设备模式"
+        },
+        "outputs": {
+            "SAM_EMBEDDING": "SAM嵌入"
+        }
+    },
+    "SAMEmbeddingToImage": {
+        "title": "将SAM嵌入转换为图像",
+        "inputs": {
+            "embedding": "嵌入"
+        },
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "BLIPLoader": {
+        "title": "加载Blip模型",
+        "inputs": {
+            "model_name": "模型名称"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "BLIP_MODEL": "Blip模型"
+        }
+    },
+    "DownloadAndLoadBlip": {
+        "title": "下载并加载Blip模型",
+        "inputs": {
+            "model_name": "模型名称"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "BLIP_MODEL": "Blip模型"
+        }
+    },
+    "BLIPCaption": {
+        "title": "生成Blip字幕",
+        "inputs": {
+            "image": "图像",
+            "blip_model": "Blip模型"
+        },
+        "widgets": {
+            "min_length": "最小长度",
+            "max_length": "最大长度",
+            "device_mode": "设备模式",
+            "prefix": "前缀",
+            "suffix": "后缀",
+            "enabled": "启用"
+        },
+        "outputs": {
+            "caption": "字幕"
+        }
+    },
+    "DeepDanbooruCaption": {
+        "title": "深度Danbooru 标题",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值",
+            "sort_alpha": "按字母排序",
+            "use_spaces": "使用空格",
+            "escape": "转义",
+            "filter_tags": "过滤标签",
+            "prefix": "前缀",
+            "suffix": "后缀",
+            "enabled": "启用",
+            "device_mode": "设备模式"
+        },
+        "outputs": {
+            "caption": "标题"
+        }
+    },
+    "ISNetLoader": {
+        "title": "ISNet 加载器",
+        "inputs": {
+            "model_name": "模型名称"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "ISNET_MODEL": "ISNet 模型"
+        }
+    },
+    "DownloadISNetModel": {
+        "title": "下载 ISNet 模型",
+        "inputs": {
+            "model_name": "模型名称"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "ISNET_MODEL": "ISNet 模型"
+        }
+    },
+    "ISNetSegment": {
+        "title": "ISNet 分割",
+        "inputs": {
+            "images": "图像",
+            "isnet_model": "ISNet 模型"
+        },
+        "widgets": {
+            "threshold": "阈值",
+            "device_mode": "设备模式",
+            "enabled": "启用"
+        },
+        "outputs": {
+            "segmented": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "AV_OpenAIApi": {
+        "title": "AV OpenAI API",
+        "inputs": {},
+        "widgets": {
+            "openai_api_key": "OpenAI API 密钥",
+            "endpoint": "端点"
+        },
+        "outputs": {
+            "LLM_API": "大语言模型 API"
+        }
+    },
+    "AV_ClaudeApi": {
+        "title": "AV Claude API",
+        "inputs": {},
+        "widgets": {
+            "claude_api_key": "Claude API 密钥",
+            "endpoint": "端点",
+            "version": "版本"
+        },
+        "outputs": {
+            "llm_api": "大语言模型 API"
+        }
+    },
+    "AV_AwsBedrockMistralApi": {
+        "title": "AV AWS Bedrock Mistral API",
+        "inputs": {},
+        "widgets": {
+            "aws_access_key_id": "AWS访问密钥ID",
+            "aws_secret_access_key": "AWS秘密访问密钥",
+            "aws_session_token": "AWS会话令牌",
+            "region": "区域"
+        },
+        "outputs": {
+            "llm_api": "大语言模型API"
+        },
+        "description": "Mistral AI 是一家欧洲的 AI 公司\n其模型以“小而精”著称，在保持出色性能的同时，具有更低的延迟和成本\n 特别擅长代码生成和复杂推理"
+    },
+    "AV_AwsBedrockClaudeApi": {
+        "title": "AV AWS Bedrock Claude API",
+        "inputs": {},
+        "widgets": {
+            "aws_access_key_id": "AWS访问密钥ID",
+            "aws_secret_access_key": "AWS秘密访问密钥",
+            "aws_session_token": "AWS会话令牌",
+            "region": "区域",
+            "version": "版本"
+        },
+        "outputs": {
+            "llm_api": "大语言模型API"
+        },
+        "description": "Claude 是由 Anthropic 开发的 AI 模型家族\n其强大的对话能力、可靠的安全性和超长的上下文窗口而著称\n Anthropic 非常注重 AI 安全与对齐"
+    },
+    "AV_LLMApiConfig": {
+        "title": "AV 大语言模型API配置",
+        "inputs": {},
+        "widgets": {
+            "model": "模型",
+            "max_token": "最大令牌数",
+            "temperature": "温度"
+        },
+        "outputs": {
+            "llm_config": "大语言模型配置"
+        }
+    },
+    "AV_LLMMessage": {
+        "title": "AV 大语言模型消息",
+        "inputs": {
+            "image": "图像",
+            "messages": "消息"
+        },
+        "widgets": {
+            "role": "角色",
+            "text": "文本"
+        },
+        "outputs": {
+            "messages": "大语言模型消息"
+        }
+    },
+    "AV_LLMChat": {
+        "title": "AV 大语言模型聊天",
+        "inputs": {
+            "messages": "消息",
+            "api": "API",
+            "config": "配置"
+        },
+        "widgets": {
+            "seed": "种子"
+        },
+        "outputs": {
+            "response": "响应"
+        }
+    },
+    "AV_LLMCompletion": {
+        "title": "AV 大语言模型补全",
+        "inputs": {
+            "api": "API",
+            "config": "配置"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "seed": "种子"
+        },
+        "outputs": {
+            "response": "响应"
+        }
+    },
+    "ColorBlend": {
+        "title": "颜色混合",
+        "inputs": {
+            "bw_layer": "黑白图层",
+            "color_layer": "彩色图层"
+        },
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ColorCorrect": {
+        "title": "颜色校正",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "temperature": "色温",
+            "hue": "色相",
+            "brightness": "亮度",
+            "contrast": "对比度",
+            "saturation": "饱和度",
+            "gamma": "伽马值"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "AV_ControlNetLoader": {
+        "title": "AV ControlNet加载器",
+        "inputs": {
+            "timestep_keyframe": "时间步长 关键帧"
+        },
+        "widgets": {
+            "control_net_name": "Control Net名称",
+            "control_net_override": "Control Net覆盖"
+        },
+        "outputs": {
+            "controlnet": "Control Net"
+        }
+    },
+    "AV_ControlNetEfficientLoaderAdvanced": {
+        "title": "AV ControlNet效率加载器（高级）",
+        "inputs": {
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "image": "图像",
+            "timestep_keyframe": "时间步长 关键帧"
+        },
+        "widgets": {
+            "control_net_name": "Control Net名称",
+            "strength": "强度",
+            "start_percent": "开始百分比",
+            "end_percent": "结束百分比",
+            "preprocessor": "预处理器",
+            "control_net_override": "Control Net覆盖",
+            "resolution": "分辨率",
+            "enabled": "开启"
+        },
+        "outputs": {
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        }
+    },
+    "AV_ControlNetEfficientStacker": {
+        "title": "AV ControlNet堆 效率（高级）",
+        "inputs": {
+            "image": "图像",
+            "cnet_stack": "ControlNet 堆",
+            "timestep_keyframe": "时间步长 关键帧"
+        },
+        "widgets": {
+            "control_net_name": "Control Net名称",
+            "strength": "强度",
+            "start_percent": "开始百分比",
+            "end_percent": "结束百分比",
+            "preprocessor": "预处理器",
+            "control_net_override": "Control Net覆盖",
+            "resolution": "分辨率",
+            "enabled": "开启"
+        },
+        "outputs": {
+            "CNET_STACK": "ControlNet 堆"
+        }
+    },
+    "AV_ControlNetPreprocessor": {
+        "title": "AV ControlNet预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "preprocessor": "预处理器",
+            "sd_version": "Control Net覆盖",
+            "resolution": "分辨率",
+            "preprocessor_override": "预处理器覆盖"
+        },
+        "outputs": {
+            "image": "图像",
+            "CNET_NAME": "ControlNet 名称"
+        }
+    },
+    "LoadLaMaModel": {
+        "title": "加载LaMa模型",
+        "inputs": {},
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "LaMa_model": "LaMa模型"
+        }
+    },
+    "LaMaInpaint": {
+        "title": "LaMa 移除对象",
+        "inputs": {
+            "lama_model": "LaMa模型",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "device_mode": "设备模式"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "AV_ControlNetEfficientStackerSimple": {
+        "title": "ControlNet堆",
+        "inputs": {
+            "image": "图像",
+            "cnet_stack": "ControlNet 堆",
+            "timestep_keyframe": "时间步长 关键帧"
+        },
+        "widgets": {
+            "control_net_name": "Control Net名称",
+            "strength": "强度",
+            "start_percent": "开始百分比",
+            "end_percent": "结束百分比",
+            "preprocessor": "预处理器",
+            "control_net_override": "Control Net覆盖",
+            "resolution": "分辨率",
+            "enabled": "开启"
+        },
+        "outputs": {
+            "CNET_STACK": "ControlNet 堆"
+        }
+    },
+    "SDXLPromptStyler": {
+        "title": "SDXL提示词样式器",
+        "inputs": {
+            "style": "样式",
+            "log_prompt": "日志提示词"
+        },
+        "widgets": {
+            "text_positive": "正面文本",
+            "text_negative": "负面文本",
+            "style_name": "样式名称"
+        },
+        "outputs": {
+            "positive_prompt_text_g": "正面提示词文本_g",
+            "negative_prompt_text_g": "负面提示词文本_g"
+        }
+    }
+}

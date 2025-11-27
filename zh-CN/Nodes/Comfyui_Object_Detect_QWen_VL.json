@@ -1,0 +1,40 @@
+{
+    "DownloadAndLoadQwenModel": {
+        "title": "下载并加载模型（Qwen2.5-VL）",
+        "widgets": {
+            "model_name": "模型名称",
+            "device": "设备",
+            "precision": "精度",
+            "attention": "注意力机制"
+        },
+        "outputs": {
+            "qwen_model": "Qwen模型"
+        }
+    },
+    "QwenVLDetection": {
+        "title": "目标检测（Qwen2.5-VL）",
+        "inputs": {
+            "qwen_model": "Qwen模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "target": "检测目标",
+            "bbox_selection": "边界框选择",
+            "score_threshold": "分数阈值",
+            "merge_boxes": "合并边界框"
+        },
+        "outputs": {
+            "text": "文本",
+            "bboxes": "Bboxes"
+        }
+    },
+    "BBoxesToSAM2": {
+        "title": "输出边界框至SAM2",
+        "inputs": {
+            "bboxes": "Bboxes"
+        },
+        "outputs": {
+            "sam2_bboxes": "SAM2_Bboxes"
+        }
+    }
+}

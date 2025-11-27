@@ -1,0 +1,24 @@
+{
+    "DownloadAndLoadDepthAnythingV2Model": {
+        "title": "下载并加载 任何深度V2模型",
+        "inputs": {},
+        "widgets": {
+            "model": "模型",
+            "precision": "精度"
+        },
+        "outputs": {
+            "da_v2_model": "深度V2模型"
+        }
+    },
+    "DepthAnything_V2": {
+        "title": "任何深度V2",
+        "inputs": {
+            "da_model": "深度V2模型",
+            "images": "图像"
+        },
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "DetectFaces": {
+        "title": "检测人脸", 
+        "inputs": {
+            "image": "输入图像", 
+            "mask": "遮罩" 
+        },
+        "widgets": {
+            "threshold": "阈值", 
+            "min_size": "最小尺寸", 
+            "max_size": "最大尺寸" 
+        },
+        "outputs": {
+            "faces": "检测出的人脸数据" 
+        }
+    },
+    "CropFaces": {
+        "title": "裁剪人脸",
+        "inputs": {
+            "faces": "人脸数据"
+        },
+        "widgets": {
+            "crop_size": "裁剪尺寸",
+            "crop_factor": "裁剪系数",
+            "mask_type": "遮罩类型"
+        },
+        "outputs": {
+            "crops": "裁剪后图像",
+            "masks": "遮罩数据",
+            "warps": "变换数据"
+        }
+    },
+    "WarpFacesBack": {
+        "title": "人脸逆变换",
+        "inputs": {
+            "images": "原始图像",
+            "face": "人脸数据",
+            "crop": "裁剪信息",
+            "mask": "遮罩数据",
+            "warp": "变换参数"
+        }
+    },
+    "BiSeNetMask": {
+        "title": "BiSeNet遮罩",
+        "inputs": {
+            "crop": "裁剪信息"
+        },
+        "widgets": {
+            "skin": "皮肤",
+            "left_brow": "左眉毛",
+            "right_brow": "右眉毛",
+            "left_eye": "左眼",
+            "right_eye": "右眼",
+            "eyeglasses": "眼镜",
+            "left_ear": "左耳朵",
+            "right_ear": "右耳朵",
+            "earring": "耳环",
+            "nose": "鼻子",
+            "mouth": "嘴巴",
+            "upper_lip": "上嘴唇",
+            "lower_lip": "下嘴唇",
+            "neck": "脖子",
+            "necklace": "项链",
+            "cloth": "衣物",
+            "hair": "头发",
+            "hat": "帽子"
+        }
+    },
+    "JonathandinuMask": {
+        "title": "Jonathandinu遮罩",
+        "inputs": {
+            "crop": "裁剪信息"
+        },
+        "widgets": {
+            "skin": "皮肤",
+            "nose": "鼻子",
+            "eyeglasses": "眼镜",
+            "left_eye": "左眼",
+            "right_eye": "右眼",
+            "left_brow": "左眉毛",
+            "right_brow": "右眉毛",
+            "left_ear": "左耳朵",
+            "right_ear": "右耳朵",
+            "mouth": "嘴巴",
+            "upper_lip": "上嘴唇",
+            "lower_lip": "下嘴唇",
+            "hair": "头发",
+            "hat": "帽子",
+            "earring": "耳环",
+            "necklace": "项链",
+            "neck": "脖子",
+            "cloth": "衣物"
+        }
+    },
+    "MergeWarps": {
+        "title": "合并变换",
+        "inputs": {
+            "crop0": "裁剪0",
+            "mask0": "遮罩0",
+            "warp0": "变换0",
+            "crop1": "裁剪1",
+            "mask1": "遮罩1",
+            "warp1": "变换1"
+        },
+        "outputs": {
+            "WARP": "合并后变换数据"
+        }
+    },
+    "GenderFaceFilter": {
+        "title": "性别人脸筛选器",
+        "inputs": {
+            "faces": "人脸数据"
+        },
+        "widgets": {
+            "gender": "性别"
+        },
+        "outputs": {
+            "filtered": "筛选后人脸数据",
+            "rest": "剩余人脸数据"
+        }
+    },
+    "OrderedFaceFilter": {
+        "title": "有序人脸筛选器",
+        "inputs": {
+            "faces": "人脸数据"
+        },
+        "widgets": {
+            "criteria": "筛选条件",
+            "order": "排序方式",
+            "take_start": "起始索引",
+            "take_count": "选取数量"
+        },
+        "outputs": {
+            "filtered": "筛选后人脸数据",
+            "rest": "剩余人脸数据"
+        }
+    }
+}

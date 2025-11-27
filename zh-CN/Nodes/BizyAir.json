@@ -1,0 +1,2349 @@
+{
+    "BizyAir_SAMModelLoader": {
+        "title": "☁️BizyAir SAM模型加载器",
+        "inputs": {
+            "model_name": "模型名称"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "SAM_PREDICTOR": "SAM预测器"
+        }
+    },
+    "BizyAir_StyleModelApply": {
+        "title": "☁️BizyAir 任意风格模型应用",
+        "inputs": {
+            "conditioning": "条件输入",
+            "style_model": "风格模型",
+            "clip_vision_output": "CLIP视觉输出"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_GroundingDinoModelLoader": {
+        "title": "☁️BizyAir GroundingDino模型加载器",
+        "inputs": {
+            "model_name": "模型名称"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "GROUNDING_DINO_MODEL": "GroundingDino模型"
+        }
+    },
+    "BizyAir_VITMatteModelLoader": {
+        "title": "☁️BizyAir VITMatte模型加载器",
+        "inputs": {
+            "detail_method": "细节处理方法"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法"
+        },
+        "outputs": {
+            "VitMatte_MODEL": "VITMatte模型",
+            "VitMatte_predictor": "VITMatte预测器"
+        }
+    },
+    "BizyAir_GroundingDinoSAMSegment": {
+        "title": "☁️BizyAir GroundingDino-SAM联合分割",
+        "inputs": {
+            "grounding_dino_model": "GroundingDino模型",
+            "sam_predictor": "SAM预测器",
+            "image": "输入图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "box_threshold": "框检测阈值",
+            "text_threshold": "文本检测阈值"
+        },
+        "outputs": {
+            "IMAGE": "输出图像",
+            "MASK": "输出遮罩"
+        }
+    },
+    "BizyAir_TrimapGenerate": {
+        "title": "☁️BizyAir Trimap生成器",
+        "inputs": {
+            "mask": "输入遮罩"
+        },
+        "widgets": {
+            "detail_erode": "细节腐蚀量",
+            "detail_dilate": "细节膨胀量"
+        },
+        "outputs": {
+            "trimap": "输出遮罩"
+        }
+    },
+    "BizyAir_VITMattePredict": {
+        "title": "☁️BizyAir VITMatte预测",
+        "inputs": {
+            "image": "输入图像",
+            "trimap": "Trimap遮罩",
+            "vitmatte_model": "VITMatte模型",
+            "vitmatte_predictor": "VITMatte预测器"
+        },
+        "widgets": {
+            "black_point": "黑场阈值",
+            "white_point": "白场阈值",
+            "max_megapixels": "最大百万像素数"
+        },
+        "outputs": {
+            "image": "输出图像",
+            "mask": "遮罩"
+        }
+    },
+    "BizyAirDetailMethodPredict": {
+        "title": "☁️BizyAir 细节方法预测",
+        "inputs": {
+            "image": "输入图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节腐蚀量",
+            "detail_dilate": "细节膨胀量",
+            "black_point": "黑场阈值",
+            "white_point": "白场阈值"
+        },
+        "outputs": {
+            "image": "输出图像",
+            "mask": "遮罩"
+        }
+    },
+    "BizyAirBaseNode": {
+        "title": "☁️BizyAir 基础节点",
+        "inputs": {
+            "class_type": "类类型",
+            "kwargs": "参数字典",
+            "node_ios": "节点输入输出"
+        },
+        "outputs": {}
+    },
+    "BizyAirSiliconCloudLLMAPI": {
+        "title": "☁️BizyAir 硅基流动大语言模型API",
+        "inputs": {
+            "images": "输入图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "system_prompt": "系统提示",
+            "user_prompt": "用户提示",
+            "max_tokens": "最大token数",
+            "temperature": "温度参数"
+        },
+        "outputs": {
+            "SRTING": "文本输出"
+        }
+    },
+    "BizyAirSiliconCloudVLMAPI": {
+        "title": "☁️BizyAir 硅基流动视觉语言模型API",
+        "inputs": {
+            "images": "输入图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "system_prompt": "系统提示",
+            "user_prompt": "用户提示",
+            "max_tokens": "最大token数",
+            "temperature": "温度参数",
+            "detail": "细节级别"
+        },
+        "outputs": {
+            "SRTING": "文本输出"
+        }
+    },
+    "BizyAirJoyCaption": {
+        "title": "☁️BizyAir Joy图像描述生成",
+        "inputs": {
+            "image": "输入图像"
+        },
+        "widgets": {
+            "do_sample": "启用采样",
+            "temperature": "温度参数",
+            "max_tokens": "最大token数"
+        },
+        "outputs": {
+            "SRTING": "文本输出"
+        }
+    },
+    "BizyAirJoyCaption2": {
+        "title": "☁️BizyAir Joy图像描述生成2.0",
+        "inputs": {
+            "image": "输入图像"
+        },
+        "widgets": {
+            "do_sample": "启用采样",
+            "temperature": "温度参数",
+            "max_tokens": "最大token数",
+            "caption_type": "描述类型",
+            "caption_length": "描述长度",
+            "extra_options": "额外选项",
+            "name_input": "名称输入",
+            "custom_prompt": "自定义提示"
+        },
+        "outputs": {
+            "SRTING": "文本输出"
+        }
+    },
+    "BizyAirJoyCaption3": {
+        "title": "☁️BizyAir Joy图像描述生成3.0",
+        "inputs": {
+            "image": "输入图像"
+        },
+        "widgets": {
+            "do_sample": "启用采样",
+            "temperature": "温度参数",
+            "max_tokens": "最大token数",
+            "caption_type": "描述类型",
+            "caption_length": "描述长度",
+            "extra_options": "额外选项",
+            "name_input": "名称输入",
+            "custom_prompt": "自定义提示"
+        },
+        "outputs": {
+            "SRTING": "文本输出"
+        }
+    },
+    "BizyAirMZChatGLM3TextEncode": {
+        "title": "☁️BizyAir MZ-ChatGLM3文本编码",
+        "inputs": {
+            "text": "输入文本"
+        },
+        "outputs": {
+            "conditioning": "条件输出"
+        }
+    },
+    "BizyAir_MinusZoneChatGLM3TextEncode": {
+        "title": "☁️BizyAir MinusZone ChatGLM3文本编码",
+        "inputs": {
+            "text": "输入文本"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_KSampler": {
+        "title": "☁️BizyAir K采样器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "latent_image": "latent图像"
+        },
+        "widgets": {
+            "seed": "随机种子",
+            "steps": "步数",
+            "cfg": "CFG值",
+            "sampler_name": "采样器名称",
+            "scheduler": "调度器",
+            "denoise": "降噪强度"
+        },
+        "outputs": {
+            "LATENT": "latent"
+        }
+    },
+    "BizyAir_KSamplerAdvanced": {
+        "title": "☁️BizyAir K采样器（高级）",
+        "inputs": {
+            "model": "模型",
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "latent_image": "latent图像"
+        },
+        "widgets": {
+            "add_noise": "添加随机",
+            "noise_seed": "随机种子",
+            "control_after_generate": "生成后控制",
+            "steps": "步数",
+            "cfg": "CFG值",
+            "sampler_name": "采样器名称",
+            "scheduler": "调度器",
+            "start_at_step": "设置引导开始",
+            "end_at_step": "设置引导结束",
+            "return_with_leftover_noise": "携带剩余噪声返回"
+        },
+        "outputs": {
+            "LATENT": "latent"
+        }
+    },
+    "BizyAir_CheckpointLoaderSimple": {
+        "title": "☁️BizyAir简易检查点加载器",
+        "widgets": {
+            "ckpt_name": "检查点名称",
+            "model_version_id": "模型版本ID"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE"
+        }
+    },
+    "BizyAir_CLIPTextEncode": {
+        "title": "☁️BizyAir CLIP文本编码",
+        "inputs": {
+            "text": "文本",
+            "clip": "CLIP模型"
+        },
+        "outputs": {
+            "CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_VAEDecode": {
+        "title": "☁️BizyAir VAE解码器",
+        "inputs": {
+            "samples": "样本",
+            "vae": "VAE模型"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAir_LoraLoader": {
+        "title": "☁️BizyAir LoRA加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP模型"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度",
+            "model_version_id": "模型版本ID"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "BizyAir_LoraLoader_Legacy": {
+        "title": "☁️BizyAir LoRA加载器(旧版)",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP模型"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "BizyAir_SharedLoraLoader": {
+        "title": "☁️BizyAir 共享 LoRa 加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP模型"
+        },
+        "widgets": {
+            "share_id": "共享ID",
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "BizyAir_VAEEncode": {
+        "title": "☁️BizyAir VAE编码器",
+        "inputs": {
+            "pixels": "像素数据",
+            "vae": "VAE模型"
+        },
+        "outputs": {
+            "latent": "潜空间"
+        }
+    },
+    "BizyAir_VAEEncodeForInpaint": {
+        "title": "☁️BizyAir VAE修复编码器",
+        "inputs": {
+            "pixels": "像素数据",
+            "vae": "VAE模型",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "grow_mask_by": "遮罩扩展量"
+        },
+        "outputs": {
+            "none": "无"
+        }
+    },
+    "BizyAir_ControlNetLoader": {
+        "title": "☁️BizyAir ControlNet加载器",
+        "widgets": {
+            "control_net_name": "ControlNet名称",
+            "model_version_id": "模型版本ID"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "BizyAir_ControlNetLoader_Legacy": {
+        "title": "☁️BizyAir ControlNet加载器(旧版)",
+        "widgets": {
+            "control_net_name": "ControlNet名称"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "BizyAir_CLIPSetLastLayer": {
+        "title": "☁️BizyAir CLIP 设置最后层",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "stop_at_clip_layer": "停在clip层"
+        },
+        "outputs": {
+            "BIZYAIR_CLIP": "BizyAir_CLIP"
+        }
+    },
+    "BizyAir_ConditioningCombine": {
+        "title": "☁️BizyAir 条件(结合)",
+        "inputs": {
+            "conditioning_1": "条件1",
+            "conditioning_2": "条件2"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_CLIPVisionEncode": {
+        "title": "☁️BizyAir CLIP视觉编码",
+        "inputs": {
+            "clip_vision": "clip视觉",
+            "image": "图像"
+        },
+        "outputs": {
+            "CLIP_VISION_OUTPUT": "clip视觉输出"
+        }
+    },
+    "BizyAir_ConditioningSetArea": {
+        "title": "☁️BizyAir 条件(设置区域)",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "strength": "强度"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_ConditioningSetAreaPercentage": {
+        "title": "☁️BizyAir 条件(设置百分比面积)",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "strength": "强度"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_ConditioningSetMask": {
+        "title": "☁️BizyAir 条件(设置遮罩)",
+        "inputs": {
+            "conditioning": "条件",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "strength": "强度",
+            "set_cond_area": "设置条件区域"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_InpaintModelConditioning": {
+        "title": "☁️BizyAir 内补模型条件",
+        "inputs": {
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "pixels": "像素图像",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "positive": "正向条件",
+            "negative": "负面条件"
+        }
+    },
+    "BizyAir_InpaintModelConditioning_v2": {
+        "title": "☁️BizyAir 内补模型条件v2",
+        "inputs": {
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "pixels": "像素图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "noise_mask": "噪声遮罩"
+        },
+        "outputs": {
+            "positive": "正向条件",
+            "negative": "负面条件"
+        }
+    },
+    "BizyAir_ControlNetApplyAdvanced": {
+        "title": "☁️BizyAir ControlNet高级应用",
+        "inputs": {
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "control_net": "Control_Net",
+            "image": "控制图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "起始百分比",
+            "end_percent": "结束百分比"
+        },
+        "outputs": {
+            "positive": "正向条件",
+            "negative": "负面条件"
+        }
+    },
+    "BizyAir_ControlNetApply": {
+        "title": "☁️BizyAir ControlNet应用",
+        "inputs": {
+            "conditioning": "条件输入",
+            "control_net": "Control_Net",
+            "image": "控制图像",
+            "strength": "强度"
+        },
+        "widgets": {
+            "strength": "强度"
+        },
+        "outputs": {
+            "CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_CLIPVisionLoader": {
+        "title": "☁️BizyAir CLIP视觉加载器",
+        "widgets": {
+            "clip_name": "CLIP名称"
+        },
+        "outputs": {
+            "CLIP_VISION": "CLIP视觉输出"
+        }
+    },
+    "BizyAir_VAELoader": {
+        "title": "☁️BizyAir VAE加载器",
+        "widgets": {
+            "vae_name": "vae名称"
+        },
+        "outputs": {
+            "none": "无"
+        }
+    },
+    "BizyAir_SharedControlNetLoader": {
+        "title": "☁️BizyAir 共享ControlNet加载器",
+        "widgets": {
+            "control_net_name": "ControlNet",
+            "share_id": "共享ID"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "BizyAir_StyleModelLoader": {
+        "title": "☁️BizyAir 风格模型加载器",
+        "widgets": {
+            "style_model_name": "风格模型"
+        },
+        "outputs": {
+            "BIZYAIR_STYLE_MODEL": "BizyAir 风格模型"
+        }
+    },
+    "BizyAir_Wan_T2V_Pipeline": {
+        "title": "☁️BizyAir Wan 文本到视频模块",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "resolution": "分辨率",
+            "sampling_steps": "采样步数",
+            "guidance_scale": "引导比例",
+            "shift_scale": "偏移比例",
+            "seed": "随机种子",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "video_url": "视频路径"
+        }
+    },
+    "BizyAir_Wan_ImageToVideoPipeline": {
+        "title": "☁️BizyAir Wan图像转视频流程",
+        "inputs": {
+            "lora_config": "Lora配置",
+            "image": "图像"
+        },
+        "widgets": {
+            "model_id": "模型名称",
+            "steps": "步数",
+            "cfg": "CFG值",
+            "seed": "随机种子",
+            "control_after_generate": "生成后进行控制",
+            "use_teacache": "使用缓存功能"
+        },
+        "outputs": {
+            "VIDEO": "视频"
+        }
+    },
+    "BizyAir_Wan_LoraLoader": {
+        "title": "☁️BizyAir Wan Lora加载器",
+        "widgets": {
+            "lora_name": "Lora名字",
+            "lora_weight": "Lora权重"
+        },
+        "outputs": {
+            "lora_config": "Lora配置"
+        }
+    },
+    "BizyAir_Wan_Model_Loader": {
+        "title": "☁️BizyAir Wan模型加载器",
+        "widgets": {
+            "ckpt_name": "模型"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "BizyAir_WanImageToVideo": {
+        "title": "☁️BizyAir Wan图像到视频",
+        "inputs": {
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "camera_conditions": "相机条件",
+            "clip_vision_output": "CLIP视觉输出",
+            "start_image": "起始图像",
+            "end_image": "结束图像"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "length": "时长",
+            "batch_size": "批大小"
+        },
+        "outputs": {
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
+    "BizyAirPiDiNetPreprocessor": {
+        "title": "☁️BizyAir PiDiNet软边缘线提取",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "safe": "安全内容检测",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirColorPreprocessor": {
+        "title": "☁️BizyAir 色彩调色板",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirCannyEdgePreprocessor": {
+        "title": "☁️BizyAir Canny边缘检测",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "low_threshold": "低阈值",
+            "high_threshold": "高阈值",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirSAMPreprocessor": {
+        "title": "☁️BizyAir SAM分割器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "coarse": "粗",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirBinaryPreprocessor": {
+        "title": "☁️BizyAir 二值线稿",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "bin_threshold": "二值化阈值",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirScribblePreprocessor": {
+        "title": "☁️BizyAir 涂鸦线稿",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "safe": "安全内容检测",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirM_LSDPreprocessor": {
+        "title": "☁️BizyAir M-LSD线稿",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "score_threshold": "分数阈值",
+            "dist_threshold": "距离阈值",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirUniFormer_SemSegPreprocessor": {
+        "title": "☁️BizyAir UniFormer语义分割",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirZoe_DepthMapPreprocessor": {
+        "title": "☁️BizyAir Zoe深度图",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirMiDaS_NormalMapPreprocessor": {
+        "title": "☁️BizyAir MiDaS法线图",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "bg_threshold": "背景阈值",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "POSE_KEYPOINT": "姿态关节点",
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirMiDaS_DepthMapPreprocessor": {
+        "title": "☁️BizyAir MiDaS深度图",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "bg_threshold": "背景阈值",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirOpenposePreprocessor": {
+        "title": "☁️BizyAir OpenPose姿态估计",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "detect_hand": "检测手",
+            "detect_body": "检测机构",
+            "detect_face": "检测的脸",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "POSE_KEYPOINT": "姿态关节点",
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirLineArtPreprocessor": {
+        "title": "☁️BizyAir 写实线稿",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "coarse": "粗",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirLeReS_DepthMapPreprocessor": {
+        "title": "☁️BizyAir LeReS深度图(启用boost使用leres++)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "rm_nearest": "移除最近点",
+            "rm_background": "移除背景",
+            "boost": "增强",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirBAE_NormalMapPreprocessor": {
+        "title": "☁️BizyAir BAE法线图",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirOneFormer_COCO_SemSegPreprocessor": {
+        "title": "☁️BizyAir OneFormer COCO分割",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirOneFormer_ADE20K_SemSegPreprocessor": {
+        "title": "☁️BizyAir OneFormer ADE20K分割",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirHEDPreprocessor": {
+        "title": "☁️BizyAir HED软边缘线稿",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "safe": "安全内容检测",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirFakeScribblePreprocessor": {
+        "title": "☁️BizyAir 伪涂鸦线稿(边缘检测)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "safe": "安全内容检测",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirTilePreprocessor": {
+        "title": "☁️BizyAir 分块处理",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "pyrUp_iters": "向上采样迭代次数",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "Tools_ImagesTest": {
+        "title": "☁️BizyAir 图像测试工具",
+        "inputs": {
+            "images1": "图像1",
+            "images2": "图像2"
+        },
+        "widgets": {
+            "ssim_threshold": "结构相似性阈值",
+            "raise_if_diff": "差异时引发异常",
+            "image_id": "图像 ID"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "Tools_ImageEncodeDecodeTest": {
+        "title": "☁️BizyAir 图像编码解码测试工具",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "lossless": "无损"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirDepthAnythingV2Preprocessor": {
+        "title": "☁️BizyAir DepthAnything V2(相对深度)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "ckpt_name": "安全内容检测",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirMetric3D_DepthMapPreprocessor": {
+        "title": "☁️BizyAir Metric3D深度图",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "backbone": "核心网络",
+            "fx": "焦距 x",
+            "fy": "焦距 y",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirMetric3D_NormalMapPreprocessor": {
+        "title": "☁️BizyAir Metric3D法线图",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "backbone": "核心网络",
+            "fx": "焦距 x",
+            "fy": "焦距 y",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirDWPreprocessor": {
+        "title": "☁️BizyAir DWPose姿态估计",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "detect_hand": "检测手",
+            "detect_body": "检测机构",
+            "detect_face": "检测的脸",
+            "resolution": "分辨率",
+            "bbox_detector": "bbox检测器",
+            "pose_estimator": "姿态估计"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "StableDiffusionXLControlNetUnionPipeline": {
+        "title": "☁️BizyAir ControlNet联合SDXL 1.0管线",
+        "inputs": {
+            "openpose_image": "OpenPose图像",
+            "depth_image": "深度图",
+            "hed_pidi_scribble_ted_image": "HED/PIDI/涂鸦图像",
+            "canny_lineart_anime_lineart_mlsd_image": "Canny/线稿/MLSD图像",
+            "normal_image": "法线图",
+            "segment_image": "分割图"
+        },
+        "widgets": {
+            "seed": "随机种子",
+            "num_inference_steps": "推理步数",
+            "num_images_per_prompt": "每提示图像数",
+            "guidance_scale": "引导尺度",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "control_guidance_start": "控制引导起始",
+            "control_guidance_end": "控制引导结束"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    },
+    "BizyAirSegmentAnythingText": {
+        "title": "☁️BizyAir 文本引导SAM分割",
+        "inputs": {
+            "image": "输入图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "box_threshold": "框检测阈值",
+            "text_threshold": "文本检测阈值"
+        },
+        "outputs": {
+            "IMAGE": "输出图像",
+            "MASK": "遮罩"
+        }
+    },
+    "BizyAirSegmentAnythingPointBox": {
+        "title": "☁️BizyAir 加载图像",
+        "widgets": {
+            "image": "输入图像",
+            "is_point": "是否点模式"
+        },
+        "outputs": {
+            "processed_image": "输出图像",
+            "original_image": "输出图像",
+            "mask": "遮罩"
+        }
+    },
+    "BizyAirRemoveBackground": {
+        "title": "☁️BizyAir 图像去背景",
+        "inputs": {
+            "image": "输入图像"
+        },
+        "outputs": {
+            "IMAGE": "输出图像",
+            "MASK": "遮罩"
+        }
+    },
+    "BizyAir_StyleModelApplySimple": {
+        "title": "☁️BizyAir_风格模型简易应用",
+        "inputs": {
+            "conditioning": "条件输入",
+            "style_model": "风格模型",
+            "clip_vision_output": "CLIP视觉输出"
+        },
+        "widgets": {
+            "image_strength": "图像强度"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_ReduxAdvanced": {
+        "title": "☁️BizyAir_高级复现",
+        "inputs": {
+            "conditioning": "条件输入",
+            "style_model": "风格模型",
+            "clip_vision": "CLIP视觉模型",
+            "image": "输入图像",
+            "mask": "输入遮罩"
+        },
+        "widgets": {
+            "downsampling_factor": "降采样因子",
+            "downsampling_function": "降采样函数",
+            "mode": "处理模式",
+            "weight": "权重值",
+            "autocrop_margin": "自动裁剪边距"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出",
+            "IMAGE": "输出图像",
+            "MASK": "输出遮罩"
+        }
+    },
+    "BizyAir_CogView4_6B_Pipe": {
+        "title": "☁️BizyAir_CogView4-6BAI图像生成",
+        "inputs": {
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "seed": "随机种子",
+            "guidance_scale": "引导比例",
+            "num_images_per_prompt": "单提示生成数",
+            "num_inference_steps": "推理步数",
+            "width": "生成宽度",
+            "height": "生成高度"
+        },
+        "outputs": {
+            "image": "输出图像"
+        }
+    },
+    "BizyAir_DetailDaemonSamplerNode": {
+        "title": "☁️BizyAir_细节守护采样器",
+        "inputs": {
+            "sampler": "采样器"
+        },
+        "widgets": {
+            "detail_amount": "细节强度",
+            "start": "起始阶段",
+            "end": "结束阶段",
+            "bias": "偏差值",
+            "exponent": "指数系数",
+            "start_offset": "起始偏移",
+            "end_offset": "结束偏移",
+            "fade": "淡出强度",
+            "smooth": "平滑度",
+            "cfg_scale_override": "CFG比例覆盖"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+    "BizyAir_KSamplerSelect": {
+        "title": "☁️BizyAir_K采样器选择",
+        "widgets": {
+            "sampler_name": "采样器名称"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+    "BizyAir_MultiplySigmas": {
+        "title": "☁️BizyAir_乘法调度器",
+        "inputs": {
+            "sigmas": "调度器"
+        },
+        "widgets": {
+            "factor": "乘数因子",
+            "start": "起始位置",
+            "end": "结束位置"
+        },
+        "outputs": {
+            "SIGMAS": "调度器"
+        }
+    },
+    "BizyAir_LyingSigmaSampler": {
+        "title": "☁️BizyAir_欺骗调度采样器",
+        "inputs": {
+            "sampler": "采样器"
+        },
+        "widgets": {
+            "dishonesty_factor": "欺骗因子",
+            "start_percent": "起始百分比",
+            "end_percent": "结束百分比"
+        },
+        "outputs": {
+            "sampler": "采样器"
+        }
+    },
+    "BizyAir_DetailDaemonGraphSigmasNode": {
+        "title": "☁️BizyAir_守护细节图调度节点",
+        "inputs": {
+            "sigmas": "调度"
+        },
+        "widgets": {
+            "detail_amount": "细节强度",
+            "start": "起始阶段",
+            "end": "结束阶段",
+            "bias": "偏差值",
+            "exponent": "指数系数",
+            "start_offset": "起始偏移",
+            "end_offset": "结束偏移",
+            "fade": "淡出强度",
+            "smooth": "平滑度",
+            "cfg_scale": "CFG比例"
+        },
+        "outputs": {}
+    },
+    "BizyAir_InstantIDModelLoader": {
+        "title": "☁️BizyAir_InstantID模型加载器",
+        "inputs": {},
+        "widgets": {
+            "instantid_file": "模型文件"
+        },
+        "outputs": {
+            "BIZYAIR_INSTANTID": "BizyAir Instant ID"
+        }
+    },
+    "BizyAir_ApplyInstantID": {
+        "title": "☁️BizyAir_InstantID应用",
+        "inputs": {
+            "instantid": "InstantID模型",
+            "insightface": "人脸分析模型",
+            "control_net": "Control_Net",
+            "image": "参考图像",
+            "model": "基础模型",
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "image_kps": "人脸关键点",
+            "mask": "区域遮罩"
+        },
+        "widgets": {
+            "weight": "融合权重",
+            "start_at": "起始层",
+            "end_at": "终止层"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "positive": "正向条件",
+            "negative": "负面条件"
+        }
+    },
+    "BizyAir_ApplyInstantIDAdvanced": {
+        "title": "☁️BizyAir_InstantID高级应用",
+        "inputs": {
+            "instantid": "InstantID模型",
+            "insightface": "人脸分析模型",
+            "control_net": "Control_Net",
+            "image": "参考图像",
+            "model": "基础模型",
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "image_kps": "人脸关键点",
+            "mask": "区域遮罩"
+        },
+        "widgets": {
+            "weight": "融合权重",
+            "ip_weight": "IP适配权重",
+            "cn_strength": "ControlNet强度",
+            "start_at": "起始层",
+            "end_at": "终止层",
+            "noise": "噪声强度",
+            "combine_embeds": "组合嵌入"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "positive": "正向条件",
+            "negative": "负面条件"
+        }
+    },
+    "BizyAir_InstantIDFaceAnalysis": {
+        "title": "☁️BizyAir_InstantID人脸分析",
+        "widgets": {
+            "provider": "计算设备"
+        },
+        "outputs": {
+            "BIZYAIR_FACEANALYSIS": "BizyAir 人脸分析"
+        }
+    },
+    "BizyAir_LayerMask: SegmentAnythingUltra V2": {
+        "title": "☁️BizyAir_图层遮罩：超级语义分割 V2",
+        "inputs": {
+            "image": "输入图像",
+            "sam_model": "SAM模型",
+            "grounding_dino_model": "GroundingDino模型",
+            "threshold": "检测阈值",
+            "detail_method": "细节方法",
+            "detail_erode": "细节腐蚀量",
+            "detail_dilate": "细节膨胀量",
+            "black_point": "黑场阈值",
+            "white_point": "白场阈值",
+            "process_detail": "处理细节",
+            "prompt": "文本提示",
+            "device": "计算设备",
+            "max_megapixels": "最大分辨率(百万像素)",
+            "cache_model": "缓存模型"
+        },
+        "outputs": {
+            "image": "输出图像",
+            "mask": "输出遮罩"
+        }
+    },
+    "BizyAir_SegmentAnythingUltraV2": {
+        "title": "☁️BizyAir_图层遮罩：超级语义分割 V2（高级）",
+        "inputs": {
+            "image": "输入图像"
+        },
+        "widgets": {
+            "sam_model": "SAM模型",
+            "grounding_dino_model": "GroundingDino模型",
+            "threshold": "检测阈值",
+            "detail_method": "细节方法",
+            "detail_erode": "细节腐蚀量",
+            "detail_dilate": "细节膨胀量",
+            "black_point": "黑场阈值",
+            "white_point": "白场阈值",
+            "process_detail": "处理细节",
+            "prompt": "文本提示",
+            "device": "计算设备",
+            "max_megapixels": "最大分辨率(百万像素)",
+            "cache_model": "缓存模型"
+        },
+        "outputs": {
+            "image": "输出图像",
+            "mask": "输出遮罩"
+        }
+    },
+    "BizyAir_LayerMaskLoadSAM2Model": {
+        "title": "☁️BizyAir 图层遮罩：加载SAM2模型（高级）",
+        "inputs": {
+            "image": "图像",
+            "bboxes": "BBoxes"
+        },
+        "widgets": {
+            "sam2_model": "SAM2模型",
+            "precision": "精度",
+            "device": "设备"
+        },
+        "outputs": {
+            "sam2_model": "SAM2模型"
+        }
+    },
+    "BizyAir_LayerMaskSAM2UltraV2": {
+        "title": "图层遮罩：SAM2 超级V2（高级）",
+        "inputs": {
+            "sam2_model": "SAM2模型",
+            "image": "图像",
+            "bboxes": "BBoxes"
+        },
+        "widgets": {
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "BizyAir_PulidFluxModelLoader": {
+        "title": "☁️BizyAir_PuLID Flux模型加载器",
+        "widgets": {
+            "pulid_file": "模型文件"
+        },
+        "outputs": {
+            "pulid_flux": "PuLID Flux处理器"
+        }
+    },
+    "BizyAir_PulidFluxInsightFaceLoader": {
+        "title": "☁️BizyAir_PuLID InsightFace加载器",
+        "widgets": {
+            "provider": "计算设备"
+        },
+        "outputs": {
+            "face_analysis": "人脸分析器"
+        }
+    },
+    "BizyAir_PulidFluxEvaClipLoader": {
+        "title": "☁️BizyAir_PuLID EVA-CLIP加载器",
+        "inputs": {},
+        "outputs": {
+            "eva_clip": "EVA-CLIP模型"
+        }
+    },
+    "BizyAir_ApplyPulidFlux": {
+        "title": "☁️BizyAir_应用PuLID Flux",
+        "inputs": {
+            "model": "基础模型",
+            "pulid_flux": "PuLID处理器",
+            "eva_clip": "EVA-CLIP模型",
+            "face_analysis": "人脸分析器",
+            "image": "参考图像",
+            "attn_mask": "注意力遮罩层"
+        },
+        "widgets": {
+            "weight": "融合权重",
+            "start_at": "起始层",
+            "end_at": "终止层"
+        },
+        "outputs": {
+            "BIZYAIR_MODEL": "BizyAir 模型"
+        }
+    },
+    "BizyAir_SetUnionControlNetType": {
+        "title": "☁️BizyAir_设置联合ControlNet类型",
+        "inputs": {
+            "control_net": "Control_Net"
+        },
+        "widgets": {
+            "type": "ControlNet类型"
+        },
+        "outputs": {
+            "BIZYAIR_CONTROL_NET": "BizyAir_Control_Net"
+        }
+    },
+    "BizyAir_ConditioningAverage": {
+        "title": "☁️BizyAir_条件(平均值)",
+        "inputs": {
+            "conditioning_to": "条件用于",
+            "conditioning_from": "条件来自"
+        },
+        "widgets": {
+            "conditioning_to_strength": "增强训练"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_ConditioningConcat": {
+        "title": "☁️BizyAir_条件(连接)",
+        "inputs": {
+            "conditioning_to": "条件用于",
+            "conditioning_from": "条件来自"
+        },
+        "widgets": {
+            "conditioning_to_strength": "增强训练"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir条件输出"
+        }
+    },
+    "BizyAir_ControlNetInpaintingAliMamaApply": {
+        "title": "☁️BizyAir_阿里妈妈ControlNet修复应用",
+        "inputs": {
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "control_net": "Control_Net",
+            "vae": "VAE编码器",
+            "image": "参考图像",
+            "mask": "修复遮罩"
+        },
+        "widgets": {
+            "strength": "控制强度",
+            "start_percent": "起始百分比",
+            "end_percent": "结束百分比"
+        },
+        "outputs": {
+            "positive": "正向条件",
+            "negative": "负面条件"
+        }
+    },
+    "BizyAir_DisableNoise": {
+        "title": "☁️BizyAir_禁用噪声生成",
+        "inputs": {},
+        "outputs": {
+            "NOISE": "空噪声"
+        }
+    },
+    "BizyAir_RandomNoise": {
+        "title": "☁️BizyAir 随机噪声",
+        "widgets": {
+            "noise_seed": "噪声种子",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "NOISE": "空噪声"
+        }
+    },
+    "BizyAir_VPScheduler": {
+        "title": "☁️BizyAir_VP噪声调度器",
+        "widgets": {
+            "steps": "总步数",
+            "beta_d": "Beta衰减率",
+            "beta_min": "Beta最小值",
+            "eps_s": "Epsilon起始值"
+        },
+        "outputs": {
+            "SIGMAS": "调度器"
+        }
+    },
+    "BizyAir_BasicScheduler": {
+        "title": "☁️BizyAir_基础调度器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "scheduler": "调度器",
+            "steps": "总步数",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "SIGMAS": "调度器"
+        }
+    },
+    "BizyAir_SplitSigmas": {
+        "title": "☁️BizyAir_调度分割",
+        "inputs": {
+            "sigmas": "调度器"
+        },
+        "widgets": {
+            "step": "分割步长"
+        },
+        "outputs": {
+            "high_sigmas": "高调度器",
+            "low_sigmas": "低调度器"
+        }
+    },
+    "BizyAir_SplitSigmasDenoise": {
+        "title": "☁️BizyAir_分割降噪调度器",
+        "inputs": {
+            "sigmas": "调度器"
+        },
+        "widgets": {
+            "denoise": "降噪强度"
+        },
+        "outputs": {
+            "high_sigmas": "高调度器",
+            "low_sigmas": "低调度器"
+        }
+    },
+    "BizyAir_FlipSigmas": {
+        "title": "☁️BizyAir_翻转调度器",
+        "inputs": {
+            "sigmas": "调度器"
+        },
+        "outputs": {
+            "sigmas": "调度器"
+        }
+    },
+    "BizyAir_CFGGuider": {
+        "title": "☁️BizyAir_CFG引导器",
+        "inputs": {
+            "model": "扩散模型",
+            "positive": "正向条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "cfg": "CFG比例"
+        },
+        "outputs": {
+            "GUIDER": "引导器"
+        }
+    },
+    "BizyAir_BasicGuider": {
+        "title": "☁️BizyAir_基础引导器",
+        "inputs": {
+            "model": "扩散模型",
+            "conditioning": "条件输入"
+        },
+        "outputs": {
+            "GUIDER": "引导器"
+        }
+    },
+    "BizyAir_SamplerCustomAdvanced": {
+        "title": "☁️BizyAir_自定义采样器（高级）",
+        "inputs": {
+            "noise": "噪波生成",
+            "guider": "引导",
+            "sampler": "采样器",
+            "sigmas": "调度器",
+            "latent_image": "latent"
+        },
+        "outputs": {
+            "output": "输出",
+            "denoised_output": "降噪输出"
+        }
+    },
+    "BizyAir_TrainDatasetAdd": {
+        "title": "☁️BizyAir_训练数据集添加",
+        "inputs": {
+            "dataset_config": "数据集配置"
+        },
+        "widgets": {
+            "width": "默认宽度",
+            "height": "默认高度",
+            "batch_size": "批次大小",
+            "dataset_path": "数据集路径",
+            "dataset_version_id": "数据集版本ID",
+            "class_tokens": "类别标记",
+            "enable_bucket": "启用分桶",
+            "bucket_no_upscale": "禁止分桶放大",
+            "num_repeats": "重复次数",
+            "min_bucket_reso": "最小分桶分辨率",
+            "max_bucket_reso": "最大分桶分辨率"
+        },
+        "outputs": {
+            "dataset": "数据集"
+        }
+    },
+    "BizyAir_DifferentialDiffusion": {
+        "title": "☁️BizyAir_差分扩散模型",
+        "inputs": {
+            "model": "基础模型"
+        },
+        "outputs": {
+            "BIZYAIR_MODEL": "BizyAir 模型"
+        }
+    },
+    "BizyAir_CLIPTextEncodeFlux": {
+        "title": "☁️BizyAir_CLIP文本编码(Flux版)",
+        "inputs": {
+            "clip": "CLIP模型"
+        },
+        "widgets": {
+            "clip_l": "CLIP-L模型",
+            "t5xxl": "T5-XXL模型",
+            "guidance": "引导强度"
+        },
+        "outputs": {
+            "conditioning": "条件"
+        }
+    },
+    "BizyAir_FluxGuidance": {
+        "title": "☁️BizyAir_Flux引导条件",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "guidance": "引导强度"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir_条件"
+        }
+    },
+    "BizyAir_ReferenceLatent": {
+        "title": "☁️BizyAir_参考Latent",
+        "inputs": {
+            "conditioning": "条件",
+            "latent": "Latent"
+        },
+        "widgets": {
+            "guidance": "引导强度"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir_条件"
+        }
+    },
+    "BizyAir_ConditioningZeroOut": {
+        "title": "☁️BizyAir_零条件输出",
+        "inputs": {
+            "conditioning": "条件",
+            "guidance": "引导强度"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir_条件"
+        }
+    },
+    "BizyAir_ConditioningSetTimestepRange": {
+        "title": "☁️BizyAir_条件设置时间步长范围",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "start": "引导开始",
+            "end": "引导结束"
+        },
+        "outputs": {
+            "BIZYAIR_CONDITIONING": "BizyAir_条件"
+        }
+    },
+    "BizyAir_LoadImageURL": {
+        "title": "☁️BizyAir_URL图像加载",
+        "inputs": {
+            "url": "图像URL"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "BizyAir_Image_Encode": {
+        "title": "☁️BizyAir_图像编码处理",
+        "inputs": {
+            "image": "输入图像"
+        },
+        "widgets": {
+            "lossless": "无损编码"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "BizyAir_IPAdapterModelLoader": {
+        "title": "☁️BizyAir_IPAdapter模型加载器",
+        "widgets": {
+            "ipadapter_file": "ipadapter模型"
+        },
+        "outputs": {
+            "IPADAPTER": "IPAdapter"
+        }
+    },
+    "BizyAir_IPAdapterUnifiedLoader": {
+        "title": "☁️BizyAir_IPAdapter模型Unified加载器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "preset": "预设"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "BizyAir_IPAdapterSimple": {
+        "title": "☁️BizyAir IPAdapter应用",
+        "inputs": {
+            "model": "模型",
+            "image": "输出图像",
+            "attn_mask": "注意力遮罩"
+        },
+        "widgets": {
+            "weight": "融合权重",
+            "start_at": "起始层",
+            "end_at": "终止层",
+            "weight_type": "权重类型"
+        },
+        "outputs": {
+            "m": "模型"
+        }
+    },
+    "BizyAir_IPAdapterStyleComposition": {
+        "title": "☁️BizyAir IPAdapter风格应用",
+        "inputs": {
+            "model": "模型",
+            "image_style": "风格图像",
+            "image_composition": "图像应用",
+            "image_negative": "负面图像",
+            "clip_vision": "clip视觉",
+            "attn_mask": "注意力遮罩"
+        },
+        "widgets": {
+            "weight_style": "风格权重",
+            "weight_composition": "应用权重",
+            "expand_style": "扩大风格",
+            "combine_embeds": "融合",
+            "start_at": "起始层",
+            "end_at": "终止层",
+            "embeds_scaling": "嵌入扩展"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "BizyAir_IPAdapterAdvanced": {
+        "title": "☁️BizyAir IPAdapter（高级）",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "image_negative": "负面图像",
+            "clip_vision": "clip视觉",
+            "attn_mask": "注意力遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "融合",
+            "start_at": "起始层",
+            "end_at": "终止层",
+            "embeds_scaling": "嵌入扩展"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "BizyAir_InstructPixToPixConditioning": {
+        "title": "☁️BizyAir_Pix2Pix指令条件",
+        "inputs": {
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "vae": "VAE编码器",
+            "pixels": "像素图像"
+        },
+        "outputs": {
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "latent": "潜空间"
+        }
+    },
+    "BizyAir_JanusModelLoader": {
+        "title": "☁️BizyAir_Janus模型加载器",
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "model": "模型",
+            "processor": "处理器"
+        }
+    },
+    "BizyAir__KolorsUNETLoaderV2": {
+        "title": "☁️BizyAir_MZ-Kolors模型加载器V2",
+        "widgets": {
+            "unet_name": "模型名称"
+        },
+        "outputs": {
+            "model": "模型",
+            "processor": "处理器"
+        }
+    },
+    "BizyAir_MZ_KolorsControlNetLoader": {
+        "title": "☁️BizyAir_MZ-Kolors模型ControlNet加载器",
+        "widgets": {
+            "control_net_name": "模型名称"
+        },
+        "outputs": {
+            "ControlNet": "模型",
+            "processor": "处理器"
+        }
+    },
+    "BizyAir_JanusImageUnderstanding": {
+        "title": "☁️BizyAir_Janus图像理解",
+        "inputs": {
+            "model": "模型",
+            "processor": "处理器",
+            "image": "输入图像",
+            "question": "问题描述"
+        },
+        "widgets": {
+            "seed": "随机种子",
+            "temperature": "温度参数",
+            "top_p": "Top-P采样",
+            "max_new_tokens": "最大新token数"
+        },
+        "outputs": {
+            "text": "回答文本"
+        }
+    },
+    "BizyAir_JanusImageGeneration": {
+        "title": "☁️BizyAir_Janus图像生成",
+        "inputs": {
+            "model": "模型",
+            "processor": "处理器",
+            "prompt": "生成提示"
+        },
+        "widgets": {
+            "seed": "随机种子",
+            "batch_size": "批次大小",
+            "cfg_weight": "CFG权重",
+            "temperature": "温度参数",
+            "top_p": "Top-P采样"
+        },
+        "outputs": {
+            "images": "生成图像"
+        }
+    },
+    "BizyAir_ModelSamplingSD3": {
+        "title": "☁️BizyAir_SD3模型采样",
+        "inputs": {
+            "model": "基础模型"
+        },
+        "widgets": {
+            "shift": "偏移量"
+        },
+        "outputs": {
+            "BIZYAIR_MODEL": "BizyAir 模型"
+        }
+    },
+    "BizyAir_ModelSamplingFlux": {
+        "title": "☁️BizyAir_Flux模型采样",
+        "inputs": {
+            "model": "基础模型"
+        },
+        "widgets": {
+            "max_shift": "最大偏移",
+            "base_shift": "基础偏移",
+            "width": "图像宽度",
+            "height": "图像高度"
+        },
+        "outputs": {
+            "BIZYAIR_MODEL": "BizyAir 模型"
+        }
+    },
+    "BizyAir_TripleCLIPLoader": {
+        "title": "☁️BizyAir_三CLIP加载器",
+        "widgets": {
+            "clip_name1": "CLIP名称1",
+            "clip_name2": "CLIP名称2",
+            "clip_name3": "CLIP名称3"
+        },
+        "outputs": {
+            "BIZYAIR_CLIP": "BizyAir CLIP"
+        }
+    },
+    "BizyAir_UNETLoader": {
+        "title": "☁️BizyAir_扩散模型加载器",
+        "widgets": {
+            "unet_name": "unet名称",
+            "weight_dtype": "权重数据类型"
+        },
+        "outputs": {
+            "BIZYAIR_CLIP": "BizyAir CLIP"
+        }
+    },
+    "BizyAir_DualCLIPLoader": {
+        "title": "☁️BizyAir_双CLIP加载器",
+        "widgets": {
+            "clip_name1": "CLIP名称1",
+            "clip_name2": "CLIP名称2",
+            "type": "类型"
+        },
+        "outputs": {
+            "BIZYAIR_CLIP": "BizyAir CLIP"
+        }
+    },
+    "BizyAir_CLIPLoader": {
+        "title": "☁️BizyAir_CLIP加载器",
+        "widgets": {
+            "clip_name": "CLIP名称",
+            "type": "类型",
+            "device": "设备"
+        },
+        "outputs": {
+            "BIZYAIR_CLIP": "BizyAir CLIP"
+        }
+    },
+    "BizyAir_ControlNetApplySD3": {
+        "title": "☁️BizyAir_SD3ControlNet应用",
+        "inputs": {
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "control_net": "Control_Net",
+            "vae": "VAE编码器",
+            "image": "控制图像"
+        },
+        "widgets": {
+            "strength": "控制强度",
+            "start_percent": "起始百分比",
+            "end_percent": "结束百分比"
+        },
+        "outputs": {
+            "positive": "正向条件",
+            "negative": "负面条件"
+        }
+    },
+    "BizyAir_IF_TrellisCheckpointLoader": {
+        "title": "☁️BizyAir_IF_网格模型加载器",
+        "inputs": {},
+        "widgets": {
+            "model_name": "模型名称",
+            "dinov2_model": "dinov2模型",
+            "use_fp16": "使用fp16",
+            "attn_backend": "注意力后端",
+            "smooth_k": "平滑系数",
+            "spconv_algo": "稀疏卷积算法",
+            "main_device": "使用设备"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "BizyAir_IF_TrellisImageTo3D": {
+        "title": "☁️BizyAir_IF_网格图像转3D",
+        "inputs": {
+            "model": "模型",
+            "images": "图像",
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "mode": "模式",
+            "seed": "随机种子",
+            "control_after_generate": "生成后控制",
+            "ss_guidance_strength": "超分辨率引导强度",
+            "ss_sampling_steps": "超分辨率采样步数",
+            "slat_guidance_strength": "分段引导强度",
+            "slat_sampling_steps": "分段采样步数",
+            "multimode": "多模式"
+        },
+        "outputs": {
+            "trellis_gaussian": "网格高斯",
+            "trellis_mesh": "网格结构"
+        }
+    },
+    "BizyAir_Trans3D2GlbFile": {
+        "title": "☁️BizyAir_3D转GLB文件",
+        "inputs": {
+            "trellis_gaussian": "网格高斯",
+            "trellis_mesh": "网格结构"
+        },
+        "widgets": {
+            "mesh_simplify": "网格简化",
+            "texture_size": "纹理尺寸",
+            "texture_mode": "纹理模式",
+            "save_glb": "保存glb",
+            "save_texture": "保存纹理"
+        },
+        "outputs": {
+            "url": "地址",
+            "texture_image": "纹理图像"
+        }
+    },
+    "BizyAirDownloadFile": {
+        "title": "☁️BizyAir文件下载",
+        "widgets": {
+            "url": "网址",
+            "folder": "文件夹",
+            "file_name": "文件名称"
+        },
+        "outputs": {
+            "path": "路径"
+        }
+    },
+    "BizyAir_UltimateSDUpscale": {
+        "title": "☁️BizyAir_SD放大",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "positive": "正向条件",
+            "negative": "负面条件",
+            "upscale_model": "放大模型"
+        },
+        "widgets": {
+            "upscale_by": "放大倍数",
+            "seed": "随机种子",
+            "control_after_generate": "生成后控制",
+            "steps": "步数",
+            "cfg": "cfg引导",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "mode_type": "模式类型",
+            "tile_width": "分块宽度",
+            "tile_height": "分块高度",
+            "mask_blur": "遮罩模糊",
+            "tile_padding": "分块分区",
+            "seam_fix_mode": "接缝修复模式",
+            "seam_fix_denoise": "接缝修复降噪",
+            "seam_fix_width": "接缝修复宽度",
+            "seam_fix_mask_blur": "接缝修复模糊",
+            "seam_fix_padding": "接缝修复分区",
+            "force_uniform_tiles": "强制统一分块",
+            "tiled_decode": "分块解码"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "BizyAir_ImageUpscaleWithModel": {
+        "title": "☁️BizyAir放大图片（使用模型）",
+        "inputs": {
+            "upscale_model": "放大模型",
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "BizyAir_UpscaleModelLoader": {
+        "title": "☁️BizyAir_放大模型加载器",
+        "widgets": {
+            "model_name": "放大模型"
+        },
+        "outputs": {
+            "BIZYAIR_UPSCALE_MODEL": "BizyAir_放大模型"
+        }
+    },
+    "BizyAir_PassParameter": {
+        "title": "☁️BizyAir 传递参数",
+        "widgets": {
+            "model_name": "放大模型"
+        },
+        "outputs": {
+            "BIZYAIR_UPSCALE_MODEL": "BizyAir_放大模型"
+        }
+    },
+    "BizyAir_NunchakuFluxDiTLoader": {
+        "title": "☁️BizyAir_双截棍FluxDiT加载器",
+        "widgets": {
+            "model_path": "模型路径",
+            "cache_threshold": "缓存阈值",
+            "attention": "注意力模式",
+            "cpu_offload": "CPU卸载",
+            "device_id": "设备ID",
+            "data_type": "数据类型",
+            "i2f_mode": "I2F模式"
+        },
+        "outputs": {
+            "BIZYAIR_MODEL": "BizyAir_模型"
+        }
+    },
+    "BizyAir_NunchakuTextEncoderLoader": {
+        "title": "☁️BizyAir 双截棍文本编码器加载器",
+        "widgets": {
+            "model_type": "模型类型",
+            "text_encoder1": "文本编码器1",
+            "text_encoder2": "文本编码器2",
+            "t5_min_length": "T5最小长度",
+            "use_4bit_t5": "使用4位T5",
+            "int4_model": "INT4模型"
+        },
+        "outputs": {
+            "BIZYAIR_CLIP": "BizyAir_CLIP编码器"
+        }
+    },
+    "BizyAir_NunchakuFluxLoraLoader": {
+        "title": "☁️BizyAir 双截棍FluxLora加载器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "lora_strength": "Lora强度",
+            "lora_name": "Lora名称",
+            "model_version_id": "模型版本编号"
+        },
+        "outputs": {
+            "BIZYAIR_MODEL": "BizyAir_模型"
+        }
+    },
+    "BizyAir_NunchakuPulidApply": {
+        "title": "☁️BizyAir 双截棍PuLID应用",
+        "inputs": {
+            "pulid": "PuLID",
+            "image": "图像",
+            "model": "模型"
+        },
+        "widgets": {
+            "ip_weight": "IP权重"
+        },
+        "outputs": {
+            "BIZYAIR_MODEL": "BizyAir_模型"
+        }
+    },
+    "BizyAir_NunchakuPulidLoader": {
+        "title": "☁️BizyAir 双截棍PuLID加载器",
+        "inputs": {
+            "pulid": "PuLID",
+            "model": "模型"
+        },
+        "widgets": {
+            "ip_weight": "IP权重"
+        },
+        "outputs": {
+            "BIZYAIR_PULID": "BizyAir PuLID",
+            "BIZYAIR_MODEL": "BizyAir_模型"
+        }
+    },
+    "BizyAir_Hy3D_2_1SimpleMeshGen": {
+        "title": "☁️BizyAir 混元3D_2_1 简单网格生成器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "steps": "迭代步数",
+            "guidance_scale": "引导强度",
+            "octree_resolution": "八叉树分辨率"
+        },
+        "outputs": {
+            "trimesh": "trimesh格式"
+        }
+    },
+    "BizyAir_Hy3DExportMesh": {
+        "title": "☁️BizyAir 混元3D_2_1 简单网格生成器",
+        "inputs": {
+            "trimesh": "trimesh格式"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "file_fommat": "文件格式",
+            "save_file": "保存文件"
+        },
+        "outputs": {
+            "glb_path": "GLB 路径"
+        }
+    },
+    "BizyAir_reactor": {
+        "title": "☁️BizyAir 🌌ReActor换脸",
+        "inputs": {
+            "input_image": "目标图像",
+            "source_image": "源图像",
+            "face_model": "面部模型",
+            "face_boost": "面部增强"
+        },
+        "widgets": {
+            "enabled": "启用",
+            "swap_model": "置换模型",
+            "facedetection": "检测模型",
+            "face_restore_model": "修复模型",
+            "face_restore_visibility": "面部修复模糊",
+            "codeformer_weight": "CodeFormer_权重",
+            "detect_gender_source": "检测源性别",
+            "detect_gender_input": "检测目标性别",
+            "source_faces_index": "源面部索引",
+            "input_faces_index": "目标面部索引",
+            "console_log_level": "控制台日志数量"
+        },
+        "outputs": {
+            "BIZYAIR_PLACEHOLDER": "☁️BizyAir占位符",
+            "SWAPPED_IMAGE": "换脸图像",
+            "ORIGINAL_IMAGE": "原始图像",
+            "FACE_MODEL": "面部模型"
+        }
+    },
+    "BizyAir_ReActorPlusOpt": {
+        "title": "☁️BizyAir 🌌ReActor换脸（设置组）",
+        "inputs": {
+            "input_image": "目标图像",
+            "source_image": "源图像",
+            "face_model": "面部模型",
+            "options": "ReActor设置组",
+            "face_boost": "面部增强"
+        },
+        "widgets": {
+            "enabled": "启用",
+            "swap_model": "置换模型",
+            "facedetection": "检测模型",
+            "face_restore_model": "修复模型",
+            "face_restore_visibility": "面部修复模糊",
+            "codeformer_weight": "CodeFormer_权重"
+        },
+        "outputs": {
+            "BIZYAIR_PLACEHOLDER": "☁️BizyAir占位符",
+            "SWAPPED_IMAGE": "换脸图像",
+            "ORIGINAL_IMAGE": "原始图像",
+            "FACE_MODEL": "面部模型"
+        }
+    },
+    "BizyAir_ReActorOptions": {
+        "title": "☁️BizyAir 🌌ReActor设置组",
+        "widgets": {
+            "input_faces_order": "目标面部顺序",
+            "source_faces_order": "源面部顺序",
+            "detect_gender_source": "检测源性别",
+            "detect_gender_input": "检测目标性别",
+            "source_faces_index": "源面部索引",
+            "input_faces_index": "目标面部索引",
+            "console_log_level": "控制台日志数量"
+        },
+        "outputs": {
+            "OPTIONS": "ReActor设置组"
+        }
+    },
+    "BizyAir_RestoreFace": {
+        "title": "☁️BizyAir 🌌ReActor修复面部",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "facedetection": "检测模型",
+            "model": "修复模型",
+            "visibility": "面部修复模糊",
+            "codeformer_weight": "CodeFormer_权重"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "BizyAir_ReActorFaceBoost": {
+        "title": "☁️BizyAir 🌌ReActor面部增强",
+        "widgets": {
+            "enabled": "启用",
+            "boost_model": "增强模型",
+            "interpolation": "插值方式",
+            "visibility": "面部修复模糊",
+            "codeformer_weight": "CodeFormer_权重",
+            "restore_with_main_after": "主流程后修复"
+        },
+        "outputs": {
+            "FACE_BOOST": "面部增强"
+        }
+    },
+    "BizyAir_MZ_KolorsUNETLoaderV2": {
+        "title": "☁️BizyAir  MinusZone - Kolors Unet 加载器 V2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "unet_name": "unet模型名称"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "BizyAir_ParseQwenVLBBoxes": {
+        "title": "☁️BizyAir  解析 Qwen-VL 的 BBoxes 文本以适配 SAM2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "bboxes_text": "边界框文本",
+            "target": "目标",
+            "bbox_selection": "边界框选择",
+            "merge_boxes": "合并边界框"
+        },
+        "outputs": {
+            "text": "文本",
+            "bboxes": "边界框"
+        }
+    },
+    "BizyAir_NanoBanana": {
+        "title": "☁️BizyAir 纳米香蕉",
+        "inputs": {
+            "image": "图像",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5"
+        },
+        "widgets": {
+            "operation": "运行",
+            "temperature": "温度",
+            "target": "目标",
+            "top_p": "top_p",
+            "seed": "种子",
+            "max_tokens": "最大字数",
+            "quality": "质量",
+            "aspect_ratio": "宽高比",
+            "character_consistency": "角色一致性"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "STRING": "字符串"
+        }
+    },
+    "BizyAir_Seedream4": {
+        "title": "☁️BizyAir 即梦4.0",
+        "inputs": {
+            "image": "图像",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5",
+            "image6": "图像6",
+            "image7": "图像7",
+            "image8": "图像8",
+            "image9": "图像9",
+            "image10": "图像10"
+        },
+        "widgets": {
+            "size": "尺寸",
+            "custom_width": "自定义宽度",
+            "custom_height": "自定义高度",
+            "model": "模型",
+            "seed": "种子",
+            "max_tokens": "最大字数",
+            "quality": "质量",
+            "aspect_ratio": "宽高比",
+            "character_consistency": "角色一致性"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "STRING": "字符串"
+        }
+    },
+    "BizyAirGenerateLightningImage": {
+        "title": "☁️BizyAir 生成超写实图像",
+        "inputs": {},
+        "widgets": {
+            "prompt": "提示词",
+            "seed": "随机种子",
+            "width": "宽度",
+            "height": "高度",
+            "cfg": "CFG值",
+            "batch_size": "批大小"
+        },
+        "outputs": {
+            "IMAGE": "输出图像"
+        }
+    }
+}
