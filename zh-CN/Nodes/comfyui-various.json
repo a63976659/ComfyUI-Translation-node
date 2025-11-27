@@ -1,0 +1,779 @@
+{
+    "JWImageLoadRGB": {
+        "title": "加载图像RGB",
+        "inputs": {},
+        "widgets": {
+            "path": "路径"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "JWImageLoadRGBA": {
+        "title": "加载图像RGB Alpha",
+        "inputs": {},
+        "widgets": {
+            "path": "路径"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "JWLoadImagesFromString": {
+        "title": "从字符串加载图像",
+        "inputs": {},
+        "widgets": {
+            "ignore_missing_images": "忽略缺失的图片"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "JWImageSaveToPath": {
+        "title": "图像保存路径",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "path": "路径",
+            "overwrite": "重写"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "JWImageExtractFromBatch": {
+        "title": "从批次中提取图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "index": "索引"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "JWImageBatchCount": {
+        "title": "获取图像批次数量",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "index": "索引"
+        },
+        "outputs": {
+            "Integer": "整数",
+            "int": "整数"
+        }
+    },
+    "JWImageResize": {
+        "title": "图像缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "height": "高度",
+            "width": "宽度",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageFlip": {
+        "title": "图像翻转",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "direction": "方向"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWMaskResize": {
+        "title": "遮罩调整大小",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "height": "高度",
+            "width": "宽度",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "JWMaskLikeImageSize": {
+        "title": "图像转遮罩尺寸一致",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "value": "遮罩灰度值"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "JWImageResizeToSquare": {
+        "title": "图像调整为正方形",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "size": "尺寸",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageResizeByFactor": {
+        "title": "图像按比例缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "factor": "比例",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageResizeByShorterSide": {
+        "title": "图像按短边缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "size": "尺寸",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageResizeByLongerSide": {
+        "title": "图像按长边缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "size": "尺寸",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageResizeToClosestSDXLResolution": {
+        "title": "图像按SDXL 分辨率缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "size": "尺寸",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {
+            "HEIGHT": "高度",
+            "WIDTH": "宽度",
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageCropToClosestSDXLResolution": {
+        "title": "图像按SDXL 分辨率裁剪",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "size": "尺寸",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {
+            "HEIGHT": "高度",
+            "WIDTH": "宽度",
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageLoadRGBFromClipboard": {
+        "title": "从剪贴板加载 RGB 图像",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "MASK": "遮罩",
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageLoadRGBA From Clipboard": {
+        "title": "从剪贴板加载 RGB Alpha 图像",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "MASK": "遮罩",
+            "IMAGE": "图像"
+        }
+    },
+    "JWInteger": {
+        "title": "整数",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "integer": "整数"
+        }
+    },
+    "JWIntegerToFloat": {
+        "title": "整数转浮点",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWIntegerToString": {
+        "title": "整数转字符串",
+        "inputs": {},
+        "widgets": {
+            "value": "值",
+            "format_string": "字符串格式"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "JWIntegerAdd": {
+        "title": "整数相加",
+        "inputs": {},
+        "widgets": {
+            "value": "值",
+            "format_string": "字符串格式"
+        },
+        "outputs": {
+            "integer": "整数"
+        }
+    },
+    "JWIntegerSub": {
+        "title": "整数相减",
+        "inputs": {},
+        "widgets": {
+            "value": "值",
+            "format_string": "字符串格式"
+        },
+        "outputs": {
+            "integer": "整数"
+        }
+    },
+    "JWIntegerMul": {
+        "title": "整数乘法",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "integer": "整数"
+        }
+    },
+    "JWIntegerDiv": {
+        "title": "整数除法",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "integer": "整数"
+        }
+    },
+    "JWIntegerAbsolute": {
+        "title": "整数绝对值",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "integer": "整数"
+        }
+    },
+    "JWIntegerMin": {
+        "title": "整数最小值",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "integer": "整数"
+        }
+    },
+    "JWIntegerMax": {
+        "title": "整数最大值",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "integer": "整数"
+        }
+    },
+    "JWFloat": {
+        "title": "浮点",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWFloatToInteger": {
+        "title": "浮点转整数",
+        "inputs": {},
+        "widgets": {
+            "value": "值",
+            "mode": "模式"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWFloatToString": {
+        "title": "浮点转字符串",
+        "inputs": {},
+        "widgets": {
+            "value": "值",
+            "format_string": "字符串格式"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "JWFloatAdd": {
+        "title": "浮点相加",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWFloatSub": {
+        "title": "浮点相减",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWFloatMul": {
+        "title": "浮点乘法",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWFloatDiv": {
+        "title": "浮点除法",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWFloatAbsolute": {
+        "title": "浮点绝对值",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWFloatMin": {
+        "title": "浮点最小值",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWFloatMax": {
+        "title": "浮点最大值",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWString": {
+        "title": "字符串",
+        "inputs": {},
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "JWStringToInteger": {
+        "title": "字符串转整数",
+        "inputs": {},
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "integer": "整数"
+        }
+    },
+    "JWStringToFloat": {
+        "title": "字符串转浮点",
+        "inputs": {},
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "JWStringMultiline": {
+        "title": "字符串（多行）",
+        "inputs": {},
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "JWStringConcat": {
+        "title": "字符串连接",
+        "inputs": {},
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "JWStringReplace": {
+        "title": "字符串替换",
+        "inputs": {},
+        "widgets": {
+            "source": "来源",
+            "to_replace": "替换",
+            "replace_with": "用……替换"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "JWStringSplit": {
+        "title": "字符串分割",
+        "inputs": {},
+        "widgets": {
+            "source": "来源",
+            "split_by": "按比例分割",
+            "from_right": "从右侧开始"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "JWStringGetLine": {
+        "title": "获取行字符串",
+        "inputs": {},
+        "widgets": {
+            "source": "来源",
+            "line_index": "行索引"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "JWStringUnescape": {
+        "title": "字符串解码",
+        "inputs": {},
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "RAFTEstimate": {
+        "title": "RAFT 评估",
+        "inputs": {
+            "image_a": "图像1",
+            "image_b": "图像2"
+        },
+        "widgets": {},
+        "outputs": {
+            "RAFT_FLOW": "RAFT 流"
+        }
+    },
+    "RAFTFlowToImage": {
+        "title": "RAFT 从流到图像",
+        "inputs": {
+            "raft_flow": "RAFT 流"
+        },
+        "widgets": {},
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "RAFTLoadFlowFromEXRChannels": {
+        "title": "从 EXR 通道获取负载流量数据",
+        "inputs": {},
+        "widgets": {
+            "path": "路径",
+            "x_channel": "x 通道",
+            "y_channel": "y 通道",
+            "invert_x": "反转 x",
+            "invert_y": "反转 y"
+        },
+        "outputs": {
+            "RAFT_FLOW": "RAFT 流"
+        }
+    },
+    "JWImageStackChannels": {
+        "title": "图像堆叠通道",
+        "inputs": {
+            "image_a": "图像1",
+            "image_b": "图像2"
+        },
+        "widgets": {},
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageMix": {
+        "title": "图像混合",
+        "inputs": {
+            "image_a": "图像1",
+            "image_b": "图像2"
+        },
+        "widgets": {
+            "blend_type": "混合模式",
+            "factor": "比例"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageContrast": {
+        "title": "图像对比度",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "factor": "比例"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageSaturation": {
+        "title": "图像饱和度",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "factor": "比例"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageLevels": {
+        "title": "图像对比度调整",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "min": "最小",
+            "max": "最大"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWDatetimeString": {
+        "title": "日期时间字符串",
+        "inputs": {},
+        "widgets": {
+            "format": "格式"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "JWLoadImageSequence": {
+        "title": "批量加载图像序列",
+        "inputs": {},
+        "widgets": {
+            "path_pattern": "路径 格式",
+            "start_index": "起始索引",
+            "frame_count": "帧数",
+            "ignore_missing_images": "忽略缺失图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWLoadImageSequenceWithStopIndex": {
+        "title": "批量加载图像序列 带有结束索引",
+        "inputs": {},
+        "widgets": {
+            "path_pattern": "路径 格式",
+            "start_index": "起始索引",
+            "stop_index": "结束索引",
+            "frame_count": "帧数",
+            "ignore_missing_images": "忽略缺失图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWImageSequenceExtractFromBatch": {
+        "title": "从批次中提取图像序列",
+        "inputs": {
+            "images": "图像序列"
+        },
+        "widgets": {
+            "i start": "我开始",
+            "i stop": "我停止",
+            "inclusive": "包含"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWSaveImageSequence": {
+        "title": "批量保存图像序列",
+        "inputs": {
+            "images": "图像序列"
+        },
+        "widgets": {
+            "path_pattern": "路径 格式",
+            "start_index": "起始索引",
+            "overwrite": "覆盖"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWLoopImageSequence": {
+        "title": "循环图像序列",
+        "inputs": {
+            "images": "图像序列"
+        },
+        "widgets": {
+            "target_frames": "目标帧"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWMaskSequenceFromMask": {
+        "title": "从遮罩中获取遮罩序列",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "MASK_SEQUENCE": "遮罩序列"
+        }
+    },
+    "JWMaskSequenceJoin": {
+        "title": "加入遮罩序列",
+        "inputs": {
+            "mask_sequence_1": "遮罩序列1",
+            "mask_sequence_2": "遮罩序列2"
+        },
+        "widgets": {},
+        "outputs": {
+            "MASK_SEQUENCE": "遮罩序列"
+        }
+    },
+    "JWMaskSequenceApplyToLatent": {
+        "title": "将遮罩序列应用于Latent",
+        "inputs": {
+            "samples": "采样",
+            "mask_sequence": "遮罩序列"
+        },
+        "widgets": {},
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "JWImageLoadRGBIfExists": {
+        "title": "图像加载（若存在）以 RGB 格式",
+        "inputs": {
+            "default": "默认"
+        },
+        "widgets": {
+            "path": "路径"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "JWLoadAudio": {
+        "title": "加载音频",
+        "inputs": {},
+        "widgets": {
+            "path": "路径",
+            "gain_db": "增加分贝",
+            "offset_seconds": "偏移秒数",
+            "duration_seconds": "持续时间（秒）",
+            "resample_to_hz": "重采样至 Hz",
+            "make_stereo": "制作立体声"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "JWAudioBlend": {
+        "title": "音频融合",
+        "inputs": {
+            "a": "音频1",
+            "b": "音频2"
+        },
+        "widgets": {
+            "ratio": "比率",
+            "if_durations_differ": "如果持续时间不同",
+            "if_samplerates_differ": "如果采样率不同"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "JWAudioSaveToPath": {
+        "title": "音频保存至路径",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "path": "路径",
+            "overwrite": "覆盖"
+        },
+        "outputs": {}
+    },
+    "ReferenceOnlySimple": {
+        "title": "仅简单参考",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "output_0": "模型",
+            "output_1": "潜在图像"
+        }
+    }
+}

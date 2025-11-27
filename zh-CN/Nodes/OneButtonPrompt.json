@@ -1,0 +1,126 @@
+{
+    "OneButtonPrompt": {
+        "title": "一键提示词",
+        "widgets": {
+            "insanitylevel": "随机强度",
+            "artist": "艺术风格",
+            "imagetype": "类型",
+            "imagemodechance": "特殊模式概率",
+            "subject": "主体",
+            "custom_subject": "自定主体",
+            "custom_outfit": "自定服装",
+            "prompt_prefix": "提示词前缀",
+            "prompt_suffix": "提示词后缀",
+            "subject_subtype_objects": "次类物体",
+            "subject_subtypes_humanoids": "次类人物",
+            "humanoids_gender": "性别",
+            "subject_subtypes_concepts": "次类概念",
+            "emojis": "表情符号",
+            "base_model": "基础模型",
+            "prompt_enhancer": "增强提示词",
+            "seed": "随机种",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "prompt": "提示词",
+            "prompt_g": "提示词_G",
+            "prompt_l": "提示词_L"
+        }
+    },
+    "OneButtonPreset": {
+        "title": "一键预设提示词",
+        "widgets": {
+            "OneButtonPreset": "一键预设",
+            "base_model": "基础模型",
+            "prompt_enhancer": "增强提示词",
+            "preset_prefix": "预设前缀",
+            "preset_suffix": "预设后缀",
+            "insanitylevel": "随机强度",
+            "seed": "随机种",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "prompt": "提示词"
+        }
+    },
+    "OneButtonArtify": {
+        "title": "一键艺术化提示词",
+        "widgets": {
+            "artist": "艺术家",
+            "amount_of_artists": "艺术家数量",
+            "artify_mode": "艺术化模式",
+            "seed": "随机种",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "artified_prompt": "强化提示词"
+        }
+    },
+    "CreatePromptVariant": {
+        "title": "差异化提示词",
+        "widgets": {
+            "prompt_input": "提示词",
+            "insanitylevel": "随机强度",
+            "seed": "随机种",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "prompt": "提示词"
+        }
+    },
+    "SavePromptToFile": {
+        "title": "保存提示词到文件",
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "positive_prompt": "正面提示词",
+            "negative_prompt": "负面提示词",
+            "prompt_g": "提示词_G",
+            "prompt_l": "提示词_L"
+        }
+    },
+    "AutoNegativePrompt": {
+        "title": "自动负面提示词",
+        "widgets": {
+            "positive_prompt": "正面提示词",
+            "negative_prompt": "负面提示词",
+            "enhancenegative": "增强负面",
+            "insanitylevel": "随机强度",
+            "base_model": "基础模型",
+            "seed": "随机种",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "negative_prompt": "负面提示词"
+        }
+    },
+    "OneButtonFlufferize": {
+        "title": "提示词一键柔顺功能",
+        "widgets": {
+            "amount_of_fluff": "蓬松量",
+            "reverse_polarity": "反极性",
+            "enhancenegative": "增强负面",
+            "insanitylevel": "随机强度",
+            "base_model": "基础模型",
+            "seed": "随机种",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "fluffed_prompt": "柔顺提示词"
+        }
+    },
+    "OneButtonSuperPrompt": {
+        "title": "一键超级提示词",
+        "widgets": {
+            "positive_prompt": "正面提示词",
+            "negative_prompt": "负面提示词",
+            "superpromptstyle": "超级提示风格",
+            "insanitylevel": "随机强度",
+            "base_model": "基础模型",
+            "seed": "随机种",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "super_prompt": "超级提示词"
+        }
+    }
+}

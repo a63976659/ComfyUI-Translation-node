@@ -1,0 +1,56 @@
+{
+    "PreResize": {
+        "title": "预调整尺寸",
+        "description": "在处理前调整图像的目标像素大小",
+        "inputs": {
+            "img": "图像"
+        },
+        "widgets": {
+            "target_pixels": "目标像素",
+            "pixel_size": "像素大小",
+            "device": "设备"
+        },
+        "outputs": {
+            "img": "图像"
+        }
+    },
+    "OutlineExpansion": {
+        "title": "轮廓扩展",
+        "description": "扩展图像的轮廓边缘",
+        "inputs": {
+            "img": "图像"
+        },
+        "outputs": {
+            "oe_image": "轮廓扩展图像",
+            "oe_weight": "轮廓权重"
+        },
+        "widgets": {
+            "pixel_size": "像素大小",
+            "thickness": "厚度",
+            "device": "设备"
+        }
+    },
+    "PixelOE": {
+        "title": "像素轮廓增强",
+        "description": "使用像素化技术增强图像轮廓和细节",
+        "inputs": {
+            "img": "图像"
+        },
+        "outputs": {
+            "pixel_image": "像素化图像",
+            "oe_image": "轮廓增强图像",
+            "oe_weight": "轮廓权重"
+        },
+        "widgets": {
+            "pixel_size": "像素大小",
+            "thickness": "厚度",
+            "mode": "模式",
+            "color_quant": "颜色量化",
+            "no_post_upscale": "禁用后期放大",
+            "num_colors": "颜色数量",
+            "quant_mode": "量化模式",
+            "dither_mode": "抖动模式",
+            "device": "设备"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "IndexTTSRun": {
+        "title": "运行IndexTTS",
+        "inputs": {
+            "text": "文本",
+            "audio": "需要克隆的音频样本",
+            "dialogue_audio_s2": "对话音频_s2"
+        },
+        "widgets": {
+            "version": "版本",
+            "top_k": "top_k",
+            "top_p": "top_p",
+            "temperature": "温度",
+            "num_beams": "光束数量",
+            "max_mel_tokens": "生成的语音长度",
+            "max_text_tokens_per_sentence": "每句话最大token数",
+            "sentences_bucket_max_size": "句子桶最大容量",
+            "fast_inference": "快速推理",
+            "custom_cuda_kernel": "自定义CUDA内核",
+            "unload_model": "卸载模型"
+        },
+        "outputs": {
+            "audio": "音频"
+        },
+        "description": "双人会话时的第二个音频, 如果输入这个音频, 自动启动会话模式. 会话模式下, 输入文本必须如下 \n ([S1] 表示第一个说话者, [S2] 表示第二个说话者): \n \n [S1] 轻喘像风掠过耳畔， \n [S2] 你靠近时，连呼吸都慢了半拍。 \n [S1] 指尖在我锁骨上游移， \n [S2] 仿佛试探一扇未曾开启的门。 "
+    },
+    "IndexSpeakersPreview": {
+        "title": "IndexTTS说话人预览",
+        "inputs": {
+            "speaker": "说话人"
+        },
+        "widgets": {
+            "speaker": "说话人"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "MultiLinePromptIndex": {
+        "title": "多行文本",
+        "inputs": {},
+        "widgets": {
+            "multi_line_prompt": "多行提示"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "FluxLoraLoader": {
+        "title": "Flux加载LoRA",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "强度"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "LoadFluxControlNet": {
+        "title": "Flux加载ControlNet",
+        "widgets": {
+            "model_name": "模型名称",
+            "controlnet_path": "ControlNet路径"
+        },
+        "outputs": {
+            "ControlNet": "ControlNet"
+        }
+    },
+    "ApplyFluxControlNet": {
+        "title": "Flux应用ControlNet",
+        "inputs": {
+            "controlnet": "ControlNet",
+            "controlnet_condition": "ControlNet条件",
+            "image": "图像"
+        },
+        "widgets": {
+            "strength": "强度"
+        },
+        "outputs": {
+            "controlnet_condition": "ControlNet条件"
+        }
+    },
+    "ApplyAdvancedFluxControlNet": {
+        "title": "Flux应用ControlNet（高级）",
+        "inputs": {
+            "controlnet": "ControlNet",
+            "controlnet_condition": "ControlNet条件",
+            "image": "图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start": "开始",
+            "end": "结束"
+        },
+        "outputs": {
+            "controlnet_condition": "ControlNet条件"
+        }
+    },
+    "XlabsSampler": {
+        "title": "XLabs采样器",
+        "inputs": {
+            "model": "模型",
+            "conditioning": "正面条件",
+            "neg_conditioning": "负面条件",
+            "latent_image": "Latent",
+            "controlnet_condition": "ControlNet条件"
+        },
+        "widgets": {
+            "noise_seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "steps": "步数",
+            "timestep_to_start_cfg": "开始引导步数",
+            "true_gs": "引导强度",
+            "image_to_image_strength": "图生图强度",
+            "denoise_strength": "降噪"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "ApplyFluxIPAdapter": {
+        "title": "Flux应用IPAdapter",
+        "inputs": {
+            "model": "模型",
+            "This is the model will be applied": "这个模型blabal",
+            "ip_adapter_flux": "IPAdapter_Flux",
+            "image": "图像"
+        },
+        "widgets": {
+            "ip_scale": "IP强度"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        },
+        "description": "模型选择\n Flux1-dev-fp8.safetensors或Flux1-dev.safetensors"
+    },
+    "LoadFluxIPAdapter": {
+        "title": "Flux加载IPAdapter",
+        "widgets": {
+            "ipadapter": "IPAdapter",
+            "clip_vision": "CLIP视觉",
+            "provider": "设备"
+        },
+        "outputs": {
+            "ipadapterFlux": "IPAdapter_Flux"
+        },
+        "description": "CLIP视觉模型选择\n clip-vit-large-patch14\n 下载链接\n https://huggingface.co/openai/clip-vit-large-patch14/resolve/main/model.safetensors?download=true\n 选择model.safetensors下载"
+    },
+    "ApplyAdvancedFluxIPAdapter": {
+        "title": "Flux应用IPAdapter（高级）",
+        "inputs": {
+            "model": "模型",
+            "ip_adapter_flux": "IPAdapter_Flux",
+            "image": "图像"
+        },
+        "widgets": {
+            "begin_strength": "初始强度",
+            "end_strength": "结束强度",
+            "smothing_type": "平滑类型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        },
+        "description": "模型选择\n Flux1-dev-fp8.safetensors或Flux1-dev.safetensors"
+    }
+}

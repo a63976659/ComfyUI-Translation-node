@@ -1,0 +1,50 @@
+{
+  "YOLOWorld_ModelLoader": {
+    "title": "YOLO世界模型加载",
+    "inputs": {
+      "text": "文本"
+    },
+    "widgets": {
+      "model_id": "模型名称",
+      "categories": "类别"
+    },
+    "outputs": {
+      "model": "模型",
+      "MODEL": "模型"
+    }
+  },
+  "YOLOWorld": {
+    "title": "YOLO世界",
+    "inputs": {
+      "model": "模型",
+      "images": "图像"
+    },
+    "widgets": {
+      "confidence_threshold": "置信度阈值",
+      "nms_iou_threshold": "非极大值抑制IoU阈值",
+      "with_class_agnostic_nms": "使用类别无关的非极大值抑制",
+      "seed": "种子"
+    },
+    "outputs": {
+      "detections": "检测",
+      "Detections": "检测"
+    }
+  },
+  "YOLOWorld_Display": {
+    "title": "YOLO世界 显示",
+    "inputs": {
+      "images": "图像",
+      "detections": "检测"
+    },
+    "widgets": {
+      "with_confidence": "有信心",
+      "thickness": "厚度",
+      "text_thickness": "文本厚度",
+      "text_scale": "文本规模"
+    },
+    "outputs": {
+      "images": "图像",
+      "IMAGE": "图像"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+    "🔹SendTo Photoshop Plugin": {
+        "title": "🔹发送至 PS 插件",
+        "inputs": {
+            "output": "输出"
+        },
+        "widgets": {
+            "scale": "缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "🔹Photoshop ComfyUI Plugin": {
+        "title": "🔹PS ComfyUI 插件",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "Load SD 1.5": "加载 SD 1.5",
+            "Load sdxl (coming Soon...)": "加载 sdxl(即将推出……)"
+        },
+        "outputs": {
+            "Canvas": "画布",
+            "Mask": "遮罩",
+            "Slider": "滑块",
+            "Seed": "种子",
+            "W": "宽度",
+            "H": "高度"
+        }
+    },
+    "🔹 Photoshop RemoteConnection": {
+        "title": "🔹PS 远程连接",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "Selection_To_Mask": "选择遮罩",
+            "password": "密码",
+            "Server": "服务器",
+            "port": "端口"
+        },
+        "outputs": {
+            "Photoshop Canvas": "PS画布",
+            "Mask": "遮罩"
+        }
+    },
+    "CLIP Text Encode PS Regional": {
+        "title": "CLIP文本编码PS区域",
+        "inputs": {
+            "clip": "CLIP",
+            "texts": "文本",
+            "masks": "遮罩",
+            "strengths": "优势"
+        },
+        "widgets": {
+            "swap_model": "替换模型",
+            "faces_index": "面部编号",
+            "console_logging_level": "控制台日志等级"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    }
+}

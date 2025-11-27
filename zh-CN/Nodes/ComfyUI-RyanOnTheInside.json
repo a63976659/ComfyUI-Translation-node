@@ -1,0 +1,4218 @@
+{
+    "UtilityNode": {
+        "title": "辅助节点⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {}
+    },
+    "BatchUtilityNode": {
+        "title": "批量工具节点⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {}
+    },
+    "ImageIntervalSelect": {
+        "title": "图像区间选择⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像",
+            "interval": "区间",
+            "start_at": "开始位置",
+            "end_at": "结束位置"
+        },
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ImageIntervalSelectPercentage": {
+        "title": "图像百分比区间选择⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "interval_percentage": "百分比区间",
+            "start_percentage": "起始百分比",
+            "end_percentage": "结束百分比"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ImageChunks": {
+        "title": "图像分块⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像",
+            "padding": "填充",
+            "normalize": "标准化",
+            "scale_each": "单独缩放",
+            "pad_value": "填充值"
+        },
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "VideoChunks": {
+        "title": "视频分块⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像",
+            "chunk_size": "分块大小",
+            "padding": "填充",
+            "normalize": "标准化",
+            "scale_each": "单独缩放",
+            "pad_value": "填充值"
+        },
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Image_Shuffle": {
+        "title": "图像洗牌⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "shuffle_size": "洗牌尺寸"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ImageDifference": {
+        "title": "图像差异⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "SwapDevice": {
+        "title": "切换设备⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "device": "设备"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "DownloadOpenUnmixModel": {
+        "title": "下载OpenUnmix模型⚡🅡🅞🅣🅘",
+        "inputs": {
+            "frame_rate": "帧率",
+            "model_name": "模型名称"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道",
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "OPEN_UNMIX_MODEL": "OpenUnmix模型",
+            "open_unmix_model": "OpenUnmix模型"
+        }
+    },
+    "AudioSeparatorSimple": {
+        "title": "音频分离器（简易）⚡🅡🅞🅣🅘",
+        "inputs": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道",
+            "model": "模型",
+            "audio": "音频"
+        },
+        "widgets": {},
+        "outputs": {
+            "drums_audio": "鼓音频",
+            "vocals_audio": "人声音频",
+            "bass_audio": "低音音频",
+            "other_audio": "其他音频",
+            "model": "模型",
+            "audio": "音频"
+        }
+    },
+    "AudioFilter": {
+        "title": "音频滤波器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道",
+            "audio": "音频",
+            "filters": "滤波器组",
+            "filter_params": "滤波参数组",
+            "sample_rate": "采样率"
+        },
+        "widgets": {},
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "FrequencyFilterPreset": {
+        "title": "频率滤波器预设⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_filter": "前级滤波器"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道",
+            "preset": "预设"
+        },
+        "outputs": {
+            "FREQUENCY_FILTER": "频率滤波器",
+            "frequency_filter": "频率滤波器"
+        }
+    },
+    "FrequencyFilterCustom": {
+        "title": "自定义频率滤波器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_filter": "前级滤波器"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道",
+            "filter_type": "滤波器类型",
+            "order": "阶数",
+            "cutoff": "截止频率"
+        },
+        "outputs": {
+            "FREQUENCY_FILTER": "频率滤波器",
+            "frequency_filter": "频率滤波器"
+        }
+    },
+    "FrequencyRange": {
+        "title": "频率范围⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_range": "前级范围"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道",
+            "low_cutoff": "低频截止",
+            "high_cutoff": "高频截止",
+            "order": "阶数"
+        },
+        "outputs": {
+            "FREQUENCY_RANGE": "频率范围",
+            "frequency_range": "频率范围"
+        }
+    },
+    "AudioFeatureVisualizer": {
+        "title": "音频特征可视化⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "video_frames": "视频帧"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道",
+            "visualization_type": "可视化类型",
+            "x_axis": "X轴",
+            "y_axis": "Y轴",
+            "cmap": "颜色映射",
+            "visualizer": "可视化器"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "EmptyImageFromAudio": {
+        "title": "音频生成空白图像⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道"
+        },
+        "outputs": {
+            "empty_mask": "空遮罩",
+            "frame_count": "帧数",
+            "image": "图像",
+            "int": "整数"
+        }
+    },
+    "EmptyMaskFromAudio": {
+        "title": "音频生成空白遮罩⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道",
+            "audio": "音频"
+        },
+        "outputs": {
+            "empty_mask": "空遮罩",
+            "frame_count": "帧数",
+            "mask": "遮罩",
+            "int": "整数"
+        }
+    },
+    "EmptyImageAndMaskFromAudio": {
+        "title": "音频生成图像和遮罩⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "height": "高度",
+            "width": "宽度",
+            "channels": "通道"
+        },
+        "outputs": {
+            "empty_mask": "空遮罩",
+            "frame_count": "帧数",
+            "empty_image": "空图像",
+            "image": "图像",
+            "mask": "遮罩",
+            "int": "整数"
+        }
+    },
+    "AudioPitchShift": {
+        "title": "音频移调⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "n_steps": "音阶步数"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioFade": {
+        "title": "音频淡入淡出⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "fade_in_duration": "淡入时长",
+            "fade_out_duration": "淡出时长",
+            "shape": "形状"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioGain": {
+        "title": "音频增益⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "gain_db": "增益分贝"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioTimeStretch": {
+        "title": "音频时间调整⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "rate": "速率"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioPad": {
+        "title": "音频填充⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "pad_left": "左填充",
+            "pad_right": "右填充",
+            "pad_mode": "填充模式"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioVolumeNormalization": {
+        "title": "音频音量标准化⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "target_level": "目标电平"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioResample": {
+        "title": "音频重采样⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "new_sample_rate": "新采样率"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioChannelMerge": {
+        "title": "音频通道合并⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio_list": "音频列表"
+        },
+        "widgets": {},
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioChannelSplit": {
+        "title": "音频通道分离⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {},
+        "outputs": {
+            "LIST[AUDIO]": "音频列表",
+            "list[audio]": "音频列表"
+        }
+    },
+    "Audio_Concatenate": {
+        "title": "音频拼接⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio1": "音频_1",
+            "audio2": "音频_2"
+        },
+        "widgets": {},
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "Audio_Combine": {
+        "title": "音频混合⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio1": "音频_1",
+            "audio2": "音频_2"
+        },
+        "widgets": {
+            "weight1": "权重_1",
+            "weight2": "权重_2"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioSubtract": {
+        "title": "音频相减⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio1": "音频_1",
+            "audio2": "音频_2"
+        },
+        "widgets": {},
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "AudioInfo": {
+        "title": "音频信息⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "frame_rate": "帧率"
+        },
+        "outputs": {
+            "total_frames": "总帧数",
+            "frames_per_beat": "每拍帧数",
+            "frames_per_bar": "每小节帧数",
+            "frames_per_quarter": "每四分音符帧数",
+            "frames_per_eighth": "每八分音符帧数",
+            "audio_duration": "音频时长",
+            "beats_per_second": "每秒拍数",
+            "detected_bpm": "检测BPM值",
+            "sample_rate": "采样率",
+            "num_channels": "通道数",
+            "num_samples": "采样点数",
+            "max_amplitude": "峰值振幅",
+            "mean_amplitude": "平均振幅",
+            "rms_amplitude": "RMS振幅",
+            "bit_depth": "bit位深度"
+        }
+    },
+    "AudioDither": {
+        "title": "音频抖动⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "bit_depth": "位深",
+            "noise_shaping": "噪声整形"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "FlexAudioBase": {
+        "title": "Flex音频基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "opt_feature": "可选特征",
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "target_fps": "目标帧率",
+            "audio_frame": "音频帧",
+            "feature_value": "特征值"
+        },
+        "widgets": {},
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "FlexAudioPitchShift": {
+        "title": "Flex音频移调⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "target_fps": "目标帧率",
+            "audio_frame": "音频帧",
+            "feature_value": "特征值",
+            "n_steps": "音阶步数"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "FlexAudioTimeStretch": {
+        "title": "Flex音频时间调整⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "target_fps": "目标帧率",
+            "audio_frame": "音频帧",
+            "feature_value": "特征值",
+            "rate": "速率"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "FlexAudioVisualizerBase": {
+        "title": "Flex音频可视化基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "param_name": "参数名称",
+            "param_value": "参数值",
+            "image": "图像",
+            "angle": "角度",
+            "processor": "处理器",
+            "frame_index": "帧索引",
+            "visualization_feature": "可视化特征",
+            "num_points": "点数",
+            "smoothing": "平滑度",
+            "fft_size": "FFT尺寸",
+            "min_frequency": "最小频率",
+            "max_frequency": "最大频率",
+            "frame_rate": "帧率",
+            "screen_width": "屏幕宽度",
+            "screen_height": "屏幕高度",
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "FlexAudioVisualizerLine": {
+        "title": "Flex音频线性可视化⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "frame_rate": "帧率",
+            "screen_width": "屏幕宽度",
+            "screen_height": "屏幕高度",
+            "position_x": "位置x",
+            "position_y": "位置y",
+            "visualization_method": "可视化方法",
+            "visualization_feature": "可视化特征",
+            "smoothing": "平滑度",
+            "rotation": "旋转",
+            "length": "长度",
+            "num_bars": "点数",
+            "max_height": "最大高度",
+            "min_height": "最小高度",
+            "separation": "分离",
+            "curvature": "曲率",
+            "curve_smoothing": "曲线平滑",
+            "fft_size": "FFT尺寸",
+            "min_frequency": "最小频率",
+            "max_frequency": "最大频率",
+            "reflect": "反映",
+            "param_name": "参数名称",
+            "param_value": "参数值",
+            "image": "图像",
+            "angle": "角度",
+            "processor": "处理器",
+            "frame_index": "帧索引",
+            "radius": "半径",
+            "line_width": "线宽",
+            "amplitude_scale": "振幅规模",
+            "base_radius": "基地半径"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "FlexAudioVisualizerCircular": {
+        "title": "Flex音频环形可视化⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "frame_rate": "帧率",
+            "screen_width": "屏幕宽度",
+            "screen_height": "屏幕高度",
+            "position_x": "位置x",
+            "position_y": "位置y",
+            "visualization_method": "可视化方法",
+            "visualization_feature": "可视化特征",
+            "rotation": "旋转",
+            "smoothing": "平滑度",
+            "num_points": "点数",
+            "fft_size": "FFT尺寸",
+            "min_frequency": "最小频率",
+            "max_frequency": "最大频率",
+            "param_name": "参数名称",
+            "param_value": "参数值",
+            "image": "图像",
+            "angle": "角度",
+            "processor": "处理器",
+            "frame_index": "帧索引",
+            "radius": "半径",
+            "line_width": "线宽",
+            "amplitude_scale": "振幅规模",
+            "base_radius": "基地半径"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "FlexAudioVisualizerContour": {
+        "title": "Flex音频轮廓可视化⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "frame_rate": "帧率",
+            "visualization_method": "可视化方法",
+            "visualization_feature": "可视化特征",
+            "smoothing": "平滑度",
+            "num_points": "点数",
+            "fft_size": "FFT尺寸",
+            "min_frequency": "最小频率",
+            "max_frequency": "最大频率",
+            "screen_width": "屏幕宽度",
+            "screen_height": "屏幕高度",
+            "bar_length": "条形长度",
+            "line_width": "线宽度",
+            "contour_smoothing": "轮廓平滑处理",
+            "position_x": "位置x",
+            "position_y": "位置y",
+            "bar length": "条形长度",
+            "line width": "线宽",
+            "contour smoothing": "轮廓平滑",
+            "rotation": "旋转",
+            "direction": "方向",
+            "min_contour_area": "最小轮廓面积",
+            "max_contours": "最大轮廓",
+            "distribute_by": "分布方式"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "FlexDepthBase": {
+        "title": "Flex深度基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "depth_maps": "深度图",
+            "param_name": "参数名称",
+            "param_value": "参数值",
+            "feature_value": "特征值",
+            "strength": "强度",
+            "mode": "模式",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "opt_feature": "可选特征",
+            "depth_map": "深度图"
+        },
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "DepthInjection": {
+        "title": "深度注入⚡🅡🅞🅣🅘",
+        "inputs": {
+            "opt_feature": "可选特征",
+            "depth_map": "深度图",
+            "mask": "遮罩",
+            "depth_maps": "深度图"
+        },
+        "widgets": {
+            "param_name": "参数名称",
+            "param_value": "参数值",
+            "feature_value": "特征值",
+            "strength": "强度",
+            "mode": "模式",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "frame_index": "帧索引",
+            "gradient_steepness": "梯度陡度",
+            "depth_min": "最小深度",
+            "depth_max": "最大深度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "DepthBlender": {
+        "title": "深度混合器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "depth_maps": "深度图",
+            "opt_feature": "可选特征",
+            "depth_map": "深度图",
+            "other_depth_maps": "其他深度图"
+        },
+        "widgets": {
+            "param_name": "参数名称",
+            "param_value": "参数值",
+            "feature_value": "特征值",
+            "strength": "强度",
+            "mode": "模式",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "blend_mode": "混合模式"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "DepthRippleEffect": {
+        "title": "深度波纹效果⚡🅡🅞🅣🅘",
+        "inputs": {
+            "opt_feature": "可选特征",
+            "depth_map": "深度图",
+            "depth_maps": "深度图"
+        },
+        "widgets": {
+            "mode": "模式",
+            "param_name": "参数名称",
+            "param_value": "参数值",
+            "feature_value": "特征值",
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "frame_index": "帧索引",
+            "ripple_amplitude": "脉动振幅",
+            "ripple_frequency": "脉动频率",
+            "ripple_phase": "脉动阶段",
+            "curvature": "曲率"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Doom_": {
+        "title": "插件注释⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "FeatureExtractorBase": {
+        "title": "特征提取器基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "FloatFeatureNode": {
+        "title": "浮点特征节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "floats": "浮点数组"
+        },
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "ManualFeatureNode": {
+        "title": "手动特征节点⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "frame_numbers": "帧编号",
+            "values": "值",
+            "last_value": "最终值",
+            "interpolation_method": "插值方法"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "ManualFeatureFromPipe": {
+        "title": "管道手动特征⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature_pipe": "特征管道"
+        },
+        "widgets": {
+            "frame_numbers": "帧编号",
+            "values": "值",
+            "last_value": "最终值",
+            "interpolation_method": "插值方法",
+            "frame_count": "总帧数",
+            "frame_rate": "帧率",
+            "width": "宽度",
+            "height": "高度",
+            "extraction_method": "提取方法"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "DrawableFeatureNode": {
+        "title": "可绘制特征节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "Value": "值",
+            "Frame": "框架"
+        },
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "points": "坐标点",
+            "min_value": "最小值",
+            "max_value": "最大值",
+            "interpolation_method": "插值方法",
+            "template": "模板",
+            "template_cycles": "模板周期",
+            "Load Template": "加载模板",
+            "Clear Graph": "清除画板",
+            "fill_value": "填充值"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "TimeFeatureNode": {
+        "title": "时序特征节点⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "frames_per_cycle": "周期帧数",
+            "offset": "偏移量"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "DepthFeatureNode": {
+        "title": "深度特征节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "depth_maps": "深度图"
+        },
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "depth_maps": "深度图"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "ColorFeatureNode": {
+        "title": "颜色特征节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "BrightnessFeatureNode": {
+        "title": "亮度特征节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "MotionFeatureNode": {
+        "title": "运动特征节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "flow_method": "光流方法",
+            "flow_threshold": "光流阈值",
+            "magnitude_threshold": "幅度阈值"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "AreaFeatureNode": {
+        "title": "区域特征节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组"
+        },
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureInfoNode": {
+        "title": "特征信息节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {},
+        "outputs": {
+            "name": "名称",
+            "type": "类型",
+            "frame_rate": "帧率",
+            "frame_rate_float": "帧率浮点",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "string": "字符串",
+            "min_value": "最小值",
+            "max_value": "最大值",
+            "float": "浮点数"
+        }
+    },
+    "AudioFeatureExtractorMixin": {
+        "title": "音频特征提取混合⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "AudioFeatureExtractor": {
+        "title": "音频特征提取器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "extraction_method": "提取方法"
+        },
+        "outputs": {
+            "FEATURE": "特征",
+            "frame_count": "总帧数"
+        }
+    },
+    "RhythmFeatureExtractor": {
+        "title": "节奏特征提取器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "time_signature": "节拍记号",
+            "extraction_method": "提取方法",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "PitchFeatureExtractor": {
+        "title": "音高特征提取器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频",
+            "opt_pitch_range_collections": "可选音高范围集合"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "opt_crepe_model": "可选CREPE模型",
+            "width": "宽度",
+            "height": "高度",
+            "extraction_method": "提取方法"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "PitchRangeNode": {
+        "title": "音高范围节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_range_collection": "前级范围集合"
+        },
+        "widgets": {
+            "min_pitch": "最低音高",
+            "max_pitch": "最高音高"
+        },
+        "outputs": {
+            "pitch_range_collection": "音高范围集合"
+        }
+    },
+    "PitchRangePresetNode": {
+        "title": "音高范围预设节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "preset": "预设",
+            "previous_range_collection": "前级范围集合"
+        },
+        "widgets": {},
+        "outputs": {
+            "pitch_range_collection": "音高范围集合"
+        }
+    },
+    "PitchRangeByNoteNode": {
+        "title": "音符音高范围节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_range_collection": "前级范围集合"
+        },
+        "widgets": {
+            "chord_only": "仅和弦",
+            "pitch_tolerance_percent": "音高容差百分比",
+            "notes": "音符",
+            "midi_note": "MIDI音符"
+        },
+        "outputs": {
+            "PITCH_RANGE_COLLECTION": "音高范围集合",
+            "previous_range_collection": "前级范围集合"
+        }
+    },
+    "MIDILoadAndExtract": {
+        "title": "MIDI加载与提取⚡🅡🅞🅣🅘",
+        "inputs": {
+            "midi_file": "MIDI文件",
+            "track_selection": "音轨选择",
+            "chord_only": "仅和弦",
+            "notes": "音符",
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "midi_path": "MIDI路径",
+            "video_frames": "视频帧"
+        },
+        "widgets": {},
+        "outputs": {
+            "midi": "MIDI",
+            "FEATURE": "特征"
+        }
+    },
+    "ProximityFeatureNode": {
+        "title": "邻近度特征节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "anchor_locations": "锚点位置",
+            "query_locations": "查询位置"
+        },
+        "widgets": {
+            "normalization_method": "标准化方法",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "extraction_method": "提取方法"
+        },
+        "outputs": {
+            "proximity_feature": "距离特征",
+            "FEATURE": "特征"
+        }
+    },
+    "LocationFromMask": {
+        "title": "遮罩定位⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "depth_maps": "深度图"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "LOCATION": "位置",
+            "location": "位置"
+        }
+    },
+    "LocationFromPoint": {
+        "title": "坐标定位⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {
+            "x": "X坐标",
+            "y": "Y值",
+            "z": "Z坐标",
+            "batch_count": "批次数量"
+        },
+        "outputs": {
+            "LOCATION": "位置",
+            "location": "位置"
+        }
+    },
+    "LocationTransform": {
+        "title": "位置变换⚡🅡🅞🅣🅘",
+        "inputs": {
+            "locations": "位置组",
+            "feature": "特征"
+        },
+        "widgets": {
+            "transformation_type": "变换类型",
+            "transformation_value": "变换值"
+        },
+        "outputs": {
+            "LOCATION": "位置",
+            "location": "位置"
+        }
+    },
+    "WhisperFeatureNode": {
+        "title": "语音特征节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "alignment_data": "对齐数据",
+            "trigger_set": "触发器合集",
+            "context_size": "上下文尺寸",
+            "overlap_mode": "重叠模式",
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度",
+            "extraction_method": "提取方法"
+        },
+        "widgets": {},
+        "outputs": {
+            "FEATURE": "特征",
+            "image": "图像"
+        }
+    },
+    "TriggerBuilder": {
+        "title": "触发器构建器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_triggers": "前级触发器",
+            "trigger_image": "触发图像"
+        },
+        "widgets": {
+            "pattern": "触发模式",
+            "start_value": "起始值",
+            "end_value": "结束值",
+            "match_mode": "匹配模式",
+            "fade_type": "淡入淡出类型",
+            "duration_frames": "持续时间帧",
+            "blend_mode": "混合模式",
+            "fill_behavior": "填充方式"
+        },
+        "outputs": {
+            "TRIGGER_SET": "触发器合集",
+            "trigger_set": "触发器合集"
+        }
+    },
+    "ContextModifier": {
+        "title": "上下文修改器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "trigger_set": "触发器合集"
+        },
+        "widgets": {
+            "modifier_type": "修改类型",
+            "condition": "条件",
+            "value_adjust": "值调整",
+            "window_size": "窗口尺寸"
+        },
+        "outputs": {
+            "TRIGGER_SET": "触发器合集",
+            "trigger_set": "触发器合集"
+        }
+    },
+    "WhisperToPromptTravel": {
+        "title": "语音转提示词映射⚡🅡🅞🅣🅘",
+        "inputs": {
+            "alignment_data": "对齐数据",
+            "fps": "帧率",
+            "segments_alignment": "片段对齐"
+        },
+        "widgets": {},
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "WhisperTextRenderer": {
+        "title": "语音文本渲染器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "feature": "特征"
+        },
+        "widgets": {
+            "font_size": "字体大小",
+            "font_name": "字体名称",
+            "position": "位置",
+            "horizontal_align": "水平对齐",
+            "margin": "边距",
+            "animation_type": "动画类型",
+            "animation_duration": "动画时长",
+            "max_width": "最大宽度",
+            "bg_color": "背景色",
+            "text_color": "文字颜色",
+            "opacity": "不透明度",
+            "text": "文本",
+            "size": "大小",
+            "font": "字体",
+            "align": "对齐",
+            "output": "输出",
+            "mask": "遮罩",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "duration": "持续时间",
+            "start": "起始",
+            "end": "结束"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ManualWhisperAlignmentData": {
+        "title": "手动语音对齐数据⚡🅡🅞🅣🅘",
+        "inputs": {
+            "alignment_text": "对齐文本"
+        },
+        "widgets": {},
+        "outputs": {
+            "alignment_data": "对齐数据",
+            "whisper_alignment": "语音对齐数据"
+        }
+    },
+    "WhisperTimeAdjuster": {
+        "title": "语音时间调节器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "alignment_data": "对齐数据"
+        },
+        "widgets": {
+            "time_offset": "时间偏移"
+        },
+        "outputs": {
+            "whisper_alignment": "语音对齐数据"
+        }
+    },
+    "WhisperAutoAdjust": {
+        "title": "语音自动调节⚡🅡🅞🅣🅘",
+        "inputs": {
+            "alignment_data": "对齐数据",
+            "audio": "音频"
+        },
+        "widgets": {
+            "detection_window": "检测窗口",
+            "energy_threshold": "能量阈值",
+            "audio_dict": "音频字典",
+            "window_size": "窗口尺寸",
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "whisper_alignment": "语音对齐数据"
+        }
+    },
+    "FeatureModulationBase": {
+        "title": "特征调制基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "FeatureMixer": {
+        "title": "特征混合器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "base_gain": "基础增益",
+            "floor": "下限",
+            "ceiling": "上限",
+            "peak_sharpness": "峰值锐度",
+            "valley_sharpness": "谷值锐度",
+            "attack": "起始时间",
+            "release": "释放时间",
+            "smoothing": "平滑度",
+            "feature_threshold": "特征阈值",
+            "rise_detection_threshold": "上升检测阈值",
+            "rise_smoothing_factor": "上升平滑因子",
+            "values": "值"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureScaler": {
+        "title": "特征缩放器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "scale_type": "缩放类型",
+            "min_output": "最小输出",
+            "max_output": "最大输出",
+            "exponent": "指数"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureCombine": {
+        "title": "特征组合器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature1": "特征_1",
+            "feature2": "特征_2"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "operation": "操作",
+            "weight1": "权重_1",
+            "weight2": "权重_2"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureMath": {
+        "title": "特征数学运算⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "feature": "特征",
+            "y": "Y值",
+            "operation": "操作"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureSmoothing": {
+        "title": "特征平滑⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "feature": "特征",
+            "smoothing_type": "平滑类型",
+            "window_size": "窗口尺寸",
+            "alpha": "阿尔法",
+            "sigma": "sigma"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureOscillator": {
+        "title": "特征振荡器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "oscillator_type": "振荡器类型",
+            "frequency": "频率",
+            "amplitude": "振幅",
+            "phase_shift": "相位偏移",
+            "blend": "混合度"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureFade": {
+        "title": "特征淡入淡出⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature1": "特征_1",
+            "feature2": "特征_2",
+            "control_feature": "控制特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "fader": "淡入淡出器"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureRebase": {
+        "title": "特征基准调整⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "lower_threshold": "下限阈值",
+            "upper_threshold": "上限阈值"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureRenormalize": {
+        "title": "特征重标准化⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "lower_threshold": "下限阈值",
+            "upper_threshold": "上限阈值"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureTruncateOrExtend": {
+        "title": "特征截断/扩展⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征",
+            "target_feature_pipe": "目标特征管道"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "fill_method": "填充方法"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureAccumulate": {
+        "title": "特征累加器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "feature": "特征",
+            "start": "起始",
+            "end": "结束",
+            "threshold": "阈值",
+            "skip_thresholded": "跳过阈值",
+            "frames_window": "帧窗口",
+            "deccumulate": "反向累加"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureContiguousInterpolate": {
+        "title": "特征连续插值⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "threshold": "阈值",
+            "start": "起始",
+            "end": "结束",
+            "easing": "缓动函数",
+            "fade_out": "淡出"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeatureInterpolator": {
+        "title": "特征插值器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "interpolation_method": "插值方法",
+            "threshold": "阈值",
+            "min_difference": "最小差值",
+            "min_distance": "最小距离",
+            "extrapolate": "外推"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "FeaturePeakDetector": {
+        "title": "特征峰值检测器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "original_feature": "原始特征",
+            "processed_values": "处理值",
+            "name_prefix": "名称前缀",
+            "feature": "特征",
+            "prominence": "突出度",
+            "distance": "距离",
+            "width": "宽度",
+            "plateau_size": "平台尺寸",
+            "detect_valleys": "检测谷值"
+        },
+        "outputs": {
+            "FEATURE": "特征"
+        }
+    },
+    "ManualFeaturePipe": {
+        "title": "手动特征管道⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {
+            "frame_rate": "帧率",
+            "frame_count": "总帧数",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "FEATURE_PIPE": "特征管道",
+            "feature_pipe": "特征管道"
+        }
+    },
+    "FlexBase": {
+        "title": "Flex基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "frame_count": "总帧数",
+            "frame_index": "帧索引",
+            "param_name": "参数名称",
+            "param_value": "参数值",
+            "feature_value": "特征值",
+            "strength": "强度",
+            "mode": "模式",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式"
+        },
+        "outputs": {}
+    },
+    "FeatureToWeightsStrategy": {
+        "title": "特征转权重策略⚡🅡🅞🅣🅘",
+        "inputs": {
+            "module_path": "模块路径",
+            "feature": "特征"
+        },
+        "widgets": {},
+        "outputs": {
+            "WEIGHTS_STRATEGY": "权重策略",
+            "weights_strategy": "权重策略"
+        }
+    },
+    "FeatureToSplineData": {
+        "title": "特征转样条数据⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "module_path": "模块路径",
+            "mask_width": "遮罩宽度",
+            "mask_height": "遮罩高度",
+            "sampling_method": "采样方法",
+            "interpolation": "插值",
+            "tension": "张力",
+            "repeat_output": "重复输出",
+            "float_output_type": "浮点输出类型",
+            "min_value": "最小值",
+            "max_value": "最大值"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "coord_str": "坐标字符串",
+            "count": "数量",
+            "normalized_str": "规范化字符串",
+            "string": "字符串",
+            "float": "浮点数",
+            "int": "整数"
+        }
+    },
+    "SplineFeatureModulator": {
+        "title": "样条特征调制器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "module_path": "模块路径",
+            "coordinates": "坐标",
+            "mask_width": "遮罩宽度",
+            "mask_height": "遮罩高度",
+            "min_speed": "最小速度",
+            "max_speed": "最大速度",
+            "float_output_type": "浮点输出类型",
+            "min_value": "最小值",
+            "max_value": "最大值"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "coord_str": "坐标字符串",
+            "count": "数量",
+            "normalized_str": "规范化字符串",
+            "string": "字符串",
+            "float": "浮点数",
+            "int": "整数"
+        }
+    },
+    "SplineRhythmModulator": {
+        "title": "样条节奏调制器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "module_path": "模块路径",
+            "coordinates": "坐标",
+            "mask_width": "遮罩宽度",
+            "mask_height": "遮罩高度",
+            "smoothing": "平滑度",
+            "direction": "方向",
+            "float_output_type": "浮点输出类型",
+            "min_value": "最小值",
+            "max_value": "最大值"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "coord_str": "坐标字符串",
+            "count": "数量",
+            "normalized_str": "规范化字符串",
+            "string": "字符串",
+            "float": "浮点数",
+            "int": "整数"
+        }
+    },
+    "FeatureToFloat": {
+        "title": "特征转浮点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "module_path": "模块路径",
+            "feature": "特征"
+        },
+        "widgets": {},
+        "outputs": {
+            "float": "浮点数"
+        }
+    },
+    "DepthShapeModifier": {
+        "title": "深度图形修改器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "depth_map": "深度图",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "module_path": "模块路径",
+            "gradient_steepness": "梯度陡度",
+            "depth_min": "最小深度",
+            "depth_max": "最大深度",
+            "strength": "强度",
+            "feature": "特征",
+            "feature_param": "特征参数"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "DepthShapeModifierPrecise": {
+        "title": "精确深度图形修改器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "module_path": "模块路径",
+            "depth_map": "深度图",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "module_path": "模块路径",
+            "gradient_steepness": "梯度陡度",
+            "depth_min": "最小深度",
+            "depth_max": "最大深度",
+            "strength": "强度",
+            "composite_method": "合成方法",
+            "original_depth": "原始深度",
+            "depth_gradient": "深度梯度",
+            "method": "方法",
+            "feature": "特征",
+            "feature_param": "特征参数"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "FeatureToMask": {
+        "title": "特征转遮罩⚡🅡🅞🅣🅘",
+        "inputs": {
+            "module_path": "模块路径",
+            "feature": "特征"
+        },
+        "widgets": {},
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "FeatureToTimestepKeyframe": {
+        "title": "特征转时间步关键帧⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征",
+            "select_every": "选择间隔",
+            "guarantee_steps": "保证步数",
+            "inherit_missing": "继承缺失",
+            "prev_timestep_kf": "前级时间步关键帧",
+            "cn_weights": "控制网权重",
+            "latent_keyframe": "Latent关键帧"
+        },
+        "widgets": {},
+        "outputs": {
+            "timestep_keyframe": "时间步关键帧"
+        }
+    },
+    "FeatureToLatentKeyframe": {
+        "title": "特征转Latent关键帧⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征",
+            "prev_latent_kf": "前级Latent关键帧"
+        },
+        "widgets": {},
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent关键帧",
+            "latent_keyframe": "Latent关键帧"
+        }
+    },
+    "FlexExpressionEditor": {
+        "title": "Flex表情编辑器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "src_image": "源图像",
+            "sample_image": "参考图像",
+            "add_exp": "添加表情",
+            "flex_motion_link": "Flex运动链接",
+            "feature": "特征"
+        },
+        "widgets": {
+            "base_value": "基础值",
+            "feature_value": "特征值",
+            "mode": "模式",
+            "param_name": "参数名称",
+            "psi": "Psi",
+            "preview_es": "预览表达式",
+            "motion_link": "运动链接",
+            "sample_parts": "采样部件",
+            "es": "表达式",
+            "rotate_pitch": "头部俯仰",
+            "rotate_yaw": "头部旋转",
+            "rotate_roll": "头部倾斜",
+            "blink": "眨眼",
+            "eyebrow": "皱眉挑眉",
+            "wink": "眨眼",
+            "pupil_x": "瞳孔X",
+            "pupil_y": "瞳孔Y",
+            "aaa": "口型A",
+            "eee": "口型E",
+            "woo": "口型O",
+            "smile": "微笑",
+            "src_ratio": "源比率",
+            "sample_ratio": "采样比率",
+            "crop_factor": "裁剪因子",
+            "constrain_min_max": "限制最小最大值",
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式"
+        },
+        "outputs": {
+            "image": "图像",
+            "flex_motion_link": "Flex运动链接",
+            "editor_link": "编辑器链接",
+            "exp_data": "表达式数据",
+            "save_exp": "保存表达式",
+            "command": "命令",
+            "string": "字符串"
+        }
+    },
+    "FeatureToADKeyframe": {
+        "title": "特征转AD关键帧⚡🅡🅞🅣🅘",
+        "inputs": {
+            "scale_feature": "缩放特征",
+            "effect_feature": "效果特征"
+        },
+        "widgets": {
+            "select_every": "选择间隔"
+        },
+        "outputs": {
+            "AD_KEYFRAMES": "AD关键帧",
+            "ad_keyframes": "AD关键帧"
+        }
+    },
+    "FeatureToCameraKeyframe": {
+        "title": "特征转摄像机关键帧⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征",
+            "camera_motion": "摄像机运动",
+            "select_every": "选择间隔",
+            "inherit_missing": "继承缺失"
+        },
+        "widgets": {},
+        "outputs": {
+            "ad_keyframes": "AD关键帧"
+        }
+    },
+    "FeatureToPIAKeyframe": {
+        "title": "特征转PIA关键帧⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征",
+            "preset": "预设",
+            "start_percent": "起始百分比",
+            "guarantee_steps": "保证步数",
+            "inherit_missing": "继承缺失"
+        },
+        "widgets": {},
+        "outputs": {
+            "ad_keyframes": "AD关键帧"
+        }
+    },
+    "SchedulerNode": {
+        "title": "调度器节点⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征",
+            "invert_output": "反转输出",
+            "lower_threshold": "下限阈值",
+            "upper_threshold": "上限阈值"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "FeatureToFlexIntParam": {
+        "title": "特征转Flex整数参数⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "lower_threshold": "下限阈值",
+            "upper_threshold": "上限阈值"
+        },
+        "outputs": {
+            "PARAMETER": "参数",
+            "int": "整数"
+        }
+    },
+    "FeatureToFlexFloatParam": {
+        "title": "特征转Flex浮点参数⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "invert_output": "反转输出",
+            "lower_threshold": "下限阈值",
+            "upper_threshold": "上限阈值"
+        },
+        "outputs": {
+            "PARAMETER": "参数",
+            "float": "浮点数"
+        }
+    },
+    "EffectVisualizer": {
+        "title": "效果可视化器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "video_frames": "视频帧",
+            "feature": "特征"
+        },
+        "widgets": {
+            "label_prefix": "标签前缀",
+            "label_x_offset": "标签x偏移量",
+            "label_y_offset": "标签y偏移量",
+            "text_color": "文字颜色",
+            "font_scale": "字体缩放",
+            "color_string": "颜色字符串"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ProximityVisualizer": {
+        "title": "邻近度可视化器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "video_frames": "视频帧",
+            "feature": "特征",
+            "anchor_locations": "锚点位置",
+            "query_locations": "查询位置"
+        },
+        "widgets": {
+            "text_color": "文字颜色",
+            "font_scale": "字体缩放",
+            "label_prefix": "标签前缀",
+            "label_x_offset": "标签x偏移量",
+            "label_y_offset": "标签y偏移量",
+            "color_string": "颜色字符串",
+            "anchor_color": "锚点颜色",
+            "query_color": "查询颜色",
+            "line_color": "线条颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "PitchVisualizer": {
+        "title": "音高可视化器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "video_frames": "视频帧",
+            "feature": "特征"
+        },
+        "widgets": {
+            "text_color": "文字颜色",
+            "font_scale": "字体缩放",
+            "color_string": "颜色字符串",
+            "label_prefix": "标签前缀",
+            "label_x_offset": "标签x偏移量",
+            "label_y_offset": "标签y偏移量"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "PreviewFeature": {
+        "title": "预览特征⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征",
+            "prompt": "提示词",
+            "extra_pnginfo": "额外PNG信息"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "FlexImageEdgeDetect": {
+        "title": "Flex图像边缘检测⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "low_threshold": "低阈值",
+            "high_threshold": "高阈值"
+        },
+        "outputs": {}
+    },
+    "FlexImagePosterize": {
+        "title": "Flex图像色调分离⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "low_threshold": "低阈值",
+            "high_threshold": "高阈值",
+            "max_levels": "最大色阶",
+            "dither_strength": "抖动强度",
+            "channel_separation": "通道分离",
+            "gamma": "Gamma",
+            "dither_method": "抖动方法"
+        },
+        "outputs": {}
+    },
+    "FlexImageKaleidoscope": {
+        "title": "Flex图像万花筒⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "segments": "分块数",
+            "center_x": "中心X",
+            "center_y": "中心Y",
+            "zoom": "缩放",
+            "rotation": "旋转",
+            "precession": "进动",
+            "speed": "速度"
+        },
+        "outputs": {}
+    },
+    "FlexImageColorGrade": {
+        "title": "Flex图像调色⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "lut_file": "LUT文件",
+            "intensity": "强度",
+            "mix": "混合度"
+        },
+        "outputs": {}
+    },
+    "FlexImageGlitch": {
+        "title": "Flex图像故障效果⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "glitch_type": "故障类型",
+            "intensity": "强度",
+            "block_size": "分块尺寸",
+            "wave_amplitude": "波形振幅",
+            "wave_frequency": "波形频率",
+            "corruption_amount": "损坏程度",
+            "time_seed": "时间种子"
+        },
+        "outputs": {}
+    },
+    "FlexImageChromaticAberration": {
+        "title": "Flex图像色差⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "shift_amount": "偏移量",
+            "angle": "角度"
+        },
+        "outputs": {}
+    },
+    "FlexImagePixelate": {
+        "title": "Flex图像像素化⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "pixel_size": "像素尺寸"
+        },
+        "outputs": {}
+    },
+    "FlexImageBloom": {
+        "title": "Flex图像泛光⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征",
+            "opt_normal_map": "可选法线贴图",
+            "opt_mask": "可选遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "threshold": "阈值",
+            "blur_amount": "模糊强度",
+            "intensity": "强度",
+            "num_passes": "处理次数",
+            "color_bleeding": "色彩溢出",
+            "falloff": "衰减"
+        },
+        "outputs": {}
+    },
+    "FlexImageTiltShift": {
+        "title": "Flex图像移轴⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "size": "大小",
+            "shape": "形状",
+            "brightness": "亮度",
+            "blur_amount": "模糊强度",
+            "focus_position_x": "焦点X位置",
+            "focus_position_y": "焦点Y位置",
+            "focus_width": "焦点宽度",
+            "focus_height": "焦点高度",
+            "focus_shape": "焦点形状",
+            "bokeh_shape": "散景形状",
+            "bokeh_size": "散景尺寸",
+            "bokeh_brightness": "散景亮度",
+            "chromatic_aberration": "色差"
+        },
+        "outputs": {}
+    },
+    "FlexImageParallax": {
+        "title": "Flex图像视差⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "depth_map": "深度图",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "image": "图像",
+            "shift_x": "X偏移",
+            "shift_y": "Y偏移",
+            "shift_z": "Z偏移",
+            "frame_index": "帧索引"
+        },
+        "outputs": {}
+    },
+    "FlexImageContrast": {
+        "title": "Flex图像对比度⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "contrast": "对比度",
+            "brightness": "亮度",
+            "preserve_luminosity": "保持亮度"
+        },
+        "outputs": {}
+    },
+    "FlexImageWarp": {
+        "title": "Flex图像扭曲⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "warp_type": "扭曲类型",
+            "warp_strength": "扭曲强度",
+            "center_x": "中心X",
+            "center_y": "中心Y",
+            "radius": "半径",
+            "warp_frequency": "扭曲频率",
+            "warp_octaves": "扭曲倍频",
+            "warp_seed": "扭曲种子"
+        },
+        "outputs": {}
+    },
+    "FlexImageVignette": {
+        "title": "Flex图像暗角⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "intensity": "强度",
+            "radius": "半径",
+            "feather": "羽化",
+            "center_x": "中心X",
+            "center_y": "中心Y"
+        },
+        "outputs": {}
+    },
+    "FlexImageTransform": {
+        "title": "Flex图像变换⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "transform_type": "变换类型",
+            "x_value": "X值",
+            "y_value": "Y值",
+            "edge_mode": "边缘模式"
+        },
+        "outputs": {}
+    },
+    "FlexImageHueShift": {
+        "title": "Flex图像色相偏移⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征",
+            "opt_mask": "可选遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "hue_shift": "色相偏移"
+        },
+        "outputs": {}
+    },
+    "FlexImageDepthWarp": {
+        "title": "Flex图像深度扭曲⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "depth_map": "深度图",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "warp_strength": "扭曲强度",
+            "frame_index": "帧索引"
+        },
+        "outputs": {}
+    },
+    "FlexImageHorizontalToVertical": {
+        "title": "Flex图像横竖转换⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "blur_amount": "模糊强度",
+            "background_type": "背景类型",
+            "border_color": "边框颜色",
+            "scale_factor": "缩放因子",
+            "effect_strength": "效果强度"
+        },
+        "outputs": {}
+    },
+    "FlexImageBase": {
+        "title": "Flex图像基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ImageUtilityNode": {
+        "title": "图像工具节点⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {}
+    },
+    "DyeImage": {
+        "title": "染色图像",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "source_rgb": "源RGB",
+            "target_rgb": "目标RGB",
+            "tolerance": "容差"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ImageCASBatch": {
+        "title": "图像CAS批次处理⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "amount": "数量",
+            "batch_size": "批次大小",
+            "batch": "批次"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ImageScaleToTarget": {
+        "title": "图像目标缩放⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像",
+            "target_image": "目标图像"
+        },
+        "widgets": {
+            "upscale_method": "放大方法",
+            "crop": "裁剪"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Color_Picker": {
+        "title": "颜色选择器",
+        "inputs": {
+            "color": "颜色"
+        },
+        "widgets": {},
+        "outputs": {
+            "string": "字符串",
+            "int": "整数",
+            "hex_color": "十六进制颜色",
+            "rgb_color": "RGB颜色",
+            "hue_shift": "色调偏移"
+        }
+    },
+    "FlexLatentInterpolate": {
+        "title": "Flex Latent插值⚡🅡🅞🅣🅘",
+        "inputs": {
+            "latents": "Latent",
+            "latent_1": "Latent_1",
+            "latent_2": "Latent_2",
+            "opt_feature": "选择功能",
+            "t": "时间"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {}
+    },
+    "EmbeddingGuidedLatentInterpolate": {
+        "title": "嵌入引导Latent插值⚡🅡🅞🅣🅘",
+        "inputs": {
+            "latents": "Latent",
+            "latent_1": "Latent_1",
+            "latent_2": "Latent_2",
+            "embedding_1": "嵌入_1",
+            "embedding_2": "嵌入_2",
+            "opt_feature": "选择功能"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "interpolation_mode": "插值模式"
+        },
+        "outputs": {}
+    },
+    "FlexLatentBlend": {
+        "title": "Flex Latent混合⚡🅡🅞🅣🅘",
+        "inputs": {
+            "latents": "Latent",
+            "latent_1": "Latent_1",
+            "latent_2": "Latent_2",
+            "embedding_1": "嵌入_1",
+            "embedding_2": "嵌入_2",
+            "opt_feature": "选择功能"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "blend_mode": "混合模式",
+            "blend_strength": "混合强度"
+        },
+        "outputs": {}
+    },
+    "FlexLatentNoise": {
+        "title": "Flex Latent噪声⚡🅡🅞🅣🅘",
+        "inputs": {
+            "latents": "Latent",
+            "opt_feature": "选择功能"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "blend_mode": "混合模式",
+            "noise_level": "噪声等级",
+            "noise_type": "噪声类型"
+        },
+        "outputs": {}
+    },
+    "FlexLatentBase": {
+        "title": "Flex Latent基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "latents": "Latents",
+            "latent": "Latent",
+            "feature_value": "特征值",
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "opt_feature": "可选特征"
+        },
+        "widgets": {},
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "LatentFrequencyBlender": {
+        "title": "Latent频率混合器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "vae": "VAE",
+            "frequency_ranges": "频率范围",
+            "audio": "音频"
+        },
+        "widgets": {
+            "feature_type": "特征类型",
+            "strength": "强度",
+            "feature_mode": "特征模式",
+            "frame_rate": "帧率",
+            "nonlinear_transform": "非线性变换",
+            "blending_mode": "混合模式",
+            "freq_range": "频率范围",
+            "feature_values": "特征值",
+            "transform_type": "变换类型",
+            "latent": "Latent",
+            "latent1": "Latent_1",
+            "latent2": "Latent_2",
+            "t": "时间"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "FlexMaskMorph": {
+        "title": "Flex遮罩形态学⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "morph_type": "形态类型",
+            "max_kernel_size": "最大卷积核尺寸",
+            "max_iterations": "最大迭代次数"
+        },
+        "outputs": {
+            "masks": "遮罩"
+        }
+    },
+    "FlexMaskWarp": {
+        "title": "Flex遮罩扭曲⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "warp_type": "波纹类型",
+            "frequency": "频率（Hz）",
+            "max_amplitude": "峰值振幅（dBFS）",
+            "octaves": "倍频程"
+        },
+        "outputs": {
+            "masks": "遮罩"
+        }
+    },
+    "FlexMaskTransform": {
+        "title": "Flex遮罩变换⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "transform_type": "转换类型",
+            "max_x_value": "最大x值",
+            "max_y_value": "最大y值"
+        },
+        "outputs": {
+            "masks": "遮罩"
+        }
+    },
+    "FlexMaskMath": {
+        "title": "Flex遮罩数学运算⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "mask_b": "遮罩_B",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "combination_method": "组合方法",
+            "max_blend": "最大混合"
+        },
+        "outputs": {
+            "masks": "遮罩"
+        }
+    },
+    "FlexMaskOpacity": {
+        "title": "Flex遮罩不透明度⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "max_opacity": "最大不透明度"
+        },
+        "outputs": {}
+    },
+    "FlexMaskVoronoiScheduled": {
+        "title": "Flex遮罩Voronoi调度⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "feature_value": "特征值",
+            "mask": "遮罩",
+            "distance_metric": "距离度量",
+            "scale": "规模",
+            "detail": "细节",
+            "randomness": "随机",
+            "seed": "种子",
+            "x_offset": "x抵消",
+            "y_offset": "y抵消",
+            "formula": "公式",
+            "a": "A参数",
+            "b": "B参数"
+        },
+        "outputs": {}
+    },
+    "FlexMaskBinary": {
+        "title": "Flex遮罩二值化⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "threshold": "阈值"
+        },
+        "outputs": {}
+    },
+    "FlexMaskWavePropagation": {
+        "title": "Flex遮罩波浪传播⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "wave_speed": "波速度",
+            "wave_amplitude": "波振幅",
+            "wave_decay": "波衰减",
+            "wave_frequency": "波的频率",
+            "max_wave_field": "最大波场"
+        },
+        "outputs": {}
+    },
+    "FlexMaskEmanatingRings": {
+        "title": "Flex遮罩放射环⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "ring_speed": "环速度",
+            "ring_width": "环宽度",
+            "ring_falloff": "环下降",
+            "binary_mode": "二进制模式"
+        },
+        "outputs": {}
+    },
+    "FlexMaskRandomShapes": {
+        "title": "Flex遮罩随机形状⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "max_num_shapes": "最大形状数",
+            "max_shape_size": "最大形状尺寸",
+            "appearance_duration": "出现时长",
+            "disappearance_duration": "消失时长",
+            "appearance_method": "出现方法",
+            "easing_function": "缓动函数",
+            "shape_type": "形状类型"
+        },
+        "outputs": {}
+    },
+    "FlexMaskDepthChamber": {
+        "title": "Flex遮罩深度腔⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "depth_map": "深度图",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "z_front": "前Z值",
+            "z_back": "后Z值"
+        },
+        "outputs": {}
+    },
+    "FlexMaskDepthChamberRelative": {
+        "title": "Flex遮罩相对深度腔⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "mask": "遮罩",
+            "masks": "遮罩组",
+            "depth_map": "深度图",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "z1": "Z1值",
+            "z2": "Z2值"
+        },
+        "outputs": {}
+    },
+    "FlexMaskInterpolate": {
+        "title": "Flex遮罩插值⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "mask_b": "遮罩_B",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度",
+            "interpolation_method": "插值方法",
+            "max_blend": "最大混合",
+            "invert_mask_b": "反转遮罩B",
+            "blend_mode": "混合模式",
+            "mask": "遮罩"
+        },
+        "outputs": {}
+    },
+    "FlexMaskBase": {
+        "title": "Flex遮罩基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "invert": "反向",
+            "subtract_original": "减去原图",
+            "grow_with_blur": "模糊扩张",
+            "mask_strength": "遮罩强度"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "MaskBase": {
+        "title": "遮罩基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "func": "函数",
+            "mask": "遮罩",
+            "processed_masks": "处理遮罩",
+            "original_masks": "原始遮罩",
+            "progress_callback": "进度回调"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "TemporalMaskBase": {
+        "title": "时间遮罩基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "func": "函数",
+            "mask": "遮罩",
+            "processed_masks": "处理遮罩",
+            "original_masks": "原始遮罩",
+            "progress_callback": "进度回调",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "效果时长",
+            "temporal_easing": "时序缓动",
+            "palindrome": "回文"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "OpticalFlowMaskBase": {
+        "title": "光流遮罩基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "func": "函数",
+            "mask": "遮罩",
+            "processed_masks": "处理遮罩",
+            "original_masks": "原始遮罩",
+            "progress_callback": "进度回调",
+            "images": "图像",
+            "flow_method": "光流方法",
+            "flow_threshold": "光流阈值",
+            "magnitude_threshold": "幅度阈值",
+            "frame_index": "帧索引",
+            "flow_magnitude": "光流幅度",
+            "flow": "光流"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "ParticleSystemMaskBase": {
+        "title": "粒子系统遮罩基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "emitters": "发射器",
+            "particle_count": "粒子数量",
+            "particle_lifetime": "粒子寿命",
+            "wind_strength": "风力强度",
+            "wind_direction": "风向",
+            "gravity": "重力",
+            "warmup_period": "预热周期",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "respect_mask_boundary": "尊重遮罩边界",
+            "vortices": "漩涡",
+            "wells": "引力场",
+            "static_bodies": "静态体",
+            "well_strength_multiplier": "引力场强度倍数",
+            "mask": "遮罩",
+            "frame_index": "帧索引",
+            "masks": "遮罩组",
+            "width": "宽度",
+            "height": "高度",
+            "t": "时间",
+            "dt": "时间差",
+            "particle": "粒子",
+            "image": "图像",
+            "effect_duration": "效果时长",
+            "current_frame": "当前帧",
+            "modulation": "调制",
+            "particle_creation_frame": "粒子创建帧",
+            "progress": "进度",
+            "current_mask": "当前遮罩",
+            "emitter": "发射器",
+            "old_pos": "旧位置",
+            "new_pos": "新位置",
+            "p1": "点1",
+            "p2": "点2",
+            "p3": "点3",
+            "p4": "点4",
+            "emitter_index": "发射器索引"
+        },
+        "widgets": {},
+        "outputs": {
+            "mask": "遮罩",
+            "image": "图像"
+        }
+    },
+    "MovingShape": {
+        "title": "移动形状⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {
+            "frame_width": "帧宽度",
+            "frame_height": "帧高度",
+            "num_frames": "总帧数",
+            "rgb": "RGB值",
+            "shape": "形状",
+            "shape_width_percent": "形状宽度百分比",
+            "shape_height_percent": "形状高度百分比",
+            "shape_start_position_x": "形状起始X位置",
+            "shape_start_position_y": "形状起始Y位置",
+            "shape_end_position_x": "形状结束X位置",
+            "shape_end_position_y": "形状结束Y位置",
+            "movement_type": "移动类型",
+            "grow": "生长",
+            "palindrome": "回文",
+            "delay": "延迟",
+            "rgb_string": "RGB字符串"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "TextMaskNode": {
+        "title": "文本遮罩节点⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "text": "文本",
+            "font": "字体",
+            "font_size": "字体大小",
+            "font_color": "字体颜色",
+            "background_color": "背景颜色",
+            "x_position": "X位置",
+            "y_position": "Y位置",
+            "rotation": "旋转",
+            "max_width_ratio": "最大宽度比率",
+            "batch_size": "批次大小",
+            "rgb_string": "RGB字符串"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "image": "图像"
+        }
+    },
+    "_mfc": {
+        "title": "图像多通道滤波⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "red": "红色",
+            "green": "绿色",
+            "blue": "蓝色",
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "image": "图像"
+        }
+    },
+    "MaskCompositePlus": {
+        "title": "遮罩混合plus⚡🅡🅞🅣🅘",
+        "inputs": {
+            "mask1": "mask1",
+            "mask2": "mask2",
+            "operation": "操作"
+        },
+        "widgets": {},
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "AdvancedLuminanceMask": {
+        "title": "高级亮度遮罩⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "luminance_threshold": "亮度阈值",
+            "glow_radius": "发光半径",
+            "edge_preservation": "边缘保护",
+            "background_samples": "背景样本",
+            "denoise_strength": "消除干扰强度",
+            "kernel_size": "内核大小",
+            "sigma": "sigma",
+            "device": "设备",
+            "x": "X坐标",
+            "d": "d",
+            "sigma_color": "sigma_颜色",
+            "sigma_space": "sigma_空间"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "image": "图像"
+        }
+    },
+    "TranslucentComposite": {
+        "title": "半透明复合材料⚡🅡🅞🅣🅘",
+        "inputs": {
+            "background": "背景",
+            "foreground": "前景",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "blend_mode": "混合模式",
+            "opacity": "不透明度",
+            "preserve_transparency": "保持透明度",
+            "luminance_boost": "增加亮度",
+            "background_influence": "背景影响"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "OpticalFlowMaskModulation": {
+        "title": "光流遮罩调节⚡🅡🅞🅣🅘",
+        "inputs": {
+            "mask": "遮罩",
+            "masks": "遮罩组",
+            "images": "图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "flow_method": "光流方法",
+            "flow_threshold": "光流阈值",
+            "magnitude_threshold": "幅度阈值",
+            "modulation_strength": "调节强度",
+            "blur_radius": "模糊半径",
+            "trail_length": "轨迹长度",
+            "decay_factor": "衰减系数",
+            "decay_style": "衰变风格",
+            "max_thickness": "最大厚度",
+            "flow_magnitude": "光流幅度",
+            "flow": "光流"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "OpticalFlowDirectionMask": {
+        "title": "光流方向遮罩⚡🅡🅞🅣🅘",
+        "inputs": {
+            "mask": "遮罩",
+            "masks": "遮罩组",
+            "images": "图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "flow_method": "光流方法",
+            "flow_threshold": "光流阈值",
+            "magnitude_threshold": "幅度阈值",
+            "direction": "方向",
+            "angle_threshold": "角阈值",
+            "blur_radius": "模糊半径",
+            "flow_magnitude": "光流幅度",
+            "flow": "光流"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "OpticalFlowParticleSystem": {
+        "title": "光流粒子系统⚡🅡🅞🅣🅘",
+        "inputs": {
+            "mask": "遮罩",
+            "masks": "遮罩组",
+            "images": "图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "flow_method": "光流方法",
+            "flow_threshold": "光流阈值",
+            "magnitude_threshold": "幅度阈值",
+            "num_particles": "矿工粒子",
+            "particle_size": "粒子大小",
+            "particle_color": "粒子颜色",
+            "particle_opacity": "粒子不透明度",
+            "flow_multiplier": "流动强度系数",
+            "particle_lifetime": "粒子寿命",
+            "initial_velocity": "初始速度",
+            "flow": "光流",
+            "height": "高度",
+            "width": "宽度",
+            "frame": "框架",
+            "flow_magnitude": "光流幅度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ParticleEmissionMask": {
+        "title": "粒子发射遮罩⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "emitters": "发射器",
+            "vortices": "漩涡",
+            "wells": "引力场",
+            "static_bodies": "静态体",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "particle_count": "粒子数量",
+            "particle_lifetime": "粒子生命周期",
+            "wind_strength": "风力强度",
+            "wind_direction": "风向",
+            "gravity": "重力加速度",
+            "warmup_period": "预热帧数",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "respect_mask_boundary": "遵循遮罩边界",
+            "emission_strength": "发射强度",
+            "well_strength_multiplier": "引力场强度倍数"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "image": "图像"
+        }
+    },
+    "EmitterModulationBase": {
+        "title": "发射器调节基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "效果时长",
+            "temporal_easing": "时序缓动",
+            "palindrome": "回文",
+            "random": "随机",
+            "previous_modulation": "历史调节",
+            "feature": "特征"
+        },
+        "widgets": {},
+        "outputs": {
+            "emitter_modulation": "发射器调制"
+        }
+    },
+    "EmitterEmissionRateModulation": {
+        "title": "发射器发射率调制⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_modulation": "历史调节",
+            "feature": "特征"
+        },
+        "widgets": {
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "效果时长",
+            "temporal_easing": "时序缓动",
+            "palindrome": "回文",
+            "random": "随机",
+            "target_emission_rate": "目标排放率"
+        },
+        "outputs": {
+            "EMITTER_MODULATION": "发射器调节",
+            "emitter_modulation": "发射器调节"
+        }
+    },
+    "Vortex": {
+        "title": "湍流⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_vortex": "历史湍流"
+        },
+        "widgets": {
+            "x": "X坐标",
+            "y": "Y值",
+            "strength": "强度",
+            "radius": "半径",
+            "inward_factor": "内在因素",
+            "movement_speed": "移动速度",
+            "color": "颜色",
+            "draw": "渲染"
+        },
+        "outputs": {
+            "VORTEX": "湍流",
+            "vortex": "湍流"
+        }
+    },
+    "GravityWell": {
+        "title": "重力场⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_well": "历史作用场"
+        },
+        "widgets": {
+            "x": "X坐标",
+            "y": "Y值",
+            "strength": "强度",
+            "radius": "半径",
+            "type": "类型",
+            "color": "颜色",
+            "draw": "渲染"
+        },
+        "outputs": {
+            "GRAVITY_WELL": "重力场",
+            "gravity_well": "重力场"
+        }
+    },
+    "ParticleEmitter": {
+        "title": "粒子发射器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_emitter": "历史发射器",
+            "emitter_movement": "发射器运动",
+            "spring_joint_setting": "弹性约束设置",
+            "particle_modulation": "粒子调节",
+            "emitter_modulation": "发射器调节"
+        },
+        "widgets": {
+            "emitter_x": "发射器_x",
+            "emitter_y": "发射器_y",
+            "particle_direction": "粒子方向",
+            "particle_spread": "粒子扩散",
+            "particle_size": "粒子大小",
+            "particle_speed": "粒子速度",
+            "emission_rate": "发射率",
+            "color": "颜色",
+            "initial_plume": "初始羽流",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "emission_radius": "发射半径"
+        },
+        "outputs": {
+            "PARTICLE_EMITTER": "粒子发射器",
+            "particle_emitter": "粒子发射器"
+        }
+    },
+    "SpringJointSetting": {
+        "title": "弹性约束设置⚡🅡🅞🅣🅘",
+        "inputs": {},
+        "widgets": {
+            "stiffness": "硬度",
+            "damping": "阻尼",
+            "rest_length": "其他长度",
+            "max_distance": "最大的距离"
+        },
+        "outputs": {
+            "SPRING_JOINT_SETTING": "弹性约束设置",
+            "spring_joint_setting": "弹性约束设置"
+        }
+    },
+    "EmitterMovement": {
+        "title": "发射器运动⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "emitter_x_frequency": "发射器x频率",
+            "emitter_x_amplitude": "发射器x振幅",
+            "emitter_y_frequency": "发射器y频率",
+            "emitter_y_amplitude": "发射器y振幅",
+            "direction_frequency": "方向频率",
+            "direction_amplitude": "方向振幅",
+            "feature_param": "特征参数"
+        },
+        "outputs": {
+            "EMITTER_MOVEMENT": "发射器运动",
+            "emitter_movement": "发射器运动"
+        }
+    },
+    "StaticBody": {
+        "title": "静态物体⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_body": "历史物体"
+        },
+        "widgets": {
+            "shape_type": "形状类型",
+            "x1": "x1",
+            "y1": "y1",
+            "x2": "x2",
+            "y2": "y2",
+            "elasticity": "弹性",
+            "friction": "摩擦",
+            "draw": "渲染",
+            "color": "颜色"
+        },
+        "outputs": {
+            "STATIC_BODY": "静态物体",
+            "static_body": "静态物体"
+        }
+    },
+    "ParticleModulationBase": {
+        "title": "粒子调节基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "效果时长",
+            "temporal_easing": "时序缓动",
+            "palindrome": "回文",
+            "random": "随机",
+            "previous_modulation": "历史调节",
+            "feature": "特征"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "ParticleSizeModulation": {
+        "title": "粒子大小调节⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_modulation": "历史调节",
+            "feature": "特征"
+        },
+        "widgets": {
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "效果时长",
+            "temporal_easing": "时序缓动",
+            "palindrome": "回文",
+            "random": "随机",
+            "target_size": "目标的大小"
+        },
+        "outputs": {
+            "PARTICLE_MODULATION": "粒子调节",
+            "particle_modulation": "粒子调节"
+        }
+    },
+    "ParticleSpeedModulation": {
+        "title": "粒子速度调节⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_modulation": "历史调节",
+            "feature": "特征"
+        },
+        "widgets": {
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "效果时长",
+            "temporal_easing": "时序缓动",
+            "palindrome": "回文",
+            "random": "随机",
+            "target_speed": "目标速度"
+        },
+        "outputs": {
+            "PARTICLE_MODULATION": "粒子调节",
+            "particle_modulation": "粒子调节"
+        }
+    },
+    "ParticleColorModulation": {
+        "title": "粒子颜色调节⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_modulation": "历史调节",
+            "feature": "特征"
+        },
+        "widgets": {
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "效果时长",
+            "temporal_easing": "时序缓动",
+            "palindrome": "回文",
+            "random": "随机",
+            "target_color": "目标颜色"
+        },
+        "outputs": {
+            "PARTICLE_MODULATION": "粒子调节",
+            "particle_modulation": "粒子调节"
+        }
+    },
+    "MaskMorph": {
+        "title": "遮罩变形⚡🅡🅞🅣🅘",
+        "inputs": {
+            "mask": "遮罩",
+            "masks": "遮罩组"
+        },
+        "widgets": {
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "特效持续时间",
+            "temporal_easing": "时序缓动",
+            "palindrome": "轮回循环",
+            "morph_type": "形态类型",
+            "max_kernel_size": "最大核大小",
+            "max_iterations": "最大迭代",
+            "particle_count": "粒子数量",
+            "particle_lifetime": "粒子生命周期",
+            "wind_strength": "风力强度",
+            "wind_direction": "风向",
+            "gravity": "重力加速度",
+            "warmup_period": "预热帧数"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "MaskTransform": {
+        "title": "遮罩变换⚡🅡🅞🅣🅘",
+        "inputs": {
+            "mask": "遮罩",
+            "masks": "遮罩组"
+        },
+        "widgets": {
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "特效持续时间",
+            "temporal_easing": "时序缓动",
+            "palindrome": "轮回循环",
+            "transform_type": "变换类型",
+            "x_value": "X值",
+            "y_value": "Y值"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "MaskMath": {
+        "title": "遮罩 数学⚡🅡🅞🅣🅘",
+        "inputs": {
+            "mask_b": "遮罩_B",
+            "mask": "遮罩",
+            "masks": "遮罩组"
+        },
+        "widgets": {
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "特效持续时间",
+            "temporal_easing": "时序缓动",
+            "palindrome": "轮回循环",
+            "combination_method": "组合方法",
+            "frame_index": "帧索引"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "MaskRings": {
+        "title": "遮罩 环⚡🅡🅞🅣🅘",
+        "inputs": {
+            "mask": "遮罩",
+            "strength": "强度",
+            "masks": "遮罩组"
+        },
+        "widgets": {
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "特效持续时间",
+            "temporal_easing": "时序缓动",
+            "palindrome": "轮回循环",
+            "num_rings": "环数",
+            "max_ring_width": "最大环宽"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "MaskWarp": {
+        "title": "遮罩扭曲⚡🅡🅞🅣🅘",
+        "inputs": {
+            "mask": "遮罩",
+            "masks": "遮罩组"
+        },
+        "widgets": {
+            "strength": "强度",
+            "invert": "反转",
+            "subtract_original": "减去原始",
+            "grow_with_blur": "模糊扩展",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "effect_duration": "特效持续时间",
+            "temporal_easing": "时序缓动",
+            "palindrome": "轮回循环",
+            "warp_type": "扭曲类型",
+            "frequency": "频率",
+            "amplitude": "振幅",
+            "octaves": "八度"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "PoseInterpolator": {
+        "title": "姿态加载器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "pose_1": "pose_1",
+            "pose_2": "pose_2",
+            "feature": "特征",
+            "strength": "强度",
+            "interpolation_mode": "加载模型",
+            "omit_missing_points": "跳过无效点位",
+            "start_poses": "开始姿态",
+            "end_poses": "结束姿态",
+            "person1": "person1",
+            "person2": "person2",
+            "t": "时间",
+            "kp1": "kp1",
+            "kp2": "kp2"
+        },
+        "widgets": {},
+        "outputs": {
+            "pose_keypoint": "姿态关键点"
+        }
+    },
+    "FlexVideoDirection": {
+        "title": "Flex视频流向⚡🅡🅞🅣🅘",
+        "inputs": {
+            "video": "视频",
+            "images": "图像",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "reverse": "反向"
+        },
+        "outputs": {}
+    },
+    "FlexVideoSeek": {
+        "title": "Flex视频查找",
+        "inputs": {
+            "video": "视频",
+            "images": "图像",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "reverse": "反向"
+        },
+        "outputs": {}
+    },
+    "FlexVideoFrameBlend": {
+        "title": "动态视频帧合成⚡🅡🅞🅣🅘",
+        "inputs": {
+            "video": "视频",
+            "images": "图像",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "feature_values": "特征值",
+            "blend_strength": "混合强度",
+            "frame_offset_ratio": "帧偏移比",
+            "direction_bias": "方向偏差",
+            "blend_mode": "混合模式",
+            "motion_blur_strength": "运动模糊强度"
+        },
+        "outputs": {}
+    },
+    "FlexVideoSpeed": {
+        "title": "Flex视频速度⚡🅡🅞🅣🅘",
+        "inputs": {
+            "video": "视频",
+            "images": "图像",
+            "opt_feature": "选择特征"
+        },
+        "widgets": {
+            "strength": "强度",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "feature_mode": "特征模式",
+            "speed_factor": "速度系数",
+            "interpolation_mode": "加载模型",
+            "fast_mode": "高速模式",
+            "ensemble": "集合",
+            "scale_factor": "缩放因子",
+            "video": "视频",
+            "feature_values": "特征值",
+            "frame_indices": "帧索引",
+            "model_dir": "dir模型",
+            "progress": "进度",
+            "file_name": "文件名称",
+            "model_type": "模型类型",
+            "ckpt_name": "ckpt名字"
+        },
+        "outputs": {}
+    },
+    "MakeInterpolationStateList": {
+        "title": "蒙版加载状态列表⚡🅡🅞🅣🅘",
+        "inputs": {
+            "frame_indices": "帧索引",
+            "is_skip_list": "skip列表"
+        },
+        "widgets": {},
+        "outputs": {
+            "interpolation_states": "加载状态"
+        }
+    },
+    "FloatToInt": {
+        "title": "浮点数转整数⚡🅡🅞🅣🅘",
+        "inputs": {
+            "float": "浮点数"
+        },
+        "widgets": {},
+        "outputs": {
+            "int": "整数"
+        }
+    },
+    "AudioLatentBlend": {
+        "title": "音频Latent混合⚡🅡🅞🅣🅘",
+        "inputs": {
+            "latent1": "Latent1",
+            "latent2": "Latent2"
+        },
+        "widgets": {
+            "blend_factor": "混合强度",
+            "blend_mode": "混合模式"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "FlexlatentAudioBlend": {
+        "title": "Flex Latent音频混合⚡🅡🅞🅣🅘",
+        "inputs": {
+            "latent1": "Latent1",
+            "latent2": "Latent2",
+            "blend_factors": "混合强度"
+        },
+        "widgets": {
+            "interpolation": "插值",
+            "blend_mode": "混合模式"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "ACEStepAudioPostProcessor": {
+        "title": "ACE音频过渡处理器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "original_audio": "原始音频",
+            "processed_audio": "处理音频",
+            "guider": "引导"
+        },
+        "widgets": {
+            "crossfade_duration": "淡入淡出时间",
+            "blend_mode": "混合模式"
+        },
+        "outputs": {
+            "Audio": "音频",
+            "audio": "音频"
+        }
+    },
+    "MIDIToAudio": {
+        "title": "Midi转音频⚡🅡🅞🅣🅘",
+        "inputs": {
+            "midi": "Midi"
+        },
+        "widgets": {
+            "instrument_type": "乐器类型",
+            "sample_rate": "采样率",
+            "volume": "音量"
+        },
+        "outputs": {
+            "Audio": "音频",
+            "AUDIO": "音频",
+            "audio": "音频"
+        },
+        "description": "这将生成 MIDI音符的粗略近似值，供快速参考，仅此而已。\n 可能无法准确获取音符，尤其是对于鼓声。"
+    },
+    "MIDILoader": {
+        "title": "Midi加载器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "midi": "Midi"
+        },
+        "widgets": {
+            "midi_file": "Midi文件",
+            "track_selection": "音轨选择",
+            "start_measure": "起始小节",
+            "start_beat": "起始节拍",
+            "end_measure": "结束小节",
+            "end_beat": "结束节拍",
+            "Upload MIDI": "上传MIDI",
+            "Refresh": "刷新"
+        },
+        "outputs": {
+            "midi": "Midi",
+            "MIDI": "Midi",
+            "audio": "音频"
+        }
+    },
+    "AudioTrim": {
+        "title": "音频修剪⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "start_time": "开始时间",
+            "end_time": "结束时间"
+        },
+        "outputs": {
+            "Audio": "音频",
+            "AUDIO": "音频",
+            "audio": "音频"
+        }
+    },
+    "Knob": {
+        "title": "旋钮⚡🅡🅞🅣🅘",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "knob": "旋钮",
+            "other_knob": "其它旋钮"
+        },
+        "outputs": {
+            "Audio": "音频",
+            "AUDIO": "音频",
+            "audio": "音频"
+        }
+    },
+    "AudioTemporalMask": {
+        "title": "音频时间遮罩⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "strength": "强度",
+            "audio_latents": "音频Latent"
+        },
+        "widgets": {
+            "value": "值",
+            "length_mismatch": "长度不匹配"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "MASK": "遮罩"
+        }
+    },
+    "AudioRegionMask": {
+        "title": "音频区域遮罩⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "strength": "强度",
+            "audio_latents": "音频Latent"
+        },
+        "widgets": {
+            "value": "值",
+            "start_time": "开始时间",
+            "end_time": "结束时间",
+            "mask_value": "遮罩值",
+            "feather_seconds": "羽化时间(秒)"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "MASK": "遮罩"
+        }
+    },
+    "MaskToAudioMask": {
+        "title": "遮罩到音频遮罩⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "spatial_mask": "空间遮罩",
+            "audio_latents": "音频Latent"
+        },
+        "widgets": {
+            "frame_summary": "框架概述",
+            "start_time": "开始时间",
+            "end_time": "结束时间",
+            "mask_value": "遮罩值",
+            "feather_seconds": "羽化时间(秒)"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "MASK": "遮罩"
+        }
+    },
+    "AudioLatentInfo": {
+        "title": "音频Latent信息⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "spatial_mask": "空间遮罩",
+            "audio_latents": "音频Latent"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "start_time": "开始时间",
+            "end_time": "结束时间",
+            "mask_value": "遮罩值",
+            "feather_seconds": "羽化时间(秒)"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "MASK": "遮罩",
+            "batch_size": "批次大小",
+            "length_frames": "帧长(帧数)",
+            "duration_seconds": "持续时间(秒)",
+            "info": "信息"
+        }
+    },
+    "AudioMaskAnalyzer": {
+        "title": "音频遮罩分析器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "masks": "遮罩组",
+            "mask": "遮罩"
+        },
+        "widgets": {},
+        "outputs": {
+            "string": "字符串",
+            "STRING": "字符串"
+        }
+    },
+    "MIDIFeatureExtractor": {
+        "title": "Midi特征提取器⚡🅡🅞🅣🅘",
+        "inputs": {
+            "midi": "Midi"
+        },
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "帧数",
+            "width": "宽度",
+            "height": "高度",
+            "chord_only": "仅和弦",
+            "Upload MlDl": "上传MlDl",
+            "Refresh": "刷新"
+        },
+        "outputs": {
+            "midi": "Midi",
+            "feature": "特征",
+            "FEATURE": "特征",
+            "frame_count": "帧数"
+        }
+    },
+    "FeatureToFilteredList": {
+        "title": "特征到过滤列表⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "filter_type": "过滤器类型",
+            "threshold_type": "阈值类型",
+            "threshold_value": "阈值",
+            "smoothing": "平滑",
+            "min_distance": "分钟距离",
+            "Upload MlDl": "上传MlDl",
+            "Refresh": "刷新"
+        },
+        "outputs": {
+            "filtered_indices": "过滤索引",
+            "filtered_count": "过滤数量",
+            "filtered_binary": "二进制过滤结果",
+            "filtered_indices_str": "过滤索引(str)"
+        }
+    },
+    "FeatureInterpolateMulti": {
+        "title": "特征插值⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature1": "特征1",
+            "feature2": "特征2",
+            "feature3": "特征3"
+        },
+        "widgets": {
+            "min_aggregate_value": "最小总价值",
+            "transition_frames": "过渡帧",
+            "invert_output": "反转输出"
+        },
+        "outputs": {
+            "FEATURE1": "特征1",
+            "FEATURE2": "特征2",
+            "FEATURE3": "特征3"
+        }
+    },
+    "WhisperFeature": {
+        "title": "语音特征⚡🅡🅞🅣🅘",
+        "inputs": {
+            "alignment_data": "对齐数据",
+            "trigger_set": "触发器合集"
+        },
+        "widgets": {
+            "extraction_method": "提取方法",
+            "frame_rate": "帧率",
+            "frame_count": "帧数",
+            "width": "宽度",
+            "height": "高度",
+            "context_size": "上下文大小",
+            "overlap_mode": "重叠模式"
+        },
+        "outputs": {
+            "FEATURE": "特征",
+            "IMAGE": "图像"
+        }
+    },
+    "PitchRangePreset": {
+        "title": "音调范围预设⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_range_collection": "前级范围集合"
+        },
+        "widgets": {
+            "preset": "预设"
+        },
+        "outputs": {
+            "PITCH_RANGE_COLLECTION": "音高范围集合"
+        }
+    },
+    "PitchRange": {
+        "title": "音调范围⚡🅡🅞🅣🅘",
+        "inputs": {
+            "previous_range_collection": "前级范围集合"
+        },
+        "widgets": {
+            "min_pitch": "最小范围",
+            "max_pitch": "最大范围"
+        },
+        "outputs": {
+            "PITCH_RANGE_COLLECTION": "音高范围集合"
+        }
+    },
+    "AnimatedFeaturePreview": {
+        "title": "动画功能预览⚡🅡🅞🅣🅘",
+        "inputs": {
+            "feature": "特征"
+        },
+        "widgets": {
+            "window_size": "窗口大小",
+            "top_label": "顶部标签",
+            "bottom_label": "底部标签",
+            "width": "宽度",
+            "height": "高度",
+            "low_color": "低的颜色",
+            "high_color": "高的颜色",
+            "title_override": "标题覆盖"
+        },
+        "outputs": {
+            "FEATURE": "特征",
+            "IMAGE": "图像"
+        }
+    },
+    "ImageChunk": {
+        "title": "图像块⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {},
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageInterval": {
+        "title": "图像间隔⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "interval": "间隔",
+            "start_at": "开始",
+            "end_at": "结束"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "VideoChunk": {
+        "title": "视频块⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "chunk_size": "块大小"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageIndexSelect": {
+        "title": "选择图像索引⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像",
+            "indices": "指数"
+        },
+        "widgets": {
+            "filter_behavior": "过滤器方法"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+    "ACEStepAnalyzeLatent": {
+        "title": "ACE一步分析Latent⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "filter_behavior": "过滤器方法"
+        },
+        "outputs": {
+            "info": "信息",
+            "duration_seconds": "持续时间秒",
+            "frame_count": "帧数",
+            "channels": "通道"
+        }
+    },
+    "ACEStepTimeRange": {
+        "title": "ACE时间范围步数⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "start_time": "开始时间",
+            "end_time": "结束时间"
+        },
+        "outputs": {
+            "info": "信息",
+            "start_frame": "开始帧",
+            "end_frame": "结束帧"
+        }
+    },
+    "ACEStepMaskVisualizer": {
+        "title": "ACE遮罩可视化步数⚡🅡🅞🅣🅘",
+        "inputs": {
+            "image": "图像",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "start_time": "开始时间",
+            "end_time": "结束时间",
+            "feather_time": "羽化时间"
+        },
+        "outputs": {
+            "mask_info": "遮罩信息",
+            "start_frame": "开始帧",
+            "end_frame": "结束帧"
+        }
+    },
+    "ACEStepRepaintGuider": {
+        "title": "ACE重绘引导⚡🅡🅞🅣🅘",
+        "inputs": {
+            "model": "模型",
+            "positive": "正向提示词",
+            "negative": "负面提示词",
+            "source_latents": "Latent来源",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "cfg": "CFG",
+            "start_time": "开始时间",
+            "end_time": "结束时间",
+            "repaint_strength": "重绘强度",
+            "feather_time": "羽化时间"
+        },
+        "outputs": {
+            "GUIDER": "引导",
+            "start_frame": "开始帧",
+            "end_frame": "结束帧"
+        }
+    },
+    "ACEStepExtendGuider": {
+        "title": "ACE步数延长引导⚡🅡🅞🅣🅘",
+        "inputs": {
+            "model": "模型",
+            "positive": "正向提示词",
+            "negative": "负面提示词",
+            "source_latents": "Latent来源",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "cfg": "CFG",
+            "start_time": "开始时间",
+            "end_time": "结束时间",
+            "extend_left_time": "左侧延长时长",
+            "extend_right_time": "右侧延长时长"
+        },
+        "outputs": {
+            "GUIDER": "引导",
+            "start_frame": "开始帧",
+            "end_frame": "结束帧"
+        }
+    },
+    "ACEStepHybridGuider": {
+        "title": "ACE步数混合引导⚡🅡🅞🅣🅘",
+        "inputs": {
+            "model": "模型",
+            "positive": "正向提示词",
+            "negative": "负面提示词",
+            "source_latents": "Latent来源",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "cfg": "CFG",
+            "start_time": "开始时间",
+            "end_time": "结束时间",
+            "extend_left_time": "左侧延长时长",
+            "extend_right_time": "右侧延长时长",
+            "repaint_start_time": "重绘开始时间",
+            "repaint_end_time": "重绘结束时间",
+            "repaint_strength": "重绘强度",
+            "feather_time": "羽化时间"
+        },
+        "outputs": {
+            "GUIDER": "引导",
+            "start_frame": "开始帧",
+            "end_frame": "结束帧"
+        }
+    },
+    "FlexVideoBase": {
+        "title": "Flex 视频基础⚡🅡🅞🅣🅘",
+        "inputs": {
+            "images": "图像",
+            "strength": "强度",
+            "feature_mode": "特征模式",
+            "feature_threshold": "特征阈值",
+            "feature_param": "特征参数",
+            "opt_feature": "可选特征",
+            "video": "视频"
+        },
+        "widgets": {},
+        "outputs": {
+            "image": "图像"
+        }
+    }
+}

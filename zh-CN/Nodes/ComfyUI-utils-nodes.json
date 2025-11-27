@@ -1,0 +1,1036 @@
+{
+    "SplitMask": {
+        "title": "按轮廓分割遮罩(utils)",
+        "inputs": {
+            "mask_prior": "遮罩_优先",
+            "mask_alternative": "遮罩_替代"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "MaskFastGrow": {
+        "title": "快速遮罩扩展(utils)",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "grow": "扩展量",
+            "blur": "模糊量",
+            "low_limit": "低限值",
+            "high_limit": "高限值",
+            "enabled": "启用"
+        }
+    },
+    "MaskofCenter": {
+        "title": "中心遮罩(utils)",
+        "inputs": {
+            "size_as": "尺寸依据"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "top": "顶部占比",
+            "bottom": "底部占比",
+            "left": "左侧占比",
+            "right": "右侧占比",
+            "redius": "半径"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "MaskAutoSelector": {
+        "title": "遮罩自动选择器(utils)",
+        "widgets": {
+            "mask_prior": "优先遮罩",
+            "mask_alternative": "替代遮罩",
+            "mask_third": "第三遮罩"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "MaskFromFaceModel": {
+        "title": "来自人脸模型的遮罩(utils)",
+        "inputs": {
+            "image": "图像",
+            "faceanalysis": "人脸分析",
+            "face_model": "人脸模型"
+        },
+        "widgets": {
+            "max_face_number": "最大人脸数量",
+            "add_bbox_upper_points": "添加边界框上方点",
+            "cant_detect_mask_mode": "无法检测遮罩模式",
+            "enabled": "启用",
+            "face_confidence": "人脸置信度"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "genders": "性别"
+        }
+    },
+    "MaskCoverFourCorners": {
+        "title": "遮罩覆盖四角(utils)",
+        "inputs": {
+            "size_as": "尺寸依据"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "radius": "半径",
+            "draw_top_left": "绘制左上角",
+            "draw_top_right": "绘制右上角",
+            "draw_bottom_right": "绘制右下角",
+            "draw_bottom_left": "绘制左下角"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LoadImageMaskWithSwitch": {
+        "title": "加载图像作为遮罩 带开关(utils)",
+        "widgets": {
+            "image": "图像",
+            "channel": "通道",
+            "enabled": "启用"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "enabled": "启用"
+        }
+    },
+    "CropByMaskToSpecificSize": {
+        "title": "按遮罩裁剪至特定尺寸(utils)",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "crop_box": "裁剪框"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "top_reserve": "顶部预留",
+            "bottom_reserve": "底部预留",
+            "left_reserve": "左侧预留",
+            "right_reserve": "右侧预留",
+            "width": "宽度",
+            "height": "高度",
+            "width_padding_position": "宽度填充位置",
+            "height_padding_position": "高度填充位置"
+        },
+        "outputs": {
+            "croped_image": "裁剪后的图像",
+            "croped_mask": "裁剪后的遮罩",
+            "crop_box": "裁剪框",
+            "box_preview": "框预览"
+        }
+    },
+    "LoadImageMaskWithoutListDir": {
+        "title": "加载图像作为遮罩 不导入输入目录(utils)",
+        "widgets": {
+            "image": "图像",
+            "channel": "通道",
+            "enabled": "启用",
+            "mask_repeat_number": "遮罩重复次数"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "enabled": "启用"
+        }
+    },
+    "ConcatTextOfUtils": {
+        "title": "拼接文本(utils)",
+        "widgets": {
+            "text1": "文本1",
+            "text2": "文本2",
+            "separator": "分隔符",
+            "text3": "文本3"
+        },
+        "outputs": {}
+    },
+    "TextPreview": {
+        "title": "预览文本(utils)",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {}
+    },
+    "ModifyTextGender": {
+        "title": "修改文本性别(utils)",
+        "inputs": {
+            "text": "文本",
+            "gender_alternative": "性别替换词"
+        },
+        "widgets": {
+            "gender_prior": "性别优先级",
+            "gender_prior_weight": "性别优先级权重",
+            "enabled": "启用"
+        },
+        "outputs": {}
+    },
+    "GenderControlOutput": {
+        "title": "性别控制输出(utils)",
+        "inputs": {
+            "gender_alternative": "性别替换词"
+        },
+        "widgets": {
+            "gender_prior": "性别优先级",
+            "male_text": "男性文本",
+            "male_float": "男性浮点值",
+            "male_int": "男性整数值",
+            "female_text": "女性文本",
+            "female_float": "女性浮点值",
+            "female_int": "女性整数值"
+        },
+        "outputs": {
+            "gender_text": "性别文本",
+            "float": "浮点值",
+            "int": "整数值",
+            "is_male": "是否男性",
+            "is_female": "是否女性"
+        }
+    },
+    "GeminiPromptEnhance": {
+        "title": "Gemini提示词增强(utils)",
+        "inputs": {
+            "gender_alternative": "性别替换词"
+        },
+        "widgets": {
+            "api_key": "API密钥",
+            "proxy": "代理",
+            "max_output_tokens": "最大输出Tokens",
+            "temperature": "温度",
+            "gender_prior": "性别优先级",
+            "enabled": "启用",
+            "request_exception_handle": "请求异常处理",
+            "model": "模型"
+        },
+        "outputs": {
+            "generated_content": "生成内容"
+        }
+    },
+    "BooleanControlOutput": {
+        "title": "布尔控制输出(utils)",
+        "widgets": {
+            "boolean_input": "布尔输入",
+            "true_text": "真文本",
+            "true_float": "真浮点值",
+            "true_int": "真整数值",
+            "false_text": "假文本",
+            "false_float": "假浮点值",
+            "false_int": "假整数值"
+        },
+        "outputs": {
+            "text": "文本",
+            "float": "浮点值",
+            "int": "整数值",
+            "is_true": "是否为真",
+            "is_false": "是否为假"
+        }
+    },
+    "TextInputAutoSelector": {
+        "title": "文本输入自动选择器(utils)",
+        "inputs": {
+            "alternative_input": "替代输入",
+            "component_input": "组件输入"
+        },
+        "outputs": {}
+    },
+    "FrameAdjuster": {
+        "title": "帧调整器(utils)",
+        "inputs": {
+            "images": "图像",
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "duration": "时长",
+            "fps": "帧率",
+            "remove_frames": "移除帧数",
+            "extend_tail_frame_if_adjust": "调整时扩展尾部帧",
+            "frame_count": "帧数"
+        },
+        "outputs": {
+            "images": "图像",
+            "frame_count": "帧数",
+            "fps": "帧率",
+            "masks": "遮罩"
+        }
+    },
+    "ImageResizeTo8x": {
+        "title": "图像缩放到8倍尺寸(utils)",
+        "inputs": {
+            "pixels": "像素",
+            "mask_optional": "可选遮罩"
+        },
+        "widgets": {
+            "action": "操作",
+            "smaller_side": "较小边",
+            "larger_side": "较大边",
+            "target_width": "目标宽度",
+            "target_height": "目标高度",
+            "scale_factor": "缩放因子",
+            "resize_mode": "缩放模式",
+            "side_ratio": "边比例",
+            "crop_pad_position": "裁剪填充位置",
+            "pad_feathering": "填充羽化",
+            "all_szie_8x": "全尺寸8倍",
+            "all_size_16x": "全尺寸16倍"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "ImageTransition": {
+        "title": "图像过渡(utils)",
+        "inputs": {
+            "first_image": "首张图像",
+            "last_image": "最后一张图像"
+        },
+        "widgets": {
+            "frames": "帧数",
+            "transition_type": "过渡类型",
+            "smooth_effect": "平滑效果"
+        },
+        "outputs": {}
+    },
+    "ImageAutoSelector": {
+        "title": "图像自动选择器(utils)",
+        "inputs": {
+            "image_prior": "优先图像",
+            "image_alternative": "替代图像",
+            "image_third": "第三图像"
+        },
+        "outputs": {}
+    },
+    "LoadImageWithSwitch": {
+        "title": "加载图像 带开关(utils)",
+        "widgets": {
+            "image": "图像",
+            "enabled": "启用"
+        },
+        "outputs": {}
+    },
+    "ImageBatchOneOrMore": {
+        "title": "图像批次(utils)",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5",
+            "image6": "图像6"
+        },
+        "outputs": {}
+    },
+    "ImageConcanateOfUtils": {
+        "title": "图像拼接(utils)",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5",
+            "image6": "图像6"
+        },
+        "widgets": {
+            "direction": "方向"
+        },
+        "outputs": {}
+    },
+    "ImageMaskColorAverage": {
+        "title": "图像遮罩颜色均值(utils)",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "COLOR_DEC": "颜色十进制",
+            "COLOR_HEX": "颜色十六进制"
+        }
+    },
+    "ImagesConcanateToGrid": {
+        "title": "图像拼接成网格(utils)",
+        "inputs": {
+            "image1": "图像1"
+        },
+        "widgets": {
+            "direction": "方向",
+            "dimension_number": "维度数量"
+        },
+        "outputs": {}
+    },
+    "NeedImageSizeAndCount": {
+        "title": "图像工具 获取尺寸和数量(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度",
+            "count": "数量"
+        }
+    },
+    "LoadImageWithoutListDir": {
+        "title": "加载图像 不导入输入目录(utils)",
+        "widgets": {
+            "image": "图像",
+            "enabled": "启用"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "enabled": "启用状态",
+            "filename": "文件名",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "MatchImageRatioToPreset": {
+        "title": "图像比例匹配到标准尺寸(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "width_offset": "宽度偏移",
+            "height_offset": "高度偏移"
+        },
+        "outputs": {
+            "standard_width": "标准宽度",
+            "standard_height": "标准高度",
+            "min": "最小值",
+            "max": "最大值"
+        }
+    },
+    "ImageCompositeWatermark": {
+        "title": "图像水印合成(utils)",
+        "inputs": {
+            "destination": "目标图像",
+            "watermark": "水印",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "position": "位置",
+            "resize_ratio": "缩放比例",
+            "margin": "边距",
+            "enabled": "启用",
+            "invert_mask": "反转遮罩"
+        },
+        "outputs": {}
+    },
+    "UpscaleImageWithModelIfNeed": {
+        "title": "使用模型放大图像(utils)",
+        "inputs": {
+            "upscale_model": "放大模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold_of_xl_area": "超大区域阈值"
+        },
+        "outputs": {}
+    },
+    "ImageCompositeMaskedOneByOne": {
+        "title": "图像遮罩合成(utils)",
+        "inputs": {
+            "destination": "目标图像",
+            "source": "源图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "x": "X坐标",
+            "y": "Y坐标",
+            "resize_source": "缩放源图像",
+            "resize_source_mode": "缩放源图像模式"
+        },
+        "outputs": {}
+    },
+    "ImageCompositeMaskedWithSwitch": {
+        "title": "图像遮罩合成（带开关）(utils)",
+        "inputs": {
+            "destination": "目标图像",
+            "source": "源图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "x": "X坐标",
+            "y": "Y坐标",
+            "resize_source": "缩放源图像",
+            "enabled": "启用",
+            "invert_mask": "反转遮罩"
+        },
+        "outputs": {}
+    },
+    "DetectorForNSFW": {
+        "title": "NSFW检测器(utils)",
+        "inputs": {
+            "image": "图像",
+            "alternative_image": "备用图像"
+        },
+        "widgets": {
+            "detect_size": "检测尺寸",
+            "provider": "计算设备",
+            "model_name": "模型名称",
+            "buttocks_exposed": "臀部暴露阈值",
+            "female_breast_exposed": "女性胸部暴露阈值",
+            "female_genitalia_exposed": "女性生殖器暴露阈值",
+            "anus_exposed": "肛门暴露阈值",
+            "male_genitalia_exposed": "男性生殖器暴露阈值"
+        },
+        "outputs": {
+            "output_image": "输出图像",
+            "detect_result": "检测结果",
+            "filtered_image": "过滤后图像"
+        }
+    },
+    "EmptyConditioning": {
+        "title": "空条件设置(utils)"
+    },
+    "IntMultipleAddLiteral": {
+        "title": "整数乘法与字面量加法(utils)",
+        "widgets": {
+            "number": "数值",
+            "a_align": "系数对齐方式",
+            "a_aign": "系数对齐方式",
+            "a": "系数a",
+            "b": "字面量b"
+        },
+        "outputs": {
+            "x": "计算结果x",
+            "ax+b": "整数计算结果ax+b",
+            "ax+b(float)": "浮点计算结果ax+b"
+        }
+    },
+    "FloatMultipleAddLiteral": {
+        "title": "浮点乘法与字面量加法(utils)",
+        "widgets": {
+            "number": "数值",
+            "a_align": "系数对齐方式",
+            "a_aign": "系数对齐方式",
+            "a": "系数a",
+            "b": "字面量b"
+        },
+        "outputs": {
+            "x": "计算结果x",
+            "ax + b": "浮点计算结果ax + b",
+            "ax + b(int)": "整数计算结果ax + b"
+        }
+    },
+    "TorchCompileModelAdvanced": {
+        "title": "PyTorch模型高级编译(utils)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "backend": "后端",
+            "compile_mode": "编译模式",
+            "enabled": "启用"
+        },
+        "outputs": {}
+    },
+    "ImageTransitionLeftToRight": {
+        "title": "图像左右过渡效果(utils)",
+        "inputs": {
+            "before_image": "过渡前图像",
+            "after_image": "过渡后图像"
+        },
+        "widgets": {
+            "duration": "持续时间",
+            "fps": "帧率",
+            "bounce_back": "回弹效果",
+            "start_end_pause_percent": "首尾暂停比例",
+            "middle_pause_percent": "中间暂停比例",
+            "start_end_position_percent": "首尾位置比例",
+            "transition_line_width": "过渡线宽度"
+        },
+        "outputs": {
+            "images": "输出图像序列",
+            "duration": "实际持续时间",
+            "fps": "实际帧率"
+        }
+    },
+    "ImageTransitionTopToBottom": {
+        "title": "图像上下过渡(utils)",
+        "inputs": {
+            "before_image": "过渡前图像",
+            "after_image": "过渡后图像"
+        },
+        "widgets": {
+            "duration": "持续时间",
+            "fps": "帧率",
+            "bounce_back": "回弹",
+            "start_end_pause_percent": "首尾暂停比例",
+            "middle_pause_percent": "中间暂停比例",
+            "start_end_position_percent": "首尾位置比例",
+            "transition_line_width": "过渡线宽度"
+        },
+        "outputs": {
+            "images": "图像序列",
+            "duration": "时长",
+            "fps": "帧率"
+        }
+    },
+    "ImageTransitionRightToLeft": {
+        "title": "图像从右到左过渡(utils)",
+        "inputs": {
+            "before_image": "过渡前图像",
+            "after_image": "过渡后图像"
+        },
+        "widgets": {
+            "duration": "持续时间",
+            "fps": "帧率",
+            "bounce_back": "回弹效果",
+            "start_end_pause_percent": "首尾暂停比例",
+            "middle_pause_percent": "中间暂停比例",
+            "start_end_position_percent": "首尾位置比例",
+            "transition_line_width": "过渡线宽度"
+        },
+        "outputs": {
+            "images": "输出图像序列",
+            "duration": "实际持续时长",
+            "fps": "实际帧率"
+        }
+    },
+    "ImageTransitionBottomToTop": {
+        "title": "图像由下至上过渡(utils)",
+        "inputs": {
+            "before_image": "过渡前图像",
+            "after_image": "过渡后图像"
+        },
+        "widgets": {
+            "duration": "持续时间",
+            "fps": "帧率",
+            "bounce_back": "回弹",
+            "start_end_pause_percent": "首尾暂停比例",
+            "middle_pause_percent": "中间暂停比例",
+            "start_end_position_percent": "首尾位置比例",
+            "transition_line_width": "过渡线宽度"
+        },
+        "outputs": {
+            "images": "图像序列",
+            "duration": "时长",
+            "fps": "帧率"
+        }
+    },
+    "CheckpointLoaderSimpleWithSwitch": {
+        "title": "Checkpoint大模型加载器（带开关）(utils)",
+        "widgets": {
+            "ckpt_name": "检查点名称",
+            "load_model": "加载模型",
+            "load_clip": "加载CLIP",
+            "load_vae": "加载VAE"
+        },
+        "outputs": {
+            "模型": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE"
+        }
+    },
+    "DeepfaceAnalyzeFaceAttributes": {
+        "title": "Deepface人脸属性分析(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "detector_backend": "检测器后端",
+            "analyze_gender": "分析性别",
+            "analyze_race": "分析种族",
+            "analyze_emotion": "分析情绪",
+            "analyze_age": "分析年龄",
+            "standard_single_face_image": "标准单人脸图像"
+        },
+        "outputs": {
+            "gender": "性别",
+            "race": "种族",
+            "emotion": "情绪",
+            "age": "年龄",
+            "json_info": "JSON信息"
+        }
+    },
+    "MaskAreaComparison": {
+        "title": "遮罩区域比较(utils)",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "area_threshold": "区域阈值"
+        },
+        "outputs": {
+            "is_greater": "是否更大",
+            "is_smaller": "是否更小"
+        }
+    },
+    "VolcanoImageEditNode": {
+        "title": "图像编辑（火山）(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "access_key": "访问密钥",
+            "secret_key": "秘密密钥",
+            "seed": "种子",
+            "version": "版本",
+            "scale": "缩放系数"
+        },
+        "outputs": {
+            "edited_image": "编辑后图像"
+        }
+    },
+    "VolcanoOutpaintingNode": {
+        "title": "图像扩展绘制（火山）(utils)",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "access_key": "访问密钥",
+            "secret_key": "秘密密钥",
+            "seed": "种子",
+            "version": "版本"
+        },
+        "outputs": {
+            "result_image": "结果图像"
+        }
+    },
+    "ReplicateRequstNode": {
+        "title": "请求复制图像(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "seed": "随机种子",
+            "aspect_ratio": "宽高比",
+            "steps": "步数",
+            "guidance": "引导",
+            "go_fast": "加快速度",
+            "api_key": "API 密钥",
+            "lora_path": "Lora 路径",
+            "lora_scale": "Lora缩放",
+            "extra_lora": "额外的Lora",
+            "extra_lora_scale": "额外Lora缩放系数",
+            "model": "模型",
+            "num_outputs": "输出数量",
+            "timeout": "超时时间"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "width": "宽度",
+            "height": "高度",
+            "url": "网址"
+        }
+    },
+    "ReplicateVideoRequestNode": {
+        "title": "请求复制视频(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "num_frames": "帧数",
+            "resolution": "分辨率",
+            "frames_per_second": "帧速率fps",
+            "go_fast": "加快速度",
+            "sample_shift": "采样偏移",
+            "lora_weights_transformer": "Lora权重变换器",
+            "lora_scale_transformer": "Lora缩放变换器",
+            "lora_weights_transformer_2": "Lora权重变换器 2",
+            "lora_scale_transformer_2": "Lora缩放变换器 2",
+            "api_key": "API 密钥",
+            "timeout": "超时时间",
+            "seed": "随机种子",
+            "steps": "步数",
+            "disable_safety_checker": "禁用安全检查",
+            "aspect_ratio": "宽高比"
+        },
+        "outputs": {
+            "video": "视频",
+            "fps": "帧速率fps",
+            "width": "宽度",
+            "height": "高度",
+            "url": "网址"
+        }
+    },
+    "NovitaVideoRequestNode": {
+        "title": "请求Novita视频(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "img_url": "图像网址",
+            "resolution": "分辨率",
+            "duration": "持续时间",
+            "prompt extend": "提示词扩展",
+            "seed": "随机种子",
+            "api_key": "API 密钥",
+            "timeout": "超时时间",
+            "steps": "步数",
+            "guidance": "引导",
+            "aspect_ratio": "宽高比"
+        },
+        "outputs": {
+            "video": "视频",
+            "fps": "帧速率fps",
+            "width": "宽度",
+            "height": "高度",
+            "url": "网址"
+        }
+    },
+    "FalImage2VideoRequestNode": {
+        "title": "FAL 图像转视频(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "api_key": "API 密钥",
+            "seed": "随机种子",
+            "resolution": "分辨率",
+            "aspect_ratio": "宽高比",
+            "enable_safety_checker": "启用安全检测",
+            "enable_prompt_expansion": "启用提示词扩展",
+            "acceleration": "加速",
+            "video_quality": "视频质量",
+            "video_write_mode": "视频写入模式",
+            "end_image_url": "结束图像 URL",
+            "timeout": "超时时间"
+        },
+        "outputs": {
+            "video": "视频",
+            "fps": "帧速率",
+            "width": "宽度",
+            "height": "高度",
+            "url": "网址"
+        }
+    },
+    "FalVideo2VideoRequestNode": {
+        "title": "FAL 视频转视频(utils)",
+        "inputs": {
+            "ref_image": "参考图片",
+            "first_frame": "开始图像",
+            "last_frame": "结束图像"
+        },
+        "widgets": {
+            "video_name": "视频名称",
+            "model": "模型",
+            "api_key": "API 密钥",
+            "match_input_num_frames": "使用输入帧总数",
+            "num_frames": "帧总数",
+            "match_input_frames_per_second": "使用输入每秒帧数",
+            "frames_per_second": "每秒帧数",
+            "seed": "随机种子",
+            "resolution": "分辨率",
+            "aspect_ratio": "宽高比",
+            "num_inference_steps": "推理步数",
+            "guidance_scale": "引导权重",
+            "shift": "位移",
+            "enable_safety_checker": "启用安全检测",
+            "enable_prompt_expansion": "启用提示词扩展",
+            "preprocess": "预处理",
+            "acceleration": "加速",
+            "video_quality": "视频质量",
+            "video_write_mode": "视频写入模式",
+            "num_interpolated_frames": "插值帧数",
+            "temporal_downsample_factor": "时间下采样因子",
+            "enable_auto_downsample": "启用自动下采样",
+            "auto_downsample_min_fps": "自动下采样最低帧率",
+            "interpolator_model": "插值器模型",
+            "sync_mode": "同步模式",
+            "timeout": "超时时间"
+        },
+        "outputs": {
+            "video": "视频",
+            "fps": "帧速率",
+            "width": "宽度",
+            "height": "高度",
+            "url": "网址"
+        }
+    },
+    "SegmindVideoRequestNode": {
+        "title": "Segmind视频 请求(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "api_key": "API 密钥",
+            "seed": "随机种子",
+            "go_fast": "加速",
+            "num_frames": "帧总数",
+            "resolution": "分辨率",
+            "aspect_ratio": "宽高比",
+            "sample_shift": "采样位移",
+            "frames_per_second": "每秒帧数",
+            "timeout": "超时时间"
+        },
+        "outputs": {
+            "video": "视频",
+            "fps": "帧速率",
+            "width": "宽度",
+            "height": "高度",
+            "url": "网址"
+        }
+    },
+    "FalFunControlVideoRequestNode": {
+        "title": "FAL Fun 控制视频 请求(utils)",
+        "inputs": {
+            "ref_image": "参考图像"
+        },
+        "widgets": {
+            "video_name": "视频名称",
+            "model": "模型",
+            "api_key": "API 密钥",
+            "num_inference_steps": "推理步数",
+            "guidance_scale": "CFG引导规模",
+            "shift": "位移",
+            "seed": "随机种子",
+            "match_input_num_frames": "匹配输入的帧数",
+            "num_frames": "帧总数",
+            "match_input_fps": "匹配输入帧率",
+            "fps": "帧率",
+            "preprocess_video": "预处理视频",
+            "preprocess_type": "预处理类型",
+            "timeout": "超时时间"
+        },
+        "outputs": {
+            "video": "视频",
+            "fps": "帧速率",
+            "width": "宽度",
+            "height": "高度",
+            "url": "网址"
+        }
+    },
+    "QwenEditPlusLoraNode": {
+        "title": "千问 编辑增强版 LoRa 节点",
+        "inputs": {
+            "image": "图像",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "model": "模型",
+            "api_key": "API密钥",
+            "custom_width": "自定义宽度",
+            "custom_height": "自定义高度",
+            "num_inference_steps": "推理步骤数",
+            "seed": "种子",
+            "guidance_scale": "CFG引导系数",
+            "num_images": "生成图像数量",
+            "enable_safety_checker": "启用安全检查器",
+            "negative_prompt": "负面提示词",
+            "lora1_url": "lora1_地址",
+            "lora1_weight": "lora1_权重",
+            "lora2_url": "lora2_地址",
+            "lora2_weight": "lora2_权重",
+            "lora3_url": "lora3_地址",
+            "lora3_weight": "lora3_权重",
+            "timeout": "超时时间",
+            "image_size": "图像尺寸",
+            "output_format": "输出格式",
+            "acceleration": "加速"
+        },
+        "outputs": {
+            "image": "图像",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+
+    "ModelsDownloaderOfUtils": {
+        "title": "模型下载",
+        "inputs": {},
+        "widgets": {
+            "url_0": "地址_0",
+            "url_1": "地址_1",
+            "url_2": "地址_2",
+            "url_3": "地址_3",
+            "subdirectory": "子目录",
+            "proxy": "代理",
+            "timeout": "超时时间",
+            "civitai_api_key": "Civitai API 密钥"
+        },
+        "outputs": {
+            "model_name_0": "模型名称_0",
+            "model_name_1": "模型名称_1",
+            "model_name_2": "模型名称_2",
+            "model_name_3": "模型名称_3"
+        }
+    },  
+    "FalNanoBananaNode": {
+        "title": "FAL 纳米香蕉",
+        "inputs": {
+            "model": "模型",
+            "image": "图片",
+            "image_2": "图片_2",
+            "image_3": "图片_3",
+            "image_4": "图片_4"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "api_key": "API密钥",
+            "image_urls": "图像网址",
+            "num_images": "图像数量",
+            "sync_mode": "同步模式",
+            "timeout": "超时时间",
+            "aspect_ratio": "宽高比",
+            "output_format": "输出格式",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "image": "图像",
+            "width": "宽度",
+            "height": "高度",
+            "description": "描述"
+        }
+    },  
+  "VolcanoArkImageEditNode": {
+        "title": "火山引擎 图像编辑",
+        "inputs": {
+            "image": "图片",
+            "image2": "图片2",
+            "image3": "图片3"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "level": "级别",
+            "aspect_ratio": "宽高比",
+            "max_images": "最大图像数量",
+            "timeout": "超时时间",
+            "api_key": "API密钥",
+            "api_url": "API地址",
+            "model": "模型"
+        },
+        "outputs": {
+            "edited_image": "图像"
+        }
+    },  
+    "ColorCorrectOfUtils": {
+        "title": "色彩校正(utils)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "temperature": "色温",
+            "red": "红色通道",
+            "green": "绿色通道",
+            "blue": "蓝色通道",
+            "hue": "色调",
+            "brightness": "亮度",
+            "contrast": "对比度",
+            "saturation": "饱和度",
+            "gamma": "伽马值",
+            "grain": "颗粒度"
+        },
+        "outputs": {
+            "图像": "校正后图像"
+        }
+    }
+}

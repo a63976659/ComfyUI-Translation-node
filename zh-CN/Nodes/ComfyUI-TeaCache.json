@@ -1,0 +1,49 @@
+{
+  "TeaCache": {
+    "title": "茶缓存",
+    "inputs": {
+      "model": "模型"
+    },
+    "widgets": {
+      "model_type": "模型类型",
+      "rel_l1_thresh": "相对L1阈值",
+      "start_percent": "开始百分比",
+      "end_percent": "结束百分比",
+      "max_skip_steps": "最大跳过步数"
+    },
+    "outputs": {
+      "model": "模型"
+    },
+        "description": "采用 茶 (TEA)时序编码架构(Temporal Encoding Architecture)。\n 实现视频帧间特征复用。\n名称由来\n 时序编码架构(Temporal Encoding Architecture)\n 像茶一样 越陈越香 的特征复用理念"
+  },
+  "CompileModel": {
+    "title": "编译模型",
+    "inputs": {
+      "model": "模型"
+    },
+    "widgets": {
+      "mode": "模式",
+      "backend": "后端",
+      "fullgraph": "全图",
+      "dynamic": "动态"
+    },
+    "outputs": {
+      "model": "模型"
+    },
+        "description": "性能优势\n 减少30%-40%的重复计算\n 支持动态缓存策略调整\n 自动处理视频场景切换"
+  },
+  "TeaCacheForCogVideoX": {
+    "title": "CogVideoX专用茶缓存",
+    "inputs": {
+      "model": "模型"
+    },
+    "widgets": {
+      "enable_teacache": "启用茶缓存",
+      "rel_l1_thresh": "相对L1阈值"
+    },
+    "outputs": {
+      "cogvideomodel": "CogVideo模型"
+    },
+        "description": "为CogVideoX模型设计的特殊缓存系统。"
+  }
+}

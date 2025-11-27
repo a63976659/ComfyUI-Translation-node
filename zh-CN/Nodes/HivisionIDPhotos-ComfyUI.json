@@ -1,0 +1,105 @@
+{
+    "ENHivisionParamsNode": {
+        "title": "英文参数",
+        "inputs": {},
+        "widgets": {
+            "size": "大小",
+            "bgcolor": "背景颜色",
+            "render": "渲染",
+            "kb": "kb",
+            "dpi": "dpi点分辨率"
+        },
+        "outputs": {
+            "normal_params": "参数组"
+        }
+    },
+    "ZHHivisionParamsNode": {
+        "title": "中文参数",
+        "inputs": {},
+        "widgets": {
+            "size": "大小",
+            "bgcolor": "背景颜色",
+            "render": "渲染",
+            "kb": "kb",
+            "dpi": "dpi点分辨率"
+        },
+        "outputs": {
+            "normal_params": "参数组"
+        }
+    },
+    "AddWaterMarkNode": {
+        "title": "添加水印",
+        "inputs": {
+            "input_img": "输入图像"
+        },
+        "widgets": {
+            "text": "文本",
+            "text_color": "文本颜色",
+            "text_size": "文本大小",
+            "text_opacity": "文本不透明度",
+            "text_angle": "文本角度",
+            "text_space": "文本间距"
+        },
+        "outputs": {
+            "output_0": "图像"
+        }
+    },
+    "AddBackgroundNode": {
+        "title": "添加背景节点",
+        "inputs": {
+            "input_img": "输入图像",
+            "normal_params": "参数组"
+        },
+        "widgets": {},
+        "outputs": {
+            "output_0": "图像"
+        }
+    },
+    "HivisionLayOutNode": {
+        "title": "照片排版",
+        "inputs": {
+            "input_img": "输入图像",
+            "normal_params": "参数组"
+        },
+        "widgets": {},
+        "outputs": {
+            "output_0": "图像"
+        }
+    },
+    "LaterProcessNode": {
+        "title": "后期处理节点",
+        "inputs": {
+            "input_img": "输入图像",
+            "normal_params": "参数组"
+        },
+        "widgets": {},
+        "outputs": {
+            "output_0": "图像"
+        }
+    },
+    "HivisionNode": {
+        "title": "Hivision人像抠图换背景",
+        "inputs": {
+            "input_img": "输入图像",
+            "normal_params": "常规参数"
+        },
+        "widgets": {
+            "face_alignment": "人脸对齐",
+            "change_bg_only": "仅更换背景",
+            "crop_only": "仅裁剪",
+            "matting_model": "抠图模型",
+            "face_detect_model": "人脸检测模型",
+            "head_measure_ratio": "头部测量比例",
+            "top_distance": "顶部距离",
+            "whitening_strength": "美白强度",
+            "brightness_strength": "亮度强度",
+            "contrast_strength": "对比度强度",
+            "saturation_strength": "饱和度强度",
+            "sharpen_strength": "锐化强度"
+        },
+        "outputs": {
+            "standard_img": "标准图像",
+            "hd_img": "高清图像"
+        }
+    }
+}

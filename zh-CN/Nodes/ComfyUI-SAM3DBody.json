@@ -1,0 +1,191 @@
+{
+    "SAM3DBodyExportFBX": {
+        "title": "SAM 3D人体：导出FBX",
+        "inputs": {
+            "mesh_data": "网格数据"
+        },
+        "widgets": {
+            "output_filename": "输出文件名"
+        },
+        "outputs": {
+            "fbx_path": "FBX路径"
+        }
+    },
+    "SAM3DBodyLoadMesh": {
+        "title": "SAM 3D人体：加载网格",
+        "inputs": {
+            "source_folder": "源文件夹"
+        },
+        "widgets": {
+            "source_folder": "源文件夹",
+            "file_path": "文件路径",
+            "refresh": "刷新",
+            "Auto-refresh after generation": "生成后自动刷新"
+        },
+        "outputs": {
+            "mesh_data": "SAM3D输出"
+        }
+    },
+    "SAM3DBodySelectMesh": {
+        "title": "SAM 3D人体：选择网格文件",
+        "inputs": {
+            "source_folder": "源文件夹"
+        },
+        "widgets": {
+            "source_folder": "源文件夹",
+            "file_path": "文件路径",
+            "refresh": "刷新",
+            "Auto-refresh after generation": "生成后自动刷新"
+        },
+        "outputs": {
+            "file_path": "文件路径"
+        }
+    },
+    "LoadSAM3DBodyModel": {
+        "title": "加载SAM 3D人体模型",
+        "inputs": {
+            "model_source": "模型源",
+            "device": "设备"
+        },
+        "widgets": {
+            "model_path": "模型路径",
+            "mhr_path": "MHR路径",
+            "hf_token": "HF令牌",
+            "model_source": "模型源",
+            "device": "设备"
+        },
+        "outputs": {
+            "model": "SAM3D模型"
+        }
+    },
+    "SAM3DBodyPreviewRiggedMesh": {
+        "title": "SAM 3D人体：预览绑定网格",
+        "inputs": {},
+        "widgets": {
+            "fbx_output_path": "FBX输出路径"
+        },
+        "outputs": {}
+    },
+    "SAM3DBodyPreviewSkeleton": {
+        "title": "SAM 3D人体：预览骨骼",
+        "inputs": {
+            "skeleton": "骨骼"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "SAM3DBodyProcess": {
+        "title": "SAM 3D人体: 处理图像",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "bbox_threshold": "边界框阈值",
+            "inference_type": "推理类型",
+            "use_detector": "使用检测器",
+            "use_segmentor": "使用分割器",
+            "use_fov_estimator": "使用视野估计器"
+        },
+        "outputs": {
+            "mesh_data": "SAM3D输出",
+            "skeleton": "骨骼",
+            "debug_image": "图像"
+        }
+    },
+    "SAM3DBodyProcessAdvanced": {
+        "title": "SAM 3D人体: 处理图像 (高级)",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "bbox_threshold": "边界框阈值",
+            "nms_threshold": "非极大值抑制阈值",
+            "inference_type": "推理类型",
+            "detector_name": "检测器名称",
+            "segmentor_name": "分割器名称",
+            "fov_name": "视野名称",
+            "detector_path": "检测器路径",
+            "segmentor_path": "分割器路径",
+            "fov_path": "视野路径"
+        },
+        "outputs": {
+            "mesh_data": "SAM3D输出",
+            "skeleton": "骨骼",
+            "debug_image": "图像"
+        }
+    },
+    "SAM3DBodySaveSkeleton": {
+        "title": "SAM 3D人体: 保存骨骼",
+        "inputs": {
+            "skeleton": "骨骼"
+        },
+        "widgets": {
+            "output_filename": "输出文件名",
+            "format": "格式"
+        },
+        "outputs": {
+            "filepath": "文件路径"
+        }
+    },
+    "SAM3DBodyLoadSkeleton": {
+        "title": "SAM 3D人体: 加载骨骼",
+        "inputs": {},
+        "widgets": {
+            "filepath": "文件路径"
+        },
+        "outputs": {
+            "skeleton": "骨骼"
+        }
+    },
+    "SAM3DBodyAddMeshToSkeleton": {
+        "title": "SAM 3D人体: 添加网格到骨骼",
+        "inputs": {
+            "skeleton": "骨骼",
+            "model": "模型"
+        },
+        "widgets": {},
+        "outputs": {
+            "mesh_data": "SAM3D输出"
+        }
+    },
+    "SAM3DBodyVisualize": {
+        "title": "SAM 3D人体: 可视化网格",
+        "inputs": {
+            "mesh_data": "网格数据",
+            "image": "图像"
+        },
+        "widgets": {
+            "render_mode": "渲染模式"
+        },
+        "outputs": {
+            "rendered_image": "图像"
+        }
+    },
+    "SAM3DBodyExportMesh": {
+        "title": "SAM 3D人体: 导出网格",
+        "inputs": {
+            "mesh_data": "网格数据"
+        },
+        "widgets": {
+            "filename": "文件名",
+            "output_dir": "输出目录"
+        },
+        "outputs": {
+            "file_path": "文件路径"
+        }
+    },
+    "SAM3DBodyGetVertices": {
+        "title": "SAM 3D人体: 获取网格信息",
+        "inputs": {
+            "mesh_data": "网格数据"
+        },
+        "widgets": {},
+        "outputs": {
+            "info": "信息"
+        }
+    }
+}

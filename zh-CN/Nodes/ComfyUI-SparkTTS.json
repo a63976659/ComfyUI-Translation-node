@@ -1,0 +1,79 @@
+{
+  "SparkTTS_VoiceCreator": {
+    "title": "SparkTTS 语音生成器 🔊",
+    "inputs": {},
+    "widgets": {
+      "text": "文本",
+      "gender": "性别",
+      "pitch": "音调",
+      "speed": "速度",
+      "batch_texts": "批量文本",
+      "temperature": "温度",
+      "top_k": "Top K",
+      "top_p": "Top P"
+    },
+    "outputs": {
+      "audio": "参考音频"
+    }
+  },
+  "SparkTTS_VoiceClone": {
+    "title": "SparkTTS 语音克隆 🔊",
+    "inputs": {
+      "text": "文本",
+      "reference_audio": "参考音频",
+      "reference_text": "参考文本",
+      "max_tokens": "最大生成长度"
+    },
+    "widgets": {
+      "text": "文本",
+      "reference_audio": "参考音频",
+      "reference_text": "参考文本",
+      "max_tokens": "最大生成长度",
+      "batch_texts": "批量文本",
+      "temperature": "温度",
+      "top_k": "Top K",
+      "top_p": "Top P"
+    },
+    "outputs": {
+      "audio": "参考音频"
+    }
+  },
+  "SparkTTS_AdvVoiceClone": {
+    "title": "SparkTTS 高级语音克隆 🔊",
+    "inputs": {
+      "text": "文本",
+      "reference_audio": "参考音频",
+      "reference_text": "参考文本",
+      "max_tokens": "最大生成长度"
+    },
+    "widgets": {
+      "text": "文本",
+      "reference_audio": "参考音频",
+      "reference_text": "参考文本",
+      "max_tokens": "最大生成长度",
+      "pitch": "音调",
+      "speed": "速度",
+      "batch_texts": "批量文本",
+      "temperature": "温度",
+      "top_k": "Top K",
+      "top_p": "Top P"
+    },
+    "outputs": {
+      "audio": "参考音频"
+    }
+  },
+  "SparkTTS_AudioRecorder": {
+    "title": "SparkTTS 音频录制器 🔴",
+    "inputs": {},
+    "widgets": {
+      "recording": "录音",
+      "recording_duration": "录音时长",
+      "sample_rate": "采样率",
+      "noise_threshold": "噪声阈值",
+      "smoothing_kernel_size": "平滑核大小"
+    },
+    "outputs": {
+      "audio": "参考音频"
+    }
+  }
+}

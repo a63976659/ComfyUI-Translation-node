@@ -1,0 +1,334 @@
+{
+    "FunTextBox": {
+        "title": "Fun文本框",
+        "inputs": {},
+        "widgets": {
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "prompt": "字符串提示词"
+        }
+    },
+    "VideoToCanny": {
+        "title": "视频转Canny边缘",
+        "inputs": {
+            "input_video": "输入视频"
+        },
+        "widgets": {
+            "low_threshold": "低阈值",
+            "high_threshold": "高阈值",
+            "video_length": "视频长度"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "VideoToDepth": {
+        "title": "视频转深度图",
+        "inputs": {
+            "input_video": "输入视频"
+        },
+        "widgets": {
+            "video_length": "视频长度"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "VideoToPose": {
+        "title": "视频转姿势图",
+        "inputs": {
+            "input_video": "输入视频"
+        },
+        "widgets": {
+            "video_length": "视频长度"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "VideoToOpenpose": {
+        "title": "视频转姿势图",
+        "inputs": {
+            "input_video": "输入视频"
+        },
+        "widgets": {
+            "video_length": "视频长度"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "LoadCogVideoXFunModel": {
+        "title": "加载Cog视频XFun模型",
+        "inputs": {},
+        "widgets": {
+            "model": "模型",
+            "model_type": "模型类型",
+            "GPU_memory_mode": "GPU内存模式",
+            "precision": "精度"
+        },
+        "outputs": {
+            "cogvideoxfun_model": "Cog视频XFun模型"
+        }
+    },
+    "LoadCogVideoXFunLora": {
+        "title": "加载Cog视频XFun LoRA",
+        "inputs": {
+            "cogvideoxfun_model": "Cog视频XFun模型"
+        },
+        "widgets": {
+            "strength_model": "模型强度",
+            "lora_name": "LoRA名称",
+            "lora_cache": "LoRA缓存"
+        },
+        "outputs": {
+            "cogvideoxfun_model": "Fun模型"
+        }
+    },
+    "CogVideoXFunT2VSampler": {
+        "title": "Cog视频XFun文本转视频采样器",
+        "inputs": {
+            "cogvideoxfun_model": "Cog视频XFun模型",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词"
+        },
+        "widgets": {
+            "video_length": "视频长度",
+            "width": "宽度",
+            "height": "高度",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "分类器自由引导尺度",
+            "is_image": "是否为图像",
+            "scheduler": "调度器"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "CogVideoXFunInpaintSampler": {
+        "title": "Cog视频XFun修复采样器",
+        "inputs": {
+            "cogvideoxfun_model": "Cog视频XFun模型",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "start_img": "起始图像",
+            "end_img": "结束图像"
+        },
+        "widgets": {
+            "video_length": "视频长度",
+            "base_resolution": "基础分辨率",
+            "scheduler": "调度器",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "分类器自由引导尺度"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "CogVideoXFunV2VSampler": {
+        "title": "Cog视频XFun V2视频采样器",
+        "inputs": {
+            "cogvideoxfun_model": "Cog视频XFun模型",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "validation_video": "验证视频",
+            "control_video": "控制视频"
+        },
+        "widgets": {
+            "video_length": "视频长度",
+            "base_resolution": "基础分辨率",
+            "scheduler": "调度器",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "分类器自由引导尺度",
+            "denoise_strength": "去噪强度"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "LoadWanModel": {
+        "title": "加载Wan模型",
+        "inputs": {},
+        "widgets": {
+            "model": "模型",
+            "GPU_memory_mode": "GPU内存模式",
+            "config": "配置",
+            "precision": "精度"
+        },
+        "outputs": {
+            "funmodels": "Fun模型"
+        }
+    },
+    "LoadWanLora": {
+        "title": "加载Wan LoRA",
+        "inputs": {
+            "funmodels": "Fun模型"
+        },
+        "widgets": {
+            "strength_model": "模型强度",
+            "lora_name": "LoRA名称",
+            "lora_cache": "LoRA缓存"
+        },
+        "outputs": {
+            "funmodels": "Fun模型"
+        }
+    },
+    "WanT2VSampler": {
+        "title": "Wan文本转视频采样器",
+        "inputs": {
+            "funmodels": "Fun模型",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词"
+        },
+        "widgets": {
+            "video_length": "视频长度",
+            "width": "宽度",
+            "height": "高度",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "分类器自由引导尺度",
+            "teacache_threshold": "茶缓存阈值",
+            "num_skip_start_steps": "跳过起始步数",
+            "is_image": "是否为图像",
+            "scheduler": "调度器",
+            "enable_teacache": "启用茶缓存",
+            "teacache_offload": "茶缓存卸载"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "WanI2VSampler": {
+        "title": "Wan图像转视频采样器",
+        "inputs": {
+            "funmodels": "Fun模型",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "start_img": "起始图像"
+        },
+        "widgets": {
+            "video_length": "视频长度",
+            "base_resolution": "基础分辨率",
+            "scheduler": "调度器",
+            "enable_teacache": "启用tea缓存",
+            "teacache_offload": "tea缓存卸载",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "cfg",
+            "teacache_threshold": "tea缓存阈值",
+            "num_skip_start_steps": "跳过起始步数"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "LoadWanFunModel": {
+        "title": "加载WanFun模型",
+        "inputs": {},
+        "widgets": {
+            "model": "模型",
+            "model_type": "模型类型",
+            "GPU_memory_mode": "GPU内存模式",
+            "config": "配置",
+            "precision": "精度"
+        },
+        "outputs": {
+            "funmodels": "Fun模型"
+        }
+    },
+    "LoadWanFunLora": {
+        "title": "加载WanFun LoRA",
+        "inputs": {
+            "funmodels": "Fun模型"
+        },
+        "widgets": {
+            "strength_model": "模型强度",
+            "lora_name": "LoRA名称",
+            "lora_cache": "LoRA缓存"
+        },
+        "outputs": {
+            "funmodels": "Fun模型"
+        }
+    },
+    "WanFunT2VSampler": {
+        "title": "WanFun文本转视频采样器",
+        "inputs": {
+            "funmodels": "Fun模型",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词"
+        },
+        "widgets": {
+            "video_length": "视频长度",
+            "width": "宽度",
+            "height": "高度",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "cfg",
+            "teacache_threshold": "tea缓存阈值",
+            "num_skip_start_steps": "跳过起始步数",
+            "is_image": "是否为图像",
+            "scheduler": "调度器",
+            "enable_teacache": "启用tea缓存",
+            "teacache_offload": "tea缓存卸载"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "WanFunInpaintSampler": {
+        "title": "WanFun修复采样器",
+        "inputs": {
+            "funmodels": "Fun模型",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "start_img": "起始图像",
+            "end_img": "结束图像"
+        },
+        "widgets": {
+            "video_length": "视频长度",
+            "base_resolution": "基础分辨率",
+            "scheduler": "调度器",
+            "enable_teacache": "启用tea缓存",
+            "teacache_offload": "tea缓存卸载",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "cfg",
+            "teacache_threshold": "tea缓存阈值",
+            "num_skip_start_steps": "跳过起始步数"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "WanFunV2VSampler": {
+        "title": "WanFun视频转视频采样器",
+        "inputs": {
+            "funmodels": "Fun模型",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "validation_video": "验证视频",
+            "control_video": "控制视频",
+            "ref_image": "参考图像"
+        },
+        "widgets": {
+            "video_length": "视频长度",
+            "base_resolution": "基础分辨率",
+            "scheduler": "调度器",
+            "enable_teacache": "启用tea缓存",
+            "teacache_offload": "tea缓存卸载",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "cfg",
+            "denoise_strength": "去噪强度",
+            "teacache_threshold": "tea缓存阈值",
+            "num_skip_start_steps": "跳过起始步数"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    }
+}

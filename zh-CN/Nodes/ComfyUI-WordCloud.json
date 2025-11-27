@@ -1,0 +1,57 @@
+{
+    "ComfyWordCloud": {
+        "title": "词云生成器",
+        "inputs": {
+            "color_ref_image": "颜色参考图像",
+            "mask_image": "遮罩图像"
+        },
+        "widgets": {
+            "text": "文本",
+            "width": "宽度",
+            "height": "高度",
+            "scale": "缩放比例",
+            "margin": "边距",
+            "font_path": "字体路径",
+            "min_font_size": "最小字体大小",
+            "max_font_size": "最大字体大小",
+            "relative_scaling": "相对缩放",
+            "colormap": "颜色映射",
+            "background_color": "背景颜色",
+            "transparent_background": "透明背景",
+            "prefer_horizontal": "偏好水平排列",
+            "max_words": "最大词数",
+            "repeat": "重复",
+            "include_numbers": "包含数字",
+            "random_state": "随机状态",
+            "stopwords": "停用词",
+
+            "contour_width": "轮廓宽度",
+            "contour_color": "轮廓颜色",
+            "keynote_words": "关键词",
+            "keynote_weight": "关键词权重"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LoadTextFile": {
+        "title": "加载文本文件",
+        "widgets": {
+            "path": "文件路径"
+        },
+        "outputs": {
+            "Text": "文本"
+        }
+    },
+    "RGB_Picker": {
+        "title": "RGB颜色选择器",
+        "widgets": {
+            "color": "颜色",
+            "mode": "模式"
+        },
+        "outputs": {
+            "value": "值"
+        }
+    }
+}

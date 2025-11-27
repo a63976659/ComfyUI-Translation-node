@@ -1,0 +1,1231 @@
+{
+    "ttN tinyLoader": {
+        "title": "TTN微型加载器",
+        "inputs": {},
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "config_name": "配置名称",
+            "sampling": "采样",
+            "zsnr": "ZSNR噪声调节",
+            "clip_skip": "CLIP跳过",
+            "pcfg_rescale_mult": "cfg重新缩放倍数",
+            "vae_name": "VAE名称",
+            "empty_latent_aspect": "Latent宽高比",
+            "empty_latent_width": "Latent宽度",
+            "empty_latent_height": "Latent高度",
+            "batch_size": "批次大小",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "model": "模型",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "ttN conditioning": {
+        "title": "TTN微型条件",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "optional_lora_stack": "LoRA堆(可选)",
+            "prepend_positive": "前置正面条件",
+            "prepend_negative": "前置负面条件"
+        },
+        "widgets": {
+            "positive": "正面提示词",
+            "positive_token_normalization": "正面Token规格化",
+            "positive_weight_interpretation": "正面权重插值方式",
+            "negative": "负面提示词",
+            "negative_token_normalization": "负面Token规格化",
+            "negative_weight_interpretation": "负面权重插值方式",
+            "zero_out_empty": "清零空值",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent",
+            "clip": "CLIP",
+            "pos_string": "正向字符串",
+            "neg_string": "负向字符串"
+        }
+    },
+    "ttN KSampler_v2": {
+        "title": "TTN K采样器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "input_image_override": "输入图像覆盖",
+            "adv_xyPlot": "高级xy绘图"
+        },
+        "widgets": {
+            "lora_name": "Lora名称",
+            "lora_strength": "Lora强度",
+            "lora_clip_strength": "CLIP强度",
+            "upscale_method": "放大方法",
+            "upscale_model_name": "放大模型名称",
+            "factor": "系数",
+            "rescale": "重新缩放",
+            "percent": "百分比",
+            "width": "宽度",
+            "height": "高度",
+            "longer_side": "较长边",
+            "crop": "裁剪",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀",
+            "file_type": "文件类型",
+            "embed_workflow": "嵌入工作流",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "🎲 New Fixed Random": "🎲新的固定随机数"
+        },
+        "outputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "images": "图像",
+            "seed": "随机种",
+            "plot_image": "图表"
+        }
+    },
+    "ttN pipeLoader_v2": {
+        "title": "TTN 节点束加载器V2",
+        "inputs": {
+            "model_override": "覆盖模型",
+            "clip_override": "覆盖CLIP",
+            "optional_lora_stack": "LoRA堆(可选)",
+            "optional_controlnet_stack": "ControlNet堆(可选)",
+            "prepend_positive": "前置正面条件",
+            "prepend_negative": "前置负面条件"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "config_name": "配置名称",
+            "vae_name": "VAE名称",
+            "clip_skip": "CLIP跳过",
+            "positive": "正面提示词",
+            "positive_token_normalization": "正面Token规格化",
+            "positive_weight_interpretation": "正面权重插值方式",
+            "negative": "负面提示词",
+            "negative_token_normalization": "负面Token规格化",
+            "negative_weight_interpretation": "负面权重插值方式",
+            "empty_latent_width": "Latent宽度",
+            "empty_latent_height": "Latent高度",
+            "batch_size": "批次大小",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "🎲 New Fixed Random": "🎲新的固定随机数"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "images": "图像",
+            "seed": "随机种",
+            "width": "宽度",
+            "height": "高度",
+            "pos_string": "正向字符串",
+            "neg_string": "负向字符串"
+        }
+    },
+    "ttN pipeKSampler_v2": {
+        "title": "TTN 节点束采样器v2",
+        "inputs": {
+            "pipe": "节点束",
+            "optional_model": "模型(可选)",
+            "optional_positive": "正面条件(可选)",
+            "optional_negative": "负面条件(可选)",
+            "optional_latent": "Latent(可选)",
+            "optional_vae": "VAE(可选)",
+            "optional_clip": "CLIP(可选)",
+            "input_image_override": "输入图像覆盖",
+            "adv_xyPlot": "高级XY图表"
+        },
+        "widgets": {
+            "lora_name": "Lora名称",
+            "lora_strength": "Lora强度",
+            "lora_clip_strength": "CLIP强度",
+            "upscale_method": "放大方法",
+            "upscale_model_name": "放大模型名称",
+            "factor": "系数",
+            "rescale": "重新缩放",
+            "percent": "百分比",
+            "width": "宽度",
+            "height": "高度",
+            "longer_side": "较长边",
+            "crop": "裁剪",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀",
+            "file_type": "文件类型",
+            "embed_workflow": "嵌入工作流",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "🎲 New Fixed Random": "🎲新的固定随机数"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "images": "图像",
+            "seed": "随机种",
+            "plot_image": "图表"
+        }
+    },
+    "ttN pipeKSamplerAdvanced_v2": {
+        "title": "TTN 节点束采样器(高级)v2",
+        "inputs": {
+            "pipe": "节点束",
+            "optional_model": "模型(可选)",
+            "optional_positive": "正面条件(可选)",
+            "optional_negative": "负面条件(可选)",
+            "optional_latent": "Latent(可选)",
+            "optional_vae": "VAE(可选)",
+            "optional_clip": "CLIP(可选)",
+            "input_image_override": "输入图像覆盖",
+            "adv_xyPlot": "高级XY图表"
+        },
+        "widgets": {
+            "lora_name": "Lora名称",
+            "lora_strength": "Lora强度",
+            "lora_clip_strength": "CLIP强度",
+            "upscale_method": "放大方法",
+            "upscale_model_name": "放大模型名称",
+            "factor": "系数",
+            "rescale": "重新缩放",
+            "percent": "百分比",
+            "width": "宽度",
+            "height": "高度",
+            "longer_side": "较长边",
+            "crop": "裁剪",
+            "add_noise": "添加噪波",
+            "noise": "噪波",
+            "steps": "步数",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "return_with_leftover_noise": "返回噪波",
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀",
+            "file_type": "文件类型",
+            "embed_workflow": "嵌入工作流",
+            "noise_seed": "噪波随机种",
+            "denoise": "降噪",
+            "control_after_generate": "运行后操作",
+            "🎲 New Fixed Random": "🎲新的固定随机数"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "images": "图像",
+            "seed": "随机种",
+            "plot_image": "图表"
+        }
+    },
+    "ttN pipeLoaderSDXL_v2": {
+        "title": "TTN 节点束加载器(SDXL)v2",
+        "inputs": {
+            "model_override": "覆盖模型",
+            "clip_override": "覆盖CLIP",
+            "optional_lora_stack": "LoRA堆(可选)",
+            "optional_controlnet_stack": "ControlNet堆(可选)",
+            "refiner_model_override": "细化模型覆盖",
+            "refiner_clip_override": "细化CLIP覆盖",
+            "prepend_positive_g": "前置正面_g条件",
+            "prepend_positive_l": "前置正面_l条件",
+            "prepend_negative_g": "前置负面_g条件",
+            "prepend_negative_l": "前置负面_l条件"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "config_name": "配置名称",
+            "vae_name": "VAE名称",
+            "clip_skip": "CLIP跳过",
+            "refiner_ckpt_name": "模型名称(细化)",
+            "refiner_config_name": "配置名称(细化)",
+            "conditioning_aspect": "条件宽高比",
+            "conditioning_width": "条件宽度",
+            "conditioning_height": "条件高度",
+            "crop_width": "裁剪宽度",
+            "crop_height": "裁剪高度",
+            "target_aspect": "目标宽高比",
+            "target_width": "目标宽度",
+            "target_height": "目标高度",
+            "positive_ascore": "正面得分",
+            "negative_ascore": "负面得分",
+            "empty_latent_aspect": "Latent宽高比",
+            "empty_latent_width": "Latent宽度",
+            "empth_latent_height": "Latent高度",
+            "batch_size": "批次大小",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "🎲 New Fixed Random": "🎲新的固定随机数"
+        },
+        "outputs": {
+            "sdxl_pipe": "SDXL节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "refiner_model": "模型(细化)",
+            "refiner_positive": "正面条件(细化)",
+            "refiner_negative": "负面条件(细化)",
+            "refiner_vae": "VAE(细化)",
+            "refiner_clip": "CLIP(细化)",
+            "latent": "Latent",
+            "seed": "随机种",
+            "width": "宽度",
+            "height": "高度",
+            "pos_string": "正向字符串",
+            "neg_string": "负向字符串"
+        }
+    },
+    "ttN pipeKSamplerSDXL_v2": {
+        "title": "TTN 节点束K采样器(SDXL)v2",
+        "inputs": {
+            "sdxl_pipe": "SDXL节点束",
+            "optional_model": "模型(可选)",
+            "optional_positive": "正面条件(可选)",
+            "optional_negative": "负面条件(可选)",
+            "optional_latent": "Latent(可选)",
+            "optional_vae": "VAE(可选)",
+            "optional_refiner_model": "细化模型(可选)",
+            "optional_refiner_positive": "细化正面条件(可选)",
+            "optional_refiner_negative": "细化负面条件(可选)",
+            "optional_clip": "CLIP(可选)",
+            "input_image_override": "输入图像覆盖",
+            "adv_xyPlot": "高级XY图表"
+        },
+        "widgets": {
+            "lora_name": "Lora名称",
+            "lora_strength": "Lora强度",
+            "lora_clip_strength": "CLIP强度",
+            "upscale_method": "放大方法",
+            "upscale_model_name": "放大模型名称",
+            "factor": "系数",
+            "rescale": "重新缩放",
+            "percent": "百分比",
+            "width": "宽度",
+            "height": "高度",
+            "longer_side": "较长边",
+            "crop": "裁剪",
+            "base_steps": "基础步数",
+            "cfg": "CFG",
+            "denoise": "降噪",
+            "refiner_steps": "细化步数",
+            "refiner_cfg": "细化CFG",
+            "refiner_denoise": "细化去噪",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀",
+            "file_type": "文件类型",
+            "embed_workflow": "嵌入工作流",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "🎲 New Fixed Random": "🎲新的固定随机数"
+        },
+        "outputs": {
+            "sdxl_pipe": "SDXL节点束",
+            "pipe": "节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "refiner_model": "模型(细化)",
+            "refiner_positive": "正面条件(细化)",
+            "refiner_negative": "负面条件(细化)",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "images": "图像",
+            "seed": "随机种",
+            "plot_image": "图表"
+        }
+    },
+    "ttN advanced xyPlot": {
+        "title": "TTN 高级XY图表",
+        "widgets": {
+            "grid_spacing": "间隔",
+            "save_individuals": "保存个体",
+            "invert_background": "反转背景",
+            "flip_xy": "翻转XY",
+            "x_axis": "X轴",
+            "x_values": "X值",
+            "y_axis": "Y轴",
+            "y_values": "Y值"
+        },
+        "outputs": {
+            "adv_xyplot": "高级XY图表"
+        }
+    },
+    "ttN advPlot images": {
+        "title": "TTN 高级图表图像",
+        "inputs": {
+            "image": "图像",
+            "adv_xyPlot": "高级XY图表"
+        },
+        "widgets": {
+            "enabled": "启用",
+            "image_output": "图像输出",
+            "save_prefix": "保存前缀",
+            "file_type": "文件类型",
+            "embed_workflow": "嵌入工作流"
+        },
+        "outputs": {
+            "images": "图像",
+            "plot_image": "图表"
+        }
+    },
+    "ttN advPlot range": {
+        "title": "高级绘图范围设置",
+        "inputs": {},
+        "widgets": {
+            "node": "目标节点",
+            "widget": "控件名称",
+            "range_mode": "范围模式",
+            "start": "起始值",
+            "step": "步长值",
+            "stop": "终止值",
+            "include_stop": "包含终止值",
+            "num_steps": "步数设置",
+            "label_type": "标签类型"
+        },
+        "outputs": {
+            "plot_text": "文字表格"
+        }
+    },
+    "ttN advPlot string": {
+        "title": "高级文本处理",
+        "inputs": {},
+        "widgets": {
+            "node": "目标节点",
+            "widget": "控件名称",
+            "replace_mode": "替换模式",
+            "search_string": "查找内容",
+            "text": "替换文本",
+            "delimiter": "分隔符号",
+            "label_type": "标签类型"
+        },
+        "outputs": {
+            "plot_text": "文字表格"
+        }
+    },
+    "ttN advPlot combo": {
+        "title": "高级组合设置",
+        "inputs": {},
+        "widgets": {
+            "node": "目标节点",
+            "widget": "控件名称",
+            "mode": "组合模式",
+            "start_from": "起始选项",
+            "end_with": "结束选项",
+            "select": "选择项",
+            "selection": "选中内容",
+            "label_type": "标签类型",
+            "prompt": "提示文本"
+        },
+        "outputs": {
+            "plot_text": "文字表格"
+        }
+    },
+    "ttN advPlot merge": {
+        "title": "文本合并处理",
+        "inputs": {
+            "plot_text1": "第一文本",
+            "plot_text2": "第二文本"
+        },
+        "widgets": {
+            "label_type": "标签类型"
+        },
+        "outputs": {
+            "plot_text": "文字表格"
+        }
+    },
+    "ttN textCycleLine": {
+        "title": "文本行循环处理器",
+        "inputs": {
+            "text": "输入文本"
+        },
+        "widgets": {
+            "index": "行索引",
+            "index_control": "控制模式选择器"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "string": "字符串"
+        }
+    },
+    "ttN textOutput": {
+        "title": "文本输出器",
+        "inputs": {},
+        "widgets": {
+            "text_output": "输出内容",
+            "text": "原始文本",
+            "output_path": "保存路径",
+            "save_prefix": "文件名前缀",
+            "number_padding": "数字补位",
+            "file_type": "文件格式",
+            "overwrite_existing": "覆盖现有文件",
+            "prompt": "提示文本",
+            "extra_pnginfo": "PNG元数据",
+            "my_unique_id": "唯一标识符"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "ttN pipeLoader": {
+        "title": "TTN节点束加载器",
+        "inputs": {
+            "model_override": "覆盖模型",
+            "clip_override": "覆盖CLIP",
+            "optional_lora_stack": "LoRA堆(可选)"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "config_name": "配置名称",
+            "vae_name": "VAE名称",
+            "clip_skip": "CLIP跳过",
+            "lora1_name": "LoRA_1",
+            "lora1_model_strength": "模型强度_1",
+            "lora1_clip_strength": "CLIP强度_1",
+            "lora2_name": "LoRA_2",
+            "lora2_model_strength": "模型强度_2",
+            "lora2_clip_strength": "CLIP强度_2",
+            "lora3_name": "LoRA_3",
+            "lora3_model_strength": "模型强度_3",
+            "lora3_clip_strength": "CLIP强度_3",
+            "positive": "正面提示词",
+            "positive_token_normalization": "正面Token规格化",
+            "positive_weight_interpretation": "正面权重插值方式",
+            "negative": "负面提示词",
+            "negative_token_normalization": "负面Token规格化",
+            "negative_weight_interpretation": "负面权重插值方式",
+            "empty_latent_width": "Latent宽度",
+            "empty_latent_height": "Latent高度",
+            "batch_size": "批次大小",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "seed": "随机种"
+        }
+    },
+    "ttN pipeKSampler": {
+        "title": "TTN节点束采样器",
+        "inputs": {
+            "pipe": "节点束",
+            "optional_model": "模型(可选)",
+            "optional_positive": "正面条件(可选)",
+            "optional_negative": "负面条件(可选)",
+            "optional_latent": "Latent(可选)",
+            "optional_vae": "VAE(可选)",
+            "optional_clip": "CLIP(可选)",
+            "xyPlot": "XY图表"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "lora_model_strength": "模型强度",
+            "lora_clip_strength": "CLIP强度",
+            "upscale_method": "放大方法",
+            "factor": "系数",
+            "crop": "裁剪",
+            "sampler_state": "采样状态",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "image": "图像",
+            "seed": "随机种"
+        }
+    },
+    "ttN pipeKSamplerAdvanced": {
+        "title": "TTN节点束采样器(高级)",
+        "inputs": {
+            "pipe": "节点束",
+            "optional_model": "模型(可选)",
+            "optional_positive": "正面条件(可选)",
+            "optional_negative": "负面条件(可选)",
+            "optional_latent": "Latent(可选)",
+            "optional_vae": "VAE(可选)",
+            "optional_clip": "CLIP(可选)",
+            "xyPlot": "XY图表"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "lora_model_strength": "模型强度",
+            "lora_clip_strength": "CLIP强度",
+            "upscale_method": "放大方法",
+            "factor": "系数",
+            "crop": "裁剪",
+            "sampler_state": "采样状态",
+            "add_noise": "添加噪波",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "return_with_leftover_noise": "返回噪波",
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀",
+            "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "image": "图像",
+            "seed": "随机种"
+        }
+    },
+    "ttN pipeLoaderSDXL": {
+        "title": "TTN节点束加载器(SDXL)",
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "vae_name": "VAE名称",
+            "lora1_name": "LoRA_1",
+            "lora1_model_strength": "模型强度_1",
+            "lora1_clip_strength": "CLIP强度_1",
+            "lora2_name": "LoRA_2",
+            "lora2_model_strength": "模型强度_2",
+            "lora2_clip_strength": "CLIP强度_2",
+            "refiner_ckpt_name": "模型名称(细化)",
+            "refiner_vae_name": "VAE名称(细化)",
+            "refiner_lora1_name": "LoRA_1(细化)",
+            "refiner_lora1_model_strength": "模型强度_1(细化)",
+            "refiner_lora1_clip_strength": "CLIP强度_1(细化)",
+            "refiner_lora2_name": "LoRA_2(细化)",
+            "refiner_lora2_model_strength": "模型强度_2(细化)",
+            "refiner_lora2_clip_strength": "CLIP强度_2(细化)",
+            "clip_skip": "CLIP跳过",
+            "positive": "正面提示词",
+            "positive_token_normalize": "正面Token规格化",
+            "positive_weight_interpolation": "正面权重插值方式",
+            "negative": "负面提示词",
+            "negative_token_normalize": "负面Token规格化",
+            "negative_weight_interpolation": "负面权重插值方式",
+            "empty_latent_width": "Latent宽度",
+            "empth_latent_height": "Latent高度",
+            "batch_size": "批次大小",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "sdxl_pipe": "SDXL节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "refiner_model": "模型(细化)",
+            "refiner_positive": "正面条件(细化)",
+            "refiner_negative": "负面条件(细化)",
+            "refiner_vae": "VAE(细化)",
+            "refiner_clip": "CLIP(细化)",
+            "latent": "Latent",
+            "seed": "随机种"
+        }
+    },
+    "ttN pipeKSamplerSDXL": {
+        "title": "TTN节点束采样器(SDXL)",
+        "inputs": {
+            "sdxl_pipe": "SDXL节点束",
+            "optional_model": "模型(可选)",
+            "optional_positive": "正面条件(可选)",
+            "optional_negative": "负面条件(可选)",
+            "optional_vae": "VAE(可选)",
+            "optional_refiner_model": "模型(细化)(可选)",
+            "optional_refiner_positive": "正面条件(细化)(可选)",
+            "optional_refiner_negative": "负面条件(细化)(可选)",
+            "optional_refiner_vae": "优化VAE(可选)",
+            "optional_latent": "Latent(可选)",
+            "optional_clip": "CLIP(可选)"
+        },
+        "widgets": {
+            "upscale_method": "放大方法",
+            "factor": "系数",
+            "crop": "裁剪",
+            "sampler_state": "采样状态",
+            "base_steps": "步数",
+            "refiner_steps": "步数(细化)",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "sdxl_pipe": "SDXL节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "vae": "VAE",
+            "refiner_model": "模型(细化)",
+            "refiner_positive": "正面条件(细化)",
+            "refiner_negative": "负面条件(细化)",
+            "refiner_vae": "VAE(细化)",
+            "latent": "Latent",
+            "clip": "CLIP",
+            "image": "图像",
+            "seed": "随机种"
+        }
+    },
+    "ttN xyPlot": {
+        "title": "TTNXY图表",
+        "widgets": {
+            "grid_spacing": "间隔",
+            "latent_id": "LatentID",
+            "output_individuals": "单独输出",
+            "flip_xy": "反转XY",
+            "x_axis": "X轴",
+            "x_values": "X值",
+            "y_axis": "Y轴",
+            "y_values": "Y值"
+        },
+        "outputs": {
+            "xyPlot": "XY图表"
+        }
+    },
+    "ttN pipeEDIT": {
+        "title": "TTN节点束编辑",
+        "inputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "pos": "正面条件",
+            "neg": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "image": "图像"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "pos": "正面条件",
+            "neg": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "image": "图像",
+            "seed": "随机种"
+        }
+    },
+    "ttN pipe2BASIC": {
+        "title": "TTN节点束到基础束",
+        "inputs": {
+            "pipe": "节点束"
+        },
+        "outputs": {
+            "basic_pipe": "基础节点束",
+            "pipe": "节点束"
+        }
+    },
+    "ttN pipe2DETAILER": {
+        "title": "TTN节点束到细化束",
+        "inputs": {
+            "pipe": "节点束",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "SEGM检测",
+            "detailer_hook": "细化约束"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "detailer_pipe": "细化束",
+            "pipe": "节点束"
+        }
+    },
+    "ttN pipeEncodeConcat": {
+        "title": "TTN编码合并",
+        "inputs": {
+            "pipe": "节点束",
+            "optional_positive_from": "正面条件(可选)",
+            "optional_negative_from": "负面条件(可选)",
+            "optional_clip": "CLIP(可选)"
+        },
+        "widgets": {
+            "toggle": "开关",
+            "positive": "正面提示词",
+            "positive_token_normalization": "正面Token规格化",
+            "positive_weight_interpretation": "正面权重插值方式",
+            "negative": "负面提示词",
+            "negative_token_normalization": "负面Token规格化",
+            "negative_weight_interpretation": "负面权重插值方式"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "clip": "CLIP"
+        }
+    },
+    "ttN pipeLoraStack": {
+        "title": "TTNLoRA堆",
+        "inputs": {
+            "optional_pipe": "节点束(可选)",
+            "model_override": "覆盖模型",
+            "clip_override": "覆盖CLIP",
+            "optional_lora_stack": "LoRA堆(可选)"
+        },
+        "widgets": {
+            "toggle": "开关",
+            "mode": "模式",
+            "num_loras": "LoRA数量",
+            "lora_1_name": "LoRA_1",
+            "lora_1_strength": "强度_1",
+            "lora_1_model_strength": "模型强度_1",
+            "lora_1_clip_strength": "CLIP强度_1",
+            "lora_2_name": "LoRA_2",
+            "lora_2_strength": "强度_2",
+            "lora_2_model_strength": "模型强度_2",
+            "lora_2_clip_strength": "CLIP强度_2",
+            "lora_3_name": "LoRA_3",
+            "lora_3_strength": "强度_3",
+            "lora_3_model_strength": "模型强度_3",
+            "lora_3_clip_strength": "CLIP强度_3",
+            "lora_4_name": "LoRA_4",
+            "lora_4_strength": "强度_4",
+            "lora_4_model_strength": "模型强度_4",
+            "lora_4_clip_strength": "CLIP强度_4",
+            "lora_5_name": "LoRA_5",
+            "lora_5_strength": "强度_5",
+            "lora_5_model_strength": "模型强度_5",
+            "lora_5_clip_strength": "CLIP强度_5",
+            "lora_6_name": "LoRA_6",
+            "lora_6_strength": "强度_6",
+            "lora_6_model_strength": "模型强度_6",
+            "lora_6_clip_strength": "CLIP强度_6",
+            "lora_7_name": "LoRA_7",
+            "lora_7_strength": "强度_7",
+            "lora_7_model_strength": "模型强度_7",
+            "lora_7_clip_strength": "CLIP强度_7",
+            "lora_8_name": "LoRA_8",
+            "lora_8_strength": "强度_8",
+            "lora_8_model_strength": "模型强度_8",
+            "lora_8_clip_strength": "CLIP强度_8",
+            "lora_9_name": "LoRA_9",
+            "lora_9_strength": "强度_9",
+            "lora_9_model_strength": "模型强度_9",
+            "lora_9_clip_strength": "CLIP强度_9",
+            "lora_10_name": "LoRA_10",
+            "lora_10_strength": "强度_10",
+            "lora_10_model_strength": "模型强度_10",
+            "lora_10_clip_strength": "CLIP强度_10",
+            "lora_11_name": "LoRA_11",
+            "lora_11_strength": "强度_11",
+            "lora_11_model_strength": "模型强度_11",
+            "lora_11_clip_strength": "CLIP强度_11",
+            "lora_12_name": "LoRA_12",
+            "lora_12_strength": "强度_12",
+            "lora_12_model_strength": "模型强度_12",
+            "lora_12_clip_strength": "CLIP强度_12",
+            "lora_13_name": "LoRA_13",
+            "lora_13_strength": "强度_13",
+            "lora_13_model_strength": "模型强度_13",
+            "lora_13_clip_strength": "CLIP强度_13",
+            "lora_14_name": "LoRA_14",
+            "lora_14_strength": "强度_14",
+            "lora_14_model_strength": "模型强度_14",
+            "lora_14_clip_strength": "CLIP强度_14",
+            "lora_15_name": "LoRA_15",
+            "lora_15_strength": "强度_15",
+            "lora_15_model_strength": "模型强度_15",
+            "lora_15_clip_strength": "CLIP强度_15",
+            "lora_16_name": "LoRA_16",
+            "lora_16_strength": "强度_16",
+            "lora_16_model_strength": "模型强度_16",
+            "lora_16_clip_strength": "CLIP强度_16",
+            "lora_17_name": "LoRA_17",
+            "lora_17_strength": "强度_17",
+            "lora_17_model_strength": "模型强度_17",
+            "lora_17_clip_strength": "CLIP强度_17",
+            "lora_18_name": "LoRA_18",
+            "lora_18_strength": "强度_18",
+            "lora_18_model_strength": "模型强度_18",
+            "lora_18_clip_strength": "CLIP强度_18",
+            "lora_19_name": "LoRA_19",
+            "lora_19_strength": "强度_19",
+            "lora_19_model_strength": "模型强度_19",
+            "lora_19_clip_strength": "CLIP强度_19",
+            "lora_20_name": "LoRA_20",
+            "lora_20_strength": "强度_20",
+            "lora_20_model_strength": "模型强度_20",
+            "lora_20_clip_strength": "CLIP强度_20"
+        },
+        "outputs": {
+            "optional_pipe": "节点束(可选)",
+            "lora_stack": "LoRA堆"
+        }
+    },
+    "ttN pipeIN": {
+        "title": "TTN节点束输入",
+        "inputs": {
+            "model": "模型",
+            "pos": "正面条件",
+            "neg": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "image": "图像"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "pipe": "节点束"
+        }
+    },
+    "ttN pipeOUT": {
+        "title": "TTN节点束输出",
+        "inputs": {
+            "pipe": "节点束"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "model": "模型",
+            "pos": "正面条件",
+            "neg": "负面条件",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "image": "图像",
+            "seed": "随机种",
+            "pipe": "节点束"
+        }
+    },
+    "ttN text": {
+        "title": "TTN文本",
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "ttN textDebug": {
+        "title": "TTN文本Debug",
+        "widgets": {
+            "print_to_console": "输出到控制台",
+            "console_title": "控制台标题",
+            "execute": "执行",
+            "text": "文本"
+        }
+    },
+    "ttN debugInput": {
+        "title": "调试输入",
+        "inputs": {
+            "debug": "DeBUG"
+        },
+        "widgets": {
+            "print_to_console": "输出到控制台",
+            "console_title": "控制台标题",
+            "execute": "执行",
+            "text": "文本",
+            "console_color": "控制台颜色"
+        }
+    },
+    "ttN concat": {
+        "title": "文本合并",
+        "widgets": {
+            "text1": "文本_1",
+            "text2": "文本_2",
+            "text3": "文本_3",
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "concat": "合并字符串"
+        }
+    },
+    "ttN text3BOX_3WAYconcat": {
+        "title": "TTN文本框合并(3路)",
+        "widgets": {
+            "text1": "文本_1",
+            "text2": "文本_2",
+            "text3": "文本_3",
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "text1": "文本_1",
+            "text2": "文本_2",
+            "text3": "文本_3",
+            "1 & 2": "1 & 2",
+            "1 & 3": "1 & 3",
+            "2 & 3": "2 & 3",
+            "concat": "合并字符串"
+        }
+    },
+    "ttN text7BOX_concat": {
+        "title": "TTN文本框合并(7路)",
+        "widgets": {
+            "text1": "文本_1",
+            "text2": "文本_2",
+            "text3": "文本_3",
+            "text4": "文本_4",
+            "text5": "文本_5",
+            "text6": "文本_6",
+            "text7": "文本_7",
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "text1": "文本_1",
+            "text2": "文本_2",
+            "text3": "文本_3",
+            "text4": "文本_4",
+            "text5": "文本_5",
+            "text6": "文本_6",
+            "text7": "文本_7",
+            "concat": "合并字符串"
+        }
+    },
+    "ttN imageOutput": {
+        "title": "TTN图像输出",
+        "input": {
+            "image": "图像"
+        },
+        "widgets": {
+            "image_output": "图像输出",
+            "output_path": "输出路径",
+            "save_prefix": "文件名前缀",
+            "number_padding": "填充位数",
+            "file_type": "文件类型",
+            "overwrite_existing": "覆盖",
+            "embed_workflow": "保存工作流"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ttN ImageREMBG": {
+        "title": "TTN移除背景",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "ttN imageREMBG": {
+        "title": "TTN移除背景",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "ttN hiresfixScale": {
+        "title": "TTN高清修复",
+        "inputs": {
+            "image": "图像",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "rescale_after_model": "使用模型后重缩放",
+            "rescale_method": "重缩放方法",
+            "rescale": "重缩放",
+            "percent": "百分比",
+            "width": "宽度",
+            "height": "高度",
+            "longer_side": "长边",
+            "crop": "裁剪",
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀",
+            "output_latent": "输出Latent"
+        },
+        "outputs": {
+            "latent": "Latent",
+            "image": "图像"
+        }
+    },
+    "ttN int": {
+        "title": "TTN整数",
+        "widget": {
+            "int": "整数"
+        },
+        "outputs": {
+            "int": "整数",
+            "float": "浮点",
+            "text": "文本"
+        }
+    },
+    "ttN float": {
+        "title": "TTN浮点",
+        "widgets": {
+            "float": "浮点"
+        },
+        "outputs": {
+            "int": "整数",
+            "float": "浮点",
+            "text": "文本"
+        }
+    },
+    "ttN seed": {
+        "title": "TTN随机种",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fixed": "固定",
+            "increment": "增加",
+            "decrement": "减少",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "seed": "随机种"
+        }
+    },
+    "ttN multiModelMerge": {
+        "title": "TTN多模型融合",
+        "inputs": {
+            "model_A_override": "覆盖模型_A",
+            "model_B_override": "覆盖模型_B",
+            "model_C_override": "覆盖模型_C",
+            "clip_A_override": "覆盖CLIP_A",
+            "clip_B_override": "覆盖CLIP_B",
+            "clip_C_override": "覆盖CLIP_C",
+            "optional_vae": "VAE(可选)"
+        },
+        "widgets": {
+            "ckpt_A_name": "模型名称_A",
+            "config_A_name": "配置名称_A",
+            "ckpt_B_name": "模型名称_B",
+            "config_B_name": "配置名称_B",
+            "ckpt_C_name": "模型名称_C",
+            "config_C_name": "配置名称_C",
+            "model_interpolation": "模型插值",
+            "model_multiplier": "模型系数",
+            "clip_interpolation": "CLIP插值",
+            "clip_multiplier": "CLIP系数",
+            "save_model": "保存模型",
+            "save_prefix": "文件名前缀"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE"
+        }
+    }
+}

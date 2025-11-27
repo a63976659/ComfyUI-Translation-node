@@ -1,0 +1,29 @@
+{
+    "Video_Upscale_With_Model": {
+        "title": "应用模型进行视频升格",
+        "inputs": {
+            "model_name": "模型名称",
+            "images": "图像",
+            "upscale_method": "升格方法",
+            "device_strategy": "设备策略"
+        },
+        "widgets": {
+            "factor": "缩放比例"
+        },
+        "outputs": {
+            "output_0": "图像"
+        }
+    },
+    "Free_Video_Memory": {
+        "title": "释放视频内存",
+        "inputs": {
+            "images": "图像",
+            "aggressive_cleanup": "强制清理",
+            "report_memory": "报告内存"
+        },
+        "widgets": {},
+        "outputs": {
+            "output_0": "图像"
+        }
+    }
+}

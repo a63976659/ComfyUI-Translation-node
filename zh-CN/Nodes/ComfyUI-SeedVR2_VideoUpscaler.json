@@ -1,0 +1,119 @@
+{
+    "SeedVR2": {
+        "title": "SeedVR2 视频超分辨率器",
+        "inputs": {
+            "images": "图像",
+            "block_swap_config": "块交换配置"
+        },
+        "widgets": {
+            "model": "模型",
+            "seed": "种子",
+            "new_resolution": "新分辨率",
+            "batch_size": "批次大小",
+            "preserve_vram": "保留显存"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "SeedVR2VideoUpscaler": {
+        "title": "Seed VR2视频 放大",
+        "inputs": {
+            "image": "图像",
+            "dit": "Seed VR2_DIT",
+            "vae": "Seed VR2_VAE"
+        },
+        "widgets": {
+            "seed": "种子",
+            "resolution": "分辨率",
+            "max_resolution": "最大分辨率",
+            "batch_size": "批次大小",
+            "uniform_batch_size": "统一批次大小",
+            "color_correction": "色彩校正",
+            "temporal_overlap": "时间重叠",
+            "prepend_frames": "前置帧",
+            "input_noise_scale": "批次大小",
+            "latent_noise_scale": "Latent 噪声系数",
+            "offload_device": "卸载设备",
+            "enable_debug": "启用调试"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "SeedVR2LoadDiTModel": {
+        "title": "Seed VR2 下载DiT模型",
+        "inputs": {
+            "torch_compile_args": "torch编译参数",
+            "dit": "Seed VR2_DIT"
+        },
+        "widgets": {
+            "model": "模型",
+            "device": "设备",
+            "blocks_to_swap": "要交换的块",
+            "swap_io_components": "交换输入/输出组件",
+            "cache_model": "缓存模型",
+            "attention_mode": "注意力模式",
+            "offload_device": "卸载设备"
+        },
+        "outputs": {
+            "SEEDVR2_DIT": "Seed VR2_DIT"
+        }
+    },
+    "SeedVR2LoadVAEModel": {
+        "title": "Seed VR2 下载VAE模型",
+        "inputs": {
+            "torch_compile_args": "torch编译参数",
+            "dit": "Seed VR2_DIT"
+        },
+        "widgets": {
+            "model": "模型",
+            "device": "设备",
+            "encode_tiled": "编码（分块）",
+            "encode_tile_size": "编码（分块）尺寸",
+            "encode_tile_overlap": "编码（分块）重叠",
+            "decode_tiled": "解码（分块）",
+            "decode_tile_size": "解码（分块）尺寸",
+            "decode_tile_overlap": "解码（分块）重叠",
+            "tile_debug": "分块调试",
+            "offload_device": "卸载设备",
+            "cache_model": "缓存模型"
+        },
+        "outputs": {
+            "SEEDVR2_VAE": "Seed VR2_VAE"
+        }
+    },
+    "SeedVR2TorchCompileSettings": {
+        "title": "Seed VR2 Torch编译设置",
+        "inputs": {
+            "torch_compile_args": "torch编译参数"
+        },
+        "widgets": {
+            "model": "模型",
+            "mode": "模式",
+            "backend": "后端",
+            "fullgraph": "全图",
+            "dynamic": "动态",
+            "dynamo_cache_size_limit": "动态缓存大小限制",
+            "dynamo_recompile_limit": "动态编译限制",
+            "offload_device": "卸载设备"
+        },
+        "outputs": {
+            "TORCH_COMPILE_ARGS": "torch编译参数"
+        }
+    },
+    "SeedVR2BlockSwap": {
+        "title": "SeedVR2 块交换配置",
+        "inputs": {},
+        "widgets": {
+            "blocks_to_swap": "要交换的块",
+            "use_non_blocking": "使用非阻塞",
+            "offload_io_components": "卸载输入输出组件",
+            "cache_model": "缓存模型",
+            "enable_debug": "启用调试"
+        },
+        "outputs": {
+            "block_swap_config": "块交换配置"
+        }
+    }
+}

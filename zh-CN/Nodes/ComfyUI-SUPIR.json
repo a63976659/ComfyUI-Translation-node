@@ -1,0 +1,215 @@
+{
+    "SUPIR_model_loader": {
+        "title": "SUPIR模型加载器",
+        "widgets": {
+            "supir_model": "SUPIR模型",
+            "sdxl_model": "SDXL模型",
+            "fp8_unet": "FP8 UNet精度",
+            "diffusion_dtype": "剪枝类型"
+        },
+        "outputs": {
+            "SUPIR_MODEL": "SUPIR模型",
+            "SUPIR_model": "SUPIR模型",
+            "SUPIR_VAE": "SUPIR_VAE"
+        },
+        "description": "旧版加载器，不推荐使用。\n\n加载 SUPIR 模型和 SDXL 模型然后融合。"
+    },
+    "SUPIR_model_loader_v2": {
+        "title": "SUPIR模型加载器_V2",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "supir_model": "SUPIR模型",
+            "fp8_unet": "FP8 UNet精度",
+            "diffusion_dtype": "剪枝类型",
+            "high_vram": "高显存"
+        },
+        "outputs": {
+            "SUPIR_MODEL": "SUPIR模型",
+            "SUPIR_model": "SUPIR模型",
+            "SUPIR_VAE": "SUPIR_VAE"
+        },
+        "description": "加载 SUPIR 模型和 SDXL 模型然后融合。\n\n剪枝类型应保持 自动 选项，除非加载模型时出现错误。\n\nfp8_unet：使用 torch.float8_e4m3fn 调用 UNet，会降低显存要求但略微影响质量。\n\n高显存：使用 Accelerate 加载模型到 GPU，轻微提示加载速度。"
+    },
+    "SUPIR_model_loader_v2_clip": {
+        "title": "SUPIR模型加载器_V2（CLIP）",
+        "inputs": {
+            "model": "模型",
+            "clip_l": "CLIP_L",
+            "clip_g": "CLIP_G",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "supir_model": "SUPIR模型",
+            "fp8_unet": "FP8 UNet精度",
+            "diffusion_dtype": "剪枝类型",
+            "high_vram": "高显存"
+        },
+        "outputs": {
+            "SUPIR_MODEL": "SUPIR模型",
+            "SUPIR_model": "SUPIR模型",
+            "SUPIR_VAE": "SUPIR_VAE"
+        },
+        "description": "加载 SUPIR 模型和 SDXL 模型然后融合。\n\n剪枝类型应保持 自动 选项，除非加载模型时出现错误。\n\nfp8_unet：使用 torch.float8_e4m3fn 调用 UNet，会降低显存要求但略微影响质量。\n\n高显存：使用 Accelerate 加载模型到 GPU，轻微提示加载速度。"
+    },
+    "SUPIR_encode": {
+        "title": "SUPIR编码",
+        "inputs": {
+            "SUPIR_VAE": "SUPIR_VAE",
+            "image": "图像"
+        },
+        "widgets": {
+            "use_tiled_vae": "分块VAE",
+            "encoder_tile_size": "编码分块尺寸",
+            "encoder_dtype": "编码剪枝"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "SUPIR_decode": {
+        "title": "SUPIR解码",
+        "inputs": {
+            "SUPIR_VAE": "SUPIR_VAE",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "use_tiled_vae": "分块VAE",
+            "decoder_tile_size": "解码分块尺寸"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "SUPIR_first_stage": {
+        "title": "SUPIR阶段一",
+        "inputs": {
+            "SUPIR_VAE": "SUPIR_VAE",
+            "image": "图像"
+        },
+        "widgets": {
+            "use_tiled_vae": "分块VAE",
+            "encoder_tile_size": "编码分块尺寸",
+            "decoder_tile_size": "解码分块尺寸",
+            "encoder_dtype": "编码剪枝"
+        },
+        "outputs": {
+            "SUPIR_VAE": "SUPIR_VAE",
+            "denoised_image": "图像",
+            "denoised_latents": "Latent"
+        },
+        "description": "SUPIR 的「第一阶段」。使用 SUPIR 的 denoise_encoder 编码和解码图像，用于修复压缩伪影，但是会导致图像模糊。\n\n可以使用其他采样器/模糊替换，或不使用该节点。"
+    },
+    "SUPIR_conditioner": {
+        "title": "SUPIR条件",
+        "inputs": {
+            "SUPIR_MODEL": "SUPIR模型",
+            "SUPIR_model": "SUPIR模型",
+            "latents": "Latent",
+            "captions": "标题/字幕"
+        },
+        "widgets": {
+            "positive_prompt": "正面提示词",
+            "negative_prompt": "负面提示词"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "description": "为采样器创建条件。\n 标题输入是可选的，当它接收到一个标题时，会将其添加到正面提示中\n 如果为单个输入图像提供了标题列表，那么这些标题需要与图块的数量相匹配\n 请参考SUPIR分块图像\n 如果提供了标题列表，并且该列表与传入的图像批次相匹配，那么每张图像都会使用相应的标题"
+    },
+    "SUPIR_sample": {
+        "title": "SUPIR采样",
+        "inputs": {
+            "SUPIR_model": "SUPIR模型",
+            "latents": "Latent",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "steps": "步数",
+            "cfg_scale_start": "起始CFG缩放",
+            "cfg_scale_end": "结束CFG缩放",
+            "EDM_s_churn": "EDM随机扰动",
+            "s_noise": "噪波量",
+            "DPMPP_eta": "DPMPP步长参数",
+            "control_scale_start": "起始控制缩放",
+            "control_scale_end": "结束控制缩放",
+            "restore_cfg": "恢复CFG",
+            "keep_model_loaded": "保持模型加载",
+            "sampler": "采样器",
+            "sampler_tile_size": "采样器分块尺寸",
+            "sampler_tile_stride": "采样器分块步长"
+        },
+        "outputs": {
+            "latent": "Latent"
+        },
+        "description": "- **latent：**\n\n用于采样的 Latent，当使用 SUPIR Latent时，该项仅影响于噪波形状。\n\n其他情况下与 ComfyUI 默认相同。 \n\n如果存在 Latent 输入，则会以输入为准。\n\n- **CFG：**\n\n使用线性插值控制 CFG，使用 起始CFG缩放 作为初始值，线性缩放到 结束CFG缩放 值。\n\n将这两项设为相同的值会禁用插值缩放。\n\n- **EDM_s_churn：**\n\n控制采样过程对 Latent 噪波变化的适应速度。\n\n对 DPMPP 采样器无效。\n\n- **噪波量s_noise：**\n\n控制在采样过程中每一步添加到 Latent 的噪波量。 \n\n- **DPMPP_eta：**\n\n通过调整降噪过程如何适应噪声水平随时间的变化来影响扩散过程的比例因子。\n\n对 EDM 采样器无效。 \n\n- **控制缩放control_scale：**\n\nSUPIR 控制模型的强度，从开始到结束使用线性插值控制强度。\n\n值越小，控制强度越小。\n\n- **恢复CFGrestore_cfg：**\n\n控制采样过程中对原始图像的还原程度。\n\n用于圆顶微调采样过程。\n\n- **采样器：**\n\nEDM 需要很多步数，但通常质量较好。\n\nDPMPP 需要步数较低，适合 Lighting 模型。\n\n分块采样器 采用分块采样，速度非常慢，但可以用较低显存获得更高分辨率。\n\n分块图像前需要确定分块尺寸，分块步长影响每个分块的重叠大小。分块功能可以参考 SUPIR分块图像 节点。"
+    },
+    "SUPIR_tiles": {
+        "title": "SUPIR分块图像",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸",
+            "tile_stride": "分块步长"
+        },
+        "outputs": {
+            "image_tiles": "分块图像",
+            "tile_size": "分块尺寸",
+            "tile_stride": "分块步长"
+        },
+        "description": "使用 分块采样器 的方法分块图像。\n\n用于预览分块和反推每个分块（这个功能还在开发）。"
+    },
+    "SUPIR_Upscale": {
+        "title": "SUPIR放大",
+        "inputs": {
+            "image": "图像",
+            "captions": "标题/字幕"
+        },
+        "widgets": {
+            "supir_model": "SUPIR模型",
+            "sdxl_model": "SDXL模型",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "resize_method": "缩放方法",
+            "scale_by": "缩放系数",
+            "steps": "步数",
+            "restoration_scale": "恢复缩放",
+            "cfg_scale": "CFG缩放",
+            "a_prompt": "正面提示词",
+            "n_prompt": "负面提示词",
+            "s_churn": "噪声衰减因子",
+            "s_noise": "噪波量",
+            "control_scale": "控制缩放",
+            "cfg_scale_start": "CFG引导起始强度",
+            "control_scale_start": "ControlNet起始权重",
+            "color_fix_type": "颜色修复类型",
+            "keep_model_loaded": "保持模型加载",
+            "use_tiled_vae": "分块VAE",
+            "encoder_tile_size": "编码分块尺寸",
+            "encoder_tile_size_pixels": "解码分块尺寸像素",
+            "decoder_tile_size": "解码分块尺寸",
+            "decoder_tile_size_latent": "解码分块尺寸Latent",
+            "diffusion_dtype": "剪枝类型",
+            "encoder_dtype": "编码剪枝",
+            "batch_size": "批次大小",
+            "use_tiled_sampling": "使用分块采样",
+            "used_tiled_sampling": "使用分块采样",
+            "sampler_tile_size": "采样器分块尺寸",
+            "sampler_tile_stride": "采样器分块步长",
+            "fp8_unet": "FP8 UNet精度",
+            "fp8_vae": "fp8_vae",
+            "sampler": "采样器"
+        },
+        "outputs": {
+            "upscaled_image": "图像"
+        }
+    }
+}

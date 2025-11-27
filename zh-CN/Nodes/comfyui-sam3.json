@@ -1,0 +1,209 @@
+{
+    "LoadSAM3Model": {
+        "title": "加载SAM3模型",
+        "inputs": {
+            "model_name": "模型名称"
+        },
+        "widgets": {
+            "hf_token": "HuggingFace 令牌",
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "sam3_model": "SAM3模型"
+        }
+    },
+    "SAM3PointCollector": {
+        "title": "SAM3点收集器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "points_store": "点存储",
+            "coordinates": "坐标",
+            "neg_coordinates": "负面坐标"
+        },
+        "outputs": {
+            "positive_points": "SAM3正面点提示",
+            "negative_points": "SAM3负面点提示"
+        }
+    },
+    "SAM3BBoxCollector": {
+        "title": "SAM3边界框收集器 📦",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "bboxes": "边界框组",
+            "neg_bboxes": "负面边界框组"
+        },
+        "outputs": {
+            "positive_bboxes": "SAM3正面边界框提示",
+            "negative_bboxes": "SAM3负面边界框提示"
+        }
+    },
+    "SAM3VideoModelLoader": {
+        "title": "SAM3视频模型加载器",
+        "inputs": {
+            "model_name": "模型名称"
+        },
+        "widgets": {
+            "hf_token": "HuggingFace 令牌",
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "video_model": "SAM3视频模型"
+        }
+    },
+    "SAM3VideoSegmentation": {
+        "title": "SAM3视频分割",
+        "inputs": {
+            "video_frames": "视频帧"
+        },
+        "widgets": {
+            "prompt_mode": "提示模式",
+            "positive_points": "正面点",
+            "negative_points": "负面点",
+            "positive_boxes": "正面边界框",
+            "negative_boxes": "负面边界框",
+            "text_prompt": "文本提示",
+            "frame_idx": "帧索引",
+            "score_threshold": "分数阈值"
+        },
+        "outputs": {
+            "video_state": "SAM3视频状态"
+        }
+    },
+    "SAM3Propagate": {
+        "title": "SAM3传播",
+        "inputs": {
+            "video_model": "视频模型",
+            "video_state": "视频状态"
+        },
+        "widgets": {
+            "start_frame": "起始帧",
+            "end_frame": "结束帧",
+            "reverse": "反向"
+        },
+        "outputs": {
+            "masks": "SAM3视频遮罩",
+            "scores": "SAM3视频分数",
+            "video_state": "SAM3视频状态"
+        }
+    },
+    "SAM3VideoOutput": {
+        "title": "SAM3视频输出",
+        "inputs": {
+            "masks": "遮罩",
+            "video_state": "视频状态",
+            "scores": "分数"
+        },
+        "widgets": {
+            "obj_id": "obj_ID",
+            "plot_all_masks": "绘制所有遮罩"
+        },
+        "outputs": {
+            "masks": "遮罩",
+            "frames": "图像帧",
+            "visualization": "图像"
+        }
+    },
+    "SAM3Segmentation": {
+        "title": "SAM3分割",
+        "inputs": {
+            "sam3_model": "sam3_模型",
+            "image": "图像",
+            "positive_boxes": "正面边界框",
+            "negative_boxes": "负面边界框",
+            "mask_prompt": "遮罩 提示"
+        },
+        "widgets": {
+            "confidence_threshold": "置信度阈值",
+            "text_prompt": "文本提示",
+            "max_detections": "最大检测数量"
+        },
+        "outputs": {
+            "masks": "遮罩",
+            "visualization": "图像",
+            "boxes": "框",
+            "scores": "分数"
+        }
+    },
+    "SAM3CreateBox": {
+        "title": "SAM3创建框",
+        "inputs": {},
+        "widgets": {
+            "center_x": "中心_x",
+            "center_y": "中心_y",
+            "width": "宽度",
+            "height": "高度",
+            "is_positive": "是否为正"
+        },
+        "outputs": {
+            "box_prompt": "SAM3_框提示"
+        }
+    },
+    "SAM3CreatePoint": {
+        "title": "SAM3创建点",
+        "inputs": {},
+        "widgets": {
+            "x": "x",
+            "y": "y",
+            "is_foreground": "处于前景位置"
+        },
+        "outputs": {
+            "point_prompt": "SAM3 点提示"
+        }
+    },
+    "SAM3CombineBoxes": {
+        "title": "SAM3合并框",
+        "inputs": {
+            "box_1": "框_1",
+            "box_2": "框_2",
+            "box_3": "框_3",
+            "box_4": "框_4",
+            "box_5": "框_5"
+        },
+        "widgets": {},
+        "outputs": {
+            "boxes_prompt": "SAM3_框提示"
+        }
+    },
+    "SAM3CombinePoints": {
+        "title": "SAM3合并点",
+        "inputs": {
+            "point_1": "点_1",
+            "point_2": "点_2",
+            "point_3": "点_3",
+            "point_4": "点_4",
+            "point_5": "点_5",
+            "point_6": "点_6",
+            "point_7": "点_7",
+            "point_8": "点_8",
+            "point_9": "点_9",
+            "point_10": "点_10"
+        },
+        "widgets": {},
+        "outputs": {
+            "points_prompt": "SAM3 点提示"
+        }
+    },
+    "SAM3InteractiveSegmentation": {
+        "title": "SAM3 交互式分割（实验性）",
+        "inputs": {
+            "sam3_model": "sam3_模型",
+            "image": "图像",
+            "positive_points": "正面点",
+            "negative_points": "负面点",
+            "box": "边界框"
+        },
+        "widgets": {
+            "multimask_output": "多遮罩输出"
+        },
+        "outputs": {
+            "masks": "遮罩",
+            "visualization": "图像",
+            "boxes": "边界框组",
+            "scores": "分数组"
+        }
+    }
+}

@@ -1,0 +1,874 @@
+{
+    "CompareINT": {
+        "title": "比较整数",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "input_float": "输入浮点数",
+            "range": "范围"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CompareInt": {
+        "title": "比较数值",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "input_float": "输入浮点数",
+            "range": "范围"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "GetRandomIntegerInRange": {
+        "title": "范围内随机数",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "input_float": "输入浮点数",
+            "range_str": "范围"
+        },
+        "outputs": {
+            "INT": "整数",
+            "STRING": "字符串"
+        }
+    },
+    "FloatToInteger": {
+        "title": "规范数值",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "float_value": "浮动值",
+            "operation": "计算方法"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "ExtractSubstringByIndices": {
+        "title": "按数字范围提取",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "input_string": "输入字符串",
+            "indices": "索引",
+            "direction": "方向"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ExtractSubstring": {
+        "title": "提取标签之间",
+        "inputs": {},
+        "widgets": {
+            "pattern": "模式",
+            "operation": "计算方法"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "SplitStringByDelimiter": {
+        "title": "分隔符拆分两边",
+        "inputs": {},
+        "widgets": {
+            "input_string": "输入字符串",
+            "indices": "索引",
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ProcessString": {
+        "title": "常规处理字符",
+        "inputs": {},
+        "widgets": {
+            "float_value": "浮动值",
+            "option": "选项"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "BatchReplaceStrings": {
+        "title": "批量替换字符",
+        "inputs": {},
+        "widgets": {
+            "original_text": "原始文本",
+            "option": "选项"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CheckSubstringPresence": {
+        "title": "判断是否包含字符",
+        "inputs": {},
+        "widgets": {
+            "input_text": "输入文本",
+            "substring": "子字符串",
+            "mode": "模式"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "FloatToINTeger": {
+        "title": "浮点转整数",
+        "inputs": {},
+        "widgets": {
+            "float_value": "浮点数值",
+            "operation": "运算方式"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "GenerateNumbers": {
+        "title": "数字生成器",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "range_rule": "范围规则",
+            "mode": "生成模式",
+            "prefix_suffix": "前后缀"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "GetRandomINTegerInRange": {
+        "title": "获取范围内随机整数",
+        "inputs": {},
+        "widgets": {
+            "range_str": "范围字符串"
+        },
+        "outputs": {
+            "INT": "整数",
+            "STRING": "字符串"
+        }
+    },
+    "LoadAndAdjustImage": {
+        "title": "加载调整图片",
+        "widgets": {
+            "image": "图片",
+            "max_dimension": "最大尺寸",
+            "size_option": "尺寸选项"
+        },
+        "outputs": {
+            "image": "图片",
+            "mask": "遮罩",
+            "info": "信息"
+        }
+    },
+    "ImageAdjuster": {
+        "title": "图片调整器",
+        "inputs": {
+            "image": "图片"
+        },
+        "widgets": {
+            "max_dimension": "最大尺寸",
+            "size_option": "尺寸选项"
+        },
+        "outputs": {
+            "image": "图片",
+            "width": "宽度",
+            "height": "高度",
+            "INT": "整数"
+        }
+    },
+    "SaveImagEX": {
+        "title": "保存图片EX",
+        "inputs": {
+            "image": "图片"
+        },
+        "widgets": {
+            "save_path": "保存路径",
+            "image_name": "图片名称"
+        },
+        "outputs": {
+            "image": "图片"
+        }
+    },
+    "FileListAndSuffix": {
+        "title": "文件列表与后缀",
+        "inputs": {
+            "any": "任何"
+        },
+        "widgets": {
+            "folder_path": "文件夹路径",
+            "file_extension": "文件扩展名"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "INT": "整数",
+            "LIST": "列表"
+        }
+    },
+    "ReadExcelData": {
+        "title": "读取Excel数据",
+        "inputs": {
+            "any": "任何"
+        },
+        "widgets": {
+            "excel_path": "Excel路径",
+            "sheet_name": "工作表名",
+            "row_range": "行范围",
+            "col_range": "列范围"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "WriteExcelData": {
+        "title": "写入Excel数据",
+        "inputs": {
+            "any": "任何"
+        },
+        "widgets": {
+            "excel_path": "Excel路径",
+            "sheet_name": "工作表名",
+            "row_range": "行范围",
+            "col_range": "列范围"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "FindExcelData": {
+        "title": "查找Excel数据",
+        "inputs": {
+            "any": "任何"
+        },
+        "widgets": {
+            "excel_path": "Excel路径",
+            "sheet_name": "工作表名",
+            "search_content": "搜索内容",
+            "search_mode": "搜索模式"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "INT": "整数"
+        }
+    },
+    "ReadExcelRowOrColumnDiff": {
+        "title": "读取Excel行列差异",
+        "inputs": {
+            "any": "任何"
+        },
+        "widgets": {
+            "excel_path": "Excel路径",
+            "sheet_name": "工作表名",
+            "read_mode": "读取模式",
+            "indices": "索引"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "GetCurrentTime": {
+        "title": "获取当前时间",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "prefix": "前缀"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "INT": "整数"
+        }
+    },
+    "SelectionParameter": {
+        "title": "选择参数",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "gender": "性别",
+            "version": "版本",
+            "additional_text": "附加文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "SingleTextInput": {
+        "title": "单文本输入",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {},
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "MultiParamInputNode": {
+        "title": "多参数输入节点",
+        "inputs": {
+            "text1": "文本1",
+            "text2": "文本2"
+        },
+        "widgets": {
+            "INT1": "整数1",
+            "INT2": "整数2",
+            "int1": "整数1",
+            "int2": "整数2"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "INT": "整数"
+        }
+    },
+    "AddPrefixSuffix": {
+        "title": "添加前后缀",
+        "inputs": {},
+        "widgets": {
+            "input_string": "输入字符串",
+            "prefix": "前缀",
+            "suffix": "后缀"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ExtractSubSTRING": {
+        "title": "提取子字符串",
+        "inputs": {
+            "input_STRING": "输入字符串"
+        },
+        "widgets": {
+            "pattern": "匹配模式"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ExtractSubSTRINGByIndices": {
+        "title": "按索引提取子串",
+        "inputs": {
+            "input_string": "输入字符串"
+        },
+        "widgets": {
+            "input_string": "输入字符串",
+            "indices": "索引",
+            "direction": "方向"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "SplitSTRINGByDelimiter": {
+        "title": "按分隔符分割字符串",
+        "inputs": {
+            "input_string": "输入字符串"
+        },
+        "widgets": {
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ProcessSTRING": {
+        "title": "字符串处理",
+        "inputs": {
+            "input_STRING": "输入字符串"
+        },
+        "widgets": {
+            "option": "处理选项"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ExtractBeforeAfter": {
+        "title": "提取前后内容",
+        "inputs": {
+            "input_STRING": "输入字符串"
+        },
+        "widgets": {
+            "input_string": "输入字符串",
+            "pattern": "匹配模式",
+            "position": "位置",
+            "include_delimiter": "包含分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ReplaceNthOccurrence": {
+        "title": "替换第N次出现",
+        "inputs": {
+            "original_text": "原始文本"
+        },
+        "widgets": {
+            "occurrence": "出现次数",
+            "search_str": "查找字符串",
+            "replace_str": "替换字符串"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ReplaceMultiple": {
+        "title": "多重替换",
+        "inputs": {
+            "original_text": "原始文本"
+        },
+        "widgets": {
+            "replacement_rule": "替换规则"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "BatchReplaceSTRINGs": {
+        "title": "批量替换字符串",
+        "inputs": {},
+        "widgets": {
+            "original_text": "原始文本",
+            "replacement_rules": "替换规则集"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "RandomLineFromText": {
+        "title": "随机获取文本行",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {},
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CheckSubSTRINGPresence": {
+        "title": "检查子串存在",
+        "inputs": {},
+        "widgets": {
+            "input_text": "输入文本",
+            "substring": "子字符串",
+            "mode": "检查模式"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "AddPrefixSuffixToLines": {
+        "title": "为行添加前后缀",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "prefix_suffix": "前后缀"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ExtractAndCombineLines": {
+        "title": "提取合并行",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "line_indices": "行索引"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "FilterLinesBySubSTRINGs": {
+        "title": "按子串过滤行",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "subSTRINGs": "子字符串集",
+            "action": "操作方式"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "FilterLinesByWordCount": {
+        "title": "按词数过滤行",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "word_count_range": "词数范围"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "SplitAndExtractText": {
+        "title": "分割提取文本",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "delimiter": "分隔符",
+            "index": "索引",
+            "order": "顺序",
+            "include_delimiter": "包含分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CountOccurrences": {
+        "title": "计数出现次数",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "char": "字符"
+        },
+        "outputs": {
+            "INT": "整数",
+            "STRING": "字符串"
+        }
+    },
+    "ExtractLinesByIndex": {
+        "title": "按索引提取行",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "delimiter": "分隔符",
+            "index": "索引"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ExtractSpecificLines": {
+        "title": "提取指定行",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "line_indices": "行索引",
+            "split_char": "分割字符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "RemoveContentBetweenChars": {
+        "title": "移除字符间内容",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "chars": "字符对"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ShuffleTextLines": {
+        "title": "随机打乱文本行",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ConditionalTextOutput": {
+        "title": "条件文本输出",
+        "inputs": {
+            "original_content": "原始内容"
+        },
+        "widgets": {
+            "check_text": "检查文本",
+            "text_if_exists": "存在时文本",
+            "text_if_not_exists": "不存在时文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "TextConditionCheck": {
+        "title": "文本条件检查",
+        "inputs": {
+            "original_content": "原始内容"
+        },
+        "widgets": {
+            "length_condition": "长度条件",
+            "frequency_condition": "频率条件",
+            "content": "内容",
+            "condition": "条件"
+        },
+        "outputs": {
+            "INT": "整数",
+            "STRING": "字符串"
+        }
+    },
+    "TextConcatenation": {
+        "title": "文本连接",
+        "inputs": {
+            "original_text": "原始文本"
+        },
+        "widgets": {
+            "concatenation_rules": "连接规则",
+            "split_char": "分割字符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ExtractSpecificData": {
+        "title": "提取特定数据",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "rule1": "规则1",
+            "rule2": "规则2",
+            "rule": "规则"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "FileCopyCutNode": {
+        "title": "文件操作🐠meeeyo.com",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "source_path": "源路径",
+            "destination_path": "目标路径",
+            "operation": "操作"
+        },
+        "outputs": {
+            "result": "结果"
+        }
+    },
+    "FileDeleteNode": {
+        "title": "清理文件🐠meeeyo.com",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "source_path": "源路径",
+            "destination_path": "目标路径",
+            "operation": "操作"
+        },
+        "outputs": {
+            "result": "结果"
+        }
+    },
+    "FileNameReplacer": {
+        "title": "替换文件名🐠meeeyo.com",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "file_path": "文件路径",
+            "new_file_name": "新文件名"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ImageOverlayAlignment": {
+        "title": "图像层叠加🐠meeeyo.com",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2"
+        },
+        "widgets": {
+            "alignment": "对齐",
+            "scale": "比例",
+            "opacity": "不透明度",
+            "offset": "偏移"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "WriteExcelImage": {
+        "title": "图片插入表格🐠meeeyo.com",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "excel_path": "Excel 路径",
+            "sheet_name": "工作表名称",
+            "row_range": "行范围",
+            "col_range": "列范围",
+            "image_path": "图像路径"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "TextToImage": {
+        "title": "文字图像🐠meeeyo.com",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "font": "字体",
+            "max_width": "最大宽度",
+            "font_properties": "字体属性",
+            "font_stroke": "字体描边",
+            "font_background": "字体背景"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "WriteToTxtFile": {
+        "title": "文本写入TXT🐠meeeyo.com",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "file_path": "文件路径"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ReadWebNode": {
+        "title": "读取页面🐠meeeyo.com",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "Instruction": "说明",
+            "prefix_suffix": "前缀 后缀"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "TextToList": {
+        "title": "文本到列表🐠meeeyo.com",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "TextConcatenator": {
+        "title": "文本拼接🐠meeeyo.com",
+        "inputs": {
+            "any": "任意值"
+        },
+        "widgets": {
+            "text1": "文本1",
+            "text2": "文本2",
+            "text3": "文本3",
+            "text4": "文本4",
+            "combine_order": "合并订单",
+            "separator": "分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "SimpleTextReplacer": {
+        "title": "简易文本替换🐠meeeyo.com",
+        "inputs": {
+            "input_string": "输入字符串"
+        },
+        "widgets": {
+            "find_text": "查找文本",
+            "replace_text": "替换文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "GetIntParam": {
+        "title": "获取整数🐠meeeyo.com",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "target_char": "目标角色"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "INT": "整数"
+        }
+    },
+    "GetFloatParam": {
+        "title": "获取浮点数🐠meeeyo.com",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "target_char": "目标角色"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "INT": "整数"
+        }
+    },
+    "NumberExtractor": {
+        "title": "整数参数🐠meeeyo.com",
+        "inputs": {
+            "input_string": "输入字符串"
+        },
+        "widgets": {
+            "input_text": "输入文本"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "INT": "整数"
+        }
+    },
+    "GenerateVideoPrompt": {
+        "title": "视频指令词模板🐠meeeyo.com",
+        "inputs": {
+            "input_string": "输入字符串"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "INT": "整数"
+        }
+    },
+    "FindFirstLineContent": {
+        "title": "查找首行内容",
+        "inputs": {
+            "input_text": "输入文本"
+        },
+        "widgets": {
+            "target_char": "目标字符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    }
+}

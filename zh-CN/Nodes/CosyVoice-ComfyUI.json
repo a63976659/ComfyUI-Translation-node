@@ -1,0 +1,65 @@
+{
+  "TextNode": {
+    "title": "文本节点",
+    "inputs": {
+      "text": "文本"
+    },
+    "widgets": {},
+    "outputs": {
+      "TEXT": "文本",
+      "text": "文本"
+    }
+  },
+  "CosyVoiceNode": {
+    "title": "语音合成节点",
+    "inputs": {
+      "tts_text": "TTS文本",
+      "prompt_text": "克隆提示文本",
+      "prompt_wav": "克隆提示音频",
+      "instruct_text": "自然语言指令文本"
+    },
+    "widgets": {
+      "speed": "速度",
+      "inference_mode": "推理模式",
+      "sft_dropdown": "SFT下拉菜单",
+      "control_after_generate": "生成后控制",
+      "seed": "种子"
+    },
+    "outputs": {
+      "AUDIO": "音频",
+      "Audio": "音频"
+    }
+  },
+  "CosyVoiceDubbingNode": {
+    "title": "语音配音节点",
+    "inputs": {
+      "tts_srt": "字幕文件作为TTS文本",
+      "prompt_wav": "克隆提示音频",
+      "prompt_srt": "字幕文件作为克隆提示文本"
+    },
+    "widgets": {
+      "control_after_generate": "生成后控制",
+      "language": "语言",
+      "if_single": "是否单句",
+      "seed": "种子"
+    },
+    "outputs": {
+      "AUDIO": "音频",
+      "audio": "音频"
+    }
+  },
+  "LoadSRT": {
+    "title": "加载字幕",
+    "inputs": {
+      "srt": "SRT字幕"
+    },
+    "widgets": {
+      "srt": "SRT字幕",
+      "choose srt file to upload": "选择要上传的SRT文件"
+    },
+    "outputs": {
+      "srt": "SRT字幕",
+      "SRT": "SRT字幕"
+    }
+  }
+}

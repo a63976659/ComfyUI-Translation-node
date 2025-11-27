@@ -1,0 +1,55 @@
+{
+  "SONICTLoader": {
+    "title": "SONIC T加载器",
+    "inputs": {
+      "model": "模型"
+    },
+    "widgets": {
+      "sonic_unet": "sonic模型",
+      "ip_audio_scale": "IP音频缩放",
+      "use_interframe": "使用帧间",
+      "dtype": "数据类型"
+    },
+    "outputs": {
+      "model": "模型",
+      "weight_dtype": "数据类型",
+      "dtype": "数据类型"
+    }
+  },
+  "SONIC_PreData": {
+    "title": "SONIC预处理",
+    "inputs": {
+      "clip_vision": "CLIP视觉",
+      "vae": "VAE",
+      "audio": "音频",
+      "image": "图像",
+      "weight_dtype": "数据类型"
+    },
+    "widgets": {
+      "min_resolution": "最小分辨率",
+      "duration": "持续时间",
+      "expand_ratio": "扩展比例"
+    },
+    "outputs": {
+      "data_dict": "数据字典"
+    }
+  },
+  "SONICSampler": {
+    "title": "SONIC采样器",
+    "inputs": {
+      "model": "模型",
+      "data_dict": "数据字典"
+    },
+    "widgets": {
+      "seed": "种子",
+      "control_after_generate": "生成后控制",
+      "inference_steps": "推理步数",
+      "dynamic_scale": "动态缩放",
+      "fps": "帧率"
+    },
+    "outputs": {
+      "image": "图像",
+      "fps": "帧率"
+    }
+  }
+}

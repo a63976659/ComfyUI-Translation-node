@@ -1,0 +1,47 @@
+{
+    "TeaCache": {
+        "title": "TeaCache缓存加速",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "model_type": "模型类型",
+            "rel_l1_thresh": "相对L1阈值",
+            "start_percent": "起始百分比",
+            "end_percent": "结束百分比",
+            "cache_device": "缓存设备",
+            "max_skip_steps": "最大跳过步数"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "CompileModel": {
+        "title": "编译模型",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "mode": "模式",
+            "backend": "后端",
+            "fullgraph": "全图",
+            "dynamic": "动态"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "TeaCacheForCogVideoX": {
+        "title": "TeaCache缓存加速（CogVideoX）",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "enable_teacache": "启用Teacache",
+            "rel_l1_thresh": "相对L1阈值"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    }
+}

@@ -1,0 +1,187 @@
+{
+    "BBoxVisNode": {
+        "title": "边界框可视化",
+        "inputs": {
+            "image": "图像",
+            "bboxes": "边界框数据",
+            "category_ids": "类别标识"
+        },
+        "widgets": {
+            "rect_size": "矩形尺寸",
+            "text_size": "文本尺寸",
+            "font_scale": "字体缩放比例",
+            "show_label": "显示标签开关"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "GetImageSize": {
+        "title": "获取图像尺寸",
+        "inputs": {
+            "image": "输入图像"
+        },
+        "widgets": {},
+        "outputs": {
+            "int": "尺寸数值"
+        }
+    },
+    "ImageResizeAdvanced": {
+        "title": "图像缩放（高级）",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "width": "目标宽度",
+            "height": "目标高度",
+            "interpolation": "插值方法",
+            "method": "缩放方法",
+            "condition": "缩放条件",
+            "multiple_of": "倍数",
+            "keep_proportion": "保持比例"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "width": "宽度",
+            "height": "高度",
+            "int": "缩放参数"
+        }
+    },
+    "CocoToNumber": {
+        "title": "COCO标签转换",
+        "inputs": {},
+        "widgets": {
+            "coco_label": "COCO标签"
+        },
+        "outputs": {
+            "STRING": "数字标签",
+            "string": "数字标签"
+        }
+    },
+    "UltralyticsModelLoader": {
+        "title": "Ultralytics模型加载",
+        "inputs": {},
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "ULTRALYTICS_MODEL": "Ultralytics模型",
+            "ultralytics_model": "Ultralytics模型"
+        }
+    },
+    "CustomUltralyticsModelLoader": {
+        "title": "自定义模型加载",
+        "inputs": {},
+        "widgets": {
+            "model_path": "模型路径"
+        },
+        "outputs": {
+            "ULTRALYTICS_MODEL": "Ultralytics模型",
+            "ultralytics_model": "Ultralytics模型"
+        }
+    },
+    "BBoxToCoco": {
+        "title": "BBox转COCO格式",
+        "inputs": {
+            "results": "检测结果",
+            "bbox": "BBox"
+        },
+        "widgets": {},
+        "outputs": {
+            "coco_json": "COCO格式数据",
+            "string": "COCO格式数据"
+        }
+    },
+    "BBoxToXYWH": {
+        "title": "BBox边界框转换坐标XYWH",
+        "inputs": {
+            "bbox": "BBox边界框数据"
+        },
+        "widgets": {
+            "index": "索引值"
+        },
+        "outputs": {
+            "StrBox": "Box字符串框",
+            "BOXES": "Boxes边界框组",
+            "X_coord": "X坐标",
+            "Y_coord": "Y坐标",
+            "Width": "宽度"
+        }
+    },
+    "ConvertToDict": {
+        "title": "数据字典转换",
+        "inputs": {
+            "bbox": "BBox边界框数据",
+            "mask": "遮罩"
+        },
+        "widgets": {},
+        "outputs": {
+            "STRING": "数字标签",
+            "string": "字典数据"
+        }
+    },
+    "UltralyticsInference": {
+        "title": "Ultralytics推理",
+        "inputs": {
+            "model": "模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "conf": "置信阈值",
+            "iou": "IOU阈值",
+            "height": "高度",
+            "width": "宽度",
+            "device": "计算设备",
+            "half": "半精度模式",
+            "augment": "数据增强",
+            "agnostic_nms": "类别无关NMS",
+            "classes": "目标类别"
+        },
+        "outputs": {
+            "ultralytics_results": "Ultralytics推理结果",
+            "ULTRALYTICS_RESULTS": "Ultralytics推理结果",
+            "image": "图像",
+            "IMAGE": "图像",
+            "BOXES": "Boxes边界框数据",
+            "MASKS": "遮罩",
+            "MASK": "遮罩",
+            "PROBABILITIES": "分类概率",
+            "KEYPOINTS": "关键点数据",
+            "OBB": "旋转边界框",
+            "LABELS": "类别标签",
+            "labels": "类别标签"
+        }
+    },
+    "UltralyticsVisualization": {
+        "title": "Ultralytics推理结果可视化",
+        "inputs": {
+            "results": "推理结果",
+            "image": "图像"
+        },
+        "widgets": {
+            "line_width": "边框粗细",
+            "font_size": "字体大小",
+            "sam": "SAM参数",
+            "kpt_line": "关键点连线",
+            "labels": "显示标签",
+            "boxes": "显示边界框",
+            "masks": "显示遮罩",
+            "probs": "显示概率",
+            "color_mode": "色彩模式"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "image": "可视化结果"
+        }
+    },
+    "ViewText": {
+        "title": "查看文本",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {},
+        "outputs": {
+            "string": "字符串"
+        }
+    }
+}

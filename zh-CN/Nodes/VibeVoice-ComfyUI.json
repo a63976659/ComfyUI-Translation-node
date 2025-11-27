@@ -1,0 +1,90 @@
+{
+    "VibeVoiceFreeMemoryNode": {
+        "title": "VibeVoice释放内存节点",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {},
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "LoadTextFromFileNode": {
+        "title": "从文件加载文本节点",
+        "inputs": {
+            "file": "文件"
+        },
+        "widgets": {},
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "VibeVoiceLoRANode": {
+        "title": "VibeVoice Lora节点",
+        "inputs": {},
+        "widgets": {
+            "lora_name": "Lora名称",
+            "llm_strength": "大语言模型强度",
+            "use_llm": "使用大语言模型",
+            "use_diffusion_head": "使用扩散头部",
+            "use_acoustic_connector": "使用声学连接器",
+            "use_semantic_connector": "使用语义连接器"
+        },
+        "outputs": {
+            "lora": "Lora配置"
+        }
+    },
+    "VibeVoiceMultipleSpeakersNode": {
+        "title": "VibeVoice多说话人节点",
+        "inputs": {
+
+            "speaker1_voice": "说话人1语音",
+            "speaker2_voice": "说话人2语音",
+            "speaker3_voice": "说话人3语音",
+            "speaker4_voice": "说话人4语音",
+            "lora": "Lora"
+        },
+        "widgets": {
+            "model": "模型",
+            "attention_type": "注意力类型",
+            "text": "文本",
+            "quantize_llm": "量化大语言模型",
+            "free_memory_after_generate": "生成后释放内存",
+            "diffusion_steps": "扩散步数",
+            "seed": "种子",
+            "cfg_scale": "分类器自由引导缩放",
+            "use_sampling": "使用采样",
+            "temperature": "温度",
+            "top_p": "核采样阈值",
+            "voice_speed_factor": "语音速度因子"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "VibeVoiceSingleSpeakerNode": {
+        "title": "VibeVoice单说话人节点",
+        "inputs": {
+            "voice_to_clone": "待克隆语音",
+            "lora": "LoRA"
+        },
+        "widgets": {
+            "model": "模型",
+            "attention_type": "注意力类型",
+            "quantize_llm": "量化大语言模型",
+            "text": "文本",
+            "free_memory_after_generate": "生成后释放内存",
+            "diffusion_steps": "扩散步数",
+            "seed": "种子",
+            "cfg_scale": "分类器自由引导缩放",
+            "use_sampling": "使用采样",
+            "temperature": "温度",
+            "top_p": "核采样阈值",
+            "max_words_per_chunk": "每块最大单词数",
+            "voice_speed_factor": "语音速度因子"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    }
+}
