@@ -9,6 +9,9 @@ ComfyUI 翻译插件
 
 
 此项目主要是为了本人制作的汉化文件更新方便。
+插件开关为彩色图表，开启效果如图。
+<img width="1600" height="180" alt="开启" src="https://github.com/user-attachments/assets/7314b8a3-770e-42d6-be8a-ee990f2fb148" />
+<img width="1600" height="180" alt="关闭" src="https://github.com/user-attachments/assets/d538f6b2-f3e9-466c-a226-97e46d5cfa3f" />
 
 
 汉化内容：
