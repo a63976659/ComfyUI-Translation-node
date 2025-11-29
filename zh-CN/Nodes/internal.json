@@ -7605,7 +7605,7 @@
             "images": "图像组"
         }
     },
-    "esizeImagesByLongerEdge": {
+    "ResizeImagesByLongerEdge": {
         "title": "按最长边缩放图像",
         "inputs": {
             "images": "图像组"
@@ -7669,6 +7669,246 @@
         },
         "outputs": {
             "images": "图像组"
+        }
+    },
+    "NormalizeImages": {
+        "title": "统一图像尺寸",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "mean": "表示",
+            "std": "std",
+            "seed": "随机种子"
+        },
+        "outputs": {
+            "images": "图像组"
+        }
+    },
+    "AdjustBrightness": {
+        "title": "调整亮度",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "factor": "系数"
+        },
+        "outputs": {
+            "images": "图像组"
+        }
+    },
+    "AdjustContrast": {
+        "title": "调整对比度",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "factor": "系数"
+        },
+        "outputs": {
+            "images": "图像组"
+        }
+    },
+    "ShuffleDatasett": {
+        "title": "随机打乱图像数据集",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "factor": "系数",
+            "seed": "随机种子"
+        },
+        "outputs": {
+            "images": "图像组"
+        }
+    },
+    "ImageGrid": {
+        "title": "图像网格",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "columns": "列",
+            "cell_width": "单元格宽度",
+            "cell_height": "单元格高度",
+            "padding": "填充"
+        },
+        "outputs": {
+            "images": "图像组"
+        }
+    },
+    "ImageDeduplication": {
+        "title": "图像去重",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "similarity_threshold": "相似度阈值"
+        },
+        "outputs": {
+            "images": "图像组"
+        }
+    },
+    "MergeImageLists": {
+        "title": "合并图像列表",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "similarity_threshold": "相似度阈值"
+        },
+        "outputs": {
+            "images": "图像组"
+        }
+    },
+    "AddTextPrefix": {
+        "title": "添加文本前缀",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "texts": "文本",
+            "prefix": "前缀"
+        },
+        "outputs": {
+            "texts": "文本"
+        }
+    },
+    "TruncateText": {
+        "title": "截断文本",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "texts": "文本",
+            "max_length": "最大长度"
+        },
+        "outputs": {
+            "texts": "文本"
+        }
+    },
+    "TextToUppercase": {
+        "title": "将文本转换为大写",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "texts": "文本",
+            "max_length": "最大长度"
+        },
+        "outputs": {
+            "texts": "文本"
+        }
+    },
+    "TextToLowercase": {
+        "title": "将文本转换为小写",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "texts": "文本",
+            "max_length": "最大长度"
+        },
+        "outputs": {
+            "texts": "文本"
+        }
+    },
+    "AddTextSuffix": {
+        "title": "添加文本后缀",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "texts": "文本",
+            "suffix": "后缀"
+        },
+        "outputs": {
+            "texts": "文本"
+        }
+    },
+    "ReplaceText": {
+        "title": "替换文本",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "texts": "文本",
+            "find": "查找",
+            "replace": "替换"
+        },
+        "outputs": {
+            "texts": "文本"
+        }
+    },
+    "StripWhitespace": {
+        "title": "去除空白字符",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "texts": "文本"
+        },
+        "outputs": {
+            "texts": "文本"
+        }
+    },
+    "MergeTextLists": {
+        "title": "合并文本列表",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "texts": "文本"
+        },
+        "outputs": {
+            "texts": "文本"
+        }
+    },
+    "MakeTrainingDataset": {
+        "title": "创建训练数据集",
+        "inputs": {
+            "images": "图像组",
+            "clip": "CLIP",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "texts": "文本"
+        },
+        "outputs": {
+            "texts": "文本",
+            "latents": "Latent",
+            "conditioning": "条件"
+        }
+    },
+    "SaveTrainingDataset": {
+        "title": "保存训练数据集",
+        "inputs": {
+            "latents": "Latent",
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "folder_name": "文件夹名称",
+            "shard_size": "分块大小"
+        },
+        "outputs": {
+            "texts": "文本",
+            "latents": "Latent",
+            "conditioning": "条件"
+        }
+    },
+    "LoadTrainingDataset": {
+        "title": "加载训练数据集",
+        "inputs": {
+            "latents": "Latent",
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "folder_name": "文件夹名称"
+        },
+        "outputs": {
+            "texts": "文本",
+            "latents": "Latent",
+            "conditioning": "条件"
         }
     },
     "TemporalScoreRescaling": {
