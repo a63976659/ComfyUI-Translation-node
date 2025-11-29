@@ -652,7 +652,9 @@
     "area": "区域",
     "bislerp": "双球面线性插值",
     "bicubic": "双三次插值",
-
+      "🎲 Randomize LoRAs": "🎲 随机 LoRA 参数",
+      "🎲 Randomize Enabled": "🎲 随机 启用",
+      "⚖️ Normalize Enabled": "⚖️ 统一 启用",
     "mix": "混合",
     "Color palette": "颜色主题",
     "Refreshed!": "刷新!",
