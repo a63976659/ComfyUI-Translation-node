@@ -906,6 +906,23 @@
       "content": "内容"
     }
   },
+  "GRLoraLoader": {
+    "title": "GR Lora加载",
+    "inputs": {
+      "model": "模型",
+      "clip": "CLIP"
+    },
+    "widgets": {
+      "Enable": "启用",
+      "🎲 Randomize LoRAs": "🎲 随机 LoRA 参数",
+      "🎲 Randomize Enabled": "🎲 随机 启用",
+      "⚖️ Normalize Enabled": "⚖️ 统一 启用"
+    },
+    "outputs": {
+      "model": "模型",
+      "clip": "CLIP"
+    }
+  },
   "GR Checkered Board": {
     "title": "GR棋盘格",
     "inputs": {},
