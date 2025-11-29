@@ -6453,6 +6453,29 @@
             "VIDEO": "生成视频"
         }
     },
+    "Veo3FirstLastFrameNode": {
+        "title": "谷歌 Veo3 首尾帧视频生成",
+        "inputs": {
+            "first_frame": "首帧图像",
+            "last_frame": "尾帧图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "resolution": "分辨率",
+            "aspect_ratio": "宽高比",
+            "duration": "时长(秒)",
+            "enhance_prompt": "提示词增强",
+            "person_generation": "人物生成模式",
+            "seed": "随机种子",
+            "model": "模型",
+            "generate_audio": "生成音频",
+            "control_after_generate": "生成后控制"
+        },
+        "outputs": {
+            "VIDEO": "生成视频"
+        }
+    },
     "GeminiImageNode": {
         "title": "谷歌 Gemini 图像",
         "inputs": {
@@ -7709,13 +7732,27 @@
             "images": "图像组"
         }
     },
-    "ShuffleDatasett": {
-        "title": "随机打乱图像数据集",
+    "ShuffleDataset": {
+        "title": "随机图像数据集",
         "inputs": {
             "images": "图像组"
         },
         "widgets": {
             "factor": "系数",
+            "seed": "随机种子"
+        },
+        "outputs": {
+            "images": "图像组"
+        }
+    },
+    "ShuffleImageTextDataset": {
+        "title": "随机图像 文本数据集",
+        "inputs": {
+            "images": "图像组"
+        },
+        "widgets": {
+            "factor": "系数",
+            "texts": "文本",
             "seed": "随机种子"
         },
         "outputs": {
