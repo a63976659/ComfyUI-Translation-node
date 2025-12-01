@@ -1,0 +1,166 @@
+{
+    "ACELoRALoader": {
+        "title": "ACE-Step LoRA加载器",
+        "description": "加载并配置ACE-Step的LoRA适配器",
+        "inputs": {
+            "models": "ACE模型",
+            "lora_name": "LoRA名称",
+            "lora_weight": "LoRA权重"
+        },
+        "outputs": {
+            "models": "ACE模型"
+        }
+    },
+    "ACEModelLoader": {
+        "title": "ACE-Step模型加载器",
+        "description": "加载ACE-Step所需的所有模型组件",
+        "inputs": {
+            "dcae_checkpoint": "DCAE检查点",
+            "vocoder_checkpoint": "声码器检查点",
+            "ace_step_checkpoint": "ACE-Step检查点",
+            "text_encoder_checkpoint": "文本编码器检查点",
+            "cpu_offload": "CPU卸载",
+            "torch_compile": "Torch编译"
+        },
+        "outputs": {
+            "models": "ACE模型"
+        }
+    },
+    "LyricsLangSwitch": {
+        "title": "ACE-Step歌词语言切换",
+        "description": "切换歌词的语言版本"
+    },
+    "ACEStepGen": {
+        "title": "ACE-Step音乐生成",
+        "description": "基于文本提示和歌词生成音乐",
+        "inputs": {
+            "models": "ACE模型",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "lyrics": "歌词",
+            "parameters": "参数",
+            "ref_audio": "参考音频",
+            "delicious_song": "示例歌曲"
+        },
+        "widgets": {
+            "ref_audio_strength": "参考音频强度",
+            "overlapped_decode": "重叠解码"
+        },
+        "outputs": {
+            "music": "音乐",
+            "delicious_song_prompt": "示例歌曲提示词",
+            "delicious_song_lyrics": "示例歌曲歌词"
+        }
+    },
+    "GenerationParameters": {
+        "title": "ACE-Step生成参数",
+        "description": "配置音乐生成的各种参数",
+        "widgets": {
+            "audio_duration": "音频时长",
+            "infer_step": "推理步数",
+            "guidance_scale": "引导尺度",
+            "scheduler_type": "调度器类型",
+            "cfg_type": "CFG类型",
+            "omega_scale": "Omega尺度",
+            "seed": "随机种子",
+            "guidance_interval": "引导区间",
+            "guidance_interval_decay": "引导区间衰减",
+            "min_guidance_scale": "最小引导尺度",
+            "use_erg_tag": "使用ERG标签",
+            "use_erg_lyric": "使用ERG歌词",
+            "use_erg_diffusion": "使用ERG扩散",
+            "oss_steps": "OSS步数",
+            "guidance_scale_text": "文本引导尺度",
+            "guidance_scale_lyric": "歌词引导尺度"
+        },
+        "outputs": {
+            "parameters": "参数"
+        }
+    },
+    "MultiLinePromptACES": {
+        "title": "ACE-Step提示词输入",
+        "description": "输入多行文本提示词",
+        "widgets": {
+            "multi_line_prompt": "多行提示词"
+        },
+        "outputs": {
+            "prompt": "提示词"
+        }
+    },
+    "MultiLineLyrics": {
+        "title": "ACE-Step歌词输入",
+        "description": "输入多行歌词",
+        "widgets": {
+            "multi_line_prompt": "多行歌词"
+        },
+        "outputs": {
+            "lyrics": "歌词"
+        }
+    },
+    "ACEStepRepainting": {
+        "title": "ACE-Step音频重绘",
+        "description": "对现有音频进行部分重绘",
+        "inputs": {
+            "models": "ACE模型",
+            "src_audio": "源音频",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "lyrics": "歌词",
+            "parameters": "参数"
+        },
+        "widgets": {
+            "repaint_start": "重绘开始位置",
+            "repaint_end": "重绘结束位置",
+            "repaint_variance": "重绘方差",
+            "seed": "随机种子",
+            "overlapped_decode": "重叠解码"
+        },
+        "outputs": {
+            "music": "音乐"
+        }
+    },
+    "ACEStepEdit": {
+        "title": "ACE-Step音频编辑",
+        "description": "编辑现有音频的内容",
+        "inputs": {
+            "models": "ACE模型",
+            "src_audio": "源音频",
+            "prompt": "提示词",
+            "lyrics": "歌词",
+            "parameters": "参数",
+            "edit_prompt": "编辑提示词",
+            "edit_lyrics": "编辑歌词"
+        },
+        "widgets": {
+            "edit_n_min": "编辑最小范围",
+            "edit_n_max": "编辑最大范围",
+            "seed": "随机种子",
+            "overlapped_decode": "重叠解码"
+        },
+        "outputs": {
+            "music": "音乐"
+        }
+    },
+    "ACEStepExtend": {
+        "title": "ACE-Step音频扩展",
+        "description": "扩展音频的时长",
+        "inputs": {
+            "models": "ACE模型",
+            "src_audio": "源音频",
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "lyrics": "歌词",
+            "parameters": "参数"
+        },
+        "widgets": {
+            "left_extend_length": "左侧扩展长度",
+            "right_extend_length": "右侧扩展长度",
+            "seed": "随机种子",
+            "overlapped_decode": "重叠解码"
+        },
+        "outputs": {
+            "music": "音乐"
+        },
+        "备注": "汉化来自QQ网友27589544"
+    }
+}
