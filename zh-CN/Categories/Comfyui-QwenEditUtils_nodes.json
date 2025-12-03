@@ -1,0 +1,274 @@
+{
+    "CropWithPadInfo": {
+        "title": "裁剪平面信息",
+        "inputs": {
+            "image": "图像",
+            "pad_info": "设备信息"
+        },
+        "widgets": {},
+        "outputs": {
+            "cropped_image": "图像",
+            "scale_by": "按比例缩放"
+        }
+    },
+    "TextEncodeQwenImageEdit_lrzjason": {
+        "title": "文本编码 Qwen 图像编辑 lrzjason",
+        "inputs": {
+            "clip": "CLIP",
+            "vae": "VAE",
+            "image": "图像",
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5",
+            "resolution": "分辨率"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "enable_vl_resize": "启用垂直方向缩放功能",
+            "skip_first_image_resize": "跳过第一张图片的缩放",
+            "enable_resize": "可调整大小"
+        },
+        "outputs": {
+            "conditioning": "条件",
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5",
+            "latent": "Latent"
+        }
+    },
+    "TextEncodeQwenImageEditPlus_lrzjason": {
+        "title": "文本编码 Qwen 图像编辑 Plus lrzjason",
+        "inputs": {
+            "clip": "CLIP",
+            "vae": "VAE",
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "enable_resize": "可调整大小",
+            "enable_vl_resize": "启用垂直方向缩放功能",
+            "skip_first_image_resize": "跳过第一张图片的缩放",
+            "instruction": "指令",
+            "upscale_method": "放大方法",
+            "crop": "裁剪"
+        },
+        "outputs": {
+            "conditioning": "条件",
+            "image1": "图像",
+            "image2": "图像",
+            "image3": "图像",
+            "image4": "图像",
+            "image5": "图像",
+            "latent": "Latent"
+        }
+    },
+    "TextEncodeQwenImageEditPlusAdvance_lrzjason": {
+        "title": "文本编码 Qwen 图像编辑 高级增强版 lrzjason",
+        "inputs": {
+            "clip": "CLIP",
+            "vae": "VAE",
+            "vl_resize_image1": "vl_resize_图像1",
+            "vl_resize_image2": "vl_resize_图像2",
+            "vl_resize_image3": "vl_resize_图像3",
+            "not_resize_image1": "not_resize_图像1",
+            "not_resize_image2": "not_resize_图像2",
+            "not_resize_image3": "not_resize_图像3"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "instruction": "指令",
+            "target_size": "目标尺寸",
+            "target_vl_size": "目标VL大小",
+            "upscale_method": "放大方法",
+            "crop_method": "裁剪方法"
+        },
+        "outputs": {
+            "conditioning_with_full_ref": "条件",
+            "latent": "Latent",
+            "target_image1": "图像",
+            "target_image2": "图像",
+            "target_image3": "图像",
+            "vl_resized_image1": "图像",
+            "vl_resized_image2": "图像",
+            "vl_resized_image3": "图像",
+            "conditioning_with_first_ref": "条件",
+            "pad_info": "设备信息"
+        }
+    },
+    "TextEncodeQwenImageEditPlusPro_lrzjason": {
+        "title": "文本编码 Qwen 图像编辑 增强版Pro lrzjason",
+        "inputs": {
+            "clip": "CLIP",
+            "vae": "VAE",
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5",
+            "target_size": "目标尺寸",
+            "target_vl_size": "目标VL大小",
+            "upscale_method": "放大方法",
+            "crop_method": "裁剪方法"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "vl_resize_indexs": "vl_resize_索引",
+            "main_image_index": "主图片索引",
+            "instruction": "指令"
+        },
+        "outputs": {
+            "conditioning_with_full_ref": "条件",
+            "latent": "Latent",
+            "image1": "图像",
+            "image2": "图像",
+            "image3": "图像",
+            "image4": "图像",
+            "image5": "图像",
+            "conditioning_with_main_ref": "条件",
+            "pad_info": "ANY"
+        }
+    },
+    "TextEncodeQwenImageEditPlusCustom_lrzjason": {
+        "title": "文本编码 Qwen 图像编辑 增强版 自定义 lrzjason",
+        "inputs": {
+            "clip": "CLIP",
+            "vae": "VAE",
+            "configs": "配置文件"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "return_full_refs_cond": "返回完整引用条件",
+            "instruction": "指令"
+        },
+        "outputs": {
+            "conditioning": "条件",
+            "latent": "Latent",
+            "custom_output": "条件输出"
+        }
+    },
+    "QwenEditConfigJsonParser": {
+        "title": "Qwen 编辑配置 JSON 解析器",
+        "inputs": {
+            "image": "图像",
+            "configs": "配置文件",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "config_json": "配置 JSON 格式文件"
+        },
+        "outputs": {
+            "configs": "列表",
+            "config": "配置"
+        }
+    },
+    "QwenEditConfigPreparer": {
+        "title": "Qwen 编辑配置准备工具",
+        "inputs": {
+            "image": "图像",
+            "configs": "配置文件",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "to_ref": "to_ref",
+            "ref_main_image": "参考主图像",
+            "ref_longest_edge": "参考最长边",
+            "ref_crop": "参考裁剪",
+            "ref_upscale": "参考放大",
+            "vl_crop": "vl_裁剪",
+            "vl_upscale": "vl_放大",
+            "to_vl": "to_vl",
+            "vl_resize": "vl_resize",
+            "vl_target_size": "vl_target_尺寸"
+        },
+        "outputs": {
+            "configs": "列表",
+            "config": "配置"
+        }
+    },
+    "QwenEditOutputExtractor": {
+        "title": "Qwen 编辑输出提取器",
+        "inputs": {
+            "custom_output": "自定义输出"
+        },
+        "widgets": {},
+        "outputs": {
+            "pad_info": "pad_info",
+            "full_refs_cond": "条件",
+            "main_ref_cond": "条件",
+            "main_image": "图像",
+            "vae_images": "LIST",
+            "ref_latents": "LIST",
+            "vl_images": "LIST",
+            "full_prompt": "完整提示",
+            "llama_template": "llama_模板",
+            "no_refs_cond": "条件",
+            "mask": "遮罩"
+        }
+    },
+    "QwenEditListExtractor": {
+        "title": "Qwen 编辑列表提取器",
+        "inputs": {
+            "items": "物品"
+        },
+        "widgets": {
+            "index": "索引"
+        },
+        "outputs": {
+            "item": "物品"
+        }
+    },
+    "QwenEditAny2Image": {
+        "title": "Qwen 编辑 任何到图像",
+        "inputs": {
+            "item": "物品"
+        },
+        "widgets": {},
+        "outputs": {
+            "item": "图像"
+        }
+    },
+    "QwenEditAny2Latent": {
+        "title": "Qwen 编辑器 任何到Latent",
+        "inputs": {
+            "item": "物品"
+        },
+        "widgets": {},
+        "outputs": {
+            "item": "Latent"
+        }
+    },
+    "QwenEditAdaptiveLongestEdge": {
+        "title": "Qwen 编辑 自适应 最长边",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "max_size": "最大尺寸"
+        },
+        "outputs": {
+            "longest_edge": "最长边"
+        }
+    },
+    "LoadImageReturnFilename": {
+        "title": "加载图像和文件名",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "image": "图像"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "filename": "文件名"
+        }
+    }
+}

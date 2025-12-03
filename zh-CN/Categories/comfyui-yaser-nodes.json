@@ -1,0 +1,199 @@
+{
+    "ImageSize (Side) - Yaser": {
+        "title": "图像尺寸（边）",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "side": "选择边",
+            "Longest": "最长",
+            "Shortest": "最短"
+        },
+        "outputs": {
+            "resolution": "分辨率"
+        }
+    },
+    "ImageColorMatch": {
+        "title": "🎨 图像色彩匹配",
+        "inputs": {
+            "image_1": "图像参考",
+            "image_2": "图像目标"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "🔀 Switch (Any) - Yaser": {
+        "title": "🔀切换（任意）",
+        "inputs": {
+            "input1": "输入1"
+        },
+        "widgets": {
+            "select": "选择",
+            "sel_mode": "选择模式",
+            "select_on_execution": "执行时选择",
+            "select_on_prompt": "提示时选择"
+        },
+        "outputs": {
+            "selected_value": "选中值",
+            "selected_label": "选中标签",
+            "selected_index": "选中索引"
+        }
+    },
+    "Float - Yaser": {
+        "title": "浮点",
+        "inputs": {
+            "input1": "输入1"
+        },
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "float": "浮点"
+        }
+    },
+    "Repeat Images - Yaser": {
+        "title": "重复图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "amount": "数量"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageSizeBySide": {
+        "title": "图像尺寸（边）",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "side": "选择边"
+        },
+        "outputs": {
+            "resolution": "分辨率"
+        }
+    },
+    "UtilRepeatImages": {
+        "title": "重复图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "amount": "数量"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "LoraLoaderStack": {
+        "title": "📚Lora 加载器(堆)",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_01": "Lora_01",
+            "strength_01": "强度_01",
+            "lora_02": "Lora_02",
+            "strength_02": "强度_02",
+            "lora_03": "Lora_03",
+            "strength_03": "强度_03",
+            "lora_04": "Lora_04",
+            "strength_04": "强度_04",
+            "lora_05": "Lora_05",
+            "strength_05": "强度_05"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        }
+    },
+    "SpotDiffusionParams": {
+        "title": "🎯 点扩散 参数",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "shift_method": "偏移方法",
+            "seed": "随机种子"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "TiledVAEEncode": {
+        "title": "📦 分块 VAE 编码器",
+        "inputs": {
+            "pixels": "图像",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸",
+            "fast": "快",
+            "color_fix": "固定色彩"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "TiledVAEDecode": {
+        "title": "📦 分块 VAE 解码器",
+        "inputs": {
+            "samples": "采样",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸",
+            "fast": "快",
+            "color_fix": "固定色彩"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "🔮 Iterative Upscale with Models Node (Yaser) ": {
+        "title": "🔮 基于模型放大图像",
+        "inputs": {
+            "image": "图像",
+            "scale_factor": "缩放系数",
+            "model1x": "模型1x",
+            "model2x": "模型2x",
+            "model4x": "模型4x",
+            "model8x": "模型8x"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "GeneralSwitch": {
+        "title": "切换（任意）",
+        "inputs": {
+            "input1": "输入1"
+        },
+        "widgets": {
+            "select": "选择",
+            "sel_mode": "选择模式"
+        },
+        "outputs": {
+            "selected_value": "选中值",
+            "selected_label": "选中标签",
+            "selected_index": "选中索引"
+        }
+    },
+    "Float": {
+        "title": "浮点",
+        "inputs": {},
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "float": "浮点"
+        }
+    }
+}
