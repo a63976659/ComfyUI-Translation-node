@@ -1,18 +1,4 @@
 {
-    "ImageSize (Side) - Yaser": {
-        "title": "图像尺寸（边）",
-        "inputs": {
-            "image": "图像"
-        },
-        "widgets": {
-            "side": "选择边",
-            "Longest": "最长",
-            "Shortest": "最短"
-        },
-        "outputs": {
-            "resolution": "分辨率"
-        }
-    },
     "ImageColorMatch": {
         "title": "🎨 图像色彩匹配",
         "inputs": {
@@ -53,18 +39,6 @@
         },
         "outputs": {
             "float": "浮点"
-        }
-    },
-    "Repeat Images - Yaser": {
-        "title": "重复图像",
-        "inputs": {
-            "images": "图像"
-        },
-        "widgets": {
-            "amount": "数量"
-        },
-        "outputs": {
-            "IMAGE": "图像"
         }
     },
     "ImageSizeBySide": {
@@ -127,7 +101,7 @@
             "model": "模型"
         }
     },
-    "📦 Tiled VAE Encode - Yaser": {
+    "TiledVAEEncode": {
         "title": "📦 分块 VAE 编码器",
         "inputs": {
             "pixels": "图像",
@@ -142,7 +116,7 @@
             "latent": "Latent"
         }
     },
-    "📦 Tiled VAE Decode - Yaser": {
+    "TiledVAEDecode": {
         "title": "📦 分块 VAE 解码器",
         "inputs": {
             "samples": "采样",
@@ -157,7 +131,7 @@
             "IMAGE": "图像"
         }
     },
-    "🔮 Iterative Upscale with Models Node (Yaser) ": {
+    "IterativeUpscaleWithModelsNode": {
         "title": "🔮 基于模型放大图像",
         "inputs": {
             "image": "图像",
@@ -167,12 +141,16 @@
             "model4x": "模型4x",
             "model8x": "模型8x"
         },
+        "widgets": {
+            "select": "选择",
+            "scale_factor": "缩放系数"
+        },
         "outputs": {
-            "image": "图像"
+            "upscaled_image": "放大后的图像"
         }
     },
     "GeneralSwitch": {
-        "title": "切换（任意）",
+        "title": "🔀切换（任意）",
         "inputs": {
             "input1": "输入1"
         },
