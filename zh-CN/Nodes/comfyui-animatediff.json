@@ -1,0 +1,98 @@
+{
+    "AnimateDiffModuleLoader": {
+        "title": "动态扩散模块加载器",
+        "inputs": {
+            "lora_stack": "Lora堆"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "MOTION_MODULE": "运动模块"
+        }
+    },
+    "AnimateDiffLoraLoader": {
+        "title": "动态Lora加载器",
+        "inputs": {
+            "lora_stack": "Lora堆"
+        },
+        "widgets": {
+            "lora_name": "Lora名称",
+            "alpha": "强度"
+        },
+        "outputs": {
+            "MOTION_LORA_STACK": "运动Lora堆"
+        }
+    },
+    "AnimateDiffCombine": {
+        "title": "动态扩散 合并视频",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "loop_count": "循环次数",
+            "save_image": "保存图像",
+            "filename_prefix": "文件名前缀",
+            "format": "格式",
+            "pingpong": "pingpong循环"
+        },
+        "outputs": {
+            "MOTION_LORA_STACK": "运动Lora堆"
+        }
+    },
+    "AnimateDiffSlidingWindowOptions": {
+        "title": "滑动窗口选项",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "context_length": "上下文长度",
+            "context_stride": "上下文步长",
+            "context_overlap": "上下文重叠",
+            "context_schedule": "上下文调度器",
+            "closed_loop": "闭环系统"
+        },
+        "outputs": {
+            "SLIDING_WINDOW_OPTS": "滑动窗口选项"
+        }
+    },
+    "ImageSizeAndBatchSize": {
+        "title": "获取图像尺寸 批次",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "alpha": "强度"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小"
+        }
+    },
+    "AnimateDiffSampler": {
+        "title": "动态扩散 采样器",
+        "inputs": {
+            "motion_module": "运动模块",
+            "model": "模型",
+            "positive": "正向提示词",
+            "negative": "负向提示词",
+            "latent_image": "Latent_图像",
+            "sliding_window_opts": "滑动窗口选项"
+        },
+        "widgets": {
+            "inject_method": "注入方法",
+            "frame_number": "帧编号",
+            "seed": "种子",
+            "steps": "步数",
+            "cfg": "CFG",
+            "scheduler": "调度器",
+            "sampler_name": "采样器名称",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    }
+}

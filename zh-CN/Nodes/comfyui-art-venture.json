@@ -1190,6 +1190,22 @@
             "CNET_STACK": "ControlNet 堆"
         }
     },
+    "AnimateDiffFrameCalculator": {
+        "title": "动画差异帧计算器",
+        "inputs": {
+            "sliding_window": "滑动窗口"
+        },
+        "widgets": {
+            "duration": "持续时间",
+            "frame_rate": "帧率"
+        },
+        "outputs": {
+            "frame_number": "帧编号",
+            "_1/2-1_index": "_1/2-1_索引",
+            "_1/2_index": "_1/2_索引",
+            "end_index": "结束索引"
+        }
+    },
     "SDXLPromptStyler": {
         "title": "SDXL提示词样式器",
         "inputs": {
