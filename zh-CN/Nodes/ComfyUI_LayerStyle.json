@@ -547,6 +547,44 @@
             "box_preview": "裁剪框预览"
         }
     },
+    "LayerUtility: ImageCompositeHandleMask": {
+        "title": "图层工具：图像合成处理遮罩",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图层图像",
+            "layer_mask": "图层遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "detect": "检测方法",
+            "opacity": "不透明度",
+            "x_percent": "百分比 x",
+            "y_percent": "百分比 y",
+            "scale": "规模",
+            "rotate": "旋转",
+            "mirror": "镜像",
+            "anti_aliasing": "抗锯齿",
+            "handle_detect": "检测处理",
+            "top_handle": "上处理",
+            "bottom_handle": "下处理",
+            "left_handle": "左处理",
+            "right_handle": "右处理",
+            "handle_mask_outradius": "处理边缘外半径",
+            "top_reserve": "顶端保留",
+            "bottom_reserve": "底部保留",
+            "left_reserve": "左侧保留",
+            "round_to_multiple": "四舍五入到倍数",
+            "right_reserve": "右侧保留"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "layer_bbox_mask": "层边界框遮罩",
+            "handle_mask": "处理遮罩",
+            "handle_crop_box": "处理裁剪框",
+            "handle_overrange": "处理超出范围"
+        }
+    },
     "LayerUtility: ExtendCanvas": {
         "title": "图层工具：扩展画布",
         "inputs": {
