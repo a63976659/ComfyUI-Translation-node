@@ -80,11 +80,17 @@ ComfyUI-Translation-node 是一个汉化翻译插件，专门为ComfyUI界面设
 便捷的状态切换
 
 
+🎨图标设置：
 
-插件开关为彩色图表，开启效果如图。
+插件开关为彩色图标，开启效果如图。
+
 <img width="800" height="180" alt="开启" src="https://github.com/user-attachments/assets/7314b8a3-770e-42d6-be8a-ee990f2fb148" />
+
 <img width="800" height="180" alt="关闭" src="https://github.com/user-attachments/assets/d538f6b2-f3e9-466c-a226-97e46d5cfa3f" />
 
+   多种风格UI可自由选择，在插件中的js文件夹，解压压缩包并选择替换即可，每个压缩包分别是一种UI图标风格。
+   
+   极致低调UI图标，采用ComfyUI默认色彩同款配色方案，由QQ群友幻影632607738提供，感谢。
 
 
 
