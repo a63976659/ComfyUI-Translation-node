@@ -359,6 +359,13 @@
     "VibeVoiceWrapper": "🎵Vibe 语音包装器",
     "Apt_Preset": "🔧设置预设Apt_Preset",
     "SongGeneration": "🎵腾讯歌曲生成SongGeneration",
+    "RES4LYF": "为生活而生RES4LYF-作者小丑鲨ClownShark",
+    "precision": "精度",
+    "masks": "遮罩",
+    "model_shift": "模型偏移",
+    "patchers": "修补",
+    "sampler_options": "采样器选项",
+    "sampler_extensions": "采样器扩展",
 
     "effects": "🎞️LTX视频",
     "lightricks": "🎞️LTX视频", 
