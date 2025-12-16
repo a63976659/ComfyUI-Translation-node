@@ -5436,11 +5436,11 @@
         }
     },
     "LumaReferenceNode": {
-        "title": "亮度参考",
+        "title": "Luma参考",
         "inputs": {
             "image": "图像",
             "prompt": "提示词",
-            "luma_ref": "亮度参考"
+            "luma_ref": "Luma参考"
         },
         "widgets": {
             "image_type": "图像类型",
@@ -5454,7 +5454,7 @@
         },
         "outputs": {
             "IMAGE": "图像",
-            "luma_ref": "亮度参考"
+            "luma_ref": "Luma参考"
         }
     },
     "ReferenceLatent": {
@@ -5471,11 +5471,11 @@
         }
     },
     "LumaConceptsNode": {
-        "title": "亮度概念",
+        "title": "Luma概念",
         "inputs": {
             "image": "图像",
             "prompt": "提示词",
-            "luma_concepts": "亮度概念"
+            "luma_concepts": "Luma概念"
         },
         "widgets": {
             "image_type": "图像类型",
@@ -5489,13 +5489,13 @@
         },
         "outputs": {
             "IMAGE": "图像",
-            "luma_concepts": "亮度概念"
+            "luma_concepts": "Luma概念"
         }
     },
     "LumaImageNode": {
         "title": "Luma文生图",
         "inputs": {
-            "image_luma_ref": "图像亮度参考",
+            "image_luma_ref": "Luma图像参考",
             "style_image": "风格图像",
             "prompt": "提示词",
             "character_image": "人物图像"
@@ -5505,14 +5505,14 @@
             "aspect_ratio": "宽高比",
             "seed": "种子",
             "style_image_weight": "风格图像权重",
-            "luma_ref": "亮度参考",
+            "luma_ref": "Luma参考",
             "auth_token": "授权令牌",
             "max_refs": "最大参考数",
             "weight": "权重"
         },
         "outputs": {
             "IMAGE": "图像",
-            "luma_concepts": "亮度概念"
+            "luma_concepts": "Luma概念"
         }
     },
     "LumaImageModifyNode": {
@@ -5536,7 +5536,7 @@
     "LumaVideoNode": {
         "title": "Luma文本转视频",
         "inputs": {
-            "luma_concepts": "亮度概念",
+            "luma_concepts": "Luma概念",
             "prompt": "提示词"
         },
         "widgets": {
@@ -5552,7 +5552,7 @@
         },
         "outputs": {
             "VIDEO": "视频",
-            "luma_concepts": "亮度概念",
+            "luma_concepts": "Luma概念",
             "duration": "时长",
             "string": "字符串"
         }
@@ -5562,7 +5562,7 @@
         "inputs": {
             "first_image": "第一帧图像",
             "last_image": "最后一帧图像",
-            "luma_concepts": "亮度概念",
+            "luma_concepts": "Luma概念",
             "prompt": "提示词"
         },
         "widgets": {
@@ -5578,7 +5578,7 @@
         },
         "outputs": {
             "VIDEO": "视频",
-            "luma_concepts": "亮度概念",
+            "luma_concepts": "Luma概念",
             "duration": "时长",
             "string": "字符串"
         }
@@ -5602,7 +5602,7 @@
         },
         "outputs": {
             "VIDEO": "视频",
-            "luma_concepts": "亮度概念",
+            "luma_concepts": "Luma概念",
             "duration": "时长",
             "string": "字符串"
         }
@@ -5626,7 +5626,7 @@
         },
         "outputs": {
             "VIDEO": "视频",
-            "luma_concepts": "亮度概念",
+            "luma_concepts": "Luma概念",
             "duration": "时长",
             "string": "字符串"
         }
@@ -5650,7 +5650,7 @@
         },
         "outputs": {
             "VIDEO": "视频",
-            "luma_concepts": "亮度概念",
+            "luma_concepts": "Luma概念",
             "duration": "时长",
             "string": "字符串"
         }

@@ -1,0 +1,223 @@
+{
+    "ImgBBUpload": {
+        "title": "图像BB上传",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "api_key": "api密匙",
+            "expire": "过期",
+            "expiration_time": "过期时间"
+        },
+        "outputs": {
+            "image_url": "图像链接"
+        }
+    },
+    "LumaAIClient": {
+        "title": "LumaAI密匙",
+        "inputs": {},
+        "widgets": {
+            "api_key": "api密匙"
+        },
+        "outputs": {
+            "client": "Luma密匙"
+        }
+    },
+    "LumaText2Video": {
+        "title": "Luma文本转视频",
+        "inputs": {
+            "client": "Luma密匙"
+        },
+        "widgets": {
+            "model": "模型",
+            "prompt": "提示词",
+            "duration": "时长",
+            "loop": "循环",
+            "save": "保存",
+            "filename": "文件名",
+            "aspect_ratio": "宽高比",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "video_url": "视频链接",
+            "generation_id": "生成ID"
+        }
+    },
+    "LumaImage2Video": {
+        "title": "Luma图像转视频",
+        "inputs": {
+            "client": "Luma密匙",
+            "init_image_url": "初始图像链接",
+            "final_image_url": "最终图像链接"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "model": "模型",
+            "duration": "时长",
+            "loop": "循环",
+            "save": "保存",
+            "filename": "文件名",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "video_url": "视频链接",
+            "generation_id": "生成ID"
+        }
+    },
+    "LumaInterpolateGenerations": {
+        "title": "Luma插值生成",
+        "inputs": {
+            "client": "Luma密匙",
+            "model": "模型",
+            "resolution": "分辨率"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "save": "保存",
+            "generation_id_1": "生成ID_1",
+            "generation_id_2": "生成ID_2",
+            "filename": "文件名"
+        },
+        "outputs": {
+            "video_url": "视频链接",
+            "generation_id": "生成ID"
+        }
+    },
+    "LumaExtendGeneration": {
+        "title": "Luma扩展生成",
+        "inputs": {
+            "init_image_url": "初始图像链接",
+            "final_image_url": "最终图像链接",
+            "init_generation_id": "初始生成ID",
+            "final_generation_id": "最终生成ID",
+            "client": "Luma密匙"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "loop": "循环",
+            "save": "保存",
+            "filename": "文件名",
+            "model": "模型",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "video_url": "视频链接",
+            "generation_id": "生成ID"
+        }
+    },
+    "LumaUpscaleGeneration": {
+        "title": "Luma生成放大",
+        "inputs": {
+            "generation_id": "生成ID",
+            "client": "Luma密匙"
+        },
+        "widgets": {
+            "save": "保存",
+            "filename": "文件名",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "video_url": "视频URL",
+            "generation_id": "生成ID"
+        }
+    },
+    "LumaAddAudio2Video": {
+        "title": "Luma添加音频到视频",
+        "inputs": {
+            "generation_id": "生成ID",
+            "client": "Luma密匙"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "save": "保存",
+            "filename": "文件名"
+        },
+        "outputs": {
+            "video_url": "视频URL",
+            "generation_id": "生成ID"
+        }
+    },
+    "LumaPreviewVideo": {
+        "title": "Luma预览视频",
+        "inputs": {
+            "video_url": "视频URL"
+        },
+        "widgets": {},
+        "outputs": {}
+    },
+    "Reference": {
+        "title": "参考",
+        "inputs": {
+            "image_url": "图像URL"
+        },
+        "widgets": {
+            "weight": "权重"
+        },
+        "outputs": {
+            "reference": "参考"
+        }
+    },
+    "ConcatReferences": {
+        "title": "合并参考",
+        "inputs": {
+            "reference_1": "参考_1",
+            "reference_2": "参考_2",
+            "reference_3": "参考_3",
+            "reference_4": "参考_4"
+        },
+        "widgets": {},
+        "outputs": {
+            "concat_references": "合并参考"
+        }
+    },
+    "CharacterReference": {
+        "title": "角色参考",
+        "inputs": {
+            "character_image_url_1": "角色图像URL_1",
+            "character_image_url_2": "角色图像URL_2",
+            "character_image_url_3": "角色图像URL_3",
+            "character_image_url_4": "角色图像URL_4"
+        },
+        "widgets": {},
+        "outputs": {
+            "character_reference": "角色参考"
+        }
+    },
+    "LumaImageGeneration": {
+        "title": "Luma图像生成",
+        "inputs": {
+            "client": "Luma密匙",
+            "prompt": "提示词",
+            "image_ref": "参考图像",
+            "style_ref": "参考风格",
+            "character_ref": "参考角色"
+        },
+        "widgets": {
+            "model": "模型",
+            "aspect_ratio": "宽高比",
+            "filename": "文件名"
+        },
+        "outputs": {
+            "image_url": "图像链接",
+            "generation_id": "生成ID",
+            "image": "图像"
+        }
+    },
+    "LumaModifyImage": {
+        "title": "Luma修改图像",
+        "inputs": {
+            "client": "Luma密匙",
+            "modify_image_ref": "待修改图像参考",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "model": "模型"
+        },
+        "outputs": {
+            "image_url": "图像链接",
+            "generation_id": "生成ID",
+            "image": "图像"
+        }
+    }
+}

@@ -3390,6 +3390,16 @@
             "model": "模型"
         }
     },
+    "SimpleCalculatorKJ": {
+        "title": "简易计算器(KJ)",
+        "inputs": {},
+        "widgets": {},
+        "outputs": {
+            "FLOAT": "浮点",
+            "STRING": "浮点",
+            "INT": "整数"
+        }
+    },
     "HunyuanVideoEncodeKeyframesToCond": {
         "title": "混元视频 关键帧编码到条件",
         "inputs": {

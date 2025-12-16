@@ -2032,6 +2032,105 @@
             "image_embeds": "图像嵌入"
         }
     },
+    "WanVideoAddOneToAllReferenceEmbeds": {
+        "title": "Wan视频 添加OneToAll 一到全部 参考嵌入(KJ)",
+        "inputs": {
+            "embeds": "嵌入",
+            "vae": "VAE",
+            "ref_image": "参考图像",
+            "ref_mask": "参考遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始百分比",
+            "end_percent": "结束百分比"
+        },
+        "outputs": {
+            "image_embeds": "图像嵌入"
+        }
+    },
+    "WanVideoAddOneToAllPoseEmbeds": {
+        "title": "Wan视频 添加OneToAll 一到全部 姿态嵌入(KJ)",
+        "inputs": {
+            "embeds": "嵌入",
+            "vae": "VAE",
+            "pose_images": "姿态图像",
+            "pose_prefix_image": "姿态前缀图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始百分比",
+            "end_percent": "结束百分比",
+            "pose_cfg_scale": "姿态CFG强度"
+        },
+        "outputs": {
+            "image_embeds": "图像嵌入"
+        }
+    },
+    "WanVideoAddOneToAllExtendEmbeds": {
+        "title": "Wan视频 添加OneToAll 一到全部 扩展嵌入(KJ)",
+        "inputs": {
+            "embeds": "嵌入",
+            "vae": "VAE",
+            "prev_latents": "前面的Latents",
+            "pose_images": "姿态图像"
+        },
+        "widgets": {
+            "window_size": "窗口大小",
+            "overlap": "重叠",
+            "frames_processed": "处理帧数",
+            "if_not_enough_frames": "如果帧数不足"
+        },
+        "outputs": {
+            "image_embeds": "图像嵌入",
+            "pose_slice": "姿势切片图"
+        }
+    },
+    "WanVideoAddWanMoveTracks": {
+        "title": "Wan视频 添加WanMoveTracks 万移动轨迹(KJ)",
+        "inputs": {
+            "image_embeds": "图像嵌入",
+            "tracks": "轨迹",
+            "track_mask": "轨迹遮罩",
+            "track_coords": "轨迹坐标"
+        },
+        "widgets": {
+            "strength": "强度"
+        },
+        "outputs": {
+            "image_embeds": "图像嵌入",
+            "tracks": "轨迹"
+        }
+    },
+    "WanVideoWanDrawWanMoveTracks": {
+        "title": "Wan视频 绘制WanMoveTracks 万移动轨迹(KJ)",
+        "inputs": {
+            "images": "图像",
+            "tracks": "轨迹"
+        },
+        "widgets": {
+            "line_resolution": "线分辨率",
+            "circle_size": "圆的大小",
+            "opacity": "透明度",
+            "line_width": "线条宽度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "WanMove_native": {
+        "title": "Wan MoveNative万移动原生版(KJ)",
+        "inputs": {
+            "positive": "正向提示词",
+            "track_mask": "轨迹遮罩",
+            "track_coords": "轨迹坐标"
+        },
+        "widgets": {},
+        "outputs": {
+            "positive": "正向提示词",
+            "tracks": "轨迹"
+        }
+    },
     "WanVideoUniAnimatePoseInput": {
         "title": "Wan视频 UniAnimate通用动画 姿态输入(KJ)",
         "inputs": {
