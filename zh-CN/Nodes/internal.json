@@ -84,7 +84,7 @@
             "positive": "正面条件",
             "negative": "负面条件",
             "sampler": "采样器",
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -103,7 +103,7 @@
         "inputs": {
             "model": "模型",
             "sampler": "采样器",
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -113,7 +113,7 @@
             "spacing": "过程"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "OptimalStepsScheduler": {
@@ -121,7 +121,7 @@
         "inputs": {
             "model": "模型",
             "sampler": "采样器",
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -130,7 +130,7 @@
             "duration": "时长"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "Flux2Scheduler": {
@@ -144,7 +144,7 @@
             "height": "高度"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "SamplingPercentToSigma": {
@@ -168,7 +168,7 @@
             "noise": "噪波生成",
             "guider": "引导",
             "sampler": "采样器",
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "latent_image": "Latent"
         },
         "outputs": {
@@ -185,7 +185,7 @@
             "rho": "rho"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "ExponentialScheduler": {
@@ -196,7 +196,7 @@
             "sigma_min": "最小调度"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "PolyexponentialScheduler": {
@@ -208,7 +208,7 @@
             "rho": "rho"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "LaplaceScheduler": {
@@ -221,7 +221,7 @@
             "beta": "尺度参数β"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "VPScheduler": {
@@ -234,7 +234,7 @@
             "eps_s": "噪声因子ε_s"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "AlignYourStepsScheduler": {
@@ -244,7 +244,7 @@
             "steps": "步数"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "GITSScheduler": {
@@ -255,7 +255,7 @@
             "denoise": "降噪"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "BetaSamplingScheduler": {
@@ -269,7 +269,7 @@
             "beta": "尺度参数β"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "KSamplerSelect": {
@@ -449,7 +449,7 @@
             "denoise": "降噪"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "SDTurboScheduler": {
@@ -461,25 +461,25 @@
             "steps": "步数"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "SplitSigmas": {
-        "title": "分离调度器",
+        "title": "分离Sigmas",
         "inputs": {
-            "sigmas": "调度器"
+            "sigmas": "sigmas"
         },
         "widgets": {
             "step": "步数"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "sigmas"
         }
     },
     "SplitSigmasDenoise": {
-        "title": "分离调度器降噪",
+        "title": "分离sigmas降噪",
         "inputs": {
-            "sigmas": "调度器"
+            "sigmas": "sigmas"
         },
         "widgets": {
             "denoise": "降噪"
@@ -490,12 +490,12 @@
         }
     },
     "FlipSigmas": {
-        "title": "翻转调度器",
+        "title": "翻转sigmas",
         "inputs": {
-            "sigmas": "调度器"
+            "sigmas": "sigmas"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "sigmas"
         }
     },
     "VideoLinearCFGGuidance": {
@@ -2453,7 +2453,7 @@
         "inputs": {
             "model": "模型",
             "noise": "噪波生成",
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "latent_image": "Latent"
         },
         "outputs": {
@@ -3236,11 +3236,11 @@
     "SetFirstSigma": {
         "title": "设置初始调度值",
         "inputs": {
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "sigma": "目标调度"
         },
         "outputs": {
-            "sigmas": "调度器"
+            "sigmas": "sigmas"
         }
     },
     "FluxDisableGuidance": {
@@ -3635,7 +3635,7 @@
             "terminal": "终止条件"
         },
         "outputs": {
-            "SIGMAS": "调度器"
+            "SIGMAS": "Sigmas"
         }
     },
     "LTXVPreprocess": {

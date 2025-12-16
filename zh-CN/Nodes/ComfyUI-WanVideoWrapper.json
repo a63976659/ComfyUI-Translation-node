@@ -468,7 +468,7 @@
     "WanVideoScheduler": {
         "title": "Wan视频  调度器(KJ)",
         "inputs": {
-            "sigmas": "调度器"
+            "sigmas": "sigmas"
         },
         "widgets": {
             "scheduler": "调度器",
@@ -478,10 +478,29 @@
             "end_step": "结束步数"
         },
         "outputs": {
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "steps": "步数",
             "shift": "偏移",
-            "scheduler": "调度器列表",
+            "scheduler": "调度器",
+            "start_step": "起始步数",
+            "end_step": "结束步数"
+        }
+    },
+    "WanVideoSchedulerv2": {
+        "title": "Wan视频  调度器v2(KJ)",
+        "inputs": {
+            "sigmas": "sigmas"
+        },
+        "widgets": {
+            "scheduler": "调度器",
+            "steps": "步数",
+            "shift": "偏移",
+            "start_step": "起始步数",
+            "end_step": "结束步数"
+        },
+        "outputs": {
+            "sigmas": "sigmas",
+            "scheduler": "调度器",
             "start_step": "起始步数",
             "end_step": "结束步数"
         }
@@ -489,7 +508,7 @@
     "WanVideoSchedulerSA_ODE": {
         "title": "Wan视频  调度器SA-ODE(KJ)",
         "inputs": {
-            "sigmas": "调度器"
+            "sigmas": "sigmas"
         },
         "widgets": {
             "use_adaptive_order": "使用自适应排序",
@@ -502,7 +521,7 @@
             "end_step": "结束步数"
         },
         "outputs": {
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "steps": "步数",
             "shift": "偏移",
             "scheduler": "调度器列表",
@@ -541,7 +560,7 @@
             "rope_function": "Rope函数",
             "loop_args": "循环参数",
             "experimental_args": "实验参数",
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "unianimate_poses": "UniAnimate通用动画_姿态",
             "fantasytalking_embeds": "FantasyTalking幻想对话_嵌入组",
             "uni3c_embeds": "Uni3C 嵌入组",
@@ -569,6 +588,51 @@
             "denoised_samples": "去噪Latent"
         }
     },
+    "WanVideoSamplerv2": {
+        "title": "Wan视频 采样器v2(KJ)",
+        "inputs": {
+            "model": "模型",
+            "image_embeds": "图像嵌入组",
+            "scheduler": "调度器",
+            "text_embeds": "文本嵌入组",
+            "samples": "采样",
+            "extra_args": "额外参数"
+        },
+        "widgets": {
+            "cfg": "CFG",
+            "seed": "随机种子",
+            "force_offload": "强制卸载",
+            "add_noise_to_samples": "添加噪声到采样"
+        },
+        "outputs": {
+            "samples": "Latent",
+            "denoised_samples": "去噪Latent"
+        }
+    },
+    "WanVideoSamplerExtraArgs": {
+        "title": "Wan视频 采样器v2额外参数(KJ)",
+        "inputs": {
+            "feta_args": "增强参数",
+            "context_options": "上下文选项",
+            "cache_args": "缓存参数",
+            "slg_args": "SLG参数",
+            "loop_args": "循环参数",
+            "experimental_args": "实验参数",
+            "unianimate_poses": "UniAnimate通用动画_姿态",
+            "fantasytalking_embeds": "FantasyTalking幻想对话_嵌入组",
+            "uni3c_embeds": "Uni3C 嵌入组",
+            "multitalk_embeds": "MultiTalk多轮对话 嵌入组",
+            "infinitetalk_embeds": "InfiniteTalk无限对话 嵌入组",
+            "freeinit_args": "自由初始化参数组"
+        },
+        "widgets": {
+            "riflex_freq_index": "Riflex频率索引",
+            "rope_function": "Rope函数"
+        },
+        "outputs": {
+            "extra_args": "额外参数"
+        }
+    },
     "WanVideoSamplerSettings": {
         "title": "Wan视频 设置采样器(KJ)",
         "inputs": {
@@ -584,7 +648,7 @@
             "rope_function": "Rope函数",
             "loop_args": "循环参数",
             "experimental_args": "实验参数",
-            "sigmas": "调度器",
+            "sigmas": "sigmas",
             "unianimate_poses": "UniAnimate通用动画_姿态",
             "fantasytalking_embeds": "FantasyTalking幻想对话_嵌入组",
             "uni3c_embeds": "Uni3C 嵌入组",
