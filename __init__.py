@@ -1,5 +1,5 @@
 """
-ComfyUI-Translation-node 插件主初始化文件
+ComfyUI-Chinese-Translation 插件主初始化文件
 主要功能：提供翻译服务的后端API，管理翻译配置和资源文件
 版本: 1
 """
@@ -18,7 +18,7 @@ from pathlib import Path
 # 插件版本信息
 VERSION = "1"
 # 插件名称
-ADDON_NAME = "ComfyUI-Translation-node"
+ADDON_NAME = "ComfyUI-Chinese-Translation"
 # ComfyUI 主程序路径
 COMFY_PATH = Path(folder_paths.__file__).parent
 # 当前插件路径
