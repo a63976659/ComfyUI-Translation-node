@@ -1,4 +1,4 @@
-ComfyUI 翻译插件
+ComfyUI 中文汉化
 
 作者：猪的飞行梦
 
@@ -112,8 +112,11 @@ ComfyUI-Translation-node 是一个汉化翻译插件，专门为ComfyUI界面设
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/332d471d-85b0-4aa5-8aef-e9a674bd179d" />
 
 
+ 
+更新事项：
 
 
+   20251220   名称从`ComfyUI-Translation-node`更改为`ComfyUI-Chinese-Translation`，`翻译节点`变成`中文翻译`，更符合插件定位。
 
 
 注意事项：
