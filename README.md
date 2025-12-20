@@ -11,7 +11,7 @@ ComfyUI 中文汉化
 
 📖 插件简介
 
-ComfyUI-Translation-node 是一个汉化翻译插件，专门为ComfyUI界面设计，
+ComfyUI-Chinese-Translation 是一个汉化翻译插件，专门为ComfyUI界面设计，
 能够智能地将界面英文文字翻译为中文，同时保持与官方原生翻译的良好兼容性。
 
 ✨ 核心优势
@@ -133,7 +133,7 @@ ComfyUI-Translation-node 是一个汉化翻译插件，专门为ComfyUI界面设
 1.    点击页面中的code复制插件地址
 2.    在ComfyUI 的 `custom_nodes` 目录下打开`cmd`
 3.   输入git空格clone空格粘贴地址并回车
-`git clone https://github.com/a63976659/ComfyUI-Translation-node.git`
+`git clone https://github.com/a63976659/ComfyUI-Chinese-Translation.git`
 4.   安装完成后， 重启 ComfyUI
 
 
