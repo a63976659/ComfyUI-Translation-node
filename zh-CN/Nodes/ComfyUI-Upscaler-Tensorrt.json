@@ -12,6 +12,22 @@
             "IMAGE": "图像"
         }
     },
+    "RifeTensorrt": {
+        "title": "⚡Tensorrt 超分放大",
+        "inputs": {
+            "frames": "序列帧图像"
+        },
+        "widgets": {
+            "engine": "引擎",
+            "clear_cache_after_n_frames": "每 n 帧后清除缓存",
+            "multiplier": "乘数",
+            "use_cuda_graph": "使用CUDA图表",
+            "keep_model_loaded": "保持模型加载状态"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "LoadUpscalerTensorrtModel": {
         "title": "⚡超分放大 Tensorrt 模型加载器",
         "inputs": {},
