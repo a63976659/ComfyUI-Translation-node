@@ -756,6 +756,10 @@
     "disable": "禁用",
     "enable": "启用",
     "Base": "基模",
+    "Execution": "执行",
+    "Live preview method ": "实时预览方法",
+
+
 
     "recent": "最近",
     "legacy": "旧版",

@@ -3649,6 +3649,13 @@
     "crane_up": "吊臂上升",
     "eye_level": "眼平",
     "pad_with_last": "用最后图像填充",
+    "index_timestep_zero": "零时刻 索引",
+
+    "pad_with_start": "用起始部分填充",
+    "mirror_from_end": "从末尾镜像",
+    "seedream-4-5-251128": "即梦-4-5-251128",
+    "seedream-4-0-250828": "即梦-4-0-250828", 
+    "kling-image-o1": "可灵-图像-o1",
 
     "Channel (1day cache)": "频道（1天缓存）",
     "Local": "本地",
