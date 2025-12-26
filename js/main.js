@@ -577,7 +577,6 @@ export class TUtils {
     }
   }
 
-
   /**
    * 添加面板按钮
    * 在界面上添加翻译切换按钮
@@ -589,54 +588,47 @@ export class TUtils {
       
       const translationEnabled = isTranslationEnabled();
       
-      // 创建样式元素，添加按钮黑金效果
+      // 创建样式元素，添加按钮动画效果
       const styleElem = document.createElement('style');
       styleElem.textContent = `
+        @keyframes flowEffect {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        
         .translation-active {
-          background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 50%, #1a1a1a 100%);
-          color: #d4af37;
-          border: 2px solid #d4af37;
-          text-shadow: 0 1px 2px rgba(0,0,0,0.8);
-          box-shadow: 0 4px 8px rgba(0,0,0,0.5), 
-                      inset 0 1px 0 rgba(255,255,255,0.1);
+          background: linear-gradient(90deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #0080ff, #8000ff, #ff0080, #ff0000);
+          background-size: 400% 100%;
+          color: white;
+          border: none;
+          animation: flowEffect 8s ease infinite;
+          text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+          box-shadow: 0 0 8px rgba(255,255,255,0.3);
           transition: all 0.3s ease;
           font-weight: bold;
-          position: relative;
-          overflow: hidden;
-        }
-        
-        .translation-active::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, 
-                      transparent, 
-                      rgba(212, 175, 55, 0.2), 
-                      transparent);
-          transition: left 0.5s ease;
-        }
-        
-        .translation-active:hover::before {
-          left: 100%;
         }
         
         .translation-inactive {
-          background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 50%, #2d2d2d 100%);
-          color: #8c8c8c;
-          border: 2px solid #5a5a5a;
-          text-shadow: 0 1px 2px rgba(0,0,0,0.8);
-          box-shadow: 0 4px 8px rgba(0,0,0,0.3), 
-                      inset 0 1px 0 rgba(255,255,255,0.05);
+          background: linear-gradient(90deg, #f0f0f0, #d0d0d0, #b0b0b0, #909090, #707070, #909090, #b0b0b0, #d0d0d0, #f0f0f0);
+          background-size: 300% 100%;
+          color: #333;
+          border: none;
+          animation: flowEffect 6s ease infinite;
+          box-shadow: 0 0 5px rgba(0,0,0,0.2);
           transition: all 0.3s ease;
           font-weight: bold;
         }
         
         .translation-btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+          box-shadow: 0 6px 12px rgba(0,0,0,0.3);
           cursor: pointer;
         }
 
@@ -645,9 +637,7 @@ export class TUtils {
           border-radius: 6px;
           padding: 6px 12px;
           font-size: 12px;
-          border: none;
-          outline: none;
-          position: relative;
+          border: 1px solid rgba(0,0,0,0.1);
         }
       `;
       document.head.appendChild(styleElem);
@@ -746,7 +736,7 @@ export class TUtils {
  * 注册翻译插件的各种生命周期回调
  */
 const ext = {
-  name: "ComfyUI.ChineseTranslation",
+  name: "ComfyUI.TranslationNode",
   
   /**
    * 初始化扩展
