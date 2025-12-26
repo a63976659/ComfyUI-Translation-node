@@ -2195,6 +2195,73 @@
             "tracks": "轨迹"
         }
     },
+    "WanVideoAddStoryMemLatents": {
+        "title": "Wan视频 添加StoryMem故事记忆Latent(KJ)",
+        "inputs": {
+            "embeds": "嵌入组",
+            "memory_images": "记忆图像"
+        },
+        "widgets": {
+            "freq_offset": "频率偏移"
+        },
+        "outputs": {
+            "image_embeds": "图像嵌入组"
+        }
+    },
+    "WanVideoAddSCAILPoseEmbeds": {
+        "title": "Wan视频 添加 SCAIL姿态 嵌入(KJ)",
+        "inputs": {
+            "embeds": "嵌入组",
+            "pose_images": "姿态图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始百分比",
+            "end_percent": "结束百分比"
+        },
+        "outputs": {
+            "image_embeds": "图像嵌入组"
+        }
+    },
+    "WanVideoAddSCAILReferenceEmbeds": {
+        "title": "Wan视频 添加 SCAIL参考 嵌入(KJ)",
+        "inputs": {
+            "embeds": "嵌入组",
+            "vae": "VAE",
+            "ref_image": "参考图像",
+            "clip_embeds": "CLIP嵌入"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始百分比",
+            "end_percent": "结束百分比"
+        },
+        "outputs": {
+            "image_embeds": "图像嵌入组"
+        }
+    },
+    "WanVideoLongCatAvatarExtendEmbeds": {
+        "title": "Wan视频 大猫虚拟影像扩展 嵌入(KJ)",
+        "inputs": {
+            "prev_latents": "前 Latent",
+            "audio_embeds": "音频嵌入",
+            "ref_latent": "参考Latent",
+            "samples": "采样"
+        },
+        "widgets": {
+            "amples": "样本",
+            "num_frames": "帧数",
+            "overlap": "重叠",
+            "frames_processed": "已处理的帧",
+            "if_not_enough_audio": "音频不足时",
+            "ref_frame_index": "参考帧索引",
+            "ref_mask_frame_range": "参考遮罩帧范围"
+        },
+        "outputs": {
+            "image_embeds": "图像嵌入组",
+            "samples_slice": "采样分块"
+        }
+    },
     "WanVideoUniAnimatePoseInput": {
         "title": "Wan视频 UniAnimate通用动画 姿态输入(KJ)",
         "inputs": {

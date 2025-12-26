@@ -3400,6 +3400,21 @@
             "INT": "整数"
         }
     },
+    "VAEDecodeLoopKJ": {
+        "title": "VAE 循环解码(KJ)",
+        "inputs": {
+            "samples": "采样",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "overlap_latent_frames": "重复Latent图像"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "STRING": "浮点",
+            "INT": "整数"
+        }
+    },
     "HunyuanVideoEncodeKeyframesToCond": {
         "title": "混元视频 首尾帧编码到条件",
         "inputs": {

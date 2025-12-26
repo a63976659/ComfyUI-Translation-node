@@ -4491,7 +4491,7 @@
         }
     },
     "FluxProImageNode": {
-        "title": "FluxPro图像节点",
+        "title": "Flux图像节点(专业版)",
         "inputs": {
             "image_prompt": "图像提示词",
             "prompt": "提示词"
@@ -4511,24 +4511,18 @@
             "MASK": "遮罩"
         }
     },
-    "FluxProExpandNode": {
-        "title": "Flux.1 扩展图像",
+    "Flux2MaxImageNode": {
+        "title": "Flux.2 图像节点(最大)",
         "inputs": {
-            "image": "图像",
+            "images": "图像",
             "prompt": "提示词"
         },
         "widgets": {
+            "width": "宽度",
+            "height": "高度",
             "prompt_upsampling": "提示词放大",
-            "top": "上扩展",
-            "bottom": "下扩展",
-            "left": "左扩展",
-            "right": "右扩展",
-            "guidance": "引导强度",
             "control_after_generate": "生成后控制",
-            "steps": "步数",
-            "seed": "种子",
-            "raw": "原始数据",
-            "auth_token": "授权令牌"
+            "seed": "种子"
         },
         "outputs": {
             "IMAGE": "图像",
@@ -4651,7 +4645,7 @@
         }
     },
     "Flux2ProImageNode": {
-        "title": "Flux 2代 [pro] 超高清图像",
+        "title": "Flux 2代 超高清图像[专业版] ",
         "inputs": {
             "images": "图像组",
             "prompt": "提示词"
@@ -5125,6 +5119,91 @@
             "string": "字符串"
         }
     },
+    "KlingOmniProImageNode": {
+        "title": "可灵 Omni图像(专业版)",
+        "inputs": {
+            "reference_images": "参考 图像"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "resolution": "分辨率",
+            "auth_token": "授权令牌",
+            "aspect_ratio": "宽高比",
+            "n": "数量"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "string": "字符串"
+        }
+    },
+    "KlingOmniProTextToVideoNode": {
+        "title": "可灵 Omni文本转视频节点(专业版)",
+        "inputs": {
+            "reference_images": "参考 图像"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "resolution": "分辨率",
+            "auth_token": "授权令牌",
+            "aspect_ratio": "宽高比",
+            "n": "数量"
+        },
+        "outputs": {
+            "VIDEO": "视频",
+            "string": "字符串"
+        }
+    },
+    "KlingOmniProFirstLastFrameNode": {
+        "title": "可灵 Omni首尾帧转视频(专业版)",
+        "inputs": {
+            "first_frame": "首帧图像",
+            "end_frame": "尾帧图像",
+            "reference_images": "参考 图像"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "resolution": "分辨率",
+            "duration": "持续时间",
+            "aspect_ratio": "宽高比"
+        },
+        "outputs": {
+            "VIDEO": "视频",
+            "string": "字符串"
+        }
+    },
+    "KlingOmniProImageToVideoNode": {
+        "title": "可灵 Omni图生视频(专业版)",
+        "inputs": {
+            "reference_images": "参考 图像"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "resolution": "分辨率",
+            "duration": "持续时间",
+            "aspect_ratio": "宽高比"
+        },
+        "outputs": {
+            "VIDEO": "视频",
+            "string": "字符串"
+        }
+    },
+    "KlingOmniProVideoToVideoNode": {
+        "title": "可灵 Omni视频转视频(专业版)",
+        "inputs": {
+            "reference_video": "参考视频",
+            "reference_images": "参考图像"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "keep_original_sound": "使用原音频",
+            "duration": "持续时间",
+            "aspect_ratio": "宽高比"
+        },
+        "outputs": {
+            "VIDEO": "视频",
+            "string": "字符串"
+        }
+    },
     "KlingVirtualTryOnNode": {
         "title": "可灵 虚拟试穿",
         "inputs": {
@@ -5170,7 +5249,7 @@
         }
     },
     "KlingOmniProEditVideoNode": {
-        "title": "可灵 全景视频编辑（专业版）",
+        "title": "可灵 Omni视频编辑（专业版）",
         "inputs": {
             "video": "视频",
             "reference_images": "参考图像"
