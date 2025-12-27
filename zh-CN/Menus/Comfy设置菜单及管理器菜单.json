@@ -757,6 +757,8 @@
     "enable": "启用",
     "Base": "基模",
     "Execution": "执行",
+    "No node(s) selected": "未选择任何节点",
+    "Select a node to see its properties and info.": "选择一个节点以查看其属性和信息。",
     "Live preview method ": "实时预览方法",
 
 

@@ -1,6 +1,12 @@
 {
     "Color Application": "颜色应用",
     "Apply color to node header": "将颜色应用到节点标题栏",
+    "Apply Color to Header Only": "仅对标题应用颜色",
+    "Hold Mode": "保持模式",
+    "Group vertical spacing": "组内垂直间距",
+    "Group horizontal spacing": "组内水平间距",
+    "Node vertical spacing": "节点垂直间距",
+    "Node horizontal spacing": "节点水平间距",
     "Apply color to node panel (background)": "将颜色应用到节点面板（背景 ）",
     "Shortcut": "快捷键",
     "Hold Shortcut Mode": "保持快捷方式模式",
