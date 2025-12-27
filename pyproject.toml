@@ -1,6 +1,6 @@
 [project]
 name = "chinese-translation"
-description = "一个中文汉化插件，将ComfyUI页面变成中文，包含界面，菜单，管理器，节点，节点库，模版，尽可能全面的翻译。"
+description = "A Chinese localization plugin that translates ComfyUI pages into Chinese, including the interface, menus, manager, nodes, node library, and templates, providing the most comprehensive possible translation."
 version = "1.0.0"
 license = {file = "LICENSE"} 
 # classifiers = [
