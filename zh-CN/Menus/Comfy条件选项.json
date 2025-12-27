@@ -3657,6 +3657,9 @@
     "seedream-4-0-250828": "即梦-4-0-250828", 
     "kling-image-o1": "可灵-图像-o1",
 
+    "user": "用户",
+    "assistant": "助手",
+
     "Channel (1day cache)": "频道（1天缓存）",
     "Local": "本地",
     "Channel (remote)": "频道（远程）",
@@ -3667,7 +3670,7 @@
     "dev": "开发版",
     "tutorial": "教程",
     "TAESD (slow)": "TAESD（慢速）",
-    "Latent2RGB (fast)": "潜在空间转RGB（快速）",
+    "Latent2RGB (fast)": "Latent转RGB（快速）",
     "None (very fast)": "无（极快）",
     "Use workflow version": "使用工作流版本",
     "Use higher version": "使用更高版本",
@@ -3675,5 +3678,5 @@
     "ComfyUI Stable Version": "ComfyUI稳定版",
     "ComfyUI Nightly Version": "ComfyUI每日构建版",
 
-    "zhudefeixingmeng": "猪的飞行梦汉化20251219 20:46更新"
+    "zhudefeixingmeng": "猪的飞行梦汉化20251227 20:35更新"
 }
